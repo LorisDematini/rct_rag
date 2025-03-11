@@ -1,0 +1,28 @@
+# Ignore the /data folder
+/data/
+/rct_protocols/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore all .pkl (pickle) files
+*.pkl
+
+# Ignore all CSV files
+*.csv
+
+# Ignore all Excel files
+*.xlsx
+
+# Ignore all Docx files
+*.doc
+*.docx
+
+#Ignore bin files
+*.bin
+
