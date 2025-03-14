@@ -1,0 +1,1 @@
+This folder aims at building the docs using mkdocs static site generator https://www.mkdocs.org/

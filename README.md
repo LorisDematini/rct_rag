@@ -1,4 +1,9 @@
-# rct_rag
+# RCT RAG
+
+Welcome to the **RCT RAG** project!
+
+📖 **Read the full documentation here:**  
+➡️ [RCT RAG Documentation](https://ohassanaly.github.io/rct_rag/)  
 
 This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.
 
