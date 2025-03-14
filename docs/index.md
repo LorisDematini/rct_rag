@@ -1,16 +1,22 @@
-# Welcome to MkDocs
+# What is this project?
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.
 
-## Commands
+A RAG architecture divides in several steps :
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+corpus text embedding
+embedding storage in a Vector Databse
+query embedding and retrieving most similar vectors in the DB
 
-## Project layout
+## Folders
 
+* `rag` - The main project architecture.
+* `get_bdd` - Code used to retrieve the rct protocols from URC Saint Louis NAS system.
+
+## Continue
+
+    Project still in progress 
+    
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.

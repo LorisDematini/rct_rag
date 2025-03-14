@@ -10,6 +10,6 @@ query embedding and retrieving most similar vectors in the DB
 
 The scratch model is based on FAISS https://github.com/facebookresearch/faiss
 
-![Alt text](docs/rag_illustration.png)
+![Alt text](assets/rag_illustration.png)
 
 later improvements include preparing the RCT protocols text database ; scale the vector db storage ; LLM augmentation (using LangChain?) ; 
