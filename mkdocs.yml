@@ -1,0 +1,10 @@
+site_name: Saint Louis RAG
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - About: about.md
+  - Installation: installation.md
+plugins:
+  - search
+
