@@ -8,6 +8,8 @@ corpus text embedding
 embedding storage in a Vector Databse
 query embedding and retrieving most similar vectors in the DB
 
+![Alt text](assets/smart_image.jpg)
+
 ## Folders
 
 * `rag` - The main project architecture.

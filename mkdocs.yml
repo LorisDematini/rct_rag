@@ -1,10 +1,13 @@
 site_name: RCT RAG
+site_url: https://rct_rag.readthedocs.io/
 theme:
   name: material
 nav:
   - Home: index.md
+  - Different steps : 
+    - Embedding: ./rag/embeddings.md
+    - Vector DB: ./rag/vector_db.md
+    - Query: ./rag/search.md
   - About: about.md
-  - Installation: installation.md
 plugins:
   - search
-
