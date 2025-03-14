@@ -22,8 +22,8 @@ launched_trial_list = main_csv[(main_csv["Etat avancement global"].isin(etat_ava
 
 
 # Define source and destination directories
-data_folder = "/mnt/c/DonneesLocales/git_cse/rct_rag/rct_rag/get_bdd/data"
-rct_protocols_folder = "/mnt/c/DonneesLocales/git_cse/rct_rag/rct_rag/get_bdd/rct_protocols"
+data_folder = "/mnt/c/Users/ohas2/Documents/APHP_save/rag_project/full_db_protocols"
+rct_protocols_folder = "/root/work/rct_rag/get_bdd/data"
 os.makedirs(rct_protocols_folder, exist_ok=True) # Ensure the destination folder exists
 
 # Convert list items to lowercase for case-insensitive comparison
@@ -31,19 +31,34 @@ launched_trial_list_lower = [trial.lower() for trial in launched_trial_list]
 
 found_rct = 0
 
-# Iterate through all files in the data folder
-for file in os.listdir(data_folder):
-    file_path = os.path.join(data_folder, file)
-    
-    if os.path.isfile(file_path):  # Ensure it's a file (not a directory)
-        # Check if the filename contains any launched trial (case insensitive)
-        if any(re.search(rf"(?i){trial}", file) for trial in launched_trial_list_lower):
-            destination_path = os.path.join(rct_protocols_folder, file)
+# Iterate over each trial first
+for trial in launched_trial_list_lower:
+    print(trial)
+    matching_files = []
 
-            # Copy file to rct_protocols, overwriting if needed
-            shutil.copy2(file_path, destination_path)
-            print(f"✅ Found : {file_path}")
-            found_rct+=1
+    # Iterate through all files in the data folder
+    for file in os.listdir(data_folder):
+        file_path = os.path.join(data_folder, file)
+
+        if (os.path.isfile(file_path) and 
+            file.lower().endswith(".pdf") and
+            re.search(rf"(?i){trial}", file) and 
+            not file.startswith("._") and 
+            "sign" not in file.lower()):
+
+            matching_files.append(file_path)
+
+    # If there are matching files, copy the most recently modified one
+    if matching_files:
+        latest_file = max(matching_files, key=os.path.getmtime)
+        destination_path = os.path.join(rct_protocols_folder, os.path.basename(latest_file))
+
+        # Copy the latest file, overwriting if needed
+        shutil.copy2(latest_file, destination_path)
+        print(f"✅ Copied latest file for trial '{trial}': {latest_file} ➡️ {destination_path}")
+        found_rct += 1
+    else : 
+        print(f"❌ No PROTOCOLE found for trial : {trial}")
 
 
 print("\n✅", found_rct, "files copied to rct_protocols!")

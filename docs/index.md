@@ -5,7 +5,7 @@ This project aims at offering a RAG architecture for Randomized Clinical Trials 
 A RAG architecture divides in several steps :
 
 corpus text embedding
-embedding storage in a Vector Databse
+embedding storage in a Vector Database
 query embedding and retrieving most similar vectors in the DB
 
 ![Alt text](assets/smart_image.jpg)

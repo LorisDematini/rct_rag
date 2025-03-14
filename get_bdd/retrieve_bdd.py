@@ -1,7 +1,6 @@
 """
 We iteratively look for every clinical protocol in the central repository of bdd (URC Saint Louis global repository for RCTs)
-for each study, in the folder "PROTOCOLE", we only keep the latest doc/docx document containing "protocol"
-This code can be extended
+for each study, in the folder "PROTOCOLE",
 """
 
 import os

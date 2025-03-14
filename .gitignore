@@ -71,6 +71,7 @@ docs/changelog.md
 docs/contributing.md
 
 # Ignore the /data folder
+data/
 /data/
 /rct_protocols/
 
