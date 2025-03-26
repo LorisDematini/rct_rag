@@ -45,7 +45,7 @@ for trial in launched_trial_list_lower:
             re.search(rf"(?i){trial}", file) and 
             not file.startswith("._") and 
             "pag" not in file.lower() and 
-            "Impression" not in file.lower()):
+            "impression" not in file.lower()):
 
             matching_files.append(file_path)
 
