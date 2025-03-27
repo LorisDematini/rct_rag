@@ -1,3 +1,6 @@
+"""
+Framework for extracting texts from PDF documents
+"""
 import fitz  # PyMuPDF
 import os
 import pickle
