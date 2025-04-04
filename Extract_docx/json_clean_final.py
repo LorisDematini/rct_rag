@@ -32,13 +32,14 @@ with open(input_path, 'r', encoding='utf-8') as f:
 # Préparer les structures de données
 grouped_data = {}
 coverage_data = []
-title_mapping = defaultdict(set)  # Pour suivre les correspondances trouvées
+title_mapping = defaultdict(set)
 
 # Traiter chaque étude
 for study_id, sections in studies_data.items():
-    grouped_sections = defaultdict(list)  # Stockage temporaire en liste
+    grouped_sections = defaultdict(list)
     title_presence = {'Study ID': study_id}
 
+    # Initialiser toutes les catégories comme absentes
     for group in title_groups.keys():
         title_presence[group] = ''
 
@@ -46,11 +47,15 @@ for study_id, sections in studies_data.items():
         if not isinstance(section, dict):
             continue
             
+        # Récupérer le texte (soit 'texte' soit 'paragraphes')
         if 'texte' in section:
             section_text = section['texte'].strip()
         elif 'paragraphes' in section:
-            section_text = " ".join(section['paragraphes']).strip()
+            section_text = " ".join([p.strip() for p in section['paragraphes'] if isinstance(p, str)]).strip()
         else:
+            continue
+
+        if not section_text:  # Ignorer les sections vides
             continue
 
         section_title = section['titre'].strip().lower()
@@ -61,15 +66,14 @@ for study_id, sections in studies_data.items():
             title_presence[matched_group] = 'true'
             title_mapping[section_title].add(section['titre'])
 
-    # Fusion finale avec déduplication
-    grouped_data[study_id] = {
-        group: " ".join(list(set(texts))) 
-        for group, texts in grouped_sections.items()
-    }
-    coverage_data.append(title_presence)
+    # Fusionner les textes pour chaque section en un seul texte
+    final_grouped = {}
+    for group, texts in grouped_sections.items():
+        # Fusionner tous les textes de la section en un seul, séparés par des espaces
+        merged_text = " ".join(texts)
+        final_grouped[group] = merged_text
 
-    # Convertir defaultdict en dict normal
-    grouped_data[study_id] = dict(grouped_sections)
+    grouped_data[study_id] = final_grouped
     coverage_data.append(title_presence)
 
 # Sauvegarder le JSON groupé
