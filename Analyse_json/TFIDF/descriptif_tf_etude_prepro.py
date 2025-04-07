@@ -81,7 +81,7 @@ def build_tfidf_analysis(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICATION'
             
             # Visualisation
             plt.figure(figsize=(10, 6))
-            word_freq.head(20).plot.bar(x='word', y='tfidf', legend=False)
+            word_freq.head(20).plot.barh(x='word', y='tfidf', legend=False)
             plt.title(f"Top 20 termes TF-IDF - {section}")
             plt.xlabel("Terme")
             plt.ylabel("Somme TF-IDF")
