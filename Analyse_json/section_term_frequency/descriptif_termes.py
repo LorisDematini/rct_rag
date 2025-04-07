@@ -12,7 +12,7 @@ import nltk
 nltk.download('stopwords')
 
 # Charger les données
-with open('/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/grouped_titles2.json', 'r') as file:
+with open('/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/grouped_titles1.json', 'r') as file:
     data = json.load(file)
 
 # Initialiser les stopwords
@@ -57,7 +57,7 @@ for section, text in section_texts.items():
 
 # 3. Sauvegarder les résultats
 if section_results:
-    output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/section_term_frequency"
+    output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/section_term_frequency/Resultat"
     os.makedirs(output_dir, exist_ok=True)
 
     df_sections = pd.DataFrame(section_results)
@@ -72,11 +72,11 @@ if section_results:
             top_terms.head(10).plot.barh()
             plt.title(f'Top 10 termes - {section}')
             plt.tight_layout()
-            plt.savefig(f'{output_dir}/{section}_top_terms.png')
+            plt.savefig(f'{output_dir}/{section}_top_terms_PROBLEM.png')
             plt.close()
 
     df_sections.sort_values(by='total', ascending=False).to_csv(
-        f'{output_dir}/all_sections_term_frequencies.csv')
+        f'{output_dir}/all_sections_term_frequencies_PROBLEM.csv')
     
     print(f"Analyse terminée. Résultats sauvegardés dans : {output_dir}")
 else:

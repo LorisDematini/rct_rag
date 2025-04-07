@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 nltk.download('stopwords')
 
 # Configuration
-output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/WORDCLOUD"
+output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/WORDCLOUD/Resultat"
 os.makedirs(output_dir, exist_ok=True)
 
 class TextPreprocessor:

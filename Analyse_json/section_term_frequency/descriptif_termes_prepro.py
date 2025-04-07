@@ -51,7 +51,7 @@ for section, text in section_texts.items():
 
 # 3. Sauvegarder les résultats (seulement si on a des données)
 if section_results:
-    output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/section_term_frequency"
+    output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/section_term_frequency/Resultat_Prepro"
     os.makedirs(output_dir, exist_ok=True)
 
     # DataFrame global

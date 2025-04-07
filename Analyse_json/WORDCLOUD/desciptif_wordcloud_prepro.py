@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Configuration
-output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/WORDCLOUD"
+output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/WORDCLOUD/Resultat_Prepro"
 os.makedirs(output_dir, exist_ok=True)
 
 def load_preprocessed_data(filepath):
