@@ -1,0 +1,442 @@
+[
+  {
+    "ADA": [
+      "Anti-drug antibodies"
+    ]
+  },
+  {
+    "ADCC": [
+      "Antibody dependent cell-mediated cytotoxicity"
+    ]
+  },
+  {
+    "AE": [
+      "Adverse event"
+    ]
+  },
+  {
+    "ALT": [
+      "Alanine amino transferase"
+    ]
+  },
+  {
+    "Anti-VEGF": [
+      "Anti-vascular endothelial growth factor"
+    ]
+  },
+  {
+    "AST": [
+      "Aspartate amino transferase"
+    ]
+  },
+  {
+    "ATC": [
+      "Anatomical-Therapeutic-Chemical classification"
+    ]
+  },
+  {
+    "AUC": [
+      "Area under the curve"
+    ]
+  },
+  {
+    "AZA": [
+      "Azathioprine"
+    ]
+  },
+  {
+    "BCVA": [
+      "Best corrected visual acuity"
+    ]
+  },
+  {
+    "BRB": [
+      "Blood-retinal barrier"
+    ]
+  },
+  {
+    "BUN": [
+      "Blood urea nitrogen"
+    ]
+  },
+  {
+    "CBC": [
+      "Complete blood count"
+    ]
+  },
+  {
+    "CHO": [
+      "Chinese hamster ovary"
+    ]
+  },
+  {
+    "CINCA": [
+      "Chronic Infantile Neurological Cutaneous Articular Syndrome"
+    ]
+  },
+  {
+    "CRF": [
+      "Case Report Form"
+    ]
+  },
+  {
+    "CSA": [
+      "Cyclosporine A"
+    ]
+  },
+  {
+    "CTCAE": [
+      "Common Terminology Criteria for Adverse Events"
+    ]
+  },
+  {
+    "dL": [
+      "Deciliter"
+    ]
+  },
+  {
+    "EAU": [
+      "Experimental autoimmune uveitis/uveoretinitis"
+    ]
+  },
+  {
+    "EC": [
+      "Ethics Committee"
+    ]
+  },
+  {
+    "ECG": [
+      "Electrocardiogram"
+    ]
+  },
+  {
+    "ECL": [
+      "Electrochemiluminescence"
+    ]
+  },
+  {
+    "EDC": [
+      "Electronic data capture"
+    ]
+  },
+  {
+    "eCRF": [
+      "Electronic case report form"
+    ]
+  },
+  {
+    "EIU": [
+      "Endotoxin-induced uveitis"
+    ]
+  },
+  {
+    "EMA": [
+      "European Medicines Agency"
+    ]
+  },
+  {
+    "ETDRS": [
+      "Early treatment diabetic retinopathy study"
+    ]
+  },
+  {
+    "FFA": [
+      "Fundus Fluorescein Angiography"
+    ]
+  },
+  {
+    "g/day": [
+      "Grams per day"
+    ]
+  },
+  {
+    "g/dL": [
+      "Grams per deciliter"
+    ]
+  },
+  {
+    "GCP": [
+      "Good Clinical Practice"
+    ]
+  },
+  {
+    "GLP": [
+      "Glucagon-like peptide or Good Laboratory Practice (note context)"
+    ]
+  },
+  {
+    "H1N1": [
+      "Hemagglutinin type 1 and neuramimidase type 1"
+    ]
+  },
+  {
+    "HIV": [
+      "Human immunodeficiency virus"
+    ]
+  },
+  {
+    "hs-CRP": [
+      "High sensitivity C-reactive protein"
+    ]
+  },
+  {
+    "IC50": [
+      "Half maximal inhibitory concentration"
+    ]
+  },
+  {
+    "ICH": [
+      "International Conference on Harmonization"
+    ]
+  },
+  {
+    "ID": [
+      "Identification"
+    ]
+  },
+  {
+    "INH": [
+      "Isonicotinylhydrazine (also known as isoniazid)"
+    ]
+  },
+  {
+    "IRS": [
+      "Interactive response system"
+    ]
+  },
+  {
+    "IUD": [
+      "Intrauterine device"
+    ]
+  },
+  {
+    "IUSG": [
+      "International Uveitis Study Group"
+    ]
+  },
+  {
+    "IV": [
+      "Intravenous"
+    ]
+  },
+  {
+    "KD": [
+      "Equilibrium dissociation constant"
+    ]
+  },
+  {
+    "kg": [
+      "Kilograms"
+    ]
+  },
+  {
+    "Ltd": [
+      "Limited"
+    ]
+  },
+  {
+    "mAb": [
+      "Monoclonal antibody"
+    ]
+  },
+  {
+    "MedDRA": [
+      "Medical Dictionary for Regulatory Activities"
+    ]
+  },
+  {
+    "mg": [
+      "Milligrams"
+    ]
+  },
+  {
+    "mm": [
+      "Millimeter"
+    ]
+  },
+  {
+    "mm3": [
+      "Cubic millimeter"
+    ]
+  },
+  {
+    "MMF": [
+      "Mycophenolate mofetil"
+    ]
+  },
+  {
+    "MPS": [
+      "Mycophenolate sodium"
+    ]
+  },
+  {
+    "MRI": [
+      "Magnetic Resonance Imaging"
+    ]
+  },
+  {
+    "MTX": [
+      "Methotrexate"
+    ]
+  },
+  {
+    "NEI": [
+      "National Eye Institute"
+    ]
+  },
+  {
+    "nM": [
+      "Nanomolar"
+    ]
+  },
+  {
+    "NOAEL": [
+      "No-observed-adverse-effect-level"
+    ]
+  },
+  {
+    "OCT": [
+      "Optical coherence tomography"
+    ]
+  },
+  {
+    "OUD": [
+      "Occurrence of uveitic disease"
+    ]
+  },
+  {
+    "PBMC": [
+      "Peripheral blood mononuclear cell"
+    ]
+  },
+  {
+    "PD": [
+      "Pharmacodynamic"
+    ]
+  },
+  {
+    "pH": [
+      "Hydrogen ion concentration"
+    ]
+  },
+  {
+    "PK": [
+      "Pharmacokinetic"
+    ]
+  },
+  {
+    "pM": [
+      "Picomolar"
+    ]
+  },
+  {
+    "PO2": [
+      "Oxygen pressure"
+    ]
+  },
+  {
+    "PPD": [
+      "Purified protein derivative"
+    ]
+  },
+  {
+    "Q4W": [
+      "Every 4 weeks"
+    ]
+  },
+  {
+    "QOL": [
+      "Quality of life"
+    ]
+  },
+  {
+    "RA": [
+      "Rheumatoid arthritis"
+    ]
+  },
+  {
+    "rHu": [
+      "Recombinant human"
+    ]
+  },
+  {
+    "rMu": [
+      "Recombinant mouse"
+    ]
+  },
+  {
+    "SAE": [
+      "Serious adverse event"
+    ]
+  },
+  {
+    "SC": [
+      "Subcutaneous"
+    ]
+  },
+  {
+    "SPR": [
+      "Surface Plasmon Resonance"
+    ]
+  },
+  {
+    "SUN": [
+      "Standardization of Uveitis Nomenclature"
+    ]
+  },
+  {
+    "TB": [
+      "Tuberculosis"
+    ]
+  },
+  {
+    "TBD": [
+      "To be determined"
+    ]
+  },
+  {
+    "TH1": [
+      "T helper 1 cell"
+    ]
+  },
+  {
+    "TH17": [
+      "T helper 17 cell"
+    ]
+  },
+  {
+    "TLR": [
+      "Toll-like receptor"
+    ]
+  },
+  {
+    "TNFα": [
+      "Tumor necrosis factor alpha"
+    ]
+  },
+  {
+    "T2D": [
+      "Type 2 diabetes"
+    ]
+  },
+  {
+    "ULN": [
+      "Upper limit of normal"
+    ]
+  },
+  {
+    "WBC": [
+      "White blood cell (count)"
+    ]
+  },
+  {
+    "WHODD": [
+      "World Health Organization Drug Dictionary"
+    ]
+  },
+  {
+    "WMA": [
+      "World Medical Association"
+    ]
+  }
+]

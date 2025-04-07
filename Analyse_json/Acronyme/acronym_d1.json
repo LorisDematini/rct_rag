@@ -1,0 +1,86 @@
+[
+  {
+    "ACR": "American College of Rheumatology"
+  },
+  {
+    "EULAR": "European League Against Rheumatism"
+  },
+  {
+    "AD": "Autoimmune Disease"
+  },
+  {
+    "AE": "Adverse Event"
+  },
+  {
+    "AHSCT": "Autologous Hematopoietic Stem Cell Transplantation"
+  },
+  {
+    "BMI": "Body Mass Index"
+  },
+  {
+    "CTC-AE": "NCI Common Terminology Criteria for Adverse Events"
+  },
+  {
+    "CRISS": "ACR Provisional Composite Response Index for Clinical Trials in Early Diffuse Cutaneous Systemic Sclerosis"
+  },
+  {
+    "DLCO": "diffusing capacity of lung for carbon monoxide"
+  },
+  {
+    "EQ-5D-5L": "EuroQol 5-Dimension 5-Level"
+  },
+  {
+    "FVC": "Forced Vital Capacity"
+  },
+  {
+    "GMP": "Good Manufacturing Practices"
+  },
+  {
+    "GRCS": "Global Rank Composite Score"
+  },
+  {
+    "HRQoL": "Health-Related Quality of Life"
+  },
+  {
+    "IV": "Intraveinous"
+  },
+  {
+    "MMF": "Mycophenolate mofetil"
+  },
+  {
+    "mRSS": "modified Rodnan Skin Score"
+  },
+  {
+    "MSC": "Mesenchymal Stromal Cells"
+  },
+  {
+    "MSC (AT)": "Mesenchymal Stromal Cells derived from AdiposeTissue"
+  },
+  {
+    "MSC (M)": "Mesenchymal Stromal Cells derived from bone Marrow"
+  },
+  {
+    "MSC (UC)": "Marrow derived Mesenchymal Stromal Cells derived from Umbilical Cord"
+  },
+  {
+    "QALY": "Quality-Adjusted Life Year"
+  },
+  {
+    "PFS": "Progression-Free Survival"
+  },
+  {
+    "SAE": "Severe Adverse Event"
+  },
+  {
+    "SAR": "Serious Adverse Reactions"
+  },
+  {
+    "SHAQ": "Scleroderma-Health Assessment Questionnaire"
+  },
+  {
+    "SF-36": "The Short Form (36) Health Survey"
+  },
+  {
+    "SSc": "Systemic Sclerosis"
+  }
+]

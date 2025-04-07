@@ -1,0 +1,251 @@
+[
+  {
+    "6-MP": "6–Mercaptopurin"
+  },
+  {
+    "ALAT": "Alanine-Aminotransferase"
+  },
+  {
+    "ALL": "Acute Lymphoblastic Leukemia"
+  },
+  {
+    "ANSM": "“Agence Nationale de sécurité du médicament et des produits de santé”"
+  },
+  {
+    "ASAT": "Aspartate Amino Transferase"
+  },
+  {
+    "AT": "Anti Thrombin"
+  },
+  {
+    "ATG": "Anti ThymoGlobulin"
+  },
+  {
+    "BID": "Twice a day"
+  },
+  {
+    "BM": "Bone Marrow"
+  },
+  {
+    "BMI": "Body Mass Index"
+  },
+  {
+    "CIR": "Cumulative Incidence of Relapse"
+  },
+  {
+    "CIV": "ContinuousIntravenous"
+  },
+  {
+    "CML": "ChronicMyelogenous Leukemia"
+  },
+  {
+    "CNS": "Central Nervous System"
+  },
+  {
+    "CPM": "Cyclophosphamide"
+  },
+  {
+    "CPP": "“Comité de Protection des Personnes”"
+  },
+  {
+    "CR": "Complete Remission"
+  },
+  {
+    "CRA": "Clinical Research Assistant"
+  },
+  {
+    "CRF": "Case Report Form"
+  },
+  {
+    "CSF": "Cerebro Spinal Fluid"
+  },
+  {
+    "DFS": "Disease free survival"
+  },
+  {
+    "DIVC": "Disseminated Intravascular Coagulation"
+  },
+  {
+    "DMA": "Drug Marketing Authorization"
+  },
+  {
+    "DNR": "Daunorubicin"
+  },
+  {
+    "DVI": "Dexamethasone, Vincristine, ITK"
+  },
+  {
+    "ECG": "Electrocardiogram"
+  },
+  {
+    "ECOG": "Eastern Cooperative Oncology Group (= PS)"
+  },
+  {
+    "FFD": "Form of Functions Delegation"
+  },
+  {
+    "FFP": "Fresh Frozen Plasma"
+  },
+  {
+    "FGM": "France Greffe de Moelle"
+  },
+  {
+    "FR": "Shortening Fraction"
+  },
+  {
+    "GCP": "Good Clinical Practice"
+  },
+  {
+    "G-CSF": "Granulocyte colony-stimulating factor"
+  },
+  {
+    "GNB": "Gram Negative Bacteria"
+  },
+  {
+    "GPB": "Gram Positive Bacteria"
+  },
+  {
+    "GVH": "Graft versus Host"
+  },
+  {
+    "HCR": "Hematologic Complete Remission"
+  },
+  {
+    "HD": "High Dose"
+  },
+  {
+    "HLA": "Human Leukocyte Antigen"
+  },
+  {
+    "HR": "High Risk"
+  },
+  {
+    "HSC": "Hematopoietic Stem Cells"
+  },
+  {
+    "HSCT": "Haematopoietic Stem Cell Transplantation"
+  },
+  {
+    "ISC": "Independent Surveillance Committee"
+  },
+  {
+    "IT": "Intra-thecal"
+  },
+  {
+    "IUD": "Intrauterine Device"
+  },
+  {
+    "IV": "Intravenous"
+  },
+  {
+    "IVD": "Intravenous Direct"
+  },
+  {
+    "LR": "Low Risk"
+  },
+  {
+    "LWH": "Low Weight Heparin"
+  },
+  {
+    "MAC": "Myelo Ablative Conditioning"
+  },
+  {
+    "MMolR": "Major Molecular Response"
+  },
+  {
+    "MRD": "Minimal Residual Disease"
+  },
+  {
+    "MRI": "Magnetic Resonance Imaging"
+  },
+  {
+    "MTX": "Methotrexate"
+  },
+  {
+    "NRM": "Non Relapse related Mortality"
+  },
+  {
+    "NYHA": "“New York Heart Association”"
+  },
+  {
+    "OS": "Overall survival"
+  },
+  {
+    "ANC": "Polymorphonuclears"
+  },
+  {
+    "PO": "Per Os"
+  },
+  {
+    "PS": "Performans Status (= ECOG)"
+  },
+  {
+    "RBC": "Red Blood Cells"
+  },
+  {
+    "RFS": "Relapse-Free Survival"
+  },
+  {
+    "RTC": "Reduced Toxicity Conditioning"
+  },
+  {
+    "SAE": "Serious Adverse Event"
+  },
+  {
+    "SC": "SubCutaneous"
+  },
+  {
+    "SGOT": "Serum Glutamic OxaloaceticTransferase"
+  },
+  {
+    "SGPT": "Serum GlutamopyruvateTransferase"
+  },
+  {
+    "SIV": "Slow Intravenous"
+  },
+  {
+    "SPC": "Summary of Product Characteristics"
+  },
+  {
+    "SR": "Standard Risk"
+  },
+  {
+    "TBI": "Total Body Irradiation"
+  },
+  {
+    "TD": "Total Dose"
+  },
+  {
+    "TDM": "Tomodensitometry"
+  },
+  {
+    "TKI": "Tyrosine Kinase Inhibitor"
+  },
+  {
+    "TLP": "Traumatic Lumbar Puncture"
+  },
+  {
+    "TUA": "Temporary Usage Authorization"
+  },
+  {
+    "ULN": "Upper Limit of Normal"
+  },
+  {
+    "VCR": "Vincristine"
+  },
+  {
+    "VDS": "Vindesine"
+  },
+  {
+    "VEF": "Ventricular Ejection Fraction"
+  },
+  {
+    "VHR": "Very High Risk"
+  },
+  {
+    "VP-16": "Etoposide"
+  },
+  {
+    "WBC": "White Blood Cells"
+  }
+]

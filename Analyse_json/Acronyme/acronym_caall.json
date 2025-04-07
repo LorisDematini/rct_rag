@@ -1,0 +1,116 @@
+[
+  {
+    "ALL": "Acute Lymphoblastic Leukemia"
+  },
+  {
+    "API": "Active Pharmaceutical Ingredient"
+  },
+  {
+    "Ara-C": "cytarabine"
+  },
+  {
+    "CMO": "Contract Manufacturing Organization"
+  },
+  {
+    "CNS": "Central Nervous System"
+  },
+  {
+    "CR": "complete remission"
+  },
+  {
+    "DFS": "disease-free survival"
+  },
+  {
+    "DNR": "daunorubicine"
+  },
+  {
+    "DEX": "dexamethasone"
+  },
+  {
+    "EFS": "event-free survival"
+  },
+  {
+    "EIG": "événement indésirable grave (see SAE)"
+  },
+  {
+    "G/L": "Giga /liter"
+  },
+  {
+    "GMP": "Good Manufacturing Practices"
+  },
+  {
+    "HD-MTX": "High-Dose Methotrexate"
+  },
+  {
+    "HR": "High Risk"
+  },
+  {
+    "HSCT": "Hematopoietic Stem Cell Transplantation"
+  },
+  {
+    "IM": "intramuscular"
+  },
+  {
+    "IMP": "Investigational Medicinal Product"
+  },
+  {
+    "IT": "intrathecal injection"
+  },
+  {
+    "IV": "intravenous infusion"
+  },
+  {
+    "MR": "Medium Risk"
+  },
+  {
+    "MRD": "minimal residual disease"
+  },
+  {
+    "MTX": "methotrexate"
+  },
+  {
+    "NCI": "National Cancer Institute"
+  },
+  {
+    "NCI-CTCAE": "National Cancer Institute Common Terminology Criteria for Adverse Events"
+  },
+  {
+    "OS": "overall survival"
+  },
+  {
+    "PEG": "pegaspargase i.e. pegylated asparaginase"
+  },
+  {
+    "PNN": "neutrophils"
+  },
+  {
+    "PRED": "prednisone"
+  },
+  {
+    "SAE": "severe adverse event"
+  },
+  {
+    "6-MP": "6-mercaptopurine"
+  },
+  {
+    "SR": "Standard Risk"
+  },
+  {
+    "6-TG": "6-thioguanine"
+  },
+  {
+    "TP": "Time Point"
+  },
+  {
+    "TLP": "Traumatic Lumbar Punction"
+  },
+  {
+    "VCR": "vincristine"
+  },
+  {
+    "VHR": "Very High Risk"
+  },
+  {
+    "WBC": "White Blood Cell Count"
+  }
+]
