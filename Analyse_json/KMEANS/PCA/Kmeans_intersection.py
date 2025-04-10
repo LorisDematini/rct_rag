@@ -6,7 +6,6 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 import seaborn as sns
 
-# Nouveau dossier pour ne garder que le résultat final
 output_dir = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/analysis/KMEANS/PCA"
 os.makedirs(output_dir, exist_ok=True)
 

@@ -35,7 +35,7 @@ def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICA
     X_mat = vectorizer.fit_transform(texts)
     return X_mat, labels
 
-# Traitement des sections des études
+#Traitement des sections des études
 def cluster_study_sections_with_pca(X_tfidf, labels, n_clusters=6):
 
     pca = PCA(n_components=2)
