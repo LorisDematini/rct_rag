@@ -25,7 +25,7 @@ def extract_sections(data, sections=None):
 
 #TF-IDF
 def compute_tfidf(data):
-    vectorizer = TfidfVectorizer(max_df=0.85, min_df=2)
+    vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform(data)
     return vectorizer, tfidf_matrix
 

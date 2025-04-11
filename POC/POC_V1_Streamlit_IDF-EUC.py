@@ -28,7 +28,7 @@ def compute_tfidf(texts):
     tfidf_matrix = vectorizer.fit_transform(texts)
     return vectorizer, tfidf_matrix
 
-# Système de recherche (top5
+# Système de recherche (top5)
 def search(query, vectorizer, tfidf_matrix, labels):
     query_vector = vectorizer.transform([query])
     distances = euclidean_distances(query_vector, tfidf_matrix)[0]

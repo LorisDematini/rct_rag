@@ -29,11 +29,7 @@ def extract_sections(data, sections=None):
 
 #TF-IDF
 def compute_tfidf(corpus):
-    vectorizer = TfidfVectorizer(
-        max_df=0.9,
-        min_df=2,
-        ngram_range=(1, 2)
-    )
+    vectorizer = TfidfVectorizer()
     tfidf_matrix = vectorizer.fit_transform(corpus)
     
     vocab = list(vectorizer.vocabulary_.keys())
