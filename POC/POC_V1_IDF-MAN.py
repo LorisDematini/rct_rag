@@ -43,13 +43,13 @@ def compute_tfidf(corpus):
 #Manhattan
 def search(query, vectorizer, tfidf_matrix, labels, top_k=5):
     query_vec = vectorizer.transform([query])
-    print(f"🔎 Vecteur TF-IDF de la requête '{query}' :\n{query_vec}")
+    print(f"Vecteur TF-IDF de la requête '{query}' :\n{query_vec}")
     
     if not np.any(query_vec.toarray()):
-        print("⚠️ Aucun mot de la requête n’a été reconnu par le modèle TF-IDF.")
+        print("Aucun mot de la requête n’a été reconnu par le modèle TF-IDF.")
         return []
 
-    distances = manhattan_distances(query_vec, tfidf_matrix)[0]  #(1, N) -> [N]
+    distances = manhattan_distances(query_vec, tfidf_matrix)[0]
     print("📏 Distances calculées :", distances)
     sorted_results = sorted(enumerate(distances), key=lambda x: x[1])
     return [(labels[i], d) for i, d in sorted_results[:top_k]]
@@ -68,7 +68,7 @@ def main():
     while True:
         query = input("Requête (ou 'exit' pour quitter) : ")
         if query.lower() == 'exit':
-            print("✅ Fin de la recherche.")
+            print("Fin de la recherche.")
             break
 
         results = search(query, vectorizer, tfidf_matrix, labels)

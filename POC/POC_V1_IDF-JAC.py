@@ -19,8 +19,8 @@ def extract_sections(data, sections=None):
     for study_id, study in data.items():
         for section in sections:
             if section in study and isinstance(study[section], str) and study[section].strip():
-                texts.append(study[section])  # Ajouter le texte de la section
-                labels.append((study_id, section))  # Ajouter l'ID de l'étude et le nom de la section
+                texts.append(study[section])
+                labels.append((study_id, section))
 
     return labels, texts
 
