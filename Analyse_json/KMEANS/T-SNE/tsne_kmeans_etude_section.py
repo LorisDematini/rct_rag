@@ -45,26 +45,34 @@ def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clust
     kmeans = KMeans(n_clusters=n_clusters, random_state=8)
     clusters = kmeans.fit_predict(X_tsne)
 
-    #Top termes par cluster
     top_terms_dict = show_top_terms_per_cluster(X_tfidf, clusters=clusters, vectorizer=vectorizer)
 
     plt.figure(figsize=(12, 8))
     palette = sns.color_palette("tab10", n_clusters)
 
-    for i, (study_id, section) in enumerate(labels):
-        plt.scatter(X_tsne[i, 0], X_tsne[i, 1], c=[palette[clusters[i]]], s=50)
-        plt.text(X_tsne[i, 0] + 0.01, X_tsne[i, 1] + 0.01, section, fontsize=7)
+    # Créer un dictionnaire pour stocker les handles des légendes
+    legend_handles = []
 
     for cluster_id in range(n_clusters):
         cluster_points = X_tsne[clusters == cluster_id]
+        plt.scatter(cluster_points[:, 0], cluster_points[:, 1], 
+                    c=[palette[cluster_id]], 
+                    label=f"Cluster {cluster_id}", 
+                    s=50)
+        # Afficher les termes au centre du cluster
         centroid_x, centroid_y = cluster_points.mean(axis=0)
         terms = ", ".join(top_terms_dict[cluster_id][:5])
         plt.text(centroid_x, centroid_y, f"Cluster {cluster_id}\n{terms}",
                  fontsize=9, weight='bold', color=palette[cluster_id])
 
+    # Affichage des noms de section
+    for i, (study_id, section) in enumerate(labels):
+        plt.text(X_tsne[i, 0] + 0.01, X_tsne[i, 1] + 0.01, section, fontsize=7)
+
     plt.title("Clustering des sections par étude via t-SNE + KMeans")
     plt.xlabel("t-SNE 1")
     plt.ylabel("t-SNE 2")
+    plt.legend(title="Clusters", loc="best")  # ✅ Légende ajoutée
     plt.grid(True)
     plt.tight_layout()
     plt.savefig(f"{output_dir}/Kmeans_etude_sections.png")
@@ -85,6 +93,7 @@ def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clust
     print(f"\n✅ CSV sauvegardé avec top_terms : {csv_path}")
 
     show_representative_texts(X_tfidf, texts, clusters)
+
 
 
 def show_top_terms_per_cluster(X_tfidf, clusters, vectorizer, n_terms=10):
