@@ -18,7 +18,7 @@ def load_data(filepath):
     return data
 
 # Section et études
-def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICATION','OBJECTIVES','METHODOLOGY','PROCEDURE','DATA_MANAGEMENT','ELIGIBILITY','STATISTICAL']):
+def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICATION','OBJECTIVES','METHODOLOGY','PROCEDURE','DATA MANAGEMENT','ELIGIBILITY','STATISTICAL']):
     texts = []
     labels = []
 

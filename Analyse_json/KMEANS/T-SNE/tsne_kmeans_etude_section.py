@@ -18,7 +18,7 @@ def load_data(filepath):
     return data
 
 # Section et études
-def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICATION','OBJECTIVES','METHODOLOGY','PROCEDURE','DATA_MANAGEMENT','ELIGIBILITY','STATISTICAL']):
+def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICATION','OBJECTIVES','METHODOLOGY','PROCEDURE','DATA MANAGEMENT','ELIGIBILITY','STATISTICAL']):
     texts = []
     labels = []
 
@@ -36,7 +36,7 @@ def build_study_section_tfidf(studies, sections=['SUMMARY','SCIENTIFIC JUSTIFICA
     X_mat = vectorizer.fit_transform(texts)
     return X_mat, labels, texts, vectorizer
 
-def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clusters=4):
+def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clusters=5):
     n_samples = X_tfidf.shape[0]
     perplexity = min(30, max(5, n_samples // 3))
     tsne = TSNE(n_components=2, perplexity=perplexity, random_state=8)
