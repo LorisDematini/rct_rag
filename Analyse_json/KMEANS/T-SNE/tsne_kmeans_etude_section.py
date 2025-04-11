@@ -50,16 +50,12 @@ def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clust
     plt.figure(figsize=(12, 8))
     palette = sns.color_palette("tab10", n_clusters)
 
-    # Créer un dictionnaire pour stocker les handles des légendes
-    legend_handles = []
-
     for cluster_id in range(n_clusters):
         cluster_points = X_tsne[clusters == cluster_id]
         plt.scatter(cluster_points[:, 0], cluster_points[:, 1], 
                     c=[palette[cluster_id]], 
                     label=f"Cluster {cluster_id}", 
                     s=50)
-        # Afficher les termes au centre du cluster
         centroid_x, centroid_y = cluster_points.mean(axis=0)
         terms = ", ".join(top_terms_dict[cluster_id][:5])
         plt.text(centroid_x, centroid_y, f"Cluster {cluster_id}\n{terms}",
@@ -72,7 +68,7 @@ def cluster_study_sections_with_tsne(X_tfidf, labels, texts, vectorizer, n_clust
     plt.title("Clustering des sections par étude via t-SNE + KMeans")
     plt.xlabel("t-SNE 1")
     plt.ylabel("t-SNE 2")
-    plt.legend(title="Clusters", loc="best")  # ✅ Légende ajoutée
+    plt.legend(title="Clusters", loc="best")
     plt.grid(True)
     plt.tight_layout()
     plt.savefig(f"{output_dir}/Kmeans_etude_sections.png")
