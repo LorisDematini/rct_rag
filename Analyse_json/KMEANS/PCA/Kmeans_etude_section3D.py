@@ -52,6 +52,16 @@ def cluster_study_sections_with_pca(X_tfidf, labels, n_clusters=8):
         'Section': [section for (_, section) in labels],
         'StudyID': [study_id for (study_id, _) in labels]
     })
+    # Analyse de la variance expliquée
+    explained_variance = pca.explained_variance_ratio_
+    cumulative_variance = explained_variance.cumsum()
+
+    print("\nVariance expliquée par composante :")
+    for i, var in enumerate(explained_variance):
+        print(f" - Composante {i+1} : {var:.4f} ({var*100:.2f}%)")
+
+    print(f"\nVariance totale expliquée par les 3 composantes : {cumulative_variance[-1]*100:.2f}%")
+
 
     fig = go.Figure()
 
@@ -84,9 +94,7 @@ def cluster_study_sections_with_pca(X_tfidf, labels, n_clusters=8):
         margin=dict(l=0, r=0, b=0, t=40),
         legend=dict(x=0.02, y=0.98)
     )
-
     fig.show()
-    print(f"Visualisation interactive sauvegardée dans : {output_dir}/Kmeans_etude_sections3D_interactif.html")
 
 def main(json_file):
     studies = load_data(json_file)
@@ -96,5 +104,5 @@ def main(json_file):
     print(f"\nAnalyse KMeans-PCA 3D terminée. Résultat sauvegardé dans : {output_dir}")
 
 if __name__ == "__main__":
-    json_file = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/grouped_titles_preprocessed.json"
+    json_file = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/Extract/grouped_titles_preprocessed.json"
     main(json_file)
