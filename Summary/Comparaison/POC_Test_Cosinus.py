@@ -1,8 +1,9 @@
 import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import pandas as pd
 
-json_file_path = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/Extract/grouped_titles_preprocessed.json"
+json_file_path = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/Summary/Comparaison/summary-title.json"
 
 def load_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -11,7 +12,7 @@ def load_data(file_path):
 
 #Sections
 def extract_sections(data, sections=None):
-    sections = sections or ['SUMMARY', 'SCIENTIFIC JUSTIFICATION', 'OBJECTIVES', 'METHODOLOGY', 'PROCEDURE', 'ELIGIBILITY', 'DATA MANAGEMENT', 'STATISTICAL']
+    sections = sections or ['Summary']
     texts = []
     labels = []
 
@@ -25,7 +26,7 @@ def extract_sections(data, sections=None):
 
 #TF-IDF
 def compute_tfidf(data):
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(norm='l1')
     tfidf_matrix = vectorizer.fit_transform(data)
     return vectorizer, tfidf_matrix
 
@@ -34,7 +35,9 @@ def search(query, vectorizer, tfidf_matrix, labels):
     query_vector = vectorizer.transform([query])
     distances = cosine_similarity(query_vector, tfidf_matrix)
     results = sorted(enumerate(distances[0]), key=lambda x: x[1], reverse=True)
-    return [(labels[idx], dist) for idx, dist in results[:5]]
+
+    return [(labels[idx], dist) for idx, dist in results[:6]]
+
 
 def main():
     data = load_data(json_file_path)
@@ -45,6 +48,8 @@ def main():
         return
 
     vectorizer, tfidf_matrix = compute_tfidf(texts)
+    # Affichage de la matrice TF-IDF (format DataFrame pour lisibilité)
+
 
     while True:
         query = input("Entrez une requête de recherche (ou 'exit' pour quitter) : ")
@@ -53,7 +58,7 @@ def main():
         results = search(query, vectorizer, tfidf_matrix, labels)
         print("\nRésultats de la recherche :")
         for (study_id, section), dist in results:
-            print(f"Étude : {study_id}, Section : {section}, Similarité : {dist:.4f}")  # Affichage de la similarité au lieu de la distance
+            print(f"Étude : {study_id}, Section : {section}, Similarité : {dist:.4f}")  # Affichage de la similarité au lieu de la distance car pas de -1
 
 if __name__ == "__main__":
     main()

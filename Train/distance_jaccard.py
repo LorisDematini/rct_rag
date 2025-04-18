@@ -4,10 +4,12 @@ import numpy as np
 
 # Données
 texte1 = "test salut comment ça va salut"
-documents = [texte1]
-query = ["salut"]
+texte2 = "test medical analyse cancer"
+documents = [texte1, texte2]
+query = ["salut test lung"]
 
 print("Texte 1 :", texte1)
+print("Texte 2 :", texte2)
 print("Requête :", query)
 
 # Vectorisation binaire (présence/absence)

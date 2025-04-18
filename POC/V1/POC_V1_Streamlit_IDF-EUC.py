@@ -31,6 +31,16 @@ def compute_tfidf(texts):
 # Système de recherche (top5)
 def search(query, vectorizer, tfidf_matrix, labels):
     query_vector = vectorizer.transform([query])
+    print("\n------ VECTEUR DE LA REQUÊTE ------")
+    print(f"Requête : '{query}'")
+    print("Vecteur sparse (non zéros) :")
+    query_sparse = query_vector.tocoo()
+    for i, j, v in zip(query_sparse.row, query_sparse.col, query_sparse.data):
+        print(f"  Mot index {j} (valeur TF-IDF : {v:.4f})")
+    print("Shape du vecteur dense :", query_vector.shape)
+    print("Norme L2 du vecteur requête :", (query_vector @ query_vector.T)[0, 0]**0.5)
+    print("-----------------------------------\n")
+
     distances = euclidean_distances(query_vector, tfidf_matrix)[0]
     results = sorted(enumerate(distances), key=lambda x: x[1])
     return [(labels[i], d) for i, d in results[:5]]
@@ -47,6 +57,17 @@ with st.spinner("Chargement des données..."):
     data = load_data(json_file_path)
     labels, texts = extract_sections(data)
     vectorizer, tfidf_matrix = compute_tfidf(texts)
+    print("------ TF-IDF INFO ------")
+    print(f"Nombre total de documents (sections) : {len(texts)}")
+    print(f"Nombre de mots uniques (vocabulaire) : {len(vectorizer.vocabulary_)}")
+    print("Exemples de mots du vocabulaire :")
+    for i, (word, idx) in enumerate(vectorizer.vocabulary_.items()):
+        if i >= 10:
+            break
+        print(f"  {word} => index {idx}")
+    print("Shape de la matrice TF-IDF :", tfidf_matrix.shape)  # (n_documents, n_mots)
+    print("--------------------------\n")
+
 
 #Query
 query = st.text_input("Entrez votre requête :", "")
