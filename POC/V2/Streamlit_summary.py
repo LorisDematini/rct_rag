@@ -5,7 +5,7 @@ import numpy as np
 import json
 
 # --- Chargement du JSON ---
-json_path = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/Summary/Comparaison/summary-title.json"
+json_path = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/Summary/Propre/summary_preprocessed.json"
 with open(json_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
