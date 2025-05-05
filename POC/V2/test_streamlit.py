@@ -12,7 +12,7 @@ with open(json_path, "r", encoding="utf-8") as f:
 # --- Préparation des documents ---
 docs = [{"title": key, "text": value["Summary"]} for key, value in data.items() if "Summary" in value]
 
-st.title("🔍 Moteur de recherche dans les résumés")
+st.title("Moteur de recherche dans les résumés")
 
 if not docs:
     st.warning("Aucun champ 'Summary' trouvé dans les données.")

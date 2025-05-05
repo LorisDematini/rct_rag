@@ -21,7 +21,7 @@ else:
     titles = [doc["title"] for doc in docs]
 
     # --- TF-IDF ---
-    vectorizer = TfidfVectorizer(max_df=0.95)
+    vectorizer = TfidfVectorizer(smooth_idf=False)
     tfidf_matrix = vectorizer.fit_transform(texts)
 
     # --- Interface utilisateur ---

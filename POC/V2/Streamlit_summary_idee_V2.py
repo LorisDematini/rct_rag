@@ -33,7 +33,7 @@ for key, value in preprocessed_data.items():
             "original": original_data[key]["Summary"]
         })
 
-st.title("🔍 Moteur de recherche dans les résumés (affichage texte original)")
+st.title("🔍 Moteur de recherche dans les résumés (affichage texte original et surbrillance)")
 
 if not docs:
     st.warning("Aucun champ 'Summary' trouvé dans les données.")
