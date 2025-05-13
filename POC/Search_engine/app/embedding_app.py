@@ -10,7 +10,7 @@ from config.paths import RAW_JSON_PATH
 from app.common_ui import display_embedding_results
 
 def load_embedding_search_engine():
-    data = load_data_embeddings()  # Utiliser la fonction qui charge les données spécifiques aux embeddings
+    data = load_data_embeddings()
     return EmbeddingSearchEngine(data)
 
 def run_embedding_app():
@@ -19,7 +19,6 @@ def run_embedding_app():
     search_engine = load_embedding_search_engine()
 
     if query:
-        # Prétraiter la requête avant de la passer à l'algorithme d'embedding
         print("[INFO] Prétraitement de la requête...")
         preprocessor = TextPreprocessor()
         preprocessed_query = preprocessor.preprocess(query)

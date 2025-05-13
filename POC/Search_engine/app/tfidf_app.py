@@ -19,7 +19,7 @@ def run_tfidf_app():
     query = st.text_input("Entrez votre requête")
 
     if query:
-        query_cleaned = preprocess_query(query)  # Prétraitement de la requête
-        print(f"Requête prétraitée : {query_cleaned}")  # Affichage de la requête prétraitée
-        results = engine.retrieve(query_cleaned, k=TOP_K_RESULTS)  # Recherche avec retrieve()
-        display_results(results, query)  # Affichage des résultats
+        query_cleaned = preprocess_query(query)
+        print(f"Requête prétraitée : {query_cleaned}")
+        results = engine.retrieve(query_cleaned, k=TOP_K_RESULTS)
+        display_results(results, query)

@@ -30,7 +30,7 @@ def load_data_tfidf():
 
     documents = []
     for study_id, sections in data.items():
-        if isinstance(sections, dict):  # les sections ont déjà été prétraitées
+        if isinstance(sections, dict):
             merged_text = " ".join(sections.values())
             documents.append(
                 Document(
@@ -47,20 +47,17 @@ def load_data_embeddings():
 
     documents = []
 
-    # Si c'est un dictionnaire (structure attendue dans ce cas)
     if isinstance(raw_data, dict):
         for study_id, texts in raw_data.items():
-            # On parcourt chaque élément de la liste pour en extraire le contenu
             for pair in texts:
-                if len(pair) == 2 and isinstance(pair[1], str):  # Assurer que la valeur est du texte
+                if len(pair) == 2 and isinstance(pair[1], str):  
                     documents.append(Document(
-                        page_content=pair[1],  # Texte dans la seconde position
-                        metadata={"study_id": study_id, "field": pair[0]}  # Enregistrer l'identifiant et le champ
+                        page_content=pair[1],
+                        metadata={"study_id": study_id, "field": pair[0]}
                     ))
         print(f"[INFO] Documents convertis à partir du dict : {len(documents)}")
         return documents
 
-    # Si c'est une liste (structure déjà en format acceptable)
     elif isinstance(raw_data, list):
         for entry in raw_data:
             if isinstance(entry, dict) and "page_content" in entry:

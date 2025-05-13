@@ -35,7 +35,7 @@ class EmbeddingSearchEngine:
         print(f"[DEBUG] Documents avant prétraitement: {len(documents)}")
         for doc in documents:
             preprocessed_text = self.preprocessor.preprocess(doc.page_content)
-            if preprocessed_text.strip():  # Ignorer les contenus vides
+            if preprocessed_text.strip():
                 preprocessed_documents.append(
                     Document(page_content=preprocessed_text, metadata=doc.metadata)
                 )
@@ -71,7 +71,7 @@ class EmbeddingSearchEngine:
 
         raw_results = self.vector_store.similarity_search_with_score(preprocessed_query, k=100)
 
-        # Filtrage pour top_k études uniques
+        # Filtrage pour top_k études
         unique_titles = set()
         filtered_results = []
         for doc, score in raw_results:
@@ -82,7 +82,6 @@ class EmbeddingSearchEngine:
             if len(filtered_results) >= top_k:
                 break
 
-        # Regroupement par étude avec sections scorées
         scored_sections_by_study = defaultdict(list)
         for doc, score in filtered_results:
             title = doc.metadata.get("study_id", "UNKNOWN")

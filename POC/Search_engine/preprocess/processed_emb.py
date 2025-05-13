@@ -30,7 +30,6 @@ class TextPreprocessor:
         return text
 
     def preprocess_json_data(self, data: Dict[str, List[Union[List[str], str]]]) -> Dict[str, List]:
-        # Appliquer le prétraitement à toutes les données JSON
         processed_data = {}
         for study_name, content_list in data.items():
             new_content = []
@@ -43,7 +42,6 @@ class TextPreprocessor:
         return processed_data
 
     def preprocess_json_file(self, input_path: str, output_path: str):
-        # Charger le fichier JSON, appliquer le prétraitement et sauvegarder le résultat
         with open(input_path, "r", encoding="utf-8") as f:
             data = json.load(f)
         processed_data = self.preprocess_json_data(data)
