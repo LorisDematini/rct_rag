@@ -1,22 +1,37 @@
+"""
+paths.py
+
+Ce module centralise tous les chemins utilisés dans le projet pour accéder aux fichiers de données.
+Il permet de garantir une organisation claire et évite la duplication de chemins en dur dans le code.
+
+Variables définies :
+- BASE_DIR : Chemin racine du projet.
+- DATA_DIR : Dossier contenant les fichiers de données (`data/`).
+
+Fichiers JSON utilisés :
+- RAW_JSON_PATH : Données brutes (`summary.json`) utilisées notamment pour le moteur sparse.
+- ACRONYMS_FILE : Dictionnaire d’acronymes et de leurs définitions.
+- SPARSE_JSON_PATH : Résultat du prétraitement pour le moteur TF-IDF.
+- DENSE_JSON_PATH : Résultat du prétraitement pour le moteur sémantique.
+- FAISS_INDEX_PATH : Répertoire contenant l’index FAISS binaire.
+"""
+
+
 import os
 
 # Racine du projet
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-# Dossier des données JSON (textes à indexer)
 DATA_DIR = os.path.join(BASE_DIR, "data")
+
+# Répertoire contenant les fichiers de données
 RAW_JSON_PATH = os.path.join(DATA_DIR, "summary.json")  # Nom du fichier JSON contenant les documents RAW
 ACRONYMS_FILE = os.path.join(DATA_DIR, "final_acronyms.json")  # Fichier contenant les acronymes et leurs définitions
 
-# Fichier de sortie prétraité spécifique au moteur TF-IDF
-TFIDF_JSON_PATH = os.path.join(DATA_DIR, "summaryTF_pre.json")
+# Fichier de sortie prétraité spécifique au moteur sparse
+SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 
-DOC_DUMP_PATH = os.path.join(DATA_DIR, "documents_used_for_index.json")
+# Fichier de sortie prétraité spécifique au moteur Dense
+DENSE_JSON_PATH = os.path.join(DATA_DIR, "summaryDense_pre.json")
 
-# Fichier de sortie prétraité spécifique au moteur Embedding
-EMB_JSON_PATH = os.path.join(DATA_DIR, "summaryEMB_pre.json")
-
-# Fichier de sortie prétraité spécifique au moteur FAISS
-FAISS_JSON_PATH = os.path.join(DATA_DIR, "summaryFA_pre.json")
-
-FAISS_INDEX_PATH = os.path.join(DATA_DIR, "faiss_index")  # Répertoire pour l'index FAISS
+# Fichier de sortie prétraité spécifique FAISS
+FAISS_INDEX_PATH = os.path.join(DATA_DIR, "faiss_index")

@@ -1,72 +1,91 @@
-# /core/data_loader.py
+"""
+data_loader.py
 
+Ce module gère le chargement et la préparation des données utilisées par les moteurs de recherche
+(sparse et dense). Il convertit les fichiers JSON en objets `Document` de LangChain, avec les
+métadonnées nécessaires à la recherche et à l'affichage.
+
+Fonctions :
+- load_data_sparse() :
+    Charge les documents prétraités pour le moteur sparse.
+    Si le fichier n'existe pas, le génère à partir du RAW JSON.
+
+- load_data_dense() :
+    Charge les documents bruts sectionnés pour le moteur dense.
+    Chaque section devient un objet `Document` avec un champ `field`.
+
+- load_dense_sections(dense_json_path) :
+    Charge les sections de texte issues du JSON dense prétraité,
+    et les regroupe par `study_id` avec les champs associés.
+
+"""
+
+
+from collections import defaultdict
 import os
 import json
 from langchain.schema import Document
-from config.paths import TFIDF_JSON_PATH, RAW_JSON_PATH
-from preprocess.processed_tfidf  import process_and_merge_json
+from config.paths import SPARSE_JSON_PATH, RAW_JSON_PATH
+from preprocess.processed_sparse  import process_and_merge_json
 
-def ensure_tfidf_preprocessed_json():
-    if not os.path.exists(TFIDF_JSON_PATH):
-        print(f"[INFO] Le fichier TF-IDF prétraité est introuvable. Génération en cours...")
+def load_data_sparse():
+    if not os.path.exists(SPARSE_JSON_PATH):
+        print(f"[INFO] Le fichier SPARSE_JSON est introuvable. Génération en cours...")
 
         with open(RAW_JSON_PATH, 'r', encoding='utf-8') as f:
             raw_data = json.load(f)
 
-        merged = process_and_merge_json(raw_data)
-
-        with open(TFIDF_JSON_PATH, 'w', encoding='utf-8') as f:
-            json.dump(merged, f, ensure_ascii=False, indent=2)
+        # Génère les documents et sauvegarde aussi un JSON brut
+        documents = process_and_merge_json(raw_data)
+        return documents
 
     else:
-        print(f"[INFO] Fichier TF-IDF déjà existant : {TFIDF_JSON_PATH}")
+        print(f"[INFO] Fichier SPARSE déjà existant : {SPARSE_JSON_PATH}")
+        with open(SPARSE_JSON_PATH, 'r', encoding='utf-8') as f:
+            raw_data = json.load(f)
 
+        documents = []
+        for study_id, text in raw_data.items():
+            if not isinstance(text, str):
+                print(f"[ERREUR] Le contenu de l'étude {study_id} n'est pas une chaîne valide.")
+                continue
+            documents.append(Document(
+                page_content=text,
+                metadata={"study_id": study_id}
+            ))
 
-def load_data_tfidf():
-    ensure_tfidf_preprocessed_json()
+        print(f"[INFO] Documents chargés à partir du fichier SPARSE : {len(documents)}")
+        return documents
 
-    with open(TFIDF_JSON_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    documents = []
-    for study_id, sections in data.items():
-        if isinstance(sections, dict):
-            merged_text = " ".join(sections.values())
-            documents.append(
-                Document(
-                    page_content=merged_text,
-                    metadata={"study_id": study_id}
-                )
-            )
-    print(f"[INFO] Études chargées : {len(documents)}")
-    return documents
-
-def load_data_embeddings():
+def load_data_dense():
     with open(RAW_JSON_PATH, "r", encoding="utf-8") as f:
         raw_data = json.load(f)
 
     documents = []
 
-    if isinstance(raw_data, dict):
-        for study_id, texts in raw_data.items():
-            for pair in texts:
-                if len(pair) == 2 and isinstance(pair[1], str):  
-                    documents.append(Document(
-                        page_content=pair[1],
-                        metadata={"study_id": study_id, "field": pair[0]}
-                    ))
-        print(f"[INFO] Documents convertis à partir du dict : {len(documents)}")
-        return documents
-
-    elif isinstance(raw_data, list):
-        for entry in raw_data:
-            if isinstance(entry, dict) and "page_content" in entry:
+    for study_id, texts in raw_data.items():
+        for pair in texts:
+            if len(pair) == 2 and isinstance(pair[1], str):  
                 documents.append(Document(
-                    page_content=entry["page_content"],
-                    metadata=entry.get("metadata", {})
+                    page_content=pair[1],
+                    metadata={"study_id": study_id, "field": pair[0]}
                 ))
-        print(f"[INFO] Documents chargés à partir de la liste : {len(documents)}")
-        return documents
+    print(f"[INFO] Documents convertis à partir du dict : {len(documents)}")
+    return documents
 
-    raise ValueError("[ERREUR] Le fichier JSON doit contenir une liste ou un dictionnaire.")
+def load_dense_sections(dense_json_path):
+    with open(dense_json_path, "r", encoding="utf-8") as f:
+        dense_sections = json.load(f)
 
+    study_sections = defaultdict(list)
+    for entry in dense_sections:
+        study_id = entry["metadata"]["study_id"]
+        field = entry["metadata"].get("field", "Unknown")
+        text = entry["page_content"]
+
+        study_sections[study_id].append({
+            "field": field,
+            "text": text
+        })
+        
+    return study_sections
