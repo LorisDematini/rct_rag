@@ -21,8 +21,7 @@ Classe :
 import json
 import re
 from typing import Dict, List, Union
-# from config.paths import ACRONYMS_FILE
-ACRONYMS_FILE = "/home/loris/Stage/STAGE/Test/db_sortie_block/DOC/POC/Clean/Search_engine/data/final_acronyms.json"
+from config.paths import ACRONYMS_FILE
 
 class TextPreprocessor:
     def __init__(self, acronym_json_path=ACRONYMS_FILE):
