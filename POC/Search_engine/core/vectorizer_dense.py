@@ -25,32 +25,41 @@ import json
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from preprocess.processed_dense import TextPreprocessor
-from config.paths import DENSE_JSON_PATH, FAISS_INDEX_PATH
+from config.paths import DENSE_JSON_PATH, FAISS_INDEX_PATH, TEST_DENSE_JSON_PATH
 from config.settings import EMBEDDING_MODEL_NAME
 from langchain.schema import Document
 from collections import defaultdict
 
 class DenseSearchEngine:
     def __init__(self, data=None):
-        # Utilisation de HuggingFaceEmbeddings pour transformer les textes en vecteurs
         self.dense_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
-        # Préparer le préprocesseur
         self.preprocessor = TextPreprocessor()
 
         if os.path.exists(FAISS_INDEX_PATH):
-            # Si l'index FAISS existe déjà, on le charge
-            self.vector_store = FAISS.load_local(FAISS_INDEX_PATH, self.dense_model, allow_dangerous_deserialization=True)
+            self.vector_store = FAISS.load_local(
+                FAISS_INDEX_PATH, self.dense_model, allow_dangerous_deserialization=True
+            )
         else:
-            # Si l'index FAISS n'existe pas, on le crée à partir des données
-            if data is None:
-                raise ValueError("Les données sont nécessaires pour créer l'index FAISS.")
-            preprocessed_data = self.preprocess_documents(data)
-            self.vector_store = self.create_faiss_index(preprocessed_data)
+            # Tentative de chargement depuis le JSON de documents déjà prétraités
+            if os.path.exists(DENSE_JSON_PATH):
+                print(f"[INFO] Chargement des documents depuis DENSE_JSON_PATH : {DENSE_JSON_PATH}")
+                with open(DENSE_JSON_PATH, "r", encoding="utf-8") as f:
+                    json_docs = json.load(f)
+                data = [
+                    Document(page_content=d["page_content"], metadata=d["metadata"])
+                    for d in json_docs
+                ]
+            else:
+                print(f"[INFO] Aucun fichier FAISS ni JSON trouvé. Chargement depuis RAW.")
+                if data is None:
+                    raise ValueError("Aucune donnée fournie pour créer l'index FAISS.")
+                data = self.preprocess_documents(data)
+                self.save_preprocessed_documents_to_json(data)
+
+            self.vector_store = self.create_faiss_index(data)
             print(f"[INFO] Index FAISS créé et sauvegardé dans '{FAISS_INDEX_PATH}'.")
             self.vector_store.save_local(FAISS_INDEX_PATH)
-            # Sauvegarder les documents prétraités dans un fichier JSON
-            # self.save_raw_documents_for_debug(preprocessed_data)
-            self.save_preprocessed_documents_to_json(preprocessed_data)
+
 
     def preprocess_documents(self, documents):
         preprocessed_documents = []

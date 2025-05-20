@@ -13,18 +13,23 @@ Fonctions :
 
 
 import json
+import os
 import streamlit as st
 from core.data_loader import load_data_dense
 from core.vectorizer_dense import DenseSearchEngine
 from preprocess.processed_dense import TextPreprocessor
 from config.settings import TOP_K_RESULTS
-from config.paths import RAW_JSON_PATH, DENSE_JSON_PATH
+from config.paths import FAISS_INDEX_PATH, DENSE_JSON_PATH, TEST_DENSE_JSON_PATH
 from app.common_ui import display_dense_results
 from core.data_loader import load_dense_sections
 
 def load_dense_search_engine():
-    data = load_data_dense()
-    return DenseSearchEngine(data)
+    if os.path.exists(FAISS_INDEX_PATH):
+        print("[INFO] Index FAISS détecté, chargement sans relecture des données brutes.")
+        return DenseSearchEngine()
+    else:
+        data = load_data_dense()
+        return DenseSearchEngine(data)
 
 def run_dense_app():
     st.title("Moteur de recherche Dense")

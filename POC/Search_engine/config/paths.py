@@ -32,6 +32,7 @@ SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 
 # Fichier de sortie prétraité spécifique au moteur Dense
 DENSE_JSON_PATH = os.path.join(DATA_DIR, "summaryDense_pre.json")
+TEST_DENSE_JSON_PATH = os.path.join(DATA_DIR, "summaryDense_pre_test.json")
 
 # Fichier de sortie prétraité spécifique FAISS
 FAISS_INDEX_PATH = os.path.join(DATA_DIR, "faiss_index")
