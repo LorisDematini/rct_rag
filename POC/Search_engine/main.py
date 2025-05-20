@@ -6,7 +6,6 @@ Interface principale Streamlit permettant de choisir entre deux moteurs de reche
 Le module spécial 'torch.classes' est bypassé pour éviter des conflits lors du scan par Streamlit.
 """
 
-
 import sys
 import types
 

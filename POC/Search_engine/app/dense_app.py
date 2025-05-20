@@ -16,20 +16,26 @@ import json
 import os
 import streamlit as st
 from core.data_loader import load_data_dense
-from core.vectorizer_dense import DenseSearchEngine
+from core.dense_search import DenseSearchEngine
+from core.dense_index_builder import DenseIndexBuilder
 from preprocess.processed_dense import TextPreprocessor
 from config.settings import TOP_K_RESULTS
 from config.paths import FAISS_INDEX_PATH, DENSE_JSON_PATH, TEST_DENSE_JSON_PATH
 from app.common_ui import display_dense_results
-from core.data_loader import load_dense_sections
+from core.data_loader import load_dense_sections, load_data_dense
+
 
 def load_dense_search_engine():
     if os.path.exists(FAISS_INDEX_PATH):
-        print("[INFO] Index FAISS détecté, chargement sans relecture des données brutes.")
+        print("[INFO] Index FAISS détecté, chargement.")
         return DenseSearchEngine()
     else:
-        data = load_data_dense()
-        return DenseSearchEngine(data)
+        print("[INFO] Index FAISS absent, création à partir des données disponibles.")
+        builder = DenseIndexBuilder()
+        raw_documents = load_data_dense()
+        builder.load_or_build_index(raw_data=raw_documents)
+        return DenseSearchEngine()
+
 
 def run_dense_app():
     st.title("Moteur de recherche Dense")

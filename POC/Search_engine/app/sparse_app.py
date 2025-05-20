@@ -12,7 +12,8 @@ Fonctions :
 
 import streamlit as st
 from core.data_loader import load_data_sparse
-from core.vectorizer_sparse import SparseRetriever
+from core.sparse_builder import SparseBuilder
+from core.sparse_search import SparseSearchEngine
 from preprocess.processed_sparse import preprocess_query
 from app.common_ui import display_sparse_results
 from config.settings import TOP_K_RESULTS
@@ -25,7 +26,8 @@ def run_sparse_app():
     with st.spinner("Chargement des données..."):
         print("[INFO] Chargement des données sparse...")
         documents = load_data_sparse()
-        engine = SparseRetriever(documents)
+        index = SparseBuilder(documents)
+        engine = SparseSearchEngine(index)
 
     # Interface utilisateur
     query = st.text_input("Entrez votre requête")
@@ -33,5 +35,5 @@ def run_sparse_app():
     if query:
         query_cleaned = preprocess_query(query)
         print(f"Requête prétraitée : {query_cleaned}")
-        results = engine.retrieve(query_cleaned, k=TOP_K_RESULTS)
-        display_sparse_results(results, query)
+        results = engine.search(query_cleaned, k=TOP_K_RESULTS)
+        display_sparse_results(results, query_cleaned)
