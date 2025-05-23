@@ -7,6 +7,8 @@ Le module spécial 'torch.classes' est bypassé pour éviter des conflits lors d
 """
 
 import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import types
 
 # Empêche Streamlit de scanner ce module spécial de torch
