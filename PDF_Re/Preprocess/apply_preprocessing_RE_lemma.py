@@ -13,7 +13,7 @@ from nltk.stem import WordNetLemmatizer
 stop_words = set(stopwords.words('english'))
 
 acronyms_file = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/final_acronyms.json"
-acronyms_file_specific = "/home/loris/Stage/STAGE/Test/PDF_RE/acronym_extracted.json"
+acronyms_file_specific = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/acronym_extracted.json"
 
 # Fonction de mapping POS
 def get_wordnet_pos(treebank_tag):
@@ -47,42 +47,52 @@ def replace_acronyms(acronyms_global, acronyms_specific_all, study_id, text):
 
     for acronym, definition in acronyms_study_specific.items():
         if isinstance(definition, str):
-            pattern = r'(?<![\w-])' + re.escape(acronym) + r'(?![\w-])'
+            pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
+            text = re.sub(pattern_parentheses, '', text, flags=re.IGNORECASE)
+
+            pattern = r'(?<![\w(])' + re.escape(acronym) + r'(?![\w)])'
             text = re.sub(pattern, definition.lower(), text, flags=re.IGNORECASE)
 
     for acronym, definition in acronyms_global.items():
         if isinstance(definition, str):
-            pattern = r'(?<![\w-])' + re.escape(acronym) + r'(?![\w-])'
+            pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
+            text = re.sub(pattern_parentheses, '', text, flags=re.IGNORECASE)
+
+            pattern = r'(?<![\w(])' + re.escape(acronym) + r'(?![\w)])'
             text = re.sub(pattern, definition.lower(), text, flags=re.IGNORECASE)
 
     return text
 
+
 #Fonction de Preprocess
 def preprocess(text, study_id, acronyms_global, acronyms_specific_all):
+    #1. Acronyme
     text = replace_acronyms(acronyms_global, acronyms_specific_all, study_id, text)
 
-    # 1. Normalisation Unicode → ASCII
+    #2. Lemmatisations
+    words = word_tokenize(text)
+    words = lemmatize_text(words)
+
+    text = ' '.join(words)
+
+    # 3. Normalisation Unicode → ASCII
     text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
 
-    # 2. Nettoyage ponctuation
+    # 4. Nettoyage ponctuation
     text = re.sub(r'[^\w\s+-]|_', ' ', text)
     text = text.replace("-", "")
     text = re.sub(r'\s+', ' ', text).strip()
 
-    # 3. Minuscules
+    # 5. Minuscules
     text = text.lower()
 
-    # 4. Normalisation d1, w2, m3 → day/week/month
+    # 6. Normalisation d1, w2, m3 → day/week/month
     text = re.sub(r'\bd(\d+)\b', r'day \1', text)
     text = re.sub(r'\bw(\d+)\b', r'week \1', text)
     text = re.sub(r'\bm(\d+)\b', r'month \1', text)
     
     words = word_tokenize(text)
-    # 5. Lemmatisation
-    words = lemmatize_text(words)
-
-
-    # 6. Tokenisation par mots + suppression stopwords
+    # 7. Tokenisation par mots + suppression stopwords
     # + Nombres et chiffres : and not any(char.isdigit() for char in word)
     words = [word for word in words if word not in stop_words and len(word) >= 2]
 
@@ -95,8 +105,8 @@ with open(acronyms_file, 'r', encoding='utf-8') as f:
 with open(acronyms_file_specific, 'r', encoding='utf-8') as f1:
     acronyms_specific_all = json.load(f1)
 
-with open("/home/loris/Stage/STAGE/Test/PDF_RE/Sections/sections_sorted.json", "r", encoding="utf-8") as f3:
-    data = json.load(f3)
+with open("/home/loris/Stage/STAGE/Test/PDF_RE/Sections/sections_sorted.json", "r", encoding="utf-8") as f2:
+    data = json.load(f2)
 
     for study_id in list(data.keys()):
         if "OTHER" in data[study_id]:
@@ -110,5 +120,5 @@ for study_id, sections in data.items():
         data[study_id][section_title] = preprocess(full_text, study_id, acronyms_global, acronyms_specific_all)
 
 # Sauvegarde
-with open("/home/loris/Stage/STAGE/Test/PDF_RE/Preprocess/sections_preprocessed_lemma.json", "w", encoding="utf-8") as f4:
-    json.dump(data, f4, indent=2, ensure_ascii=False)
+with open("/home/loris/Stage/STAGE/Test/PDF_RE/Preprocess/sections_preprocessed_lemma.json", "w", encoding="utf-8") as f3:
+    json.dump(data, f3, indent=2, ensure_ascii=False)
