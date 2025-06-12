@@ -1,0 +1,450 @@
+## TITLE
+- Full Title
+- Full title
+- Name of the study
+- Title
+
+## JUSTIFICATION
+- Background
+- Main backgrounds
+- Rationale
+- Scientific
+justification
+- Scientific justification
+
+## OBJECTIVE
+- Criteria of
+assessment
+- Evaluation criteria
+- Main end-points
+- Main objective and
+primary endpoint
+- Main objective and primary
+endpoint
+- Main objective and primary endpoint
+- Objective and primary endpoint
+- Objectives
+- Objectives and secondary
+endpoints
+- Primary objective
+- Primary objective
+and assessment
+criterion
+- Primary objective and
+assessment criterion
+- Primary objective and assessment
+criterion
+- Primary objectives
+- Questions asked in
+the CAALL-F01
+protocol
+- Secondary
+objectives
+- Secondary
+objectives and
+assessment criteria
+- Secondary
+objectives and
+endpoints
+- Secondary end-points
+- Secondary objectives
+and endpoints
+- Secondary objectives and
+assessment criteria
+- Secondary objectives and
+endpoints
+- Secondary objectives and assessment
+criteria
+- Secondary objectives and endpoints
+- Study Endpoints
+- Study Objectives
+
+## DESIGN
+- Ancillary study
+- Design / phase / category
+- Design of the study
+- Design of the trial
+- Diagnostic method
+- Experimental
+design
+- Experimental design
+- Reference diagnostic method
+- Scope of the trial
+- Study Design
+- Study design
+- Type of study
+
+## INCLUSION CRITERIA
+- GRAALL-2014/B
+Inclusion Criteria
+- GRAALL-QUEST
+Inclusion criteria
+- Inclusion Criteria
+- Inclusion Criteria
+observational
+phase:
+(N°1,2,3,4,6,7,8,9)
+interventional
+phase:
+(N°1,2,3,4,5,6,7,8).
+- Inclusion criteria
+- Inclusion criteria
+
+
+
+- Inclusion criteria of donors
+- Inclusion criteria of patients
+- Indication
+- Population concerned
+- Population involved
+- Population of study
+participants
+- Population of study participants
+- Population of trial subjects
+- Preinclusion criteria
+
+## EXCLUSION CRITERIA
+- Exclusion Criteria
+observational
+phase: (N°1,2,3)
+interventional
+phase:
+(N°:1,2,3,4,5,6,7,8).
+- Exclusion criteria
+- Exclusion criteria :
+- Exclusion criteria of patients
+- Exclusion criterion
+- GRAALL-2014/B
+Non inclusion
+Criteria
+- GRAALL-QUEST
+Non inclusion
+criteria
+- Non Inclusion criteria
+- Non inclusion criteria
+- Non-Inclusion Criteria
+- Non-Preinclusion and
+Non-inclusion criteria
+- Non-inclusion
+criteria
+- Non-inclusion criteria
+
+## TREATMENT
+- Benchmark treatment
+- Challenge agents
+- Chemotherapy
+- Comparator strategy and
+treatment
+- Comparator treatment
+- Concomitant treatments
+- Experimental drug
+Prescription
+outside MA
+- Experimental drugs
+Prescription
+according to MA
+- Experimental group
+- Experimental treatment
+- Investigational
+medicinal product(s)
+- Investigational drug
+- Investigational medicinal
+product
+- Investigational medicinal
+product and auxiliairy
+medicinal products
+- Investigational medicinal
+product(s)
+- Investigational medicinal
+products
+- Investigational strategy and
+medicinal product(s)
+- Reference
+Treatment
+- Study Intervention
+- Study intervention
+- Transplant Modalities
+- Transplant modalities
+- Transplant modalities
+Medical product provided by the
+Sponsor
+- Transplantation modalities
+- Transplants modalities
+- Treatment (transplant modalities)
+- Treatment being
+tested
+- Treatment being tested
+- treatment
+
+## STATISTICAL
+- First interim analysis
+- Sample Size
+- Statistical
+justification of
+sample size
+- Statistical Analysis
+- Statistical analysis
+- Statistical power and sample
+size justification:
+
+## RISKS
+- Added risks of the
+research
+- Added risks through research
+- Minimal risks and constraints
+added by the study
+- Risk factors
+definition
+- Risks added by the
+research
+- Risks added by the clinical trial
+- Risks added by the research
+- Risks added by the study
+- Risks added by the trial
+- Risks and burdens
+added by the study
+- Risks and burdens added
+by the study
+- Risks and burdens added by the
+study
+
+## TREATMENT BIS
+- Background
+Therapy
+- Comparator
+- Comparator arm
+- Control group
+- Leukemia-oriented
+biological
+assessments
+
+## PROCEDURE
+- Identification of
+subjects
+- Intervention under investigation
+- Interventions
+added by the study
+- Interventions added
+for the study
+- Interventions added by the study
+- Interventions added for
+the study
+- Interventions added for the
+study
+- Interventions added for the
+trial
+- Interventions added for the study
+- Interventions added for the trial
+- Interventions or
+product under
+investigation
+- Interventions or product under
+investigation
+- Other interventions added by the
+study
+- Other acts added by research
+- Other procedures
+added by the
+research
+- Other procedures added
+by the research
+- Other procedures added by
+the research
+- Practical
+implementation
+- Practical course
+- Practical implementation
+- Practical procedure
+- Randomization
+(Interventional
+phase)
+
+## EXPECTED BENFITS
+- Expected benefits
+- Expected benefits
+for the participants
+and for society
+- Expected benefits for
+the participants and for
+society
+- Expected benefits for the
+participants and for
+society
+- Expected benefits for the
+participants and for society
+
+## DSMB
+- DSMB
+- DSMB (Data Safety Monitoring
+Board)
+- DSMB : Data safety monitoring
+board
+- Data Safety
+Monitoring Board
+- Data Safety
+Monitoring Board
+anticipated
+- Data Safety Monitoring
+Board anticipated
+- Data Safety Monitoring Board
+anticipated
+- Independent
+surveillance
+committee planned
+- Study will have a
+Data Safety
+Monitoring Board
+- Study will have a Data
+Safety Monitoring
+Board
+- Study will have a Data
+Safety Monitoring Board
+- Study will have a Data Safety
+Monitoring Board
+- Trial will have a Data
+Monitoring Committee
+- Trial will have a Data
+Safety Monitoring Board
+- Trial will have a Data Monitoring
+Committee
+- Trial will have a Data Safety
+Monitoring Board
+
+## TITRES NON VOULUES
+- Abbreviated title
+- Acronym
+- Acronym/reference
+- Clinical Trial Code
+- Short Title
+- Study Acronym
+
+## PEOPLE
+- Coordinating
+Investigator
+- Coordinating
+investigator
+- Coordinating
+investigator and
+Scientific Director
+- Coordinating Investigator
+- Coordinating investigator
+- Coordinating investigator and
+Scientific director
+- Coordinating investigators
+- Coordinator
+- Scientific Director
+- Scientific Director (if
+applicable)
+- Scientific Director (if applicable)
+- Scientific director
+- Study committee
+representatives
+- coordinating investigator
+
+## NUMBERS
+- Number of
+enrolments
+expected per site
+and per month
+- Number of
+enrolments expected
+per site and per
+month
+- Number of
+inclusions expected
+per center and per
+month
+- Number of
+inclusions expected
+per centre and per
+month
+- Number of
+participants
+included
+- Number of enrolments
+expected per site and
+per month
+- Number of enrolments
+expected per site and per
+month
+- Number of enrolments
+expected per site and per month
+- Number of enrolments expected
+per site and per month
+- Number of enrolments expected per
+site and per month
+- Number of inclusions
+expected /centre and month
+- Number of inclusions
+expected per centre and
+per month
+- Number of inclusions expected per
+centre and per month
+- Number of inclusions under
+center per month
+- Number of participants
+chosen
+- Number of participants
+included
+- Number of participants included
+- Number of selected
+subjects
+- Number of subjects
+chosen
+- Number of subjects chosen
+- Number of subjects included
+- Number of subjects required
+
+## SITES
+- Centres: 28
+- Clinical Sites
+- Number of centers
+- Number of centres
+- Number of sites
+- Number of valued sites
+
+## MONETARY
+- Budget
+- Financing
+- Funding
+- Funding source
+- Funding sources
+- Sources of funding for the
+trial
+- Sources of funding for the trial
+- Sources of monetary
+support
+- Sources of monetary support
+- Sponsor
+- Study Sponsor
+
+## DURATION
+- Duration of the
+study
+- Duration of the study
+- Duration of the trial
+- Research duration
+- Research period
+- Schedule for the study
+- Study Duration
+- Study duration
+- Treatment schedules
+
+## INFORMATIONS
+- Category
+- EU-CT number
+- EudraCT Number
+- SAEs
+- Scope of the study
+
+## SPECIFIC
+- ASPARAGINASE-
+Oriented assays
+- Add-on studies
+- Definitions
+- Device(s) under
+investigation
+- MRD monitoring
+
+## OTHER
+

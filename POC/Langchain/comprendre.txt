@@ -1,0 +1,4 @@
+Fine-tuning de Sentence-transformers : 
+We fine-tune the model using a contrastive objective. 
+Formally, we compute the cosine similarity from each possible sentence pairs from the batch. 
+We then apply the cross entropy loss by comparing with true pairs.

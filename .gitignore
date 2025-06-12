@@ -43,7 +43,7 @@ _build/
 # Data
 *.csv
 *.pickle
-*.txt
+# *.txt
 *.xls
 *.xlsx
 *.tar.gz

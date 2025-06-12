@@ -1,0 +1,17 @@
+Cluster 0 - top terms:
+response, ks, tumor, stage, pharmacodynamic, met, pembrolizumab, simons, endemic, l1
+
+ Cluster 1 - top terms:
+graft, transplantation, host, versus, stem, cell, disease, haplo, transplant, donor
+
+ Cluster 2 - top terms:
+week, uveitis, bd, vasculitis, cd, adalimumab, disease, 16, remission, tocilizumab
+
+ Cluster 3 - top terms:
+mesenchymal, stromal, cells, breast, radiation, sclerosis, conventional, diagnostic, ultrasound, dose
+
+ Cluster 4 - top terms:
+antibiotic, sars, covid, participant, 19, cov, 21, 90, emergency, unit
+
+ Cluster 5 - top terms:
+prevalence, graall, concentration, treated, leukemia, activity, survival, nervous, central, responders

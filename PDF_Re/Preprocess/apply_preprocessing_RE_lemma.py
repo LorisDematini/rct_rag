@@ -3,7 +3,7 @@ import re
 import unicodedata
 from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer as wnl
 
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
@@ -12,7 +12,7 @@ from nltk.stem import WordNetLemmatizer
 
 stop_words = set(stopwords.words('english'))
 
-acronyms_file = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/final_acronyms.json"
+acronyms_file = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/final_acronyms_parenthese.json"
 acronyms_file_specific = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/acronym_extracted.json"
 
 # Fonction de mapping POS
@@ -30,36 +30,36 @@ def get_wordnet_pos(treebank_tag):
 
 # Fonction de lemmatisation
 def lemmatize_text(tokens):
-    lemmatizer = WordNetLemmatizer()
     pos_tags = pos_tag(tokens)
 
     lemmatized_tokens = []
     for token, pos in pos_tags:
         wordnet_pos = get_wordnet_pos(pos)
-        lemma = lemmatizer.lemmatize(token, wordnet_pos)
+        lemma = wnl().lemmatize(token, wordnet_pos)
         lemmatized_tokens.append(lemma)
 
     return lemmatized_tokens
 
-#Fonction pour remplacer les acronym en commençant par les spécifiques
+#Fonction pour remplacer les acronymes en commençant par les spécifiques
 def replace_acronyms(acronyms_global, acronyms_specific_all, study_id, text):
     acronyms_study_specific = acronyms_specific_all.get(study_id, {})
 
     for acronym, definition in acronyms_study_specific.items():
-        if isinstance(definition, str):
-            pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
-            text = re.sub(pattern_parentheses, '', text, flags=re.IGNORECASE)
+        pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
+        text = re.sub(pattern_parentheses, '', text)
+        #, flags=re.IGNORECASE
 
-            pattern = r'(?<![\w(])' + re.escape(acronym) + r'(?![\w)])'
-            text = re.sub(pattern, definition.lower(), text, flags=re.IGNORECASE)
+        pattern = r'(?<![\w])' + re.escape(acronym) + r'(?![\w])'
+        text = re.sub(pattern, definition.lower(), text)
+
 
     for acronym, definition in acronyms_global.items():
-        if isinstance(definition, str):
-            pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
-            text = re.sub(pattern_parentheses, '', text, flags=re.IGNORECASE)
 
-            pattern = r'(?<![\w(])' + re.escape(acronym) + r'(?![\w)])'
-            text = re.sub(pattern, definition.lower(), text, flags=re.IGNORECASE)
+        pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
+        text = re.sub(pattern_parentheses, '', text)
+
+        pattern = r'(?<![\w])' + re.escape(acronym) + r'(?![\w])'
+        text = re.sub(pattern, definition.lower(), text)
 
     return text
 
@@ -84,7 +84,7 @@ def preprocess(text, study_id, acronyms_global, acronyms_specific_all):
     text = re.sub(r'\s+', ' ', text).strip()
 
     # 5. Minuscules
-    text = text.lower()
+    #text = text.lower()
 
     # 6. Normalisation d1, w2, m3 → day/week/month
     text = re.sub(r'\bd(\d+)\b', r'day \1', text)
