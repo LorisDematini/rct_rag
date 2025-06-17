@@ -1,0 +1,229 @@
+{
+  "TITLE [39]": {
+    "name of the study": 1,
+    "title": 1,
+    "full title": 37
+  },
+  "JUSTIFICATION [38]": {
+    "background": 1,
+    "scientific justification": 35,
+    "rationale": 1,
+    "main backgrounds": 1
+  },
+  "OBJECTIVE [83]": {
+    "objectives": 1,
+    "main objective and primary endpoint": 31,
+    "main end-points": 1,
+    "primary objective": 1,
+    "primary objectives": 1,
+    "criteria of assessment": 1,
+    "primary objective and assessment criterion": 4,
+    "objective and primary endpoint": 1,
+    "objectives and secondary endpoints": 1,
+    "secondary objectives": 1,
+    "secondary objectives and endpoints": 31,
+    "secondary objectives and assessment criteria": 4,
+    "secondary end-points": 1,
+    "study endpoints": 1,
+    "study objectives": 1,
+    "evaluation criteria": 1,
+    "Questions asked in the CAALL-F01 protocol": 1
+  },
+  "DESIGN [54]": {
+    "Study Design": 2,
+    "design / phase / category": 1,
+    "design of the study": 20,
+    "design of the trial": 10,
+    "experimental design": 6,
+    "diagnostic method": 1,
+    "reference diagnostic method": 1,
+    "Scope of the trial": 11,
+    "ancillary study": 1,
+    "type of study": 1
+  },
+  "INCLUSION CRITERIA [81]": {
+    "inclusion criteria": 36,
+    "preinclusion criteria": 1,
+    "graall-2014/b inclusion criteria": 1,
+    "graall-quest inclusion criteria": 1,
+    "inclusion criteria observational phase: (n°1,2,3,4,6,7,8,9) interventional phase: (n°1,2,3,4,5,6,7,8).": 1,
+    "inclusion criteria   ": 1,
+    "inclusion criteria of donors": 1,
+    "inclusion criteria of patients": 1,
+    "population concerned": 1,
+    "population involved": 5,
+    "population of study participants": 21,
+    "population of trial subjects": 10,
+    "Indication": 1
+  },
+  "EXCLUSION CRITERIA [44]": {
+    "graall-2014/b non inclusion criteria": 1,
+    "graall-quest non inclusion criteria": 1,
+    "non-preinclusion and non-inclusion criteria": 1,
+    "non-inclusion criteria": 6,
+    "non inclusion criteria": 4,
+    "exclusion criteria observational phase: (n°1,2,3) interventional phase: (n°:1,2,3,4,5,6,7,8).": 1,
+    "exclusion criteria": 27,
+    "exclusion criteria :": 1,
+    "exclusion criteria of patients": 1,
+    "exclusion criterion": 1
+  },
+  "TREATMENT [62]": {
+    "reference treatment": 1,
+    "transplant modalities": 2,
+    "transplant modalities medical product provided by the Sponsor": 1,
+    "transplantation modalities": 1,
+    "transplants modalities": 1,
+    "treatment (transplant modalities)": 1,
+    "treatment being tested": 3,
+    "treatment": 1,
+    "benchmark treatment": 1,
+    "comparator strategy and treatment": 1,
+    "comparator treatment": 17,
+    "concomitant treatments": 1,
+    "experimental treatment": 1,
+    "experimental drug prescription outside ma": 1,
+    "experimental drugs prescription according to ma": 1,
+    "experimental group": 1,
+    "investigational medicinal product(s)": 16,
+    "investigational drug": 1,
+    "investigational medicinal product": 1,
+    "investigational medicinal products": 1,
+    "investigational strategy and medicinal product(s)": 1,
+    "investigational medicinal product and auxiliairy medicinal products": 1,
+    "Study Intervention": 2,
+    "Study intervention": 2,
+    "chemotherapy": 1,
+    "Challenge agents": 1
+  },
+  "STATISTICAL [41]": {
+    "statistical justification of sample size": 1,
+    "statistical analysis": 37,
+    "statistical power and sample size justification:": 1,
+    "first interim analysis": 1,
+    "sample size": 1
+  },
+  "RISKS [35]": {
+    "Risks added by the research": 5,
+    "Risks added by the clinical trial": 1,
+    "Risks added by the study": 1,
+    "Risks added by the trial": 12,
+    "Risks and burdens added by the study": 12,
+    "Added risks of the research": 1,
+    "Added risks through research": 1,
+    "Minimal risks and constraints added by the study": 1,
+    "risk factors definition": 1
+  },
+  "TREATMENT BIS [7]": {
+    "Leukemia-oriented biological assessments": 1,
+    "comparator": 1,
+    "comparator arm": 2,
+    "control group": 2,
+    "background therapy": 1
+  },
+  "PROCEDURE [52]": {
+    "practical procedure": 4,
+    "practical course": 1,
+    "practical implementation": 10,
+    "other acts added by research": 1,
+    "other procedures added by the research": 4,
+    "randomization (interventional phase)": 1,
+    "Identification of subjects": 1,
+    "intervention under investigation": 1,
+    "interventions added by the study": 3,
+    "interventions added for the study": 13,
+    "interventions added for the trial": 8,
+    "interventions or product under investigation": 3,
+    "other interventions added by the study": 2
+  },
+  "EXPECTED BENEFITS [19]": {
+    "Expected benefits": 1,
+    "Expected benefits for the participants and for society": 18
+  },
+  "DSMB [37]": {
+    "DSMB": 1,
+    "DSMB (Data Safety Monitoring Board)": 1,
+    "DSMB : Data safety monitoring board": 1,
+    "Data Safety Monitoring Board": 1,
+    "Data Safety Monitoring Board anticipated": 5,
+    "Independent surveillance committee planned": 1,
+    "Study will have a Data Safety Monitoring Board": 14,
+    "Trial will have a Data Monitoring Committee": 11,
+    "Trial will have a Data Safety Monitoring Board": 2
+  },
+  "TITRES NON VOULUES [41]": {
+    "Abbreviated title": 1,
+    "Acronym": 20,
+    "Acronym/reference": 17,
+    "Short Title": 1,
+    "Study Acronym": 1,
+    "Clinical Trial Code": 1
+  },
+  "PEOPLE [122]": {
+    "Coordinating Investigator": 35,
+    "Coordinating investigator": 35,
+    "Coordinating investigator and Scientific Director": 2,
+    "Coordinating investigator and Scientific director": 2,
+    "Coordinating investigators": 1,
+    "coordinating investigator": 35,
+    "Coordinator": 1,
+    "Scientific Director": 6,
+    "Scientific Director (if applicable)": 4,
+    "Study committee representatives": 1
+  },
+  "NUMBERS [73]": {
+    "Number of enrolments expected per site and per month": 30,
+    "Number of inclusions expected per center and per month": 1,
+    "Number of inclusions expected per centre and per month": 3,
+    "Number of participants included": 18,
+    "Number of inclusions expected /centre and month": 1,
+    "Number of inclusions under center per month": 1,
+    "Number of participants chosen": 1,
+    "Number of selected subjects": 1,
+    "Number of subjects chosen": 5,
+    "Number of subjects included": 11,
+    "Number of subjects required": 1
+  },
+  "SITES [38]": {
+    "Number of valued sites": 1,
+    "Clinical Sites": 1,
+    "Centres: 28": 1,
+    "Number of sites": 13,
+    "Number of centers": 6,
+    "Number of centres": 16
+  },
+  "MONETARY [78]": {
+    "Study Sponsor": 1,
+    "Sources of funding for the trial": 12,
+    "Sources of monetary support": 3,
+    "Sponsor": 39,
+    "Financing": 1,
+    "Funding": 1,
+    "Funding source": 5,
+    "Funding sources": 15,
+    "Budget": 1
+  },
+  "DURATION [40]": {
+    "Duration of the study": 16,
+    "Duration of the trial": 12,
+    "Research duration": 1,
+    "treatment schedules": 1,
+    "Schedule for the study": 2,
+    "Study Duration": 2,
+    "Research period": 6
+  },
+  "INFORMATIONS [15]": {
+    "Category": 10,
+    "EU-CT number": 1,
+    "EudraCT Number": 1,
+    "SAEs": 1,
+    "Scope of the study": 2
+  },
+  "SPECIFIC [5]": {
+    "ASPARAGINASE- Oriented assays": 1,
+    "Add-on studies": 1,
+    "MRD monitoring": 1,
+    "Device(s) under investigation": 1,
+    "definitions": 1
+  }
+}

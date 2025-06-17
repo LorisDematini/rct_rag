@@ -5,8 +5,8 @@ import json
 import logging
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
-PDF_FOLDER = "/home/loris/Stage/STAGE/Test/PDF_RE/PDF"
-OUTPUT_JSON_PATH = "/home/loris/Stage/STAGE/Test/PDF_RE/acronym_extracted2.json"
+PDF_FOLDER = "/home/loris/Stage/STAGE/Test/PDF_RE/BDD/PDF"
+OUTPUT_JSON_PATH = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/acronym_extracted_pdf.json"
 TARGET_KEYWORDS = ["abbreviation", "glossary"]
 
 acronym_pattern = re.compile(r"^\s*([A-Z][A-Z0-9\-]{1,10})[\s:,-]+(.+)$")
@@ -20,6 +20,7 @@ for filename in os.listdir(PDF_FOLDER):
 
         with pdfplumber.open(filepath) as pdf:
             for page_num, page in enumerate(pdf.pages):
+                # print(page.to_dict())
                 text = page.extract_text()
                 if not text:
                     continue
@@ -54,4 +55,3 @@ with open(OUTPUT_JSON_PATH, "w", encoding="utf-8") as f:
 
 #GRAAL PAS COMPLET
 #RUBI SUR PLUSIEURS PAGES
-

@@ -112,17 +112,17 @@ categories = {
         "sample size",
     ],
 
-    "RISKS": [
-        "Risks added by the research",
-        "Risks added by the clinical trial",
-        "Risks added by the study",
-        "Risks added by the trial",
-        "Risks and burdens added by the study",
-        "Added risks of the research",
-        "Added risks through research",
-        "Minimal risks and constraints added by the study",
-        "risk factors definition",
-    ],
+    # "RISKS": [
+    #     "Risks added by the research",
+    #     "Risks added by the clinical trial",
+    #     "Risks added by the study",
+    #     "Risks added by the trial",
+    #     "Risks and burdens added by the study",
+    #     "Added risks of the research",
+    #     "Added risks through research",
+    #     "Minimal risks and constraints added by the study",
+    #     "risk factors definition",
+    # ],
 
     # "TREATMENT BIS":[
     #     # BIZARRE
@@ -132,25 +132,25 @@ categories = {
     #     "control group",
     #     "background therapy",
     # ],
-    "PROCEDURE":[
-        "practical procedure",
-        "practical course",
-        "practical implementation",
-        "other acts added by research",
-        "other procedures added by the research",
-        "randomization (interventional phase)",
-        "Identification of subjects",
-        "intervention under investigation",
-        "interventions added by the study",
-        "interventions added for the study",
-        "interventions added for the trial",
-        "interventions or product under investigation",
-        "other interventions added by the study",
-    ],
-    "EXPECTED BENEFITS": [
-        "Expected benefits",
-        "Expected benefits for the participants and for society",
-    ],
+    # "PROCEDURE":[
+    #     "practical procedure",
+    #     "practical course",
+    #     "practical implementation",
+    #     "other acts added by research",
+    #     "other procedures added by the research",
+    #     "randomization (interventional phase)",
+    #     "Identification of subjects",
+    #     "intervention under investigation",
+    #     "interventions added by the study",
+    #     "interventions added for the study",
+    #     "interventions added for the trial",
+    #     "interventions or product under investigation",
+    #     "other interventions added by the study",
+    # ],
+    # "EXPECTED BENEFITS": [
+    #     "Expected benefits",
+    #     "Expected benefits for the participants and for society",
+    # ],
 }
 
 def clean_study_name(name):
