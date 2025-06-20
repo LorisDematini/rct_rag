@@ -51,9 +51,12 @@ def display_sparse_results(results, query, top_terms_by_study=None):
     for result in results:
         study_id = result["study_id"]
         score = result["score"]
-        normalized_score = (score / top_score) * 100
+        normalized_score = score
+        # normalized_score = (score / top_score) * 100
 
-        st.markdown(f"### {study_id} — Score : `{normalized_score:.2f}%`")
+        color = "green" if normalized_score > 0.3 else "orange" if normalized_score > 0.1 else "red"
+        st.markdown(f"### {study_id} — Score : <span style='color:{color}; font-weight:bold'>{normalized_score:.2f}</span>", unsafe_allow_html=True)
+
 
         #Top mots-clés
         if top_terms_by_study and study_id in top_terms_by_study:

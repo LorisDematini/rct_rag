@@ -8,7 +8,7 @@ Il regroupe soit :
 et génère une matrice sparse utilisable pour la recherche textuelle.
 """
 
-from typing import List, Dict
+from typing import List
 from langchain.schema import Document
 from sklearn.feature_extraction.text import TfidfVectorizer
 
