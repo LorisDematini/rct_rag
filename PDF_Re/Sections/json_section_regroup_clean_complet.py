@@ -5,7 +5,7 @@ import os
 base_path = os.getcwd()
 
 input_json = os.path.join(base_path,"final_output.json")
-output_json = os.path.join(base_path, "Sections", "sections_sorted_clean.json")
+output_json = os.path.join(base_path, "Sections", "sections_sorted_clean_complet.json")
 
 categories = {
     "TITLE": [
@@ -115,7 +115,64 @@ categories = {
         "statistical power and sample size justification:",
         "first interim analysis",
         "sample size",
-    ]
+    ],
+    "DSMB" : [
+        "DSMB",
+        "DSMB (Data Safety Monitoring Board)",
+        "DSMB : Data safety monitoring board",
+        "Data Safety Monitoring Board",
+        "Data Safety Monitoring Board anticipated",
+        "Independent surveillance committee planned",
+        "Study will have a Data Safety Monitoring Board",
+        "Trial will have a Data Monitoring Committee",
+        "Trial will have a Data Safety Monitoring Board",
+    ],
+    "ACRONYM" : [
+        "Abbreviated title",
+        "Acronym",
+        "Acronym/reference",
+        "Short Title",
+        "Study Acronym",
+        "Clinical Trial Code",
+    ],
+    "INVESTIGATOR" : [
+        "Coordinating Investigator",
+        "Coordinating investigator",
+        "Coordinating investigator and Scientific Director",
+        "Coordinating investigator and Scientific director",
+        "Coordinating investigators",
+        "coordinating investigator",
+        "Coordinator",
+        "Scientific Director",
+        "Scientific Director (if applicable)"
+    ],
+    "NUMBER OF INCLUSIONS": [
+        "Number of participants included",
+        "Number of participants chosen",
+        "Number of selected subjects",
+        "Number of subjects chosen",
+        "Number of subjects included",
+        "Number of subjects required",
+    ],
+    "SITES" : [
+        "Number of valued sites",
+        "Clinical Sites",
+        "Centres: 28",
+        "Number of sites",
+        "Number of centers",
+        "Number of centres",
+    ],
+    "FUNDING": [
+        "Study Sponsor",
+        "Sources of funding for the trial",
+        "Sources of monetary support",
+        "Sponsor",
+        "Financing",
+        "Funding",
+        "Funding source",
+        "Funding sources",
+        "Budget",
+    ],
 }
 
 def clean_study_name(name):
@@ -147,8 +204,6 @@ for study_name, study_content in data.items():
                     break
             if found:   
                 break
-        # if not found:
-            # sorted_sections["OTHER"].append(entry_text)
 
     grouped_data[study_name] = sorted_sections
 

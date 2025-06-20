@@ -4,7 +4,7 @@ import unicodedata
 from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
 from nltk.stem import WordNetLemmatizer as wnl
-
+import os
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('wordnet')
@@ -12,8 +12,11 @@ from nltk.stem import WordNetLemmatizer as wnl
 
 stop_words = set(stopwords.words('english'))
 
-acronyms_file = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/final_acronyms_parenthese.json"
-acronyms_file_specific = "/home/loris/Stage/STAGE/Test/PDF_RE/Acronym/acronym_extracted.json"
+base_path = os.getcwd()
+
+sections_json = os.path.join(base_path, "Sections", "sections_sorted_clean.json")
+acronyms_json = os.path.join(base_path, "Acronym", "extracted_acronym_final.json")
+output_json = os.path.join(base_path, "Preprocess","sections_preprocessed_lemma.json")
 
 # Fonction de mapping POS
 def get_wordnet_pos(treebank_tag):
@@ -41,33 +44,31 @@ def lemmatize_text(tokens):
     return lemmatized_tokens
 
 #Fonction pour remplacer les acronymes en commençant par les spécifiques
-def replace_acronyms(acronyms_global, acronyms_specific_all, study_id, text):
+def replace_acronyms(acronyms_specific_all, study_id, text):
+    def replace_all_variants(text, acronym, definition):
+        variants = {acronym, acronym.upper(), acronym.lower()}
+        for variant in variants:
+            pattern_parentheses = r'\(' + re.escape(variant) + r'\)'
+            text = re.sub(pattern_parentheses, ' ', text)
+
+            pattern = r'(?<![\w])' + re.escape(variant) + r'(?![\w])'
+            text = re.sub(pattern, f" {definition.lower()} ", text)
+        return text
+
     acronyms_study_specific = acronyms_specific_all.get(study_id, {})
 
     for acronym, definition in acronyms_study_specific.items():
-        pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
-        text = re.sub(pattern_parentheses, '', text)
-        #, flags=re.IGNORECASE
-
-        pattern = r'(?<![\w])' + re.escape(acronym) + r'(?![\w])'
-        text = re.sub(pattern, definition.lower(), text)
-
-
-    for acronym, definition in acronyms_global.items():
-
-        pattern_parentheses = r'\(' + re.escape(acronym) + r'\)'
-        text = re.sub(pattern_parentheses, '', text)
-
-        pattern = r'(?<![\w])' + re.escape(acronym) + r'(?![\w])'
-        text = re.sub(pattern, definition.lower(), text)
+        text = replace_all_variants(text, acronym, definition)
 
     return text
 
 
+
 #Fonction de Preprocess
-def preprocess(text, study_id, acronyms_global, acronyms_specific_all):
+def preprocess(text, study_id, acronyms_specific_all):
+
     #1. Acronyme
-    text = replace_acronyms(acronyms_global, acronyms_specific_all, study_id, text)
+    text = replace_acronyms(acronyms_specific_all, study_id, text)
 
     #2. Lemmatisations
     words = word_tokenize(text)
@@ -84,7 +85,7 @@ def preprocess(text, study_id, acronyms_global, acronyms_specific_all):
     text = re.sub(r'\s+', ' ', text).strip()
 
     # 5. Minuscules
-    #text = text.lower()
+    text = text.lower()
 
     # 6. Normalisation d1, w2, m3 → day/week/month
     text = re.sub(r'\bd(\d+)\b', r'day \1', text)
@@ -98,27 +99,21 @@ def preprocess(text, study_id, acronyms_global, acronyms_specific_all):
 
     return ' '.join(words)
 
-# Chargement fichiers JSON
-with open(acronyms_file, 'r', encoding='utf-8') as f:
-    acronyms_global = json.load(f)
-
-with open(acronyms_file_specific, 'r', encoding='utf-8') as f1:
+with open(acronyms_json, 'r', encoding='utf-8') as f1:
     acronyms_specific_all = json.load(f1)
 
-with open("/home/loris/Stage/STAGE/Test/PDF_RE/Sections/sections_sorted.json", "r", encoding="utf-8") as f2:
+with open(sections_json, "r", encoding="utf-8") as f2:
     data = json.load(f2)
-
-    for study_id in list(data.keys()):
-        if "OTHER" in data[study_id]:
-            del data[study_id]["OTHER"]
 
 # Application de preprocess à chaque section en les fusionnant
 for study_id, sections in data.items():
     for section_title, entries in sections.items():
+        if section_title == "TITLE":
+            entries = [entry.lower() if isinstance(entry, str) else entry for entry in entries]
         cleaned_entries = [entry.split(':', 1)[1].strip() for entry in entries]
         full_text = ' '.join(cleaned_entries)
-        data[study_id][section_title] = preprocess(full_text, study_id, acronyms_global, acronyms_specific_all)
+        data[study_id][section_title] = preprocess(full_text, study_id, acronyms_specific_all)
 
 # Sauvegarde
-with open("/home/loris/Stage/STAGE/Test/PDF_RE/Preprocess/sections_preprocessed_lemma.json", "w", encoding="utf-8") as f3:
+with open(output_json, "w", encoding="utf-8") as f3:
     json.dump(data, f3, indent=2, ensure_ascii=False)

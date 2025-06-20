@@ -41,7 +41,6 @@ _build/
 *.ipynb
 
 # Data
-*.csv
 *.pickle
 # *.txt
 *.xls

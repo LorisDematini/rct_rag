@@ -1,14 +1,12 @@
 {
   "OPTISAGE": {
     "AML": "acute myeloid leukemia",
-    "MDS": "myelodysplastic",
     "RIC": "reduced intensity conditioning",
     "EFS": "event free survival",
     "GVL": "graft versus leukemia",
     "ATG": "Anti thymocyte globulins",
     "MUD": "matched unrelated donor",
-    "GRFS": "GVHD relapse free survival",
-    "MMF": "mycophenolate mofetil"
+    "GRFS": "GVHD relapse free survival"
   },
   "CAALLF01": {
     "ALL": "Acute Lymphoblastic Leukemia",
@@ -50,10 +48,8 @@
     "MUD": "matched unrelated donor",
     "ELT": "eltrombopag",
     "PNH": "paroxysmal nocturnal hemoglobinuria",
-    "MDS": "myelodysplastic",
     "AML": "acute myeloid leukemia",
     "HSCT": "Hematopoietic stem cell transplantation",
-    "PTCy": "post transplantation cyclophosphamide",
     "GvHD": "Graft versus Host Disease",
     "OS": "overall survival"
   },
@@ -123,7 +119,6 @@
   },
   "MARVEL": {
     "DME": "drug metabolizing enzymes",
-    "V": "venlafaxine",
     "ODV": "ODemethylV",
     "MAR": "missing at random"
   },
@@ -218,17 +213,14 @@
   },
   "METIMGAST": {
     "ORR": "overall response rate",
-    "mAbs": "monoclonal antibodies",
     "HIV": "Human Immunodeficiency Virus",
     "CNS": "central nervous system",
     "SBP": "Systolic Blood Pressure",
     "DBP": "Diastolic Blood Pressure",
     "ULN": "Upper Limit Normal",
-    "AST": "Aspartate",
     "PT": "Prothrombin Time",
     "INR": "International Normalized Ratio",
-    "ANC": "Absolute neutrophil count",
-    "cTnI": "Cardiac troponin"
+    "ANC": "Absolute neutrophil count"
   },
   "RUBI": {
     "ADA": "Anti-drug antibodies",
@@ -335,7 +327,7 @@
     "AC": "anterior chamber",
     "VH": "vitreous haze",
     "BDCA": "Behcet Disease Current Activity",
-    "BSAS": "BDCA s Activity Score",
+    "BSAS": "Behcet Syndrome Activity Score",
     "QOL": "quality of life",
     "OCT": "Optical Coherence Tomography",
     "ICBD": "International Criteria Behçet Disease",
@@ -350,17 +342,15 @@
     "NIH": "National Institute Health",
     "TST": "tuberculin skin test",
     "IGRA": "interferon gamma release assay",
-    "HIV": "human immunodeficiency virus",
-    "AST": "as shown transaminase"
+    "HIV": "human immunodeficiency virus"
   },
   "TRIBECA": {
-    "W": "week",
     "HB": "Hepatitis B",
     "WCBP": "Women Child Bearing Potential"
   },
   "MSC-SLE": {
     "SLE": "Systemic Lupus Erythematosus",
-    "AD": "and Disease",
+    "AD": "auto Disease",
     "MSC": "Mesenchymal Stem cells",
     "WHO": "World Health Organization",
     "MCR": "Major Clinical Response"
@@ -401,7 +391,7 @@
     "VGPR": "Very Good Partial Response"
   },
   "ITAC": {
-    "BD": "BD disease",
+    "BD": "Behçet disease",
     "QOL": "quality of life",
     "MRI": "magnetic resonance imaging",
     "IGRA": "interferon gamma release assay"
@@ -416,14 +406,12 @@
   },
   "ICE": {
     "MC": "mixed cryoglobulinaemia",
-    "MGUS": "myeloma gammapathy unknown significance",
-    "W": "week",
+    "MGUS": "monoclonal gammapathy unknown significance",
     "BVAS": "Birmingham Vasculitis Activity Score"
   },
   "MAC-HAPLO-MUD": {
     "SCT": "stem cell transplantation",
     "MUD": "matched unrelated donors",
-    "CNI": "calcineurin",
     "GvHD": "graft versus host disease",
     "PBSC": "Peripheral blood stem cell",
     "HR": "Hazard ratio"
@@ -431,8 +419,7 @@
   "SHORTCUT": {
     "KTR": "kidney transplant recipients",
     "UTI": "urinary tract infection",
-    "MDR": "Multidrug",
-    "APN": "acute pyelonephritis"
+    "MDR": "Multidrug"
   },
   "CAMOVID": {
     "ACE2": "Angiotensin Converting Enzyme 2",
@@ -506,8 +493,7 @@
   },
   "TEOREM": {
     "CD": "Crohn disease",
-    "AIEC": "adherent invasive E coli",
-    "SSR": "Sample size re"
+    "AIEC": "adherent invasive E coli"
   },
   "SALMA": {
     "AML": "Acute Myeloid Leukemias",
@@ -519,7 +505,6 @@
     "EFS": "event free survival",
     "MFC": "multiparameter flow cytometry",
     "MRD": "Measurable Residual Disease",
-    "EOI": "end of induction",
     "LSCs": "Leukemic Stem Cells",
     "ROS": "Reactive Oxygen Species",
     "CpG": "Carboxyphenylglycine",
@@ -531,10 +516,10 @@
     "DLT": "dose limiting toxicity",
     "PK": "pharmacokinetics",
     "PD": "pharmacodynamics",
+    "EOI": "end of induction",
     "AE": "Adverse events",
     "TEAE": "treatment emergent adverse events",
     "SAEs": "serious adverse events",
-    "Cmax": "Corporation maximum",
     "Cl": "clearance",
     "MRT": "mean residence time",
     "MDA": "malondialdehyde",
@@ -545,7 +530,6 @@
     "RFS": "Relapse free survival",
     "OS": "Overall survival",
     "DSMB": "data safety monitoring board",
-    "MDS": "Myelodysplastic",
     "ULN": "upper limit normal",
     "GFR": "glomerular filtration rate",
     "HIV": "human immunodeficiency virus",
@@ -593,11 +577,10 @@
     "WHO": "World Health Organization"
   },
   "KAPKEY": {
-    "KS": "Kaposi s",
+    "KS": "Kaposi sarcoma",
     "BORR": "Best Overall Response Rate",
     "CTCAE": "Common Terminology Criteria Adverse Events",
-    "ANC": "Absolute neutrophil count",
-    "mAb": "monoclonal antibody"
+    "ANC": "Absolute neutrophil count"
   },
   "UPFRONT-MUD": {
     "AA": "aplastic anemia",
@@ -608,28 +591,23 @@
     "MTX": "methotrexate"
   },
   "HAPLORESCUE": {
-    "CNI": "calcineurin",
     "DSA": "donor specific antibody"
   },
   "FIRST": {
-    "HMA": "hypomethylating",
     "OS": "Overall Survival",
     "DFS": "disease free survival",
     "NRM": "Non relapse mortality",
     "DSA": "donor specific antibody",
     "BMI": "Body Mass Index",
     "PBSC": "peripheral blood stem cell",
-    "MMF": "mycophenolate mofétil",
     "CR": "complete remission"
   },
   "APARR": {
     "HSCT": "Hematopoietic Stem Cell Transplantation",
-    "AA": "acquired aplastic",
+    "AA": "aplastic anemia",
     "EPAG": "eltrombopag",
     "PNH": "paroxysmal nocturnal hemoglobinuria",
-    "MDS": "myelodysplastic",
     "AML": "acute myeloid leukemia",
-    "PTCy": "post transplantation cyclophosphamide",
     "GvHD": "graft versus host disease"
   }
 }

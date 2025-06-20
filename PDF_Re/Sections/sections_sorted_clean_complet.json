@@ -27,6 +27,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Our hypotheses are based on a reduction on the\nincidence on day 100 post-HSCT of grade II-IV acute\nGVHD from 40% (ATG arm) to 23% (ATLG arm), and\nassuming a 10% risk of randomised patients who would\nnot reach transplant and an incidence of 5% for the\ncompeting risk (death without GvHD) in each arm.\nWhen accounting for competing risks, a two-sided\nlogrank test with an overall sample size of 324 subjects\n(162 in the control group and 162 in the treatment group)\nachieves 91% power at a 0,05 significance level to detect\na hazard ratio of 0,50 with a follow-up time of 100 days.\nIn total, 162+162=324 patients will be included.\nNo interim analysis is scheduled to be performed.."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: OPTISAGE / APHP230276 / EU CT n°2023-504555-27-\n00"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Pr Régis Peffault de Latour\nBMT department\nHôpital Saint Louis, avenue Vellefaux, 75010 Paris\nEmail : regis.peffaultdelatour@aphp.fr",
+      "Scientific Director: Pr Marie Thérèse RUBIO\nHematology department\nCHRU Nancy, Hôpital Brabois, Allée du Morvan\n54500 Vandoeuvre les Nancy, France\nEmail : m.rubio@chru-nancy.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 324"
+    ],
+    "SITES": [
+      "Number of centres: 26 in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: The study is funded by industrial support from NEOVII\nand MEDAC"
     ]
   },
   "CAALLF01": {
@@ -57,6 +77,18 @@
     ],
     "STATISTICS": [
       "First interim analysis: Will be performed based on all patients randomized before January, 1, 2018, as\nrequested by the DSMB of the study on November 2017"
+    ],
+    "DSMB": [],
+    "ACRONYM": [],
+    "INVESTIGATOR": [],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects\nchosen: 2000 patients could be enrolled to obtain:\nB-SR, B-MR, T-SR: 1578 evaluable patients\nB-HR, T-HR :250-300 evaluable patients"
+    ],
+    "SITES": [
+      "Centres: 28: Amiens Nantes\nAngers Nice\nBesançon Paris :\nBordeaux Armand Trousseau,\nBrest Robert Debré\nCaen Saint-Louis\nClermont-Ferrand Poitiers\nDijon Reims\nGrenoble Rennes\nLille Rouen\nLimoges Saint-Etienne\nLyon Strasbourg\nMarseille Toulouse\nMontpellier Tours\nNancy"
+    ],
+    "FUNDING": [
+      "Study Sponsor: Assistance Publique-Hôpitaux de Paris"
     ]
   },
   "HAPLO-EMPTY": {
@@ -85,6 +117,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Justification of sample size\nWe hypothesize the 2-year overall survival (OS) will be of 80%\n(versus 60% in historical controls). A two-sided, one-sample\nlogrank test calculated from a sample of 31 subjects achieves\n80.7% power at a 0.050 significance level to detect a proportion\nOS of 80% in the new group when the proportion OS in the\nhistoric control group is 60% at 2 years.\nTerminal analysis\nWill be realized after the observation of the required number of\nevents"
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: HAPLO-EMPTY"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Pr Régis Peffault de latour"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: For an objective of 31 patients to be allo-grafted, we anticipate 35\npatients to include."
+    ],
+    "SITES": [
+      "Number of centres: 36 centres in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Ministry of Health - PHRC-N 2019"
     ]
   },
   "KAPVEC": {
@@ -115,6 +166,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Simon’s 2 stage Optimal Design\nInterim analysis planned after 9 patients"
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: KAPVEC"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Céleste LEBBE\nOncodermatologie - Hopital Saint Louis"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 9 patients will be enrolled in the first part of the study with\nanother 11 patients in the second part (total 20 patients).\nIt implies to screen a maximum of 40 patients."
+    ],
+    "SITES": [
+      "Number of sites: National multicenter study: 2 sites"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: Amgen"
     ]
   },
   "FIBRAPLO": {
@@ -145,6 +215,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The analysis will be based on the intent-to-treat basis, that\nis, including all patients whatever they were administered\nthe treatment under study or not. A sensitivity analysis will\nbe performed in patients who will actually receive the\ngraft. Only patient consent withdrawals with positive\nreport of not using their data, if any, will be excluded.\nBaseline summary statistics, namely percentages or\nmedian [interquartile range, IQR], will be performed.\nThe right censored endpoint will be estimated using\nnonparametric methods. Kaplan Meier curves and\ncumulative incidence curves will be considered in case of\nnon-informative or informative censoring based on the\nlog-rank test or the Gray test, respectively. Adjustment on\npotential confounders will used the Cox proportional\nhazards models. Model assumptions will be checked\nusing a test for proportional hazards and spline smoothing\nof residuals for the log-linearity assumption.\nStatistical analyses will be performed on SAS (SAS Inc,\nCary, NC) and R (https://www.R-project.org/) software\npackages."
+    ],
+    "DSMB": [
+      "Trial will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: FIBRAPLO"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Dr Marie Robin\nHôpital Saint-Louis, APHP, Paris"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 28"
+    ],
+    "SITES": [
+      "Number of sites: 22"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: Industrial grant"
     ]
   },
   "SONIMEL": {
@@ -172,6 +261,21 @@
     "INTERVENTION": [],
     "STATISTICS": [
       "Statistical analysis: An adaptive Bayesian dose-escalation model (Continual\nReassessment Method, CRM) will be used. The selected\nversion of the CRM is a model-based design, where the dose–\nDLT relationship is modelled through a cumulative function\ncorresponding to a one-parameter power model, the parameter\nof which is sequentially estimated from the data via a bayesian\nestimation. In this setting, the MTD is a population-parameter,\nand refers to the π=10th percentile of the dose-toxicity\nrelationship.\nA total of 3 US dose levels will be evaluated (0.78, 0.9 and 1.03\nMPa). A minimum of three patients will be included at each\ndose level.\nAs of October 3, 2022, 3 patients were treated at level 1\n(0.78MPa) and 1 patient was at level 2 (0.9MPa). No side\neffects or toxicity were observed (very good tolerance).\nSince the CRM design recommends that a new patient could\nbe treated at the higher level (1.03MPa), the patient n°5 will\nreceive the 1.03MPa dose."
+    ],
+    "DSMB": [
+      "Trial will have a Data\nSafety Monitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: SONIMEL 01"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Céleste LEBBE\nService de Dermatologie 2\nHôpital Saint Louis\n1, avenue Claude Vellefaux, 75 010 Paris\nTel : 0142499590 / Fax :0142499078\nEmail : celeste.lebbe@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [],
+    "SITES": [],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of monetary\nsupport: PHRC 2016"
     ]
   },
   "DREPA-RIC": {
@@ -201,6 +305,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: A single efficacy analysis is planned: EFS will be compared\nbetween two groups using log-rank test, and the effect of HSCT\nassessed by Hazard Ratio using a Cox model. The primary\nendpoint is event free survival at 2 years calculated from\ninclusion. Event will be defined as followed:\na) death from any cause\nb) or an acute grade II-IV GVHD according to the Magic\nconsortium 2016 (Appendix 20.3) or a moderate or severe\nchronic GVHD according to the NIH classification,\nc) or 3 hospitalizations for VOC defined according to usual\ncriteria\nd) or one ACS defined by usual clinical criteria and a\npulmonary infiltrate on chest film and/or thoracic\ncomputed-tomography (CT) scan\ne) or a stroke defined as a clinical event confirmed by an MRI\nf) or a cerebral or cervical stenosis > 25% in a new territory,\nevaluated by MRI and MRA\ng) or increased of at least +10% of tricuspid regurgitation\nvelocity, (confirmed by 2 echocardiographies performed\nwith a delay of at least 3 months) compared with pre-\ninclusion value for patients with TRV ≥ 2.7 at inclusion\nh) or apparition of a silent infarct or a cerebral/cervical\nstenosis >25% in a new territory, or increase >25% of\nprevious stenosis evaluated MRI and MRA\nEvent free survival at 2 years calculated from inclusion will\nalso be described in the HSCT group. Overall survival will be\ndefined as the time between date of inclusion and death due to\nany cause or to date of last follow-up. A propensity score\nmatching analysis will be also performed as a sensitivity\nanalysis to handle potential residual imbalances between arms\nin confounders.\nA sequential analysis of tolerance data will be performed, using\nBayesian methods.\nWe hypothesize that the 2-year event free survival will be of\n80% after HSCT versus 40% in the no-transplant group."
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: DREPA-RIC"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Dr Nathalie DHEDIN\nHematology. Saint Louis Hospital, AP-HP, Paris.",
+      "Scientific Director: Adult scientific Director:\nDr Jean Benoit ARLET\nInternal Medicine\nGeorges Pompidou Hospital, AP-HP, Paris\nPediatric scientific Director:\nDr Corinne PONDARRE\nPediatric hematology\nCHI Créteil"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 78 patients"
+    ],
+    "SITES": [
+      "Number of valued sites: 37 centres: 22 recruiting centres and 15 transplant centres\n(some recruiting site, also transplant patients)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of monetary support: French Ministry of Health, PHRC N-2017"
     ]
   },
   "PARADISE": {
@@ -227,6 +351,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: It will be based on the intent-to-treat principle (ITT).\nBased on the available literature, we hypothesize that 50 % of patients will reach\nthe primary endpoint in the CDED arm versus 20% in the corticosteroid arm. We\nplan to screen 140 patients to include 80 patients. 54 will be randomized to CDED\nand 26 to corticosteroids."
+    ],
+    "DSMB": [
+      "Data Safety\nMonitoring Board: No, because there is no expected safety issue raised by CDED. However, long-term compliance of EEN is poor. . It is aimed to restore intestinal barrier and improve microbiota composition . It is aimed to restore intestinal barrier and improve microbiota composition"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: PARADISE"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\ninvestigator: Prof Franck Carbonnel\nAPHP, CHU Kremlin-Bicêtre\nService de gastro-entérologie\nUniversité Paris Saclay\n78, rue du général Leclerc, 94275, Le Kremlin-Bicêtre Cedex France\nfranck.carbonnel@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of\nparticipants\nincluded: 80 randomized\nAbout 140 screened"
+    ],
+    "SITES": [
+      "Number of centres: 17 in France, Israel and the Netherlands"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: PHRC, Nestlé, gift of a patient"
     ]
   },
   "MARVEL": {
@@ -256,6 +399,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The statistical analysis will be performed once the sample size has\nbeen reached, and all the end point measures available.\nOur hypothesis is that the prevalence of patients with a CYP2C19 UM\nprofile is twice as high in non-responders in comparison with\nresponders, who have a CYP2C19 metabolic profile comparable to\nthat of Caucasians (20%). To demonstrate that the prevalence is two-\nfold that observed in non-responders, with a type I error at 0.05 and a\nstatistical power of 80%, the sample size is tabulated below according to the prevalence of response.\nThus, to anticipate for potential large disproportion in responders/non\nresponders (that will be only defined after study inclusion) we decided\nto include 205 patients. This will allow to control for type I and type II\nerror rates in the comparison of the prevalence of CYP2C19 UM\nprofile among these groups. In addition the sample size will allow to\nstudy sufficient numbers of CYP2D6 PM, IM, and UM to determine\nthe effects of CYP2D6 variations on V and ODV plasma levels and\ntheir efficacy or risk of adverse events.\nThe type I error rate will be fixed at 0.05. All tests will be two-sided\nand compared thus to 0.05.\nMultiple imputations, which are a popular approach for handling the\npervasive problem of missing data in biostatistics, will be used. It is\nusually performed under a missing at random (MAR) assumption.\nMultiple imputations by chained equation are to our knowledge the\nmost flexible approach to handle complex patterns of missing data\n(including categorical data, quantitative data, and survival data).\nPrimary analyses will be performed on an intent-to-treat basis.\nSecondary exploratory analyses will consider the population of\ncompliers, that is, those who completed the treatment according to\nthe scheduled protocol."
+    ],
+    "DSMB": [
+      "Data Safety\nMonitoring Board\nanticipated: Non"
+    ],
+    "ACRONYM": [
+      "Acronym: MARVEL"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\nInvestigator: Frank Bellivier\nDepartment of Psychiatry\nFernand Widal Hospital\n200 rue du Faubourg Saint Denis\n75475 Paris Cedex 10\nInserm UMR-S 1144 Variabilité de Réponse aux Psychotropes\nUniversités Paris Descartes – Paris Diderot\nTel. 01 40 05 42 01"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects\nchosen: 205"
+    ],
+    "SITES": [
+      "Number of centers: 12 clinical centers in France\n7 centers of clinical investigations in France\n4 centers involved in biological analysis (3 in France and 1 in\nSwitzerland)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding source: PHRC AOM 14562\nand for dosages for the determination of phenotypes: Department of\npharmacology-toxicology, Geneva"
     ]
   },
   "PIPAC": {
@@ -286,6 +448,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The 24-month progression free-survival will be estimated\nusing Kaplan Meier estimator on the total sample and per\narm. Estimation with 95% Confidence Intervals (CI) will\nbe given. Test between survival curves will be performed\nusing Logrank test. Hazard Ratio will be estimated using\nCox model.\nSensitivity analyses will be performed considering per\nprotocol population."
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: PIPAC EstoK 01"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Clarisse EVENO, PU-PH, Digestive Surgery Department,\nClaude Huriez hospital, CHU of Lille"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 94 patients (47 in each arm)"
+    ],
+    "SITES": [
+      "Number of sites: 20 Participating national centres"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: INCa PHRC K 2016"
     ]
   },
   "JAKAHDI": {
@@ -315,6 +496,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Based on the 2-stage Fleming design, an interim analysis will\nbe performed once Day 7 status of the 21th consecutively\nenrolled patient has been observed.\nTerminal analysis, based on the intention-to-treat population,\nwill be performed once all patients have been recruited unless\nearly stopping."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: JAKAHDI"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Dr Sandrine VALADE",
+      "Scientific Director: Dr Eric MARIOTTE"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 42 (maximal sample size)"
+    ],
+    "SITES": [
+      "Number of centres: 9"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Ministry of Health"
     ]
   },
   "GRAALL-2014/B": {
@@ -344,6 +545,25 @@
     ],
     "STATISTICS": [
       "Statistical\njustification of\nsample size: Each year, approximately 100 patients with Ph-negative BCP-ALL may be recruited\nfront-line in the GRAALL-2014/B trial. After HCR achievement, one may anticipate\napproximately 40 SR patients/year and 50 HR patients/year (including 30-35 VHR-MRD\npatients).\nAfter consolidation 1 :\n All SR patients will be treated by the standard GRAALL protocol, without new\nagent nor HSCT in first CHR. The objective is here to demonstrate in an\nuncontrolled study, the non-inferiority in terms of 4-year DFS which must be at\nleast of 60% in the control group (historical reference), with a margin of inferiority\nof 15%, justifying the absence of allo-SCT in first CR. With a 0.05 unilateral alpha\nrisk and a 0.90 power the calculated sample size is 110 patients.\n About 50 HR patients/year will be eligible for GRAALL-QUEST study, with DFS as\nprimary endpoint. DFS will be compared to historical GRAALL-2005 results (50% at\n3 years). The objective is here to demonstrate a 50% to 65% DFS improvement.\nWith a 0.05 alpha risk and a 0.90 power in the two-sided setting, the calculated\nsample size is 91 patients. Considering a drop-out rate of about 5%, 95 patients\nshould be included in the present study (Ref: Sample size tables for clinical\nstudies. Machin D, Campbell M et al. Wiley, 2009)."
+    ],
+    "DSMB": [
+      "Independent\nsurveillance\ncommittee planned: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: GRAALL-2014/B and GRAALL-QUEST"
+    ],
+    "INVESTIGATOR": [
+      "Coordinator: Pr. Hervé DOMBRET\nHématologie, Hôpital Saint Louis, Paris\nTél: +33 (0)1 57 27 68 47 /(0)1 42 49 96 48\nEmail: herve.dombret@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of selected\nsubjects: 500 patients front-line\n95 patients for the GRAALL-QUEST study"
+    ],
+    "SITES": [
+      "Number of centers: About 80 centers expected (Belgium, France, Switzerland)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Financing: PHRC"
     ]
   },
   "METIMGAST": {
@@ -373,6 +593,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Two cohorts will be constituted:\n- Cohort 1 to enrol patients with no MET amplification (<6\ncopies). Specifically, a total of 81 patients will ensure 90%\npower with a 5% type I error rate to detect a 30%\nresponse rate compared to reference 15%, including an\ninterim analysis after 30 patients have been included with\na futility stopping rule, using a Bayesian optimal time-to-\nevent Phase II design [Lin R et al, JNCI, 2020]. In case\nthe trial is terminated early for futility, inclusions will\ncontinue but spartalizumab monotherapy, for 51\nadditional patients in cohort 1 (total 81). In that case, this\nsample of 50 patients with spartalizumab monotherapy\nwill allow to detect 20% response rate in patients under\nmonotherapy (against 8% as unacceptable) with >80%\npower and a 5% type I error rate, using a binomial exact\ncomparison.\n- Cohort 2 to enrol patient with MET amplification (≥6\ncopie) for exploratory purpose only. The enrolment in\ncohort 2 will be ongoing until cohort 1 is completed and\nfor a maximum of 9 patients.\nA sequential continuous toxicity montoring will be\nconducted across both cohorts [Ivanova et al.-Clin Invest-\n2015].\nEndpoints will be described with count and percentage for\ncategorical endpoints (toxicity, AEs), and with mean,\nmedian, 95% confidence interval (or 95% credibility interval if appropriate), interquartile range for continuous\nendpoints. Time-to event endpoints (PFS and OS) will be\nestimated using the non-parametric Kaplan Meier\nestimator, to obtain the survival estimates up to 24\nmonths after inclusion.\nAnalyses will be performed using R statistical platform.\nAlong with data-management, analyses will be conducted\nin the Department of Biostatistics and Medical Information\nof Hôpital Saint Louis, Paris (Pr Sylvie Chevret), which is\na labelled Centre de Traitement des Données INCa."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: A data safety monitoring board will meet every 6 months\nfor the duration of the study and may be consulted at any\ntime by the vigilance sector or the scientific committee\nthrough DRCI's promotion sector."
+    ],
+    "ACRONYM": [
+      "Acronym/reference: METIMGAST"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Pr Thomas APARICIO, Hôpital Saint Louis, Paris",
+      "Scientific Director (if applicable): NA"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 90"
+    ],
+    "SITES": [
+      "Number of centres: 10 clinical centers of 7 public hospitals or institute located\nin France\n- Hôpital Saint Louis, Paris : Gastroenterology and\nDigestive Oncology department, CLIPP and CIC\n- Centre Léon Bérard, Lyon : Medical Oncology, CLIPP\n- Centre Georges François Leclerc, Dijon : Medical\nOncology, CLIPP and Unité de phase précoce\n- Institut Gustave Roussy, Villejuif : Digestive Oncology,\nCLIPP\n- Institut Universitaire du Cancer, Toulouse : Medical\nOncology, CLIPP\n- Hôpital Haut Levêque , Bordeaux : Hepato-\nGastroenterology and Unité de recherche clinique\n- Centre Hospitalier Régional Universitaire Jean Minjoz\nde Besançon: Medical Oncology"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: INCa and NOVARTIS"
     ]
   },
   "RUBI": {
@@ -401,6 +641,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: We will use a Bayesian Multi-Arm Multi-Stage (MAMS) design that aim\nat comparing several new treatments (multi-arm), in order to select or\ndrop any treatment arm to move forward when such evidence already\nexists based on interim analyses\nThe randomization will be stratified by retinal vasculitis, macular\noedema and underlying disease. At randomization, the patient will be\nunder treatment with prednisone as single therapy."
+    ],
+    "DSMB": [
+      "Data Safety\nMonitoring Board\nanticipated: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: RUBI : Refractory Uveitis BIotherapies"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\nInvestigator: Pr David SAADOUN\nCentre national de référence des maladies autoimmunes et\nsystémiques rares\nDepartment of Internal Medicine and Clinical Immunology, Hospital\nPitie Salpetriere\nTel.0142178088 / Email david.saadoun@psl.aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects\nchosen: 120"
+    ],
+    "SITES": [
+      "Number of centres: 37 departments of 17 French public hospitals"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding source: PHRC 2015"
     ]
   },
   "MSC-AT-SSC": {
@@ -430,6 +689,24 @@
     ],
     "STATISTICS": [
       "Statistical analysis: We propose to conduct a multi-center, three-arm,\nrandomized, double-blind, placebo-controlled trial. We\nwill enroll a total of 18 SSc patients. Each patient will be\n1:1:1 randomized to one of two treatment arms (1 infusion\nof MSC (M0) or 2 infusions of MSC (M0, M3))or a placebo\narm (total of 6 patients per arm, using randomization\nblock of size 6).\nInclusions will be staggered, to allow the detection of SAE\nprior to inclusion of subsequent patients, according to the\nfollowing waiting rules:\n- at least one week between two consecutive\nrandomizations\n- interval of at least one month every three\nrandomizations\nContinuous monitoring of the primary endpoint by the\nsponsor will be implemented to allow continuous\nBayesian toxicity monitoring with a stopping rule\nimplemented on the primary endpoint on cell infusions\n(see section 13 for details): - first analysis on the first 3 patients with completed M1\nvisits,\n- then analysis at any TRSAE at M1 or M4 visits\n- final analysis.\nThe stopping rule will be defined based on the estimated\nprobability that the risk of treatment-related Severe\nAdverse Events (TRSAE) is >15%. “criterion 1” = the\nprobability that the a posteriori probability of SAE is >\n15%. The posterior probability of TRSAE (π ) will be\ntrsae\nestimated using a Bayesian approach with a beta density.\nThe stopping rule will be fulfilled if criterion 1 > 0.70\n(meaning that we have a high probability that there is a\ngreater than 15% risk of TRSAE). Interim analyses results\nwill be presented to the DSMB for their recommendation.\nIn the case of early stopping, subsequent patients will not\nbe randomized and all patients treated thus far will be\nfollowed up and results analyzed as described below.\nThere is no formal statistical test for sample size in a\nBayesian framework. Nevertheless, one can invoke the\nfrequentist framework to anticipate the expected\nprecision in terms of safety. Indeed, after 18 infusions (6\npatients with 1 infusion, 6 patients with 2 infusions), we\nwill be able to estimate a risk of Severe Adverse Events\n(SAE) of 10% with a width of the exact 95% confidence\ninterval equal to 32% considering independence between\ninfusions."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: YesThe Data and Safety Monitoring Board (DSMB) will be\ncomposed of 3 external reviewers with expertise in SSc,\nMSC and early phase trials. In case of any safety data\nreported to the Safety department, the DSMB will be\ninformed, hold meeting and determine whether the trial\nshould be held or proceed."
+    ],
+    "ACRONYM": [
+      "Acronym/reference: MSC-AT-SSc"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator and\nScientific director: Prof. Dominique FARGE\nMATHEC, Centre de Référence des Maladies auto-\nimmunes systémiques Rares d’Ile-de-France, Filière\nFAI2R, IRSL, EA-3518, Université de Paris,\nHôpital Saint Louis\n1 avenue Claude Vellefaux\n75010 PARIS"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 18 patients"
+    ],
+    "SITES": [
+      "Number of centres: 1 centre for patients treatment :\n- Unité de Médecine Interne: (UF 04),\nMATHEC, Centre de Référence des Maladies auto-immunes systémiques Rares d’Ile-de-\nFrance, Filière FAI2R, IRSL, URP\n3518, Université de Paris, Hôpital St-Louis, AP-\nHP, 1 avenue Claude Vellefaux, 75010\nParis, France. Dominique Farge, MD, PhD\n2 centres for patients recruitment and follow-up :\n- Unité de Médecine Interne: (UF 04),\nMATHEC, Centre de Référence des Maladies\nauto-immunes systémiques Rares d’Ile-de-\nFrance, Filière FAI2R, IRSL, URP\n3518, Université de Paris, Hôpital St-Louis, AP-\nHP, 1 avenue Claude Vellefaux, 75010\nParis, France. Dominique Farge, MD, PhD\n- Service de Médecine Interne et Immunologie\nClinique Pôle Hospitalo-Universitaire des\nMaladies Digestives CHU Rangueil, bât. H2,\n3ème étage 1 avenue du Pr Jean Poulhès TSA\n50032, 31059 Toulouse Cedex 9. Grégory\nPugnet, MD, PhD.\n-"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris"
     ]
   },
   "UVB": {
@@ -459,6 +736,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The experimental design is an open multicenter randomized clinical trial\nstratified on the characteristics of the initial uveitis in Behçet’s disease :\nretinal inflammation (retinal vascularitis and/or macular edema) and\naccording to the diagnosis (newly diagnosed or relapsing disease), with\nevaluation of the primary assessment criteria at 16 weeks.\nThe primary assessment criteria will be reviewed by a scientific\ncommittee blinded of the randomization.\nThe RCT will use a Bayesian design for phase II randomized national\nmulticenter clinical trial that aims at comparing a new treatment to a\nreference based on a binary endpoint (i.e. complete remission at week\n16), which offers greater flexibility and simplicity of inference to the\nmonitoring for patient safety and evidence of efficacy of small\nrandomized trials.\nIt will use a Beta-Binomial model with a non-informative prior (Berry\n2006). The posterior probability that the remission rate is at least 0.65\nwill be estimated in both arms, and the probability that the rate of\nremission in Arm B is above that in Arm A will be computed, with B\nindicating the tocilizumab group and A the adalimumab group.\nWe will use a Bayesian inference framework, where 𝜋 =𝑃(𝑌 =1|𝐴)\n𝐴\ndenotes the probability of remission in the arm A. After inclusion of n\nA\npatient in Arm A and y complete remission observed. Using a beta\nA\nBe(𝑎 , 𝑏 ) prior for 𝜋 , the posterior probability of 𝜋 is still a beta\n𝐴 𝐴 𝐴 𝐴\ndistribution given by Be(𝑎 +𝑦 , 𝑏 +𝑛 −𝑦 ) due to the natural conjugate\n𝐴 𝐴 𝐴 𝐴 𝐴\nproperty of the beta family for binomial sampling.\nIn our setting, the efficacy of the drug in arm A will be first assessed by\ncomparison to some historical minimal value of interest, sometimes\ncalled the “minimum required treatment remission rate”. It has been set\nat 0.65 in this trial. Thus, we will compute\n𝑃(𝜋 >0.65|𝑦 ,𝑛 )\n𝐴 𝐴 𝐴\nSimilar analyses will be performed in arm B. However, in randomized phase II settings, the selection of a new drug\nis mostly based on evaluating the potential benefits of experimental\ntreatments. Thus, one may consider dropping a new drug from further\nstudies only if there is a rather low posterior probability that this drug is\nbeneficial over the other by some targeted minimal level. This will be\ndone by computing the posterior probability of the difference in\nremission rates between the two experimental arms (Kawasaki in 2012)\nbeing greater than zero, with B being the tocilizumab group and A the\nadalimumab group:\n𝑃(𝜋 −𝜋 >0|𝑦 ,𝑦 ,𝑛 ,𝑛 )\n𝐵 𝐴 𝐴 𝐵 𝐴 𝐵\nAs we consider a Bayesian design an interim analysis will be performed\nwithout any “alpha spending“ after inclusion of 30 patients. If\n𝑃(𝜋 >0.65|𝑦 ,𝑛 ) >0.80, 𝑃(𝜋 >0.65|𝑦 ,𝑛 ) >0.80 and if\n𝐴 𝐴 𝐴 𝐵 𝐵 𝐵\n𝑃(𝜋 −𝜋 >0|𝑦 ,𝑦 ,𝑛 ,𝑛 ) >0.80. The trial will be stopped.\n𝐵 𝐴 𝐴 𝐵 𝐴 𝐵\nIf 𝑃(𝜋 >0.65|𝑦 ,𝑛 ) <0.10 or 𝑃(𝜋 >0.65|𝑦 ,𝑛 ) <0.10 the\n𝐴 𝐴 𝐴 𝐵 𝐵 𝐵\ncorresponding arm will be stopped and the following patients will be\nincluded in the other arm.\nIf 𝑃(𝜋 >0.65|𝑦 ,𝑛 ) <0.10 and 𝑃(𝜋 >0.65|𝑦 ,𝑛 ) <0.10, the trial will\n𝐴 𝐴 𝐴 𝐵 𝐵 𝐵\nbe stopped."
+    ],
+    "DSMB": [
+      "Trial will have a Data\nMonitoring Committee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: UVB: treatment of UVeitis in Behçet’s diseases with biologics"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Bahram BODAGHI\nDepartment of Ophthalmology\nCentre national de référence des uvéites\nCentre national de référence des maladies autoinflammatoires et de\nl’amylose inflammatoire\nHospital Pitie Salpetriere\nTel. 01 42 16 37 28\nEmail bahram.bodaghi@aphp.fr",
+      "Scientific director: Pr. David SAADOUN\nDepartment of Internal Medicine and Clinical Immunology\nCentre national de référence des maladies autoimmunes systémiques\nrares\nCentre national de référence des maladies autoinflammatoires et de\nl’amylose inflammatoire\nPitie Salpetrière Hospital, 43 boulevard de l’Hôpital, 75013 PARIS\nTel.01 42 17 80 88\nEmail david.saadoun@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nincluded: 60 patients (30 patients in each arm)"
+    ],
+    "SITES": [
+      "Number of sites: Multicenter national study including 26 centers"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the\ntrial: PHRC National 2019 - Ministère des solidarités et de la Santé"
     ]
   },
   "COMBINATION-LOCK01": {
@@ -489,6 +786,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: According to previous studies by our study group, day-90\nmortality in the studied population is expected to be of 60%.\nAssuming a 15% target effect for each of the interventions\ncompared with their respective control, a type I error rate\nof 0.05 and a power of 80%, each group should include 170\npatients on the basis of a two-sided log-rank test. No\ncorrelation is expected between interventions. Only main\neffects will be estimated, and interaction between\ninterventions tested.\nAucune analyse intermédiaire n’est prévue"
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: Combination-Lock01"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Michael Darmon\nService de Médecine Intensive et Réanimation\nCHU Saint-Louis, APHP\nTel : 01 42 49 94 22\nmichael.darmon@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 340"
+    ],
+    "SITES": [
+      "Number of sites: 14 ICUs in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Sources of funding for the trial: PHRC-K18-102"
     ]
   },
   "INTORETAK": {
@@ -517,6 +833,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: We will randomize 25 patients in each arm.\nFor each arm, the null hypothesis (response rate 0.40) will be tested\nagainst a one-sided alternative (response rate 0.70) with 0.0248 type\nI error rate and power 0.8061. The first stage includes 10 patients in\neach arm. If 5 or fewer responses are observed in these patients, the\narm is stopped. Otherwise, 15 additional patients are accrued. The\nnull hypothesis will be rejected if 14 or more responses are observed\nin the 25 patients."
+    ],
+    "DSMB": [
+      "Data Safety Monitoring Board\nanticipated: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: INTOReTAK (INfliximab and TOcilizumab in Refractory/relapsing\nTAKayasu arteritis)"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Dr Tristan MIRAULT\nNational Reference Centre for Rare Vascular Diseases\nGeorges-Pompidou european hospital\nUniversity Hospital Paris Ouest\nParis Descartes university, Sorbone Paris Cite\nAPHP, Paris, France\ntristan.mirault@aphp.fr\n+33.1.56.09.30.51"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects chosen: 50 patients"
+    ],
+    "SITES": [
+      "Number of centres: Multicentre national study including 18 centres"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding source: PHRC-N 2016 – French Ministry of Health"
     ]
   },
   "TRIBECA": {
@@ -547,6 +882,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: This is a Bayesian Phase II randomized clinical trial that\naims at evaluating the treatment strategy of\ncryoglobulinemia vasculitis, based on difference in the\nresponse rate as measured at week 25 after\nrandomization. Randomized phase II trials are still poorly\nused, with still large use of single-arm phase II trial\nresults that are interpreted relative to historical control\nsubjects, introducing selection bias and confounding that\nmay limit the validity of the conclusions. Thus, planning a\nphase II randomized trial appears a worthy investment\nconsidering finite patient and financial resources. This\ndesign is adapted to binary outcomes observed at the\nend of a fixed follow-up period and analyzed using an\nabsolute difference in proportions that has been shown\nto greatly reduce sample size requirements. We thus\nused the approach for phase II randomized trials\nproposed by Simon R, Wittes RE, and Ellenberg SS that\naims at controlling the probability of detecting a given\ndifference in response rates. We hypothesize that up to\n70% of the patients receiving placebo of belimumab and\n85% of those treated by belimumab will achieve a\ncomplete remission of cryoglobulinemia vasculitis at\nweek 25 (W25) and with steroid therapy stopped (0\nmg/day) at W12."
+    ],
+    "DSMB": [
+      "Trial will have a Data\nMonitoring Committee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: TRIBECA: Treatment after RItuximab with BElimumab in\nCryoglobulinemia Associated vasculitis"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr David SAADOUN\nDepartment of Internal medicine and clinical Immunology\nCentre national de référence des Maladies Autoimmunes\net Systémiques rares\nHospital Pitié Salpétrière\nTel.0142178009\nEmail : david.saadoun@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 48 patients, 24 patients in each arm"
+    ],
+    "SITES": [
+      "Number of sites: Multicentre national study including 20 centres"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: GSK who will also provide belimumab Benlysta® and\nplacebo of belimumab."
     ]
   },
   "MSC-SLE": {
@@ -577,6 +931,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Initially 5 subjects at the initial dose of 2.106 CSM/kg recipient weight will\nbe included.\nThe following 5 subjects will be enrolled in a dose:\n- 1.106 MS /kg there is a high probability of excessive toxicity* at 2.106\nMSC / kg;\n- 4.106 CSM/kg if there is a low probability of excessive toxicity* 2.106\nCSM / kg\n*The toxicity criteria are described in CTCAE classification\nEach patient cohort will be scanned in a sequential Bayesian approach\nto estimate the probability of toxicity to the administered dose allowing\nan adaptation of the function of the toxicity observed in the dose previous\nsubjects."
+    ],
+    "DSMB": [
+      "Trial will have a Data\nMonitoring Committee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: MSC-SLE"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Professor Dominique FARGE-BANCEL\nInternal Medicine : Auto-Immune Diseases and Vascular Pathology, UF\n04 Hôpital St-Louis\n1, avenue Claude Vellefaux, Paris 75010 Paris"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 10 patients"
+    ],
+    "SITES": [
+      "Number of sites: Monocentric (St Louis Hospital)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: “Subvention de recherche Thérapie génique et cellulaire en\nnéphrologie”(Subv.Thérapie génique FdR-AFM_AIRG 2014) funding by\n« Fondation du Rein and l’Association Française contre les Myopathies\n(AFM Téléthon) », in collaboration with « l’AIRG France\" and DRCI\n(sponsor AP-HP)"
     ]
   },
   "PCL-2": {
@@ -605,6 +978,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The primary endpoint of the trial is the VGPR or better rate at\ncompletion of induction phase (according to the IMWG response\ncriteria). In our previous published phase II trial 36% of patients\nachieved VGPR or better after induction. Using a phase 2 one\nstage A’Hern design, with a lowest acceptable response rate of\n35% (p0) and an expected response rate of 60% (p1), with type 1\nand type 2 error levels of 5% and 20%, 26 patients are needed. To\naccount for 10% of non-evaluable patients, 29 patients will be\nrecruited."
+    ],
+    "DSMB": [
+      "Study will have a Data\nSafety Monitoring\nBoard: Yes Cycle 3"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: PCL-2"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\ninvestigator: Bruno Royer\nImmuno-Hematology Unit, St Louis Hospital, Paris"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nincluded: 29"
+    ],
+    "SITES": [
+      "Number of centres: 16 French sites (IFM sites) are planned"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: - PHRC-K 2018\n- Pharmaceutical companies will provide the study drugs:\nSubcutaneous Daratumumab and Lenalidomide"
     ]
   },
   "ITAC": {
@@ -635,6 +1027,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: The experimental design is a multicentric open\nmulticenter randomized clinical trial stratified on the\ncharacteristics of the initial Behçet’s disease with\nevaluation of the primary assessment criteria at 22 weeks.\nThe primary assessment criteria and the final measures\nof corticosteroid sparing will be reviewed by a scientific\ncommittee blinded of the randomization.\nThe RCT will use a Bayesian design for phase II\nrandomized national multicentre clinical trial that aims at\ncomparing a new treatment to a reference based on a\nbinary endpoint (i.e. complete clinical response at week\n22), which offers greater flexibility and simplicity of\ninference to the monitoring for patient safety and evidence\nof efficacy of small randomized trials."
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: ITAC : Induction Therapy with Anti-TNFα vs\nCyclophosphamide in severe Behçet disease"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr David SAADOUN\nCentre de reference des maladies autoimmunes et\nsystémiques rares\nDepartment of Internal Medicine and Clinical Immunology\n83 bd de l’hôpital\n75013 Paris\nHospital Pitie Salpetriere\nTel.0142178088\nEmail david.saadoun@psl.aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 52 patients, 26 patients in each arm"
+    ],
+    "SITES": [
+      "Number of sites: Multicentre national study including 28 centres"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Sources of funding for the trial: PHRC"
     ]
   },
   "FOCUS": {
@@ -665,6 +1076,22 @@
     ],
     "STATISTICS": [
       "Statistical analysis: This is a prospective, two-arm randomized, open-label, phase III trial\ncomparing Adalimumab to Standard of care (mycophenolate mofetil)\nbased on a binary primary endpoint (treatment failure at week 36 of\ntreatment). Randomization will be stratified on retinal vasculitis, presence\nor not of macular oedema, underlying disease (idiopathic uveitis or\nunderlying disease associated) and steroid dose at inclusion (<20mg/d vs.\n≥ 20mg/d). This trial will be conducted using a group sequential design\nwith one interim analysis after 50% of primary observations have been\ncompleted, with efficacy and futility early stopping rules.\nSpecifically, assuming a probability of treatment failure (primary endpoint)\nof 50% in the SoC control population versus 20% under the alternative\nhypothesis with adalimumab, a total number of 106 patients (53 per\nrandomization arm) is required to ensure 90% power with a 2.5% one-\nsided type I error risk, accounting for one interim analysis after 50% of\nprimary observations have been completed and using Lan & DeMets\nO’Brien & Fleming-type risk-spending functions to define efficacy and\nfutility (non-binding) early stopping rules. Moreover, we plan to include a\ntotal of 120 patients (60 per randomization arm) to account for potential\n10% of lost-to-follow-up."
+    ],
+    "DSMB": [
+      "Study will have a\nData Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: FOCUS / APHP211032 / EU no: 2023-505112-38-00"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\ninvestigator: Pr Bahram BODAGHI\nCentre national de référence des uvéites\nDepartment of Ophtalmology\nHospital Pitie Salpetriere\nTel.: 01 42 16 37 28\nEmail: bahram.bodaghi@aphp.fr",
+      "Scientific Director (if\napplicable): Pr David SAADOUN ;\nCentre national de reference maladies autoinflammatoires et amylose\nDépartement de médecine interne et immunologie clinique\nPitié Salpétrière Hospital\nTel: 0142178042\nEmail :david.saadoun@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [],
+    "SITES": [],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: PHRC 2020"
     ]
   },
   "ICE": {
@@ -696,6 +1123,27 @@
     "STATISTICS": [
       "Statistical power and sample\nsize justification:: We used the one-sample multiple testing procedure for\nPhase II clinical trials (Report Definitions, Fleming, T. R.\n1982; Biometrics, Volume 38, pages 143-151) to calculate\nthe sample size.\nReport Definitions\nP0 is the maximum response proportion of a poor drug.\nP1 is the minimum response proportion of a good drug.\nN is the sample size.\nIf the number of responses ≥ R+1, P0 is rejected.\nIf the number of responses ≤ R, P1 is rejected.\nAlpha is the probability of rejecting that P ≤ P0 when this\nis true.\nBeta is the probability of rejecting that P ≥ P1 when this is\ntrue.\nSummary Statements The ICE study requires 21 subjects to decide whether the\nproportion responding, P, is less than or equal to 0,400 or\ngreater than or equal to 0,700. If the number of responses\nis 13 or more, the hypothesis that P ≤ 0,400 is rejected with\na target error rate of 0,050 and an actual error rate of\n0,035. If the number of responses is 12 or less, the\nhypothesis that P ≥ 0,700 is rejected with a target error rate\nof 0,150 and an actual error rate of 0,148.",
       "Statistical analysis: This is a pilot prospective Phase II clinical trial that aims at\nevaluating safety and efficacy of Isatuximab in type 1\ncryoglobulinemia vasculitis. We hypothesize that up to\n70% of the patients receiving Isatuximab will achieve a\ncomplete remission of cryoglobulinemia vasculitis at week\n20 (W20).\nContinuous variables (cf variables described in primary\nand secondary objectives) will be presented with the\nmedian and IQR or with the mean ± SEM. Categorical\nvariables will be presented with counts and proportions.\nStatistical comparisons will be performed by using the\nMann-Whitney test for quantitative unpaired data, t-test for\nquantitative paired data, Kruskal-Wallis for multiple\ncomparisons, Spearman correlation test for correlations.\nT-test for quantitative paired data analysis will be used to\ncompare immunological changes between day 0 and week\n12 and 20 after Isatuximab.\nAll statistical tests will be two-tailed with a significance\nlevel of 0.05."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: ICE STUDY (Isatuximab in type 1 CryoglobulinEmia)"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Pr David SAADOUN\nDepartment of Internal medicine and clinical Immunology\nCentre national de référence Maladies Autoimmunes\nSystémiques rares\nHospital Pitié Salpétrière\nTel. 0142161051\nEmail : david.saadoun@aphp.fr",
+      "Scientific Director (if applicable): Pr Bertrand ARNULF\nDepartment of Immuno-Hematology\nHospital Saint Louis\nEmail: Bertrand.arnulf@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 21 patients"
+    ],
+    "SITES": [
+      "Number of sites: Multicenter national study including 17 centers"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: Sanofi funds the trial and will provide Isatuximab",
+      "Budget: 350 000 euros\nPlus the supply of Isatuximab"
     ]
   },
   "ETOLE": {
@@ -724,6 +1172,25 @@
     "INTERVENTION": [],
     "STATISTICS": [
       "Statistical Analysis: The analysis comparison of the BiRads classifications\nobtained by mammography and then by tomosynthesis\nwill rely on the construction of simultaneous confidence\nintervals for the ratios of true negative rates (specificity)\nand false negative rates (1-sensitivity) obtained with each\ntechnics in the mammography + tomosynthesis arm, as\ndescribed by Alonzo et al."
+    ],
+    "DSMB": [
+      "DSMB (Data Safety Monitoring\nBoard): Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: ETOLE"
+    ],
+    "INVESTIGATOR": [
+      "coordinating investigator: Professor Cédric de Bazelaire\nService de Radiologie\nHôpital Saint-Louis, Paris\nTél : +33 1 42 49 91 33\nCourriel : cedric.de-bazelaire@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects required: 2000 subjects"
+    ],
+    "SITES": [
+      "Number of centers: 4 centers (Saint-Louis Hospital, Tenon Hospital,\nLariboisière Hospital and HEGP)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding: PHRC 12-070"
     ]
   },
   "MAC-HAPLO-MUD": {
@@ -754,6 +1221,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Justification of sample size\nWe hypothesize the 1-year progression free survival\nwithout Grade II-IV acute GvHD and without moderate or\nsevere chronic GvHD will be of 65% after haplo SCT\nversus 50% after 10/10-HLA MUD.\n172 patients in both arms (n=344 overall) are required to\ndemonstrate such a difference, based on a two-sided\nlogrank test,  = 0.05 and power = 0.80 (HR= 0.62), with\na required total number of events of 146.\nThe Bayesian interim analysis will not inflate .\nInterim analysis at mid-inclusion\nThis will be based on the Bayesian computation of\nstopping rules based on the modeling of the log Hazard\nratio (HR) of the main endpoint (Spiegelhalter 1994). Non\ninformative prior of the logHR will be considered.\nTerminal analysis after the observation of the required\nnumber of events"
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Abbreviated title: MAC-HAPLO-MUD"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Régis Peffault de Latour"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 344"
+    ],
+    "SITES": [
+      "Number of sites: 36 centres"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: Industrial and patients associations funding"
     ]
   },
   "SHORTCUT": {
@@ -783,6 +1269,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Sample sizes of 235 in each group achieve 80% power to\ndetect a non-inferiority margin difference between the\ngroup proportions of -0.05. The reference group\nproportion is 0.95. The treatment group proportion is\nassumed to be 0.90 under the null hypothesis of\ninferiority. The power was computed for the case the\nactual treatment group proportion is 0.90. The test\nstatistic used is the one-sided Z test (unpooled). The\nsignificance level of the test is 0.05"
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: yes"
+    ],
+    "ACRONYM": [
+      "Acronym: SHORTCUT"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Dr Matthieu Lafaurie, Infectious Diseases, Saint Louis\nhospital, Paris"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: 470"
+    ],
+    "SITES": [
+      "Number of sites: 10"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: Ministry of Health"
     ]
   },
   "CAMOVID": {
@@ -812,6 +1317,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Descriptive analyses will use either frequencies and\npercentages for categorical variables, or median and\ninterquartile range for quantitative variables. Number of missing\nvalues will be reported.\nThe primary endpoint (probability of hospitalization within 21\ndays) will be compared between groups using a two-sided z-\ntest.\nSecondary endpoints will be compared across groups using\nFisher’s exact test when comparing probabilities between\ngroups and Wilcoxon’s rank sum test when comparing\nquantitative endpoints.\nAll analyses will be performed under the intention-to-treat\nprinciple.\nA 5% two-sided significance-level will be used for comparisons\nof secondary endpoints."
+    ],
+    "DSMB": [
+      "Study will have a Data\nSafety Monitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: CAMOVID"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Dr David BOUTBOUL",
+      "Scientific Director: Pr Lara ZAFRANI"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nincluded: N=596 planned\nFrom the current knowledge on SARS-CoV2 infection in adults ,\nwe expect roughly 20% of newly diagnosed high-risk patients\nbeing hospitalized within 21 days (8).\nThe design initially included a planned interim analysis after\none third of observations had been completed. A maximum\ntotal sample size of 536 evaluable patients (268 per treatment\ngroup) would allow 90% power to detect an absolute difference\nof 10% in the probability of hospitalization at day 21 between\ngroups (e.g. reduction from 20% to 10%), using a z-test, with\none-sided 2.5%-significance level for efficacy, using Lan &\nDeMets risk-spending functions (O’Brien & Fleming boundaries\napproximation), for efficacy and futility stopping rules.\nOverall, 596 patients (298 in each group) would be included to\nanticipate a potential 10% drop-out rate, given the ambulatory\nfollow-up.\nHowever, due to the status of the pandemics as of fall 2021 and\nglobal use of vaccines, the scientific comittee decided to stop\nrecruitment to eventually discontinue the trial early. The\nplanned interim sample size has not been reached. Eventually,\nonly a single final analysis will be performed at the 2.5% one-\nsided significance level, for the primary endpoints. Other\nendpoints will be analysed as planned."
+    ],
+    "SITES": [
+      "Number of centres: Recruiting centers:\n1. Emergency department of Saint Louis Hospital, Paris\n2. COVID-19 screening center at Bichat hospital\n3. Emergency department of Argenteuil hospital\n4. Centre de Santé Richerand, 75010 Paris\n5. Emergency department of H. Mondor hospital, Créteil\n6. Outpatient consult of the infectious disease deparment –\nCOVID screening center of Henri Mondor hospital,\nCréteil\n7. Outpatient consult of the Sickle Cell Disease and\ninherited Red Blood Cell genetic disorders, coordinating\nreferral center at H.Mondor hospital, Créteil\n8. Post-emergency – Internal medicine department of H.\nMondor hospital, Créteil\n9. Department of Infectious and Tropical Diseases / Public\nHealth Unit, Groupe Hospitalier Sud Ile de France\n(GHSIF), Melun\n10. Emergency department of Lariboisière hospital, Paris\nNon-recruiting centers (follow-up visits): - Internal medicine department of Argenteuil hospital\n- Office of Dr K. Amazzough, 75011 Paris\n- Office of Dr J Marzouk, 75017 Paris"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: PHRC COVID-19-20-0095"
     ]
   },
   "GREEN": {
@@ -844,6 +1369,28 @@
     ],
     "STATISTICS": [
       "Statistical analysis: An interim analysis will be performed when 30% of the\npatient enrolment will be achieved (78 patients).\nIn the control group, we considered that the distribution\nof the mRS is “0“:0.10, “1“:0.17, “2“:0.19, “3“:0.17,\n“4“:0.16, “5“:0.06, “6“:0.15. We calculated that a sample\nof 258 patients would yield a power of 80% to detect a\ntreatment effect associated with an OR of 1.85 considered\na two-sided p value of 0.05. As we planned an interim\nanalysis at 78 patients with an O“Brien and Fleming\nscheme, we increased the sample size to 260. The first\ninterim analysis will be considered as statistically\nsignificant if the p value is below to 0.0054. The final\nanalysis will be considered as statistically significant if the p value is below 0.0492. Interim analysis will also\nallowed a stop for futility. Futility bound has been\ncalculated using O'Brien & Fleming type beta spending.\nAfter inclusion of 78 patients, if the statistic of the Wald\ntest value associated with the OR is below -0.523 in\nfavour of the placebo group, the trial will be terminated\nfor futility."
+    ],
+    "DSMB": [
+      "DSMB : Data safety monitoring\nboard: DSMB will be composed by four members: three\nneurologists, and one statistician."
+    ],
+    "ACRONYM": [
+      "Short Title: Glenzocimab for REperfusion in the setting of Endovascular\ntherapy for brain infarctioN",
+      "Study Acronym: GREEN Study",
+      "Clinical Trial Code: APHP201028 / ACT-CS-004"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Prof Mikael Mazighi – Department of Neurology, AP-HP\nLariboisière Hospital – 2, Rue Ambroise-Paré - 75010 Paris\n(France)",
+      "Scientific Director (if applicable): Jean-Marc OLIVOT- Department of Neurology, University of\nHospital of Toulouse"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 260"
+    ],
+    "SITES": [
+      "Number of centres: 13"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris (AP-HP) and by\ndelegation: Délégation à la Recherche Clinique et à\nl’Innovation - DRCI (Clinical Research and Innovation\nDepartment)\nHôpital Saint-Louis - 1, avenue Claude Vellefaux\n75010 Paris - France",
+      "Funding sources: ANR"
     ]
   },
   "TEOREM": {
@@ -874,6 +1421,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Data will be analyzed on an intent-to-treat basis\nThe trial is based upon an adaptive scheme, allowing the\nre-estimation of the required number of included patients\n(« Sample size re-estimation (SSR) design »), taking into\naccount the uncertainty of endoscopic remission rate at\nweek 12 in the placebo arm. Thus, one interim unblind\nstatistical analysis will be performed once one half of the\npatients have been successively enrolled.\nPrimary endpoint analysis concerns the comparison of\nthe main end point, ie, the percentage of endoscopic\nremission in each group that will be compared using the\nchi-square test unless validity violated (or the Fisher exact\nwill be used).\nSecondary endpoints will be analyzed once the whole\nsample size will be reached."
+    ],
+    "DSMB": [
+      "Data Safety Monitoring Board\nanticipated: No"
+    ],
+    "ACRONYM": [
+      "Acronym: TEOREM"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Dr Franck Carbonnel\nGastroenterology Department\nKremlin Bicêtre Hospital,\n78, rue du général Leclerc\n94275 Le Kremlin-Bicêtre"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects chosen: 252 screened patients will be needed on average to obtain\n62 randomized patients"
+    ],
+    "SITES": [
+      "Number of centres: 26"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding source: Broad Medical Research Program, Mayoly-Spindler, Alpha\nWassermann, and PHRC national."
     ]
   },
   "SALMA": {
@@ -903,6 +1469,26 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Phase I\nA Bayesian adaptive dose escalation design will be used for the\ntrial objectives. It allows sequential monitoring of data during the\ntrial, using all current evidence for straightforward inference on\nsafety and efficacy and decision making to select and evaluate\nan optimal dose.\nThe design will rely on the Bayesian continual reassessment\nmethod (CRM) for the phase I, with cohorts of size 1 and a\nmaximum sample size of 20 patients.30 The target DLT rate for\nthe definition of the MTD will be 33% within the EOI observation\nwindow. The time-to-event extension of the CRM (survCRM)\ndesign will be used depending on the anticipated accrual rate\ncompared to the DLT observation window 31; this will allow\naccounting for right-censored toxicity observation in sequential\nMTD estimation and dose assignment process.\nPhase II\nOnce phase I has been completed providing the estimated\nMTD, the RP2D will be determined based on DSMB\nrecommendations according to safety data and efficacy signals\nfrom Phase I.\nInclusion criteria will be the same as in Phase I with the addition\nof an additional inclusion criteria (LAIP detected at baseline\nFCM assessment) related to the primary endpoint of complete\nresponse with negative MRD.\nBased on historical data, the rate of MRD-negative complete\nresponse in the study population is estimated at ~50% (British\nAML16 data, 12 Spanish PETHEMA data,32 British AML17 data\n[S. Freeman, pers. comm.]).\nA Simon minimax two-stage design will be used for this phase\n(Simon R. Optimal Two-Stage Designs for Phase II Clinical\nTrials. Controlled Clinical Trials 1989;10: 1-10). This phase II\nassessment will require a maximum total of 44 subjects to\ndecide whether the proportion responding, P, is less than or\nequal to 0.50 or greater than or equal to 0.70. At the first stage\n(that is among the first 22 included patients), if the number of\nresponses is lower than or equal to r1=11, the phase II will\nstopped early, for futility. Otherwise, if r1 ≥ 12, enrollment will\ncontinue up to a maximum of 44 patients. Overall, if the number\nof responses R becomes 28 or more, the hypothesis that P ≤\n0.50 is rejected with a target type I error rate of 0.05. If the total\nnumber of responses is R=27 or less, the hypothesis that P ≥\n0.70 is rejected with a target type II error rate of 0.15. Of note,\nphase I patients treated at the RP2D of choice will be included\nin this analysis if they are assessable by FCM MRD (presence\nof a LAIP)."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: SALMA"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Prof Raphaël Itzykson",
+      "Scientific Director: Dr Alexandre Puissant"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nincluded: Total: 64 patients\nphase I: 20 patients\nphase II: 44 patients"
+    ],
+    "SITES": [
+      "Number of centers: • 8 centers in phase I\n• 13 centers in phase II\nConducted only in France, in hematology centers"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Fondation ARC"
     ]
   },
   "ERYTHROSIM": {
@@ -931,6 +1517,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: A bilateral logrank test considering a sample size of 45\nrandomized patients in 2:1 (30 in the experimental group\nwith median transfusion independence under H1 of 1.5\nmonths, 15 in the control group with median transfusion\nindependence under H1 of 4.5 months) achieves a power\nof 86,4% with an alpha risk of 0.05. Considering that only\n50% of patients included at D60 will be randomized at 6\nmonths, 90 patients should be included.\nInterim analysis will be performed after observations of\n22 events (primary endpoint) in the trial."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: ERYTHROSIM"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Dr XHAARD Aliénor"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 90 patients, 45 randomized\nThe inclusion period will be increased to include patients\n(even more than the 90 expected) until to randomize the\n45 patients needed, notably if less than 50% of the 90\nenrolled patients are still PRCA at M6."
+    ],
+    "SITES": [
+      "Number of centres: 24 centers (pediatrics and adults) in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Ministry of Health (PHRC- 2019)\nExperimental treatment: Free supply by Sanofi Company"
     ]
   },
   "EQUAALL01": {
@@ -957,6 +1562,23 @@
     "INTERVENTION": [],
     "STATISTICS": [
       "Statistical analysis: The analysis will handle the left data truncation (given only\npatients who survive until 2016 are able to be included in the\nstudy).\nApproximately 1000 patients were included in the GRAALL-2003\nand 2005, among them 630 before August 2009.\nConsidering that 363/630 patients were alive at last follow-up,\nthe opportunity to include patients treated according to these\nprotocols, and a 80% inclusion success, approximately 300\npatients will be recruited.\nThis allows assessing the prevalence of troubles with a 95%CI\nwidth at 7% about assuming a 10% prevalence or to 0.10\nassuming a 30% prevalence, and detection of OR at 2.5 or 2,\nrespectively. This also allows reaching a statistical power of at\nleast 80% for detecting OR at 2."
+    ],
+    "DSMB": [],
+    "ACRONYM": [
+      "Acronym: EQUAALL01"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Nicolas BOISSEL\nHematology Department\nSaint-Louis Hospital\n+33142499643\nnicolas.boissel@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 300"
+    ],
+    "SITES": [
+      "Number of sites: Approximatively 36 centers of the GRAALL network"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of monetary support: Ministry of Health"
     ]
   },
   "EFRAIM-II": {
@@ -986,6 +1608,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: An interim analysis will be performed after the\nrecruitment of 120 patients (or after 50 day-90 deaths,\nwhichever will occur first)."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: EFRAIM-II"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Prof. Elie AZOULAY\nService de Réanimation Médicale\nHôpital Saint Louis, Paris, FRANCE\nOffice phone: +33 (0) 1 42 49 34 21\nFax: +33 (0) 1 42 49 94 26\nE-mail: elie.azoulay@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nincluded: 420"
+    ],
+    "SITES": [
+      "Number of centers: 19 centers in France."
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: PHRC-N 2018"
     ]
   },
   "RECORDS": {
@@ -1013,6 +1654,20 @@
     ],
     "STATISTICS": [
       "Sample Size: We will enroll a total of at most 1800 patients in this adaptative trial.\nSites are expected to enroll at least 1or 2 patients per month. By\nenrolling 376 evaluable patients per arm, the study will have 80%\npower to detect a 10% absolute risk reduction (from 45% to 35%, which\ncorresponds to a 20% relative risk reduction)."
+    ],
+    "DSMB": [],
+    "ACRONYM": [
+      "Acronym/reference: RECORDS"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating\ninvestigator and\nScientific Director: Pr Djillali ANNANE"
+    ],
+    "NUMBER OF INCLUSIONS": [],
+    "SITES": [
+      "Clinical Sites: French adult general ICUs"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris"
     ]
   },
   "KAPKEY": {
@@ -1042,6 +1697,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Simon’s 2-stage Optimal Design:\nThis is a multicenter uncontrolled phase II study, based on a 2-\nstage phase II Simon’s Optimal Design. Sample size computation was based on statistical hypotheses\nwith regards to treatment effect on the main endpoint, best\noverall response rate.\nWith a 0.05 type I error and a 90% statistical power, the sample\nsize was computed to assess whether the drug is inactive\n(partial+complete response probability π0<5%) or truly active\n(partial+complete response probability π1>30%).\nBased on our hypotheses, it was computed that 9 patients would\nbe accrued in stage 1. If necessary inclusion will be stopped\nduring 6 months after the 9th inclusion waiting for the primary\nendpoint. The trial will stop with conclusion of inactivity if no\nresponse is observed in this stage; otherwise, 8 additional\npatients will be recruited to a total sample size of 17 patients,\nwith at least 3 responses to indicate that the drug is effective\nenough. In case an observed response before the end of stage\n1 the stage 2 will directly begin withouit any stop.\nExtension Stage:\nOnly the 20 patients included in the extension stage will be\nconsidered in this main analysis. With an expected complete\nbest overall response rate (complete response, partial response)\nat 6 months of 14/20 (70%), we would obtain a 95%CI interval of\nthe complete response rate equal to [46%;88%].\nA secondary analysis will be performed on the 20 patients\nincluded in the extension stage plus the 17 patients included in\nthe Simon’s 2- stage Optimal Design. With an expected best\noverall response rate at 6 months of 26/37 (70.3%), this analysis\nwill reach a 95%CI interval of the complete response rate equal\nto [53%;84%]."
+    ],
+    "DSMB": [
+      "Data Safety Monitoring\nBoard anticipated: YES"
+    ],
+    "ACRONYM": [
+      "Acronym: KAPKEY"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Céleste LEBBE - Dermatologie - Hôpital Saint Louis, Paris -\n0142494679 – celeste.Lebbe@aphp.fr"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants\nchosen: Simon’s 2-stage Optimal Design 9 patients will be enrolled in the first part of the study with another\n8 patients in the second part (total 17 patients). It implies have\nto screen a maximum of 34 patients.\nExtension stage: 20 additional patients will be enrolled."
+    ],
+    "SITES": [
+      "Number of centers: Multicentric french study\nFor Simon’s 2-stage Optimal Design: 8 participating centers of\nthe French National Group “Groupe de Cancérologie Cutanée”.\nFor the Extension stage: 10 participating centers of the French\nNational Group “Groupe de Cancérologie Cutanée”"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding source: MSD"
     ]
   },
   "UPFRONT-MUD": {
@@ -1070,6 +1744,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Justification of sample size\nWe use the Simon Minimax Two-Stage Phase 2 design,\nto demonstrate success (primary outcome) in 70% of\npatients (to consider treatment as a valuable option)\nagainst less than 45% (considered as unacceptable).\nInterim analysis\nAn interim analysis will be performed after 12 inclusions:\nthe trial will be terminated if 5 or fewer do not receive\nUpfront MUD HSCT, then the study ends with conclusion\nof inefficacy. Otherwise, inclusions are pursued until a\ntotal of 25 patients. To conclude treatment efficacy, at\nleast 16 successes should be identified among the 25\npatients."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes."
+    ],
+    "ACRONYM": [
+      "Acronym/reference: UPFRONT-MUD"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigators: Pr Jean-Hugues Dalle, Pr Régis Peffault de Latour"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 25 patients with an interim analysis after 12 inclusions"
+    ],
+    "SITES": [
+      "Number of centres: 13 centres in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Ministry of Health (PHRC-N 2019)"
     ]
   },
   "HAPLORESCUE": {
@@ -1099,6 +1792,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Overall Survival will be estimated using the Kaplan-\nMaier’s estimator with its 95% Confidences Intervals.\nComparaison with the historical controls of 30% at 1 year\nwill be performed using the One-Sample Log-Rank Test\nproposed by Sun X et al in 2011.\nTerminal analysis will be performed after the follow-up of\nthe last included patient."
+    ],
+    "DSMB": [
+      "Trial will have a Data Monitoring\nCommittee: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym: HaploRescue"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating Investigator: Pr Régis Peffault de Latour"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of subjects included: For an objective of 31 patients to be allo-grafted, we\nanticipate 35 patients to include."
+    ],
+    "SITES": [
+      "Number of sites: 37 centres in France\n2 centres in Belgium (affiliated to SFGM-TC)\n1 centre in Switzerland (affiliated to SFGM-TC)"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique-Hôpitaux de Paris",
+      "Sources of funding for the trial: PHRC-K 2019"
     ]
   },
   "FIRST": {
@@ -1125,6 +1837,25 @@
     "INTERVENTION": [],
     "STATISTICS": [
       "Statistical analysis: A, two-sided, one-sample, logrank test calculated from a\nsample of 55 subjects achieves 90.36% power at a 0.050\nsignificance level to detect a proportion surviving of 0.5500 in\nthe new group when the proportion surviving in the historic\ncontrol group is 0.3500. Such an historical proportion has\nbeen estimated from our previous French cohort study, as\npublished in Leukemia where a 2-year DFS rate of 35% was observed in patients with a donor who were not transplanted\nupfront . By contrast, EBMT studies have reported that 2-year\nDFS in patients with MDS is expected to be 55%.\nThese surviving proportions are for a period of 24.0 months.\nSubjects are accrued for a period of 24.0 months. Follow-up\ncontinues for a period of 24.0 months after the last subject is\nadded.\nThe probability that a subject experiences an event during the\nstudy is 0.5860. The expected number of events during the\nstudy is 24.\nIt is assumed that the survival time distributions of both\ngroups are approximated reasonably well by the Weibull\ndistribution with a shape parameter of 1.00.\nTo increase the level of evidence, external indirect\ncomparisons will be secondly performed to (i) demethylating\nagents using individual patient data from a prospective cohort\n(Robin 2015) or (ii) 5-Azacytidine, using aggregated data from\na published randomized clinical trial (Kröger 2021)."
+    ],
+    "DSMB": [
+      "DSMB: YES"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: FIRST ALLO MDS"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Dr. Marie ROBIN\nDepartment of Hematology\nHôpital Saint-Louis\nParis"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 55 patients"
+    ],
+    "SITES": [
+      "Number of centres: Multicenter national study: 16 Hematology departments in\nFrance (3 centres APHP)."
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: Fondation MSD Avenir"
     ]
   },
   "APARR": {
@@ -1153,6 +1884,25 @@
     ],
     "STATISTICS": [
       "Statistical analysis: Sample size calculation\nA two-sided, one-sample log-rank test calculated from a sample\nof 52 subjects achieves 80% power at a 0.05 significance level\nto detect a 2-years GRFS of 70% in the new group when the 2-\nyears GRFS in the historic control group is 50% if all patients\nare followed 2 years.\nAnalysis of primary endpoint\nSeveral interim analyses of the primary outcome measure are\nplanned once every 12 months (unless less than 20 enrolled\npatients), based on a Bayesian approach.\nAt the end of the trial (accrual+follow-up), GRFS will be\nestimated using Kaplan Meier method with its corresponding\n95% confidence interval and compared to historical rate using\none sample two-sided log-rank test.\nAn additional terminal analysis will use external patients from\nan observational cohort, with propensity score weighting, to\nensure an unbiased comparison and enhance the level of\nevidence of the treatment effect."
+    ],
+    "DSMB": [
+      "Study will have a Data Safety\nMonitoring Board: Yes"
+    ],
+    "ACRONYM": [
+      "Acronym/reference: APARR"
+    ],
+    "INVESTIGATOR": [
+      "Coordinating investigator: Régis PEFFAULT DE LATOUR"
+    ],
+    "NUMBER OF INCLUSIONS": [
+      "Number of participants included: 52 patients"
+    ],
+    "SITES": [
+      "Number of centres: 28 centers affiliated at SFGM-TC in France"
+    ],
+    "FUNDING": [
+      "Sponsor: Assistance Publique – Hôpitaux de Paris",
+      "Funding sources: PHRC-N 2022"
     ]
   }
 }

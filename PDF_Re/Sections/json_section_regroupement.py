@@ -75,7 +75,7 @@ categories = {
         "exclusion criteria of patients",
         "exclusion criterion",
     ],
-    "TREATMENT" : [
+    "INTERVENTION" : [
         "reference treatment",
         "transplant modalities",
         "transplant modalities medical product provided by the Sponsor",
@@ -103,8 +103,10 @@ categories = {
         "Study intervention",
         "chemotherapy",
         "Challenge agents",
+        "comparator",
+        "comparator arm",
     ],
-    "STATISTICAL": [
+    "STATISTICS": [
         "statistical justification of sample size",
         "statistical analysis",
         "statistical power and sample size justification:",
@@ -127,8 +129,6 @@ categories = {
     "TREATMENT BIS":[
         # BIZARRE
         "Leukemia-oriented biological assessments",
-        "comparator",
-        "comparator arm",
         "control group",
         "background therapy",
     ],
