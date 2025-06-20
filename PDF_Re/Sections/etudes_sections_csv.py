@@ -7,16 +7,18 @@ base_path = os.getcwd()
 input_json = os.path.join(base_path, "Sections", "sections_sorted_clean_complet.json")
 output_csv = os.path.join(base_path, "Sections", "etudes_verification.csv")
 
-
 with open(input_json, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-all_keys = set()
-for etude, contenu in data.items():
+# Conserve l’ordre d’apparition des clés dans le premier dictionnaire rencontré
+all_keys = []
+seen_keys = set()
+for contenu in data.values():
     if isinstance(contenu, dict):
-        all_keys.update(contenu.keys())
-
-all_keys = sorted(all_keys)
+        for key in contenu.keys():
+            if key not in seen_keys:
+                seen_keys.add(key)
+                all_keys.append(key)
 
 rows = []
 for etude, contenu in data.items():
@@ -26,8 +28,8 @@ for etude, contenu in data.items():
         has_text = any(isinstance(v, str) and v.strip() for v in value)
         row[key] = 'oui' if has_text else 'NON'
         if row[key] == "NON":
-            print("\nEtude : ",etude)
-            print("Section vide : ",key)
+            print("\nEtude : ", etude)
+            print("Section vide : ", key)
     rows.append(row)
 
 with open(output_csv, 'w', newline='', encoding='utf-8') as f:
