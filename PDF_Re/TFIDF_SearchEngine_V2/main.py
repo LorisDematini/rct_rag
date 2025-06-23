@@ -1,7 +1,7 @@
 """
 Interface principale Streamlit permettant de choisir entre deux moteurs de recherche :
-- Sparse : recherche basée sur un embedding TF-IDF et similarité cosinus
-- Dense : recherche basée sur embeddings HuggingFace et index FAISS
+- Mot Clé : recherche basée sur un embedding TF-IDF et similarité cosinus
+- Exacte : recherche basée sur des mots exactes et CTRL+F
 
 Le module spécial 'torch.classes' est bypassé pour éviter des conflits lors du scan par Streamlit.
 """
@@ -15,6 +15,13 @@ import types
 sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 import streamlit as st
 from app.sparse_app import run_sparse_app
+from app.exact_app import run_exacte_app
 
 st.set_page_config(layout="wide")
-run_sparse_app()
+st.sidebar.title("Choisissez le moteur de recherche")
+mode = st.sidebar.radio("Mode", ["Mot Clé", "Exacte"])
+
+if mode == "Mot Clé":
+    run_sparse_app()
+else:
+    run_exacte_app()

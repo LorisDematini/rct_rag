@@ -27,10 +27,12 @@ PDF_FOLDER = os.path.join(DATA_DIR, "pdf")
 
 # Répertoire contenant les fichiers de données
 SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
-ACRONYMS_FILE = os.path.join(DATA_DIR, "extracted_acronym_final.json")  # Fichier contenant les acronymes et leurs définitions
+SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
+ACRONYMS_FILE = os.path.join(DATA_DIR, "extracted_acronym_final.json")
 
 # Fichier de sortie prétraité spécifique au moteur sparse
 SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
+EXACT_JSON_PATH = os.path.join(DATA_DIR, "summaryExact_pre.json")
 
 #OLD RAW
 # RAW_JSON_PATH = os.path.join(DATA_DIR, "summary.json")  # Nom du fichier JSON contenant les documents RAW

@@ -22,7 +22,8 @@ Fonctions :
 
 
 import os
-from config.paths import SPARSE_JSON_PATH
+from config.paths import EXACT_JSON_PATH, SPARSE_JSON_PATH
+from preprocess.processed_exact import process_and_keep_json
 from preprocess.processed_sparse  import process_and_merge_json
 
 def load_data_sparse():
@@ -38,3 +39,15 @@ def load_data_sparse():
         documents = process_and_merge_json(existing=True)
         return documents
         
+def load_data_exact():
+    if not os.path.exists(EXACT_JSON_PATH):
+        print(f"[INFO] Le fichier EXACT_JSON est introuvable. Génération en cours...")
+
+        # Génère les documents
+        documents = process_and_keep_json()
+        return documents
+
+    else:
+        print(f"[INFO] Fichier JSON déjà existant : {EXACT_JSON_PATH}")
+        documents = process_and_keep_json(existing=True)
+        return documents
