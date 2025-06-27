@@ -54,10 +54,6 @@ def extract_acronyms_with_definitions(text):
             words_before = get_words_before(text, start_pos, len(acronym)*2)
             definition = version_4(acronym, words_before)
         
-        # if not definition:
-        #     words_before = get_words_before(text, start_pos, len(acronym))
-        #     definition = version_5(acronym, words_before)
-
         if definition and acronym not in results:
             results[acronym] = ' '.join(definition)
 
@@ -153,41 +149,6 @@ def version_4(acronym, words):
         return selected_words
 
     return None
-
-# def version_5(acronym, words):
-#     """
-#     Chaque lettre de l'acronyme peut apparaître n'importe où dans les mots successifs,
-#     dans l'ordre. Plusieurs lettres peuvent être dans le même mot si elles apparaissent
-#     dans l’ordre.
-#     """
-#     window_size = len(acronym)
-#     if len(words) < window_size:
-#         window_words = words
-#     else:
-#         window_words = words[-window_size:]
-
-#     filtered_words = [w for w in window_words if w.lower() not in STOPWORDS]
-
-#     a_idx = 0
-#     selected_words = []
-
-#     for word in filtered_words:
-#         word_lower = word.lower()
-#         found = False
-#         for c in word_lower:
-#             if a_idx < len(acronym) and c == acronym[a_idx].lower():
-#                 a_idx += 1
-#                 found = True
-#             if a_idx == len(acronym):
-#                 break
-#         if found:
-#             selected_words.append(word)
-#         if a_idx == len(acronym):
-#             break
-
-#     if a_idx == len(acronym):
-#         return selected_words
-#     return None
 
 
 if __name__ == "__main__":

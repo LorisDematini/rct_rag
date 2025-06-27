@@ -1,0 +1,35 @@
+Nombre d'études avec au moins une section manquante : 9
+Nombre total de sections manquantes (toutes études confondues) : 17
+
+Étude : CAALLF01
+Sections manquantes : DSMB, ACRONYM, INVESTIGATOR
+Étude : SONIMEL
+Sections manquantes : INTERVENTION, NUMBER OF INCLUSIONS, SITES
+Étude : PARADISE
+Sections manquantes : JUSTIFICATION
+Étude : GRAALL-2014
+Sections manquantes : TITLE, JUSTIFICATION
+Étude : FOCUS
+Sections manquantes : NUMBER OF INCLUSIONS, SITES
+Étude : ETOLE
+Sections manquantes : INTERVENTION
+Étude : EQUAALL01
+Sections manquantes : INTERVENTION, DSMB
+Étude : RECORDS
+Sections manquantes : DSMB, NUMBER OF INCLUSIONS
+Étude : FIRST
+Sections manquantes : INTERVENTION
+
+Fréquence des sections manquantes :
+- TITLE : 1
+- JUSTIFICATION : 2
+- INTERVENTION : 4
+- DSMB : 3
+- ACRONYM : 1
+- INVESTIGATOR : 1
+- NUMBER OF INCLUSIONS : 3
+- SITES : 2
+
+Nombres d'études : 40
+Nombres de sections par étude : 14
+NOmbres total de sections : 543 (560 -17)

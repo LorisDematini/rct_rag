@@ -65,7 +65,7 @@
     "SUSAR": "Suspected Unexpected Serious Adverse Reaction",
     "WPAI": "Work Productivity Index"
   },
-  "GRAALL-2014/B": {
+  "GRAALL-2014": {
     "HSCT": "Haematopoietic Stem Cell Transplantation",
     "ALAT": "Alanine-Aminotransferase",
     "IT": "Intra-thecal",
@@ -85,10 +85,13 @@
     "ANSM": "“Agence Nationale de sécurité du ",
     "ASAT": "Aspartate Amino Transferase ",
     "AT": "Anti Thrombin ",
-    "ATG": "Anti ThymoGlobulin MAC: Myelo Ablative Conditioning",
+    "ATG": "Anti ThymoGlobulin",
+    "MAC": "Myelo Ablative Conditioning",
     "BID": "Twice a day ",
-    "BM": "Bone Marrow MRD: Minimal Residual Disease",
-    "BMI": "Body Mass Index MRI: Magnetic Resonance Imaging",
+    "BM": "Bone Marrow ",
+    "MRD": "Minimal Residual Disease",
+    "BMI": "Body Mass Index",
+    "MRI": "Magnetic Resonance Imaging",
     "CIR": "Cumulative Incidence of Relapse ",
     "MTX": "Methotrexate",
     "CIV": "ContinuousIntravenous ",

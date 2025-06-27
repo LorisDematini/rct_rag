@@ -20,7 +20,7 @@ from config.settings import TOP_K_RESULTS
 
 
 def run_sparse_app():
-    st.title("Moteur de recherche par mots-clés")
+    st.title("Moteur de recherche par similarité thématique")
 
     # Chargement des données
     with st.spinner("Chargement des données..."):
@@ -37,4 +37,4 @@ def run_sparse_app():
         print(f"Requête prétraitée : {query_cleaned}")
         results = engine.search(query_cleaned, k=TOP_K_RESULTS)
         top_terms_by_study = engine.top_terms_per_document()
-        display_sparse_results(results, query, top_terms_by_study)
+        display_sparse_results(results, query, query_cleaned, top_terms_by_study)

@@ -16,12 +16,15 @@ sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 import streamlit as st
 from app.sparse_app import run_sparse_app
 from app.exact_app import run_exacte_app
+from app.liste_app import run_liste_app
 
 st.set_page_config(layout="wide")
 st.sidebar.title("Choisissez le moteur de recherche")
-mode = st.sidebar.radio("Mode", ["Mot Clé", "Exacte"])
+mode = st.sidebar.radio("Mode", ["Similarité", "Mot-Clé", "Base de Données"])
 
-if mode == "Mot Clé":
+if mode == "Similarité":
     run_sparse_app()
-else:
+elif mode == "Mot-Clé":
     run_exacte_app()
+else:
+    run_liste_app()

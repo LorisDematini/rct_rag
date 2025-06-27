@@ -6,7 +6,7 @@ from preprocess.processed_sparse import preprocess_query
 from app.common_ui import display_exacte_results
 
 def run_exacte_app():
-    st.title("Moteur exacte de recherche")
+    st.title("Moteur de recherche par mot-clé")
 
     with st.spinner("Chargement des données..."):
         documents = load_data_exact()
@@ -22,6 +22,7 @@ def run_exacte_app():
 
     if query:
         query_cleaned = preprocess_query(query)
+        print(query_cleaned)
 
         if selected_section == "Toutes les sections":
             selected_sections = None

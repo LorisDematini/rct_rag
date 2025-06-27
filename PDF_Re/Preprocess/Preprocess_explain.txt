@@ -1,0 +1,29 @@
+
+[TEXTE DE BASE]
+The study's evaluated the effects of Good Clinical Practice (GCP) in ICH of ps2 treatment d10 ≥ 12 — which, m3 surprisingly,
+improved patients-outcomes.
+
+[APRÈS REMPLACEMENT ACRONYMES]
+The study's evaluated the effects of Good Clinical Practice   in  international conference on harmonization  of ps2 treatment d10 ≥ 12 — which, m3 surprisingly,
+improved patients-outcomes.
+
+[APRÈS LEMMATISATION]
+The study 's evaluate the effect of Good Clinical Practice in international conference on harmonization of ps2 treatment d10 ≥ 12 — which , m3 surprisingly , improve patients-outcomes .
+
+[NORMALISATION UTF-8]
+The study 's evaluate the effect of Good Clinical Practice in international conference on harmonization of ps2 treatment d10  12  which , m3 surprisingly , improve patients-outcomes .
+
+[EN MINUSCULES]
+the study 's evaluate the effect of good clinical practice in international conference on harmonization of ps2 treatment d10  12  which , m3 surprisingly , improve patients-outcomes .
+
+[REMPLACEMENT PONCTUATION]
+the study  s evaluate the effect of good clinical practice in international conference on harmonization of ps2 treatment d10  12  which   m3 surprisingly   improve patientsoutcomes  
+
+[SUPPRESSION D/W/M + CHIFFRES]
+the study  s evaluate the effect of good clinical practice in international conference on harmonization of ps2 treatment    12  which     surprisingly   improve patientsoutcomes  
+
+[SUPPRESSION CHIFFRES ISOLES]
+the study  s evaluate the effect of good clinical practice in international conference on harmonization of ps2 treatment       which     surprisingly   improve patientsoutcomes  
+
+[SUPPRESSION STOPWORDS ET MOTS COURTS]
+study evaluate effect good clinical practice international conference harmonization ps2 treatment surprisingly improve patientsoutcomes

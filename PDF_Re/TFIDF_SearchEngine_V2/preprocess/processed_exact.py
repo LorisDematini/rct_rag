@@ -34,7 +34,7 @@ import json
 import string
 from nltk.corpus import stopwords
 from langchain.schema import Document
-from config.paths import EXACT_JSON_PATH, SECTIONS_FULL_JSON_PATH
+from config.paths import ACRONYMS_FILE_UNIQUE, EXACT_JSON_PATH, SECTIONS_FULL_JSON_PATH
 
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
@@ -57,23 +57,42 @@ def replace_acronyms(acronyms_all, study_id, text):
         text = replace_all_variants(text, acronym, definition)
     return text
 
-def preprocess(text, study_id, acronym_all):
+def replace_acronyms_query(acronyms_all, text):
+    # Normalisation du dictionnaire en minuscule
+    acronyms_all_lower = {k.lower(): v for k, v in acronyms_all.items()}
+
+    def replace_match(match):
+        token = match.group(0)
+        token_lower = token.lower()
+        definition = acronyms_all_lower.get(token_lower)
+        return definition.lower() if definition else token
+
+    # Match tous les mots (2 lettres ou plus), insensible à la casse
+    pattern = r'\b[a-zA-Z]{2,}\b'
+    return re.sub(pattern, replace_match, text)
+
+def preprocess(text, study_id, acronym_all, isQuery=False):
+
     #acronymes
-    text = replace_acronyms(acronym_all, study_id, text)
+    if isQuery:
+        text = replace_acronyms_query(acronym_all, text)
+    else: 
+        text = replace_acronyms(acronym_all, study_id, text)
+
     #minuscules
     text = text.lower()
     #ponctuation
-    text = text.translate(str.maketrans('', '', string.punctuation))
+    text = re.sub(r'[^\w\s+-]|_', ' ', text)
+    text = text.replace("-", "")
 
     return text
 
 
-#PROBLEME D'ACRONYME POUR LA QUERY
 def preprocess_query(query):
-    study_id = "OPTISAGE"
-    with open(ACRONYMS_FILE, 'r', encoding='utf-8') as f:
-        acronyms_all = json.load(f)
-    query_cleaned = preprocess(query, study_id, acronyms_all)
+    study_id = None
+    with open(ACRONYMS_FILE_UNIQUE, 'r', encoding='utf-8') as f:
+        acronyms_all_unique = json.load(f)
+    query_cleaned = preprocess(query, study_id, acronyms_all_unique, isQuery=True)
     return query_cleaned
 
 
