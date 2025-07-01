@@ -20,7 +20,7 @@ from config.settings import TOP_K_RESULTS
 
 
 def run_sparse_app():
-    st.title("Moteur de recherche par similarité thématique")
+    st.title("Moteur de recherche par similarité")
 
     # Chargement des données
     with st.spinner("Chargement des données..."):
