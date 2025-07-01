@@ -14,6 +14,9 @@ from langchain.schema import Document
 from config.paths import ACRONYMS_FILE_UNIQUE, SPARSE_JSON_PATH, SECTIONS_JSON_PATH, ACRONYMS_FILE
 
 stop_words = set(stopwords.words('english'))
+words_dont = ["be", "day", "week", "month", "year","kg", "ml", "g", "mg", "ng", "cm", "mm", "nm", "min", "cal", "kcal", "ppm", "ppb", "mm2", "mm3"]
+roman_to_arabic = {"i": "1","ii": "2","iii": "3","iv": "4","v": "5","vi": "6","vii": "7","viii": "8","ix": "9"}
+
 
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
@@ -50,17 +53,21 @@ def replace_acronyms(acronyms_all, study_id, text):
 
 
 def replace_acronyms_query(acronyms_all, text):
-    #dictionnaire en minuscule
+    # dictionnaire en minuscule
     acronyms_all_lower = {k.lower(): v for k, v in acronyms_all.items()}
 
     def replace_match(match):
         token = match.group(0)
         token_lower = token.lower()
         definition = acronyms_all_lower.get(token_lower)
-        return definition.lower() if definition else token
+        if definition:
+            return f"{definition.lower()} {token_lower}"
+        else:
+            return token
 
     pattern = r'\b[a-zA-Z]{2,}\b'
     return re.sub(pattern, replace_match, text)
+
 
 
 def preprocess(text, study_id, acronyms_all, isQuery=False):
@@ -72,19 +79,37 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
     words = lemmatize_text(words)
     text = ' '.join(words)
 
+    text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
     text = text.lower()
 
-    text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
     text = re.sub(r'[^\w\s+-]|_', ' ', text)
     text = text.replace("-", "")
     text = re.sub(r'\s+', ' ', text).strip()
 
-    text = re.sub(r'\bd(\d+)\b', r'day \1', text)
-    text = re.sub(r'\bw(\d+)\b', r'week \1', text)
-    text = re.sub(r'\bm(\d+)\b', r'month \1', text)
+    text = re.sub(r'[^\w\s+-]|_', ' ', text)
+    text = text.replace("-", "")
+
+    text = re.sub(r'\bd(\d+)\b', " ", text)
+    text = re.sub(r'\bw(\d+)\b', " ", text)
+    text = re.sub(r'\bm(\d+)\b', " ", text)
+    text = re.sub(r'\b\d+\b', " ", text)
+
+    for roman, arabic in sorted(roman_to_arabic.items(), key=lambda x: -len(x[0])):
+        text = re.sub(rf'\b{roman}\b', f' {arabic} ', text)
 
     words = word_tokenize(text)
-    words = [word for word in words if word not in stop_words and len(word) >= 2]
+    words = [
+        word for word in words
+        if (word not in stop_words or word.isdigit()) and (len(word) > 1 or word.isdigit())
+    ]
+
+    # regex pour détecter nombre + unité comme 30mg
+    unit_pattern = re.compile(rf"^\d+(\.\d+)?({'|'.join(re.escape(u) for u in words_dont)})$", re.IGNORECASE)
+
+    words = [
+        word for word in words
+        if word not in words_dont and not unit_pattern.match(word)
+    ]
 
     return ' '.join(words)
 

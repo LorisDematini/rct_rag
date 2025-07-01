@@ -15,6 +15,13 @@ import streamlit as st
 import re
 import json
 from config.paths import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH, SUMMARY_JSON_PATH
+import matplotlib.pyplot as plt
+from core.exact_search import ExactSearchEngine
+
+# import nltk
+# nltk.download('wordnet')
+# nltk.download('omw-1.4')
+# nltk.download('averaged_perceptron_tagger')
 
 #Chargment unique du fichier summary.json 
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
@@ -32,6 +39,42 @@ def highlight_text(text, keywords):
         pattern = re.compile(rf"(\b{re.escape(word)}\b)", flags=re.IGNORECASE)
         text = pattern.sub(r"<mark>\1</mark>", text)
     return text
+import re
+
+import re
+
+def highlight_text_exact(text, query, mode="PHRASE"):
+    text = str(text)
+    original_text = text
+
+    if mode == "PHRASE":
+        phrase = query.strip().lower()
+        if phrase.endswith("*"):
+            prefix = re.escape(phrase[:-1])
+            pattern = re.compile(rf"\b({prefix}\w*)\b", flags=re.IGNORECASE)
+            return pattern.sub(r"<mark>\1</mark>", text)
+        else:
+            pattern = re.compile(rf"\b({re.escape(phrase)})\b", flags=re.IGNORECASE)
+            return pattern.sub(r"<mark>\1</mark>", text)
+
+    elif mode in ("AND", "OR"):
+        terms = re.split(r"\s+(and|or)\s+", query.lower())
+        keywords = [t.strip() for t in terms if t.lower() not in {"and", "or"} and t.strip()]
+
+        for word in sorted(keywords, key=len, reverse=True):
+            if word.endswith("*"):
+                prefix = re.escape(word[:-1])
+                pattern = re.compile(rf"\b({prefix}\w*)\b", flags=re.IGNORECASE)
+            else:
+                pattern = re.compile(rf"\b({re.escape(word)})\b", flags=re.IGNORECASE)
+            text = pattern.sub(r"<mark>\1</mark>", text)
+
+        return text
+
+    return original_text
+
+
+
 
 def clean_string(s):
     return s.lower().replace("-", " ").replace("_", " ").replace("/", " ").strip()
@@ -55,22 +98,18 @@ def find_pdf_file(study_id, folder=PDF_FOLDER):
  
     return None
 
-
 def display_sparse_results(results, query, query_cleaned, top_terms_by_study=None):
-    # st.warning(f"Votre requête a été transformée : `{query_cleaned}`")
-    
     if "validated_warning" not in st.session_state:
         st.session_state.validated_warning = False
 
     if not st.session_state.validated_warning:
-        st.warning(f"Votre requête a été traitée : `{query_cleaned}`")
+        st.warning(f"requête traitée : `{query_cleaned}`")
         if st.button("✅ Continuer"):
             st.session_state.validated_warning = True
         else:
             st.stop()
     st.session_state.validated_warning = False
-    
-    # Code de base
+
     keywords = query.split()
     total_results = len(results)
     total_studies = len(summary_data)
@@ -81,12 +120,30 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
         st.info("Aucun protocole pertinent trouvé.")
         return
 
+   # --- HISTOGRAMME DES SCORES (vertical mais toujours en paysage) ---
+    study_ids = [res["study_id"] for res in results]
+    scores = [res["score"] for res in results]
+
+    # Forcer un format paysage : largeur fixe minimale
+    fig, ax = plt.subplots(figsize=(10, 4))  # 10 est large => paysage garanti
+    bars = ax.bar(study_ids, scores, color='skyblue')
+    ax.set_title("Score par étude")
+    ax.set_ylabel("Score de similarité")
+    ax.set_xlabel("Identifiant de l'étude")
+    ax.set_ylim(0, max(scores) * 1.1)
+
+    # Rotation des labels si trop nombreux
+    if len(study_ids) > 5:
+        ax.set_xticklabels(study_ids, rotation=45, ha='right')
+
+    st.pyplot(fig)
+
     for result in results:
         study_id = result["study_id"]
         score = result["score"]
         normalized_score = score
 
-        color = "green" if normalized_score > 0.3 else "orange" if normalized_score > 0.1 else "red"
+        color = "green" if normalized_score > 0.2 else "orange" if normalized_score > 0.1 else "red"
         st.markdown(f"### {study_id} — Score : <span style='color:{color}; font-weight:bold'>{normalized_score:.2f}</span>", unsafe_allow_html=True)
 
         if top_terms_by_study and study_id in top_terms_by_study:
@@ -133,17 +190,24 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
                 st.warning("Format inattendu pour cette étude.")
 
 
-def display_exacte_results(results, query, selected_section=None):
-    keywords = query.split()
-    total_results = len(results)
-    total_studies = len(summary_data_full)
-    if total_results > total_studies:
-        total_results = total_studies
 
-    st.subheader(f"{total_results} / {total_studies} protocoles trouvés")
+def display_exacte_results(results, query, selected_section=None, engine=None):
+    if engine is None:
+        raise ValueError("L'objet engine est requis")
+    parsed = engine.parse_query(query)
+    mode = parsed["operator"]
+
+    unique_study_ids = {res["study_id"] for res in results}
+    total_results = len(unique_study_ids)
+    total_studies = len(summary_data_full)
+
+    if selected_section == "Toutes les sections":
+        st.subheader(f"{total_results} / {total_studies} protocole(s) trouvé(s)")
+    else :
+        st.subheader(f"{total_results} section(s) trouvée(s)")
 
     if not results:
-        st.info("Aucun protocoles pertinent trouvé.")
+        st.info("Aucun protocole pertinent trouvé.")
         return
 
     #ne pas répéter plusieurs fois la même étude
@@ -189,7 +253,7 @@ def display_exacte_results(results, query, selected_section=None):
                         if isinstance(section_paragraphs, list):
                             for paragraph in section_paragraphs:
                                 if isinstance(paragraph, str):
-                                    highlighted = highlight_text(paragraph, keywords)
+                                    highlighted = highlight_text_exact(paragraph, query, mode)
                                     st.markdown(highlighted, unsafe_allow_html=True)
                                 else:
                                     st.markdown("Paragraphe non textuel.")
@@ -232,7 +296,7 @@ def display_exacte_results(results, query, selected_section=None):
                 if isinstance(section_paragraphs, list):
                     for paragraph in section_paragraphs:
                         if isinstance(paragraph, str):
-                            highlighted = highlight_text(paragraph, keywords)
+                            highlighted = highlight_text_exact(paragraph, query, mode)
                             st.markdown(highlighted, unsafe_allow_html=True)
                         else:
                             st.markdown("Paragraphe non textuel.")

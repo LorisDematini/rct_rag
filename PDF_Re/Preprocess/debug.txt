@@ -1,0 +1,182 @@
+
+==== OPTISAGE ====
+
+--- [TITLE] ---
+
+// originale \\
+Full title: Phase III study comparing GVHD prophylaxis with ATG-
+thymoglobulin to ATLG-grafalon in elderly patients with
+acute myeloid leukemia or myelodysplatic syndrome and
+receiving an allogeneic hematopoietic stem cell
+transplantation with a 10/10 HLA matched unrelated
+donor following a reduced intensity conditioning regimen
+by fludarabine-treosulfan
+
+// Acronymes \\
+Full title: Phase III study comparing GVHD prophylaxis with  anti thymocyte globulins -
+thymoglobulin to ATLG-grafalon in elderly patients with
+acute myeloid leukemia or myelodysplatic syndrome and
+receiving an allogeneic hematopoietic stem cell
+transplantation with a 10/10 HLA matched unrelated
+donor following a reduced intensity conditioning regimen
+by fludarabine-treosulfan
+
+// Lemma \\
+Full title : Phase III study compare GVHD prophylaxis with anti thymocyte globulin - thymoglobulin to ATLG-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 HLA match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
+
+// UTF_8 \\
+Full title : Phase III study compare GVHD prophylaxis with anti thymocyte globulin - thymoglobulin to ATLG-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 HLA match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
+
+// Lower \\
+full title : phase iii study compare gvhd prophylaxis with anti thymocyte globulin - thymoglobulin to atlg-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 hla match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
+
+// Ponctuation \\
+full title phase iii study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10 10 hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
+
+// nombres et dates \\
+full title phase iii study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a     hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
+
+// Chiffres romain \\
+full title phase  3  study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a     hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
+
+// stopword et lettre \\
+full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
+
+// unite et temporal \\
+full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
+
+// final \\
+full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
+
+==== CAALLF01 ====
+
+--- [INCLUSION CRITERIA] ---
+
+// originale \\
+Inclusion criteria: (cid:120) Children and adolescents
+Age > 12 months but < 18 yearsB-lineage or T- lineage ALL
+(cid:120) Written informed consent obtained before day 8 of treatment
+NB: patients with Down syndrome can be included but not randomized (see details in
+the protocol section 5-3-2)
+
+// Acronymes \\
+Inclusion criteria: (cid:120) Children and adolescents
+Age > 12 months but < 18 yearsB-lineage or T- lineage  acute lymphoblastic leukemia 
+(cid:120) Written informed consent obtained before day 8 of treatment
+NB: patients with Down syndrome can be included but not randomized (see details in
+the protocol section 5-3-2)
+
+// Lemma \\
+Inclusion criterion : ( cid:120 ) Children and adolescent Age > 12 month but < 18 yearsB-lineage or T- lineage acute lymphoblastic leukemia ( cid:120 ) Written informed consent obtain before day 8 of treatment NB : patient with Down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
+
+// UTF_8 \\
+Inclusion criterion : ( cid:120 ) Children and adolescent Age > 12 month but < 18 yearsB-lineage or T- lineage acute lymphoblastic leukemia ( cid:120 ) Written informed consent obtain before day 8 of treatment NB : patient with Down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
+
+// Lower \\
+inclusion criterion : ( cid:120 ) children and adolescent age > 12 month but < 18 yearsb-lineage or t- lineage acute lymphoblastic leukemia ( cid:120 ) written informed consent obtain before day 8 of treatment nb : patient with down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
+
+// Ponctuation \\
+inclusion criterion cid 120 children and adolescent age 12 month but 18 yearsblineage or t lineage acute lymphoblastic leukemia cid 120 written informed consent obtain before day 8 of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section 532
+
+// nombres et dates \\
+inclusion criterion cid   children and adolescent age   month but   yearsblineage or t lineage acute lymphoblastic leukemia cid   written informed consent obtain before day   of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section  
+
+// Chiffres romain \\
+inclusion criterion cid   children and adolescent age   month but   yearsblineage or t lineage acute lymphoblastic leukemia cid   written informed consent obtain before day   of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section  
+
+// stopword et lettre \\
+inclusion criterion cid children adolescent age month yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain day treatment nb patient syndrome include randomize see detail protocol section
+
+// unite et temporal \\
+inclusion criterion cid children adolescent age yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain treatment nb patient syndrome include randomize see detail protocol section
+
+// final \\
+inclusion criterion cid children adolescent age yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain treatment nb patient syndrome include randomize see detail protocol section
+
+==== HAPLO-EMPTY ====
+
+--- [STATISTICS] ---
+
+// originale \\
+Statistical analysis: Justification of sample size
+We hypothesize the 2-year overall survival (OS) will be of 80%
+(versus 60% in historical controls). A two-sided, one-sample
+logrank test calculated from a sample of 31 subjects achieves
+80.7% power at a 0.050 significance level to detect a proportion
+OS of 80% in the new group when the proportion OS in the
+historic control group is 60% at 2 years.
+
+// Acronymes \\
+Statistical analysis: Justification of sample size
+We hypothesize the 2-year overall survival   will be of 80%
+(versus 60% in historical controls). A two-sided, one-sample
+logrank test calculated from a sample of 31 subjects achieves
+80.7% power at a 0.050 significance level to detect a proportion
+ overall survival  of 80% in the new group when the proportion  overall survival  in the
+historic control group is 60% at 2 years.
+
+// Lemma \\
+Statistical analysis : Justification of sample size We hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . A two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
+
+// UTF_8 \\
+Statistical analysis : Justification of sample size We hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . A two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
+
+// Lower \\
+statistical analysis : justification of sample size we hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . a two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
+
+// Ponctuation \\
+statistical analysis justification of sample size we hypothesize the 2year overall survival will be of 80 versus 60 in historical control a twosided onesample logrank test calculate from a sample of 31 subject achieve 80 7 power at a 0 050 significance level to detect a proportion overall survival of 80 in the new group when the proportion overall survival in the historic control group be 60 at 2 year
+
+// nombres et dates \\
+statistical analysis justification of sample size we hypothesize the 2year overall survival will be of   versus   in historical control a twosided onesample logrank test calculate from a sample of   subject achieve     power at a     significance level to detect a proportion overall survival of   in the new group when the proportion overall survival in the historic control group be   at   year
+
+// Chiffres romain \\
+statistical analysis justification of sample size we hypothesize the 2year overall survival will be of   versus   in historical control a twosided onesample logrank test calculate from a sample of   subject achieve     power at a     significance level to detect a proportion overall survival of   in the new group when the proportion overall survival in the historic control group be   at   year
+
+// stopword et lettre \\
+statistical analysis justification sample size hypothesize 2year overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group year
+
+// unite et temporal \\
+statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group
+
+// final \\
+statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group
+
+==== PARADISE ====
+
+--- [TITLE] ---
+
+// originale \\
+Full title: Prospective rAndomized controlled tRial of Crohn’s diseAse exclusion Diet vs
+corticosteroIds in adults and pediatric patientS with activE Crohn’s disease
+
+// Acronymes \\
+Full title: Prospective rAndomized controlled tRial of Crohn’s diseAse exclusion Diet vs
+corticosteroIds in adults and pediatric patientS with activE Crohn’s disease
+
+// Lemma \\
+Full title : Prospective rAndomized control tRial of Crohn ’ s diseAse exclusion Diet v corticosteroIds in adult and pediatric patientS with activE Crohn ’ s disease
+
+// UTF_8 \\
+Full title : Prospective rAndomized control tRial of Crohn  s diseAse exclusion Diet v corticosteroIds in adult and pediatric patientS with activE Crohn  s disease
+
+// Lower \\
+full title : prospective randomized control trial of crohn  s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn  s disease
+
+// Ponctuation \\
+full title prospective randomized control trial of crohn s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn s disease
+
+// nombres et dates \\
+full title prospective randomized control trial of crohn s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn s disease
+
+// Chiffres romain \\
+full title prospective randomized control trial of crohn s disease exclusion diet  5  corticosteroids in adult and pediatric patients with active crohn s disease
+
+// stopword et lettre \\
+full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease
+
+// unite et temporal \\
+full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease
+
+// final \\
+full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease

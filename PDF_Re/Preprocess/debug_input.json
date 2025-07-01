@@ -1,0 +1,23 @@
+{
+  "OPTISAGE": {
+        "TITLE": [
+            "Full title: Phase III study comparing GVHD prophylaxis with ATG-\nthymoglobulin to ATLG-grafalon in elderly patients with\nacute myeloid leukemia or myelodysplatic syndrome and\nreceiving an allogeneic hematopoietic stem cell\ntransplantation with a 10/10 HLA matched unrelated\ndonor following a reduced intensity conditioning regimen\nby fludarabine-treosulfan"
+        ]
+    },
+    "CAALLF01" :{
+        "INCLUSION CRITERIA": [
+            "Inclusion criteria: (cid:120) Children and adolescents\nAge > 12 months but < 18 yearsB-lineage or T- lineage ALL\n(cid:120) Written informed consent obtained before day 8 of treatment\nNB: patients with Down syndrome can be included but not randomized (see details in\nthe protocol section 5-3-2)"
+        ]
+    },
+    "HAPLO-EMPTY":{
+        "STATISTICS": [
+            "Statistical analysis: Justification of sample size\nWe hypothesize the 2-year overall survival (OS) will be of 80%\n(versus 60% in historical controls). A two-sided, one-sample\nlogrank test calculated from a sample of 31 subjects achieves\n80.7% power at a 0.050 significance level to detect a proportion\nOS of 80% in the new group when the proportion OS in the\nhistoric control group is 60% at 2 years."
+        ]
+    },
+    "PARADISE": {
+        "TITLE": [
+            "Full title: Prospective rAndomized controlled tRial of Crohn’s diseAse exclusion Diet vs\ncorticosteroIds in adults and pediatric patientS with activE Crohn’s disease"
+        ]
+    }
+
+}
