@@ -1,0 +1,173 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Page-1" id="Ci-ZUKzy-brfk0MZ3x0q">
+    <mxGraphModel dx="1889" dy="1163" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.16499999999996" y="-30.61999999999989" as="sourcePoint" />
+            <mxPoint x="141.17000000000007" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1" source="2CpQiGCqXpnz2ZMGltOy-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-3" value="UTF-8" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="30" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000003" y="120" as="sourcePoint" />
+            <mxPoint x="141.1700000000001" y="181" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1" source="2CpQiGCqXpnz2ZMGltOy-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-6" value="Acronymes&lt;br&gt;Généraux" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="181" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141" y="271" as="sourcePoint" />
+            <mxPoint x="141.17000000000007" y="332" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2CpQiGCqXpnz2ZMGltOy-8" target="2CpQiGCqXpnz2ZMGltOy-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-8" value="Acronymes&lt;br&gt;Spécifiques" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="332" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000003" y="420" as="sourcePoint" />
+            <mxPoint x="141.1700000000001" y="481" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-10" value="Lemma" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="481" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000003" y="571" as="sourcePoint" />
+            <mxPoint x="141.1700000000001" y="632" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-12" value="Lower" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="632" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1" source="2CpQiGCqXpnz2ZMGltOy-12" target="2CpQiGCqXpnz2ZMGltOy-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141" y="730" as="sourcePoint" />
+            <mxPoint x="141.17000000000007" y="791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-14" value="Ponctuation" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="800" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000006" y="890" as="sourcePoint" />
+            <mxPoint x="141.17000000000013" y="951" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-16" value="Stopwords" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16000000000003" y="951" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000003" y="1041" as="sourcePoint" />
+            <mxPoint x="141.1700000000001" y="1102" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-18" value="Cas&amp;nbsp;&lt;div&gt;Particuliers&amp;nbsp;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="1102" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="141.00000000000003" y="1192" as="sourcePoint" />
+            <mxPoint x="141.1700000000001" y="1253" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-20" value="Nettoyage spéciaux" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="91.16" y="1253" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-21" value="Statistical analysis: Justification of sample size&#xa;We hypothesize the 2-year overall survival (OS) will be of 80%&#xa;(versus 60% in historical controls). A two-sided, one-sample&#xa;logrank test calculated from a sample of 31 subjects achieves&#xa;80.7% power at a 0.050 significance level to detect a proportion&#xa;OS of 80% in the new group when the proportion OS in the&#xa;historic control group is 60% at 2 years." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="-180" width="380" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-22" value="Statistical analysis: Justification of sample size&#xa;We hypothesize the 2-year overall survival (OS) will be of 80%&#xa;(versus 60% in historical controls). A two-sided, one-sample&#xa;logrank test calculated from a sample of 31 subjects achieves&#xa;80.7% power at a 0.050 significance level to detect a proportion&#xa;OS of 80% in the new group when the proportion OS in the&#xa;historic control group is 60% at 2 years." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250" y="15" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-25" value="Statistical analysis: Justification of sample size&#xa;We hypothesize the 2-year overall survival (OS) will be of 80%&#xa;(versus 60% in historical controls). A two-sided, one-sample&#xa;logrank test calculated from a sample of 31 subjects achieves&#xa;80.7% power at a 0.050 significance level to detect a proportion&#xa;OS of 80% in the new group when the proportion OS in the&#xa;historic control group is 60% at 2 years." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250" y="156" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="377" as="targetPoint" />
+            <mxPoint x="191" y="377" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-29" value="&lt;div&gt;Statistical analysis: Justification of sample size&lt;/div&gt;&lt;div&gt;We hypothesize the 2-year overall survival&amp;nbsp; &amp;nbsp;will be of 80%&lt;/div&gt;&lt;div&gt;(versus 60% in historical controls). A two-sided, one-sample&lt;/div&gt;&lt;div&gt;logrank test calculated from a sample of 31 subjects achieves&lt;/div&gt;&lt;div&gt;80.7% power at a 0.050 significance level to detect a proportion&lt;/div&gt;&lt;div&gt;&amp;nbsp;overall survival&amp;nbsp; of 80% in the new group when the proportion&amp;nbsp; overall survival&amp;nbsp; in the&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;historic control group is 60% at 2 years.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250" y="307" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250.15999999999997" y="526" as="targetPoint" />
+            <mxPoint x="191.16" y="526" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-31" value="&lt;div&gt;Statistical analysis : Justification of sample size We hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . A two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250.15999999999997" y="456" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250.15999999999997" y="677" as="targetPoint" />
+            <mxPoint x="191.16" y="677" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-33" value="&lt;div&gt;statistical analysis : justification of sample size we hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . a two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250.15999999999997" y="607" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="845" as="targetPoint" />
+            <mxPoint x="191" y="845" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-35" value="&lt;div&gt;statistical analysis justification of sample size we hypothesize the 2year overall survival will be of 80 versus 60 in historical control a twosided onesample logrank test calculate from a sample of 31 subject achieve 80 7 power at a 0 050 significance level to detect a proportion overall survival of 80 in the new group when the proportion overall survival in the historic control group be 60 at 2 year&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250" y="775" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250.15999999999997" y="996" as="targetPoint" />
+            <mxPoint x="191.16" y="996" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-37" value="&lt;div&gt;statistical analysis justification sample size hypothesize 2year overall survival 80 versus 60 historical control twosided onesample logrank test calculate sample 31 subject achieve 80 7 power 0 050 significance level detect proportion overall survival 80 new group proportion overall survival historic control group 60 2 year&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250.15999999999997" y="926" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;fillColor=#b0e3e6;strokeColor=#0e8088;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250.15999999999997" y="1147" as="targetPoint" />
+            <mxPoint x="191.16" y="1147" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-39" value="&lt;div&gt;statistical analysis justification sample size hypothesize 2year overall survival 80 versus 60 historical control twosided onesample logrank test calculate sample 31 subject achieve 80 7 power 0 050 significance level detect proportion overall survival 80 new group proportion overall survival historic control group 60 2 year&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="250.15999999999997" y="1077" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-41" value="&lt;div&gt;statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="-21" y="1400" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2CpQiGCqXpnz2ZMGltOy-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.464;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" edge="1" parent="1" source="2CpQiGCqXpnz2ZMGltOy-20" target="2CpQiGCqXpnz2ZMGltOy-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

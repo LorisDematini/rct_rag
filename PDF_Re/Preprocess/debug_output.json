@@ -1,14 +1,17 @@
 {
-  "OPTISAGE": {
-    "TITLE": "full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan"
-  },
-  "CAALLF01": {
-    "INCLUSION CRITERIA": "inclusion criterion cid children adolescent age yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain treatment nb patient syndrome include randomize see detail protocol section"
-  },
   "HAPLO-EMPTY": {
     "STATISTICS": "statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group"
   },
-  "PARADISE": {
-    "TITLE": "full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease"
+  "MARVEL": {
+    "INCLUSION CRITERIA": "population involve patient major depressive disorder madrs despite regardless dose patient hospitalized outpatient major depressive disorder madrs visit selection patients non responder regardless dose decision psychiatrist increase dose visit selection male female age understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen"
+  },
+  "MARVEL2": {
+    "INCLUSION CRITERIA": "criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole hour auc metabolic ratio hour omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine concentration hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 cyp2d6"
+  },
+  "GREEN": {
+    "INTERVENTION": "investigational medicinal product glenzocimab act017 acticor biotech formulate administration sterile product sodium citrate sodium chloride buffer supply clinical trial use vial contain drug product concentration vial contain glenzocimab two vial glenzocimab administer concomitantly eligible patient total daily dose"
+  },
+  "KAPKEY": {
+    "JUSTIFICATION": "scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus hhv8 treatment poorly codify chemotherapies give best transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma"
   }
 }

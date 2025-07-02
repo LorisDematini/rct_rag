@@ -1,0 +1,66 @@
+Scientific justification: Classic and endemic Kaposi’s sarcoma (KS) are
+lymphangioproliferations associated with human herpes virus 8
+(HHV8), which treatment is poorly codified. Chemotherapies
+give at best 30-60% of transient responses. While interferon
+responses are frequent, this drug is often poorly tolerated in
+elderly patients. Therefore new therapies are needed. Classic
+KS represents an ideal model for evaluating new drugs since
+patients do not receive concomitant immunosuppressive
+regimens nor antiviral therapies. Pembrolizumab, an anti-PD1 monoclonal antibody has recently
+been shown to improve survival in several solid tumors. In KS
+few data are available on the role of PD1-PD-L1 axis. A
+significant PD-L1 expression on HHV8-associated pleural
+effusion lymphomas and on KS samples have been recently
+reported. Our experience in classical and endemic KS supports
+the role of this pathway with expression of PD-L1 by
+subpopulations of T cells but also NK cells in peripheral blood
+cells from these patients and expression of PD-L1 by tumor cells
+in KS lesions. In this study we will evaluate the benefit and safety profile of
+pembrolizumab in classic and endemic KS.
+
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate 
+human herpes virus hhv8 treatment poorly codify chemotherapies give best transient response 
+interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need 
+classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive 
+regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid 
+tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion 
+lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway 
+expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi 
+sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
+
+
+
+
+
+Investigational medicinal product(s): Glenzocimab (ACT-017, Acticor Biotech) is formulated for IV
+administration as a sterile product with 20 mM sodium citrate and 130 mM sodium chloride buffer at pH of 5.0.
+It is supplied for clinical trial use in vials containing 50 mL of the drug product at a concentration of 10 mg/mL.
+Each vial contains 500 mg of glenzocimab. Two vials (2x500 mg) of glenzocimab should be administered
+concomitantly for eligible patients for a total daily dose of 1g.
+
+investigational medicinal product glenzocimab act017 acticor biotech formulate administration
+sterile product sodium citrate sodium chloride buffer supply clinical trial use vial contain drug product 
+concentration vial contain glenzocimab two vial glenzocimab administer concomitantly eligible patient total daily dose
+
+
+
+
+Criteria of
+assessment:  (V+ODV) concentration  The CYP2C19 activity: 5-hydroxyomeprazole/omeprazole at 2
+hours and AUC of the Metabolic ratio 2, 3 and 6 hours after 2,3,6 meprazole oral administration
+ The CYP2D6 activity: dextrorphan/dextromethorphan ratio two hours after dextromethorphan oral administration
+ The CYP3A4 activity: 1-hydroxymidazolam/ midazolam ratio two hours after midazolam oral administration
+ The P-gp activity: Fexofenadine AUC based on fexofenadine 2,3,6
+concentrations at 2, 3 and 6 hours after fexofenadine oral administration
+ Antidepressant efficacy: MADRS, HAMD, QIDS
+ Antidepressant tolerance: PRISE-M, FISBER
+ Antidepressant observance: MARS
+ Circulating mRNA and miRNA transcripts
+ Allelic variations: CYP2C19 2* and CYP2D6 4* and 5*
+
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole 
+hour auc metabolic ratio hour omeprazole oral administration cyp2d6 activity dextrorphan 
+dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam 
+midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine 
+concentration hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant 
+tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 cyp2d6

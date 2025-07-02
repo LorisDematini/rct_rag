@@ -1,103 +1,27 @@
 
-==== OPTISAGE ====
-
---- [TITLE] ---
-
-// originale \\
-Full title: Phase III study comparing GVHD prophylaxis with ATG-
-thymoglobulin to ATLG-grafalon in elderly patients with
-acute myeloid leukemia or myelodysplatic syndrome and
-receiving an allogeneic hematopoietic stem cell
-transplantation with a 10/10 HLA matched unrelated
-donor following a reduced intensity conditioning regimen
-by fludarabine-treosulfan
-
-// Acronymes \\
-Full title: Phase III study comparing GVHD prophylaxis with  anti thymocyte globulins -
-thymoglobulin to ATLG-grafalon in elderly patients with
-acute myeloid leukemia or myelodysplatic syndrome and
-receiving an allogeneic hematopoietic stem cell
-transplantation with a 10/10 HLA matched unrelated
-donor following a reduced intensity conditioning regimen
-by fludarabine-treosulfan
-
-// Lemma \\
-Full title : Phase III study compare GVHD prophylaxis with anti thymocyte globulin - thymoglobulin to ATLG-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 HLA match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
-
-// UTF_8 \\
-Full title : Phase III study compare GVHD prophylaxis with anti thymocyte globulin - thymoglobulin to ATLG-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 HLA match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
-
-// Lower \\
-full title : phase iii study compare gvhd prophylaxis with anti thymocyte globulin - thymoglobulin to atlg-grafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10/10 hla match unrelated donor follow a reduced intensity condition regimen by fludarabine-treosulfan
-
-// Ponctuation \\
-full title phase iii study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a 10 10 hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
-
-// nombres et dates \\
-full title phase iii study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a     hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
-
-// Chiffres romain \\
-full title phase  3  study compare gvhd prophylaxis with anti thymocyte globulin thymoglobulin to atlggrafalon in elderly patient with acute myeloid leukemia or myelodysplatic syndrome and receive an allogeneic hematopoietic stem cell transplantation with a     hla match unrelated donor follow a reduced intensity condition regimen by fludarabinetreosulfan
-
-// stopword et lettre \\
-full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
-
-// unite et temporal \\
-full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
-
-// final \\
-full title phase 3 study compare gvhd prophylaxis anti thymocyte globulin thymoglobulin atlggrafalon elderly patient acute myeloid leukemia myelodysplatic syndrome receive allogeneic hematopoietic stem cell transplantation hla match unrelated donor follow reduced intensity condition regimen fludarabinetreosulfan
-
-==== CAALLF01 ====
-
---- [INCLUSION CRITERIA] ---
-
-// originale \\
-Inclusion criteria: (cid:120) Children and adolescents
-Age > 12 months but < 18 yearsB-lineage or T- lineage ALL
-(cid:120) Written informed consent obtained before day 8 of treatment
-NB: patients with Down syndrome can be included but not randomized (see details in
-the protocol section 5-3-2)
-
-// Acronymes \\
-Inclusion criteria: (cid:120) Children and adolescents
-Age > 12 months but < 18 yearsB-lineage or T- lineage  acute lymphoblastic leukemia 
-(cid:120) Written informed consent obtained before day 8 of treatment
-NB: patients with Down syndrome can be included but not randomized (see details in
-the protocol section 5-3-2)
-
-// Lemma \\
-Inclusion criterion : ( cid:120 ) Children and adolescent Age > 12 month but < 18 yearsB-lineage or T- lineage acute lymphoblastic leukemia ( cid:120 ) Written informed consent obtain before day 8 of treatment NB : patient with Down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
-
-// UTF_8 \\
-Inclusion criterion : ( cid:120 ) Children and adolescent Age > 12 month but < 18 yearsB-lineage or T- lineage acute lymphoblastic leukemia ( cid:120 ) Written informed consent obtain before day 8 of treatment NB : patient with Down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
-
-// Lower \\
-inclusion criterion : ( cid:120 ) children and adolescent age > 12 month but < 18 yearsb-lineage or t- lineage acute lymphoblastic leukemia ( cid:120 ) written informed consent obtain before day 8 of treatment nb : patient with down syndrome can be include but not randomize ( see detail in the protocol section 5-3-2 )
-
-// Ponctuation \\
-inclusion criterion cid 120 children and adolescent age 12 month but 18 yearsblineage or t lineage acute lymphoblastic leukemia cid 120 written informed consent obtain before day 8 of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section 532
-
-// nombres et dates \\
-inclusion criterion cid   children and adolescent age   month but   yearsblineage or t lineage acute lymphoblastic leukemia cid   written informed consent obtain before day   of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section  
-
-// Chiffres romain \\
-inclusion criterion cid   children and adolescent age   month but   yearsblineage or t lineage acute lymphoblastic leukemia cid   written informed consent obtain before day   of treatment nb patient with down syndrome can be include but not randomize see detail in the protocol section  
-
-// stopword et lettre \\
-inclusion criterion cid children adolescent age month yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain day treatment nb patient syndrome include randomize see detail protocol section
-
-// unite et temporal \\
-inclusion criterion cid children adolescent age yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain treatment nb patient syndrome include randomize see detail protocol section
-
-// final \\
-inclusion criterion cid children adolescent age yearsblineage lineage acute lymphoblastic leukemia cid written informed consent obtain treatment nb patient syndrome include randomize see detail protocol section
-
 ==== HAPLO-EMPTY ====
 
 --- [STATISTICS] ---
 
 // originale \\
+Statistical analysis: Justification of sample size
+We hypothesize the 2-year overall survival (OS) will be of 80%
+(versus 60% in historical controls). A two-sided, one-sample
+logrank test calculated from a sample of 31 subjects achieves
+80.7% power at a 0.050 significance level to detect a proportion
+OS of 80% in the new group when the proportion OS in the
+historic control group is 60% at 2 years.
+
+// UTF_8 \\
+Statistical analysis: Justification of sample size
+We hypothesize the 2-year overall survival (OS) will be of 80%
+(versus 60% in historical controls). A two-sided, one-sample
+logrank test calculated from a sample of 31 subjects achieves
+80.7% power at a 0.050 significance level to detect a proportion
+OS of 80% in the new group when the proportion OS in the
+historic control group is 60% at 2 years.
+
+// Acronymes generaux \\
 Statistical analysis: Justification of sample size
 We hypothesize the 2-year overall survival (OS) will be of 80%
 (versus 60% in historical controls). A two-sided, one-sample
@@ -118,23 +42,20 @@ historic control group is 60% at 2 years.
 // Lemma \\
 Statistical analysis : Justification of sample size We hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . A two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
 
-// UTF_8 \\
-Statistical analysis : Justification of sample size We hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . A two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
-
 // Lower \\
 statistical analysis : justification of sample size we hypothesize the 2-year overall survival will be of 80 % ( versus 60 % in historical control ) . a two-sided , one-sample logrank test calculate from a sample of 31 subject achieve 80.7 % power at a 0.050 significance level to detect a proportion overall survival of 80 % in the new group when the proportion overall survival in the historic control group be 60 % at 2 year .
 
 // Ponctuation \\
 statistical analysis justification of sample size we hypothesize the 2year overall survival will be of 80 versus 60 in historical control a twosided onesample logrank test calculate from a sample of 31 subject achieve 80 7 power at a 0 050 significance level to detect a proportion overall survival of 80 in the new group when the proportion overall survival in the historic control group be 60 at 2 year
 
-// nombres et dates \\
-statistical analysis justification of sample size we hypothesize the 2year overall survival will be of   versus   in historical control a twosided onesample logrank test calculate from a sample of   subject achieve     power at a     significance level to detect a proportion overall survival of   in the new group when the proportion overall survival in the historic control group be   at   year
-
-// Chiffres romain \\
-statistical analysis justification of sample size we hypothesize the 2year overall survival will be of   versus   in historical control a twosided onesample logrank test calculate from a sample of   subject achieve     power at a     significance level to detect a proportion overall survival of   in the new group when the proportion overall survival in the historic control group be   at   year
-
 // stopword et lettre \\
-statistical analysis justification sample size hypothesize 2year overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group year
+statistical analysis justification sample size hypothesize 2year overall survival 80 versus 60 historical control twosided onesample logrank test calculate sample 31 subject achieve 80 7 power 0 050 significance level detect proportion overall survival 80 new group proportion overall survival historic control group 60 2 year
+
+// Phase \\
+statistical analysis justification sample size hypothesize 2year overall survival 80 versus 60 historical control twosided onesample logrank test calculate sample 31 subject achieve 80 7 power 0 050 significance level detect proportion overall survival 80 new group proportion overall survival historic control group 60 2 year
+
+// nombres et dates \\
+statistical analysis justification sample size hypothesize 2year overall survival   versus   historical control twosided onesample logrank test calculate sample   subject achieve     power     significance level detect proportion overall survival   new group proportion overall survival historic control group     year
 
 // unite et temporal \\
 statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group
@@ -142,41 +63,386 @@ statistical analysis justification sample size hypothesize overall survival vers
 // final \\
 statistical analysis justification sample size hypothesize overall survival versus historical control twosided onesample logrank test calculate sample subject achieve power significance level detect proportion overall survival new group proportion overall survival historic control group
 
-==== PARADISE ====
+==== MARVEL ====
 
---- [TITLE] ---
+--- [INCLUSION CRITERIA] ---
 
 // originale \\
-Full title: Prospective rAndomized controlled tRial of Crohn’s diseAse exclusion Diet vs
-corticosteroIds in adults and pediatric patientS with activE Crohn’s disease
-
-// Acronymes \\
-Full title: Prospective rAndomized controlled tRial of Crohn’s diseAse exclusion Diet vs
-corticosteroIds in adults and pediatric patientS with activE Crohn’s disease
-
-// Lemma \\
-Full title : Prospective rAndomized control tRial of Crohn ’ s diseAse exclusion Diet v corticosteroIds in adult and pediatric patientS with activE Crohn ’ s disease
+Population involved: Patient with major depressive disorder and MADRS ≥ 20
+Despite 4 weeks of V regardless of the dose. Patient (Hospitalized or outpatient) with major depressive disorder
+and MADRS ≥ 20 at visit of selection
+Patients non responders to V after 4 weeks of V regardless of the
+dose
+Decision of the psychiatrist to increase the dose of V at visit of
+selection
+Male and female Age  18 years Understanding of French language
+and able to give a written inform consent.
+Informed consent signed to participate to the study
+Individuals covered by social security regimen
 
 // UTF_8 \\
-Full title : Prospective rAndomized control tRial of Crohn  s diseAse exclusion Diet v corticosteroIds in adult and pediatric patientS with activE Crohn  s disease
+Population involved: Patient with major depressive disorder and MADRS  20
+Despite 4 weeks of V regardless of the dose. Patient (Hospitalized or outpatient) with major depressive disorder
+and MADRS  20 at visit of selection
+Patients non responders to V after 4 weeks of V regardless of the
+dose
+Decision of the psychiatrist to increase the dose of V at visit of
+selection
+Male and female Age  18 years Understanding of French language
+and able to give a written inform consent.
+Informed consent signed to participate to the study
+Individuals covered by social security regimen
+
+// Acronymes generaux \\
+Population involved: Patient with major depressive disorder and MADRS  20
+Despite 4 weeks of V regardless of the dose. Patient (Hospitalized or outpatient) with major depressive disorder
+and MADRS  20 at visit of selection
+Patients non responders to V after 4 weeks of V regardless of the
+dose
+Decision of the psychiatrist to increase the dose of V at visit of
+selection
+Male and female Age  18 years Understanding of French language
+and able to give a written inform consent.
+Informed consent signed to participate to the study
+Individuals covered by social security regimen
+
+// Acronymes \\
+Population involved: Patient with major depressive disorder and MADRS  20
+Despite 4 weeks of V regardless of the dose. Patient (Hospitalized or outpatient) with major depressive disorder
+and MADRS  20 at visit of selection
+Patients non responders to V after 4 weeks of V regardless of the
+dose
+Decision of the psychiatrist to increase the dose of V at visit of
+selection
+Male and female Age  18 years Understanding of French language
+and able to give a written inform consent.
+Informed consent signed to participate to the study
+Individuals covered by social security regimen
+
+// Lemma \\
+Population involve : Patient with major depressive disorder and MADRS 20 Despite 4 week of V regardless of the dose . Patient ( Hospitalized or outpatient ) with major depressive disorder and MADRS 20 at visit of selection Patients non responder to V after 4 week of V regardless of the dose Decision of the psychiatrist to increase the dose of V at visit of selection Male and female Age 18 year Understanding of French language and able to give a write inform consent . Informed consent sign to participate to the study Individuals cover by social security regimen
 
 // Lower \\
-full title : prospective randomized control trial of crohn  s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn  s disease
+population involve : patient with major depressive disorder and madrs 20 despite 4 week of v regardless of the dose . patient ( hospitalized or outpatient ) with major depressive disorder and madrs 20 at visit of selection patients non responder to v after 4 week of v regardless of the dose decision of the psychiatrist to increase the dose of v at visit of selection male and female age 18 year understanding of french language and able to give a write inform consent . informed consent sign to participate to the study individuals cover by social security regimen
 
 // Ponctuation \\
-full title prospective randomized control trial of crohn s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn s disease
-
-// nombres et dates \\
-full title prospective randomized control trial of crohn s disease exclusion diet v corticosteroids in adult and pediatric patients with active crohn s disease
-
-// Chiffres romain \\
-full title prospective randomized control trial of crohn s disease exclusion diet  5  corticosteroids in adult and pediatric patients with active crohn s disease
+population involve patient with major depressive disorder and madrs 20 despite 4 week of v regardless of the dose patient hospitalized or outpatient with major depressive disorder and madrs 20 at visit of selection patients non responder to v after 4 week of v regardless of the dose decision of the psychiatrist to increase the dose of v at visit of selection male and female age 18 year understanding of french language and able to give a write inform consent informed consent sign to participate to the study individuals cover by social security regimen
 
 // stopword et lettre \\
-full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease
+population involve patient major depressive disorder madrs 20 despite 4 week regardless dose patient hospitalized outpatient major depressive disorder madrs 20 visit selection patients non responder 4 week regardless dose decision psychiatrist increase dose visit selection male female age 18 year understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen
+
+// Phase \\
+population involve patient major depressive disorder madrs 20 despite 4 week regardless dose patient hospitalized outpatient major depressive disorder madrs 20 visit selection patients non responder 4 week regardless dose decision psychiatrist increase dose visit selection male female age 18 year understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen
+
+// nombres et dates \\
+population involve patient major depressive disorder madrs   despite   week regardless dose patient hospitalized outpatient major depressive disorder madrs   visit selection patients non responder   week regardless dose decision psychiatrist increase dose visit selection male female age   year understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen
 
 // unite et temporal \\
-full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease
+population involve patient major depressive disorder madrs despite regardless dose patient hospitalized outpatient major depressive disorder madrs visit selection patients non responder regardless dose decision psychiatrist increase dose visit selection male female age understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen
 
 // final \\
-full title prospective randomized control trial crohn disease exclusion diet 5 corticosteroids adult pediatric patients active crohn disease
+population involve patient major depressive disorder madrs despite regardless dose patient hospitalized outpatient major depressive disorder madrs visit selection patients non responder regardless dose decision psychiatrist increase dose visit selection male female age understanding french language able give write inform consent informed consent sign participate study individuals cover social security regimen
+
+==== MARVEL2 ====
+
+--- [INCLUSION CRITERIA] ---
+
+// originale \\
+Criteria of
+assessment:  (V+ODV) concentration
+ The CYP2C19 activity: 5-hydroxyomeprazole/omeprazole at 2
+hours and AUC of the Metabolic ratio 2, 3 and 6 hours after
+2,3,6
+omeprazole oral administration
+ The CYP2D6 activity: dextrorphan/dextromethorphan ratio two
+hours after dextromethorphan oral administration
+ The CYP3A4 activity: 1-hydroxymidazolam/ midazolam ratio two
+hours after midazolam oral administration
+ The P-gp activity: Fexofenadine AUC based on fexofenadine
+2,3,6
+concentrations at 2, 3 and 6 hours after fexofenadine oral
+administration
+ Antidepressant efficacy: MADRS, HAMD, QIDS
+ Antidepressant tolerance: PRISE-M, FISBER
+ Antidepressant observance: MARS
+ Circulating mRNA and miRNA transcripts
+ Allelic variations: CYP2C19 2* and CYP2D6 4* and 5*
+
+// UTF_8 \\
+Criteria of
+assessment:  (V+ODV) concentration
+ The CYP2C19 activity: 5-hydroxyomeprazole/omeprazole at 2
+hours and AUC of the Metabolic ratio 2, 3 and 6 hours after
+2,3,6
+omeprazole oral administration
+ The CYP2D6 activity: dextrorphan/dextromethorphan ratio two
+hours after dextromethorphan oral administration
+ The CYP3A4 activity: 1-hydroxymidazolam/ midazolam ratio two
+hours after midazolam oral administration
+ The P-gp activity: Fexofenadine AUC based on fexofenadine
+2,3,6
+concentrations at 2, 3 and 6 hours after fexofenadine oral
+administration
+ Antidepressant efficacy: MADRS, HAMD, QIDS
+ Antidepressant tolerance: PRISE-M, FISBER
+ Antidepressant observance: MARS
+ Circulating mRNA and miRNA transcripts
+ Allelic variations: CYP2C19 2* and CYP2D6 4* and 5*
+
+// Acronymes generaux \\
+Criteria of
+assessment:  (V+ODV) concentration
+ The CYP2C19 activity: 5-hydroxyomeprazole/omeprazole at 2
+hours and AUC of the Metabolic ratio 2, 3 and 6 hours after
+2,3,6
+omeprazole oral administration
+ The CYP2D6 activity: dextrorphan/dextromethorphan ratio two
+hours after dextromethorphan oral administration
+ The CYP3A4 activity: 1-hydroxymidazolam/ midazolam ratio two
+hours after midazolam oral administration
+ The P-gp activity: Fexofenadine AUC based on fexofenadine
+2,3,6
+concentrations at 2, 3 and 6 hours after fexofenadine oral
+administration
+ Antidepressant efficacy: MADRS, HAMD, QIDS
+ Antidepressant tolerance: PRISE-M, FISBER
+ Antidepressant observance: MARS
+ Circulating mRNA and miRNA transcripts
+ Allelic variations: CYP2C19 2* and CYP2D6 4* and 5*
+
+// Acronymes \\
+Criteria of
+assessment:  (V+ODV) concentration
+ The CYP2C19 activity: 5-hydroxyomeprazole/omeprazole at 2
+hours and AUC of the Metabolic ratio 2, 3 and 6 hours after
+2,3,6
+omeprazole oral administration
+ The CYP2D6 activity: dextrorphan/dextromethorphan ratio two
+hours after dextromethorphan oral administration
+ The CYP3A4 activity: 1-hydroxymidazolam/ midazolam ratio two
+hours after midazolam oral administration
+ The P-gp activity: Fexofenadine AUC based on fexofenadine
+2,3,6
+concentrations at 2, 3 and 6 hours after fexofenadine oral
+administration
+ Antidepressant efficacy: MADRS, HAMD, QIDS
+ Antidepressant tolerance: PRISE-M, FISBER
+ Antidepressant observance: MARS
+ Circulating mRNA and miRNA transcripts
+ Allelic variations: CYP2C19 2* and CYP2D6 4* and 5*
+
+// Lemma \\
+Criteria of assessment : ( V+ODV ) concentration The CYP2C19 activity : 5-hydroxyomeprazole/omeprazole at 2 hour and AUC of the Metabolic ratio 2 , 3 and 6 hour after 2,3,6 omeprazole oral administration The CYP2D6 activity : dextrorphan/dextromethorphan ratio two hour after dextromethorphan oral administration The CYP3A4 activity : 1-hydroxymidazolam/ midazolam ratio two hour after midazolam oral administration The P-gp activity : Fexofenadine AUC base on fexofenadine 2,3,6 concentration at 2 , 3 and 6 hour after fexofenadine oral administration Antidepressant efficacy : MADRS , HAMD , QIDS Antidepressant tolerance : PRISE-M , FISBER Antidepressant observance : MARS Circulating mRNA and miRNA transcript Allelic variation : CYP2C19 2 * and CYP2D6 4 * and 5 *
+
+// Lower \\
+criteria of assessment : ( v+odv ) concentration the cyp2c19 activity : 5-hydroxyomeprazole/omeprazole at 2 hour and auc of the metabolic ratio 2 , 3 and 6 hour after 2,3,6 omeprazole oral administration the cyp2d6 activity : dextrorphan/dextromethorphan ratio two hour after dextromethorphan oral administration the cyp3a4 activity : 1-hydroxymidazolam/ midazolam ratio two hour after midazolam oral administration the p-gp activity : fexofenadine auc base on fexofenadine 2,3,6 concentration at 2 , 3 and 6 hour after fexofenadine oral administration antidepressant efficacy : madrs , hamd , qids antidepressant tolerance : prise-m , fisber antidepressant observance : mars circulating mrna and mirna transcript allelic variation : cyp2c19 2 * and cyp2d6 4 * and 5 *
+
+// Ponctuation \\
+criteria of assessment v odv concentration the cyp2c19 activity 5hydroxyomeprazole omeprazole at 2 hour and auc of the metabolic ratio 2 3 and 6 hour after 2 3 6 omeprazole oral administration the cyp2d6 activity dextrorphan dextromethorphan ratio two hour after dextromethorphan oral administration the cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour after midazolam oral administration the pgp activity fexofenadine auc base on fexofenadine 2 3 6 concentration at 2 3 and 6 hour after fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna and mirna transcript allelic variation cyp2c19 2 and cyp2d6 4 and 5
+
+// stopword et lettre \\
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole 2 hour auc metabolic ratio 2 3 6 hour 2 3 6 omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine 2 3 6 concentration 2 3 6 hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 2 cyp2d6 4 5
+
+// Phase \\
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole 2 hour auc metabolic ratio 2 3 6 hour 2 3 6 omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine 2 3 6 concentration 2 3 6 hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 2 cyp2d6 4 5
+
+// nombres et dates \\
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole   hour auc metabolic ratio       hour       omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine       concentration       hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19   cyp2d6    
+
+// unite et temporal \\
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole hour auc metabolic ratio hour omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine concentration hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 cyp2d6
+
+// final \\
+criteria assessment odv concentration cyp2c19 activity 5hydroxyomeprazole omeprazole hour auc metabolic ratio hour omeprazole oral administration cyp2d6 activity dextrorphan dextromethorphan ratio two hour dextromethorphan oral administration cyp3a4 activity 1hydroxymidazolam midazolam ratio two hour midazolam oral administration pgp activity fexofenadine auc base fexofenadine concentration hour fexofenadine oral administration antidepressant efficacy madrs hamd qids antidepressant tolerance prisem fisber antidepressant observance mars circulating mrna mirna transcript allelic variation cyp2c19 cyp2d6
+
+==== GREEN ====
+
+--- [INTERVENTION] ---
+
+// originale \\
+Investigational medicinal
+product(s): Glenzocimab (ACT-017, Acticor Biotech) is formulated for IV
+administration as a sterile product with 20 mM sodium citrate
+and 130 mM sodium chloride buffer at pH of 5.0.
+It is supplied for clinical trial use in vials containing 50 mL of
+the drug product at a concentration of 10 mg/mL.
+Each vial contains 500 mg of glenzocimab.
+Two vials (2x500 mg) of glenzocimab should be administered
+concomitantly for eligible patients for a total daily dose of 1g.
+
+// UTF_8 \\
+Investigational medicinal
+product(s): Glenzocimab (ACT-017, Acticor Biotech) is formulated for IV
+administration as a sterile product with 20 mM sodium citrate
+and 130 mM sodium chloride buffer at pH of 5.0.
+It is supplied for clinical trial use in vials containing 50 mL of
+the drug product at a concentration of 10 mg/mL.
+Each vial contains 500 mg of glenzocimab.
+Two vials (2x500 mg) of glenzocimab should be administered
+concomitantly for eligible patients for a total daily dose of 1g.
+
+// Acronymes generaux \\
+Investigational medicinal
+product(s): Glenzocimab (ACT-017, Acticor Biotech) is formulated for IV
+administration as a sterile product with 20 mM sodium citrate
+and 130 mM sodium chloride buffer at pH of 5.0.
+It is supplied for clinical trial use in vials containing 50 mL of
+the drug product at a concentration of 10 mg/mL.
+Each vial contains 500 mg of glenzocimab.
+Two vials (2x500 mg) of glenzocimab should be administered
+concomitantly for eligible patients for a total daily dose of 1g.
+
+// Acronymes \\
+Investigational medicinal
+product(s): Glenzocimab (ACT-017, Acticor Biotech) is formulated for IV
+administration as a sterile product with 20 mM sodium citrate
+and 130 mM sodium chloride buffer at pH of 5.0.
+It is supplied for clinical trial use in vials containing 50 mL of
+the drug product at a concentration of 10 mg/mL.
+Each vial contains 500 mg of glenzocimab.
+Two vials (2x500 mg) of glenzocimab should be administered
+concomitantly for eligible patients for a total daily dose of 1g.
+
+// Lemma \\
+Investigational medicinal product ( s ) : Glenzocimab ( ACT-017 , Acticor Biotech ) be formulate for IV administration a a sterile product with 20 mM sodium citrate and 130 mM sodium chloride buffer at pH of 5.0 . It be supply for clinical trial use in vial contain 50 mL of the drug product at a concentration of 10 mg/mL . Each vial contain 500 mg of glenzocimab . Two vial ( 2x500 mg ) of glenzocimab should be administer concomitantly for eligible patient for a total daily dose of 1g .
+
+// Lower \\
+investigational medicinal product ( s ) : glenzocimab ( act-017 , acticor biotech ) be formulate for iv administration a a sterile product with 20 mm sodium citrate and 130 mm sodium chloride buffer at ph of 5.0 . it be supply for clinical trial use in vial contain 50 ml of the drug product at a concentration of 10 mg/ml . each vial contain 500 mg of glenzocimab . two vial ( 2x500 mg ) of glenzocimab should be administer concomitantly for eligible patient for a total daily dose of 1g .
+
+// Ponctuation \\
+investigational medicinal product s glenzocimab act017 acticor biotech be formulate for iv administration a a sterile product with 20 mm sodium citrate and 130 mm sodium chloride buffer at ph of 5 0 it be supply for clinical trial use in vial contain 50 ml of the drug product at a concentration of 10 mg ml each vial contain 500 mg of glenzocimab two vial 2x500 mg of glenzocimab should be administer concomitantly for eligible patient for a total daily dose of 1g
+
+// stopword et lettre \\
+investigational medicinal product glenzocimab act017 acticor biotech formulate iv administration sterile product 20 mm sodium citrate 130 mm sodium chloride buffer ph 5 0 supply clinical trial use vial contain 50 ml drug product concentration 10 mg ml vial contain 500 mg glenzocimab two vial 2x500 mg glenzocimab administer concomitantly eligible patient total daily dose 1g
+
+// Phase \\
+investigational medicinal product glenzocimab act017 acticor biotech formulate 4 administration sterile product 20 mm sodium citrate 130 mm sodium chloride buffer ph 5 0 supply clinical trial use vial contain 50 ml drug product concentration 10 mg ml vial contain 500 mg glenzocimab two vial 2x500 mg glenzocimab administer concomitantly eligible patient total daily dose 1g
+
+// nombres et dates \\
+investigational medicinal product glenzocimab act017 acticor biotech formulate   administration sterile product   mm sodium citrate   mm sodium chloride buffer ph     supply clinical trial use vial contain   ml drug product concentration   mg ml vial contain   mg glenzocimab two vial   mg glenzocimab administer concomitantly eligible patient total daily dose 1g
+
+// unite et temporal \\
+investigational medicinal product glenzocimab act017 acticor biotech formulate administration sterile product sodium citrate sodium chloride buffer supply clinical trial use vial contain drug product concentration vial contain glenzocimab two vial glenzocimab administer concomitantly eligible patient total daily dose
+
+// final \\
+investigational medicinal product glenzocimab act017 acticor biotech formulate administration sterile product sodium citrate sodium chloride buffer supply clinical trial use vial contain drug product concentration vial contain glenzocimab two vial glenzocimab administer concomitantly eligible patient total daily dose
+
+==== KAPKEY ====
+
+--- [JUSTIFICATION] ---
+
+// originale \\
+Scientific justification: Classic and endemic Kaposi’s sarcoma (KS) are
+lymphangioproliferations associated with human herpes virus 8
+(HHV8), which treatment is poorly codified. Chemotherapies
+give at best 30-60% of transient responses. While interferon
+responses are frequent, this drug is often poorly tolerated in
+elderly patients. Therefore new therapies are needed. Classic
+KS represents an ideal model for evaluating new drugs since
+patients do not receive concomitant immunosuppressive
+regimens nor antiviral therapies.
+Pembrolizumab, an anti-PD1 monoclonal antibody has recently
+been shown to improve survival in several solid tumors. In KS
+few data are available on the role of PD1-PD-L1 axis. A
+significant PD-L1 expression on HHV8-associated pleural
+effusion lymphomas and on KS samples have been recently
+reported. Our experience in classical and endemic KS supports
+the role of this pathway with expression of PD-L1 by
+subpopulations of T cells but also NK cells in peripheral blood
+cells from these patients and expression of PD-L1 by tumor cells
+in KS lesions.
+In this study we will evaluate the benefit and safety profile of
+pembrolizumab in classic and endemic KS.
+
+// UTF_8 \\
+Scientific justification: Classic and endemic Kaposis sarcoma (KS) are
+lymphangioproliferations associated with human herpes virus 8
+(HHV8), which treatment is poorly codified. Chemotherapies
+give at best 30-60% of transient responses. While interferon
+responses are frequent, this drug is often poorly tolerated in
+elderly patients. Therefore new therapies are needed. Classic
+KS represents an ideal model for evaluating new drugs since
+patients do not receive concomitant immunosuppressive
+regimens nor antiviral therapies.
+Pembrolizumab, an anti-PD1 monoclonal antibody has recently
+been shown to improve survival in several solid tumors. In KS
+few data are available on the role of PD1-PD-L1 axis. A
+significant PD-L1 expression on HHV8-associated pleural
+effusion lymphomas and on KS samples have been recently
+reported. Our experience in classical and endemic KS supports
+the role of this pathway with expression of PD-L1 by
+subpopulations of T cells but also NK cells in peripheral blood
+cells from these patients and expression of PD-L1 by tumor cells
+in KS lesions.
+In this study we will evaluate the benefit and safety profile of
+pembrolizumab in classic and endemic KS.
+
+// Acronymes generaux \\
+Scientific justification: Classic and endemic Kaposis sarcoma (KS) are
+lymphangioproliferations associated with human herpes virus 8
+(HHV8), which treatment is poorly codified. Chemotherapies
+give at best 30-60% of transient responses. While interferon
+responses are frequent, this drug is often poorly tolerated in
+elderly patients. Therefore new therapies are needed. Classic
+KS represents an ideal model for evaluating new drugs since
+patients do not receive concomitant immunosuppressive
+regimens nor antiviral therapies.
+Pembrolizumab, an anti-PD1 monoclonal antibody has recently
+been shown to improve survival in several solid tumors. In KS
+few data are available on the role of PD1-PD-L1 axis. A
+significant PD-L1 expression on HHV8-associated pleural
+effusion lymphomas and on KS samples have been recently
+reported. Our experience in classical and endemic KS supports
+the role of this pathway with expression of PD-L1 by
+subpopulations of T cells but also NK cells in peripheral blood
+cells from these patients and expression of PD-L1 by tumor cells
+in KS lesions.
+In this study we will evaluate the benefit and safety profile of
+pembrolizumab in classic and endemic KS.
+
+// Acronymes \\
+Scientific justification: Classic and endemic Kaposis sarcoma   are
+lymphangioproliferations associated with human herpes virus 8
+(HHV8), which treatment is poorly codified. Chemotherapies
+give at best 30-60% of transient responses. While interferon
+responses are frequent, this drug is often poorly tolerated in
+elderly patients. Therefore new therapies are needed. Classic
+ kaposi sarcoma  represents an ideal model for evaluating new drugs since
+patients do not receive concomitant immunosuppressive
+regimens nor antiviral therapies.
+Pembrolizumab, an anti-PD1 monoclonal antibody has recently
+been shown to improve survival in several solid tumors. In  kaposi sarcoma 
+few data are available on the role of PD1-PD-L1 axis. A
+significant PD-L1 expression on HHV8-associated pleural
+effusion lymphomas and on  kaposi sarcoma  samples have been recently
+reported. Our experience in classical and endemic  kaposi sarcoma  supports
+the role of this pathway with expression of PD-L1 by
+subpopulations of T cells but also NK cells in peripheral blood
+cells from these patients and expression of PD-L1 by tumor cells
+in  kaposi sarcoma  lesions.
+In this study we will evaluate the benefit and safety profile of
+pembrolizumab in classic and endemic  kaposi sarcoma .
+
+// Lemma \\
+Scientific justification : Classic and endemic Kaposis sarcoma be lymphangioproliferations associate with human herpes virus 8 ( HHV8 ) , which treatment be poorly codify . Chemotherapies give at best 30-60 % of transient response . While interferon response be frequent , this drug be often poorly tolerate in elderly patient . Therefore new therapy be need . Classic kaposi sarcoma represent an ideal model for evaluate new drug since patient do not receive concomitant immunosuppressive regimen nor antiviral therapy . Pembrolizumab , an anti-PD1 monoclonal antibody have recently be show to improve survival in several solid tumor . In kaposi sarcoma few data be available on the role of PD1-PD-L1 axis . A significant PD-L1 expression on HHV8-associated pleural effusion lymphoma and on kaposi sarcoma sample have be recently report . Our experience in classical and endemic kaposi sarcoma support the role of this pathway with expression of PD-L1 by subpopulation of T cell but also NK cell in peripheral blood cell from these patient and expression of PD-L1 by tumor cell in kaposi sarcoma lesion . In this study we will evaluate the benefit and safety profile of pembrolizumab in classic and endemic kaposi sarcoma .
+
+// Lower \\
+scientific justification : classic and endemic kaposis sarcoma be lymphangioproliferations associate with human herpes virus 8 ( hhv8 ) , which treatment be poorly codify . chemotherapies give at best 30-60 % of transient response . while interferon response be frequent , this drug be often poorly tolerate in elderly patient . therefore new therapy be need . classic kaposi sarcoma represent an ideal model for evaluate new drug since patient do not receive concomitant immunosuppressive regimen nor antiviral therapy . pembrolizumab , an anti-pd1 monoclonal antibody have recently be show to improve survival in several solid tumor . in kaposi sarcoma few data be available on the role of pd1-pd-l1 axis . a significant pd-l1 expression on hhv8-associated pleural effusion lymphoma and on kaposi sarcoma sample have be recently report . our experience in classical and endemic kaposi sarcoma support the role of this pathway with expression of pd-l1 by subpopulation of t cell but also nk cell in peripheral blood cell from these patient and expression of pd-l1 by tumor cell in kaposi sarcoma lesion . in this study we will evaluate the benefit and safety profile of pembrolizumab in classic and endemic kaposi sarcoma .
+
+// Ponctuation \\
+scientific justification classic and endemic kaposis sarcoma be lymphangioproliferations associate with human herpes virus 8 hhv8 which treatment be poorly codify chemotherapies give at best 3060 of transient response while interferon response be frequent this drug be often poorly tolerate in elderly patient therefore new therapy be need classic kaposi sarcoma represent an ideal model for evaluate new drug since patient do not receive concomitant immunosuppressive regimen nor antiviral therapy pembrolizumab an antipd1 monoclonal antibody have recently be show to improve survival in several solid tumor in kaposi sarcoma few data be available on the role of pd1pdl1 axis a significant pdl1 expression on hhv8associated pleural effusion lymphoma and on kaposi sarcoma sample have be recently report our experience in classical and endemic kaposi sarcoma support the role of this pathway with expression of pdl1 by subpopulation of t cell but also nk cell in peripheral blood cell from these patient and expression of pdl1 by tumor cell in kaposi sarcoma lesion in this study we will evaluate the benefit and safety profile of pembrolizumab in classic and endemic kaposi sarcoma
+
+// stopword et lettre \\
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus 8 hhv8 treatment poorly codify chemotherapies give best 3060 transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
+
+// Phase \\
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus 8 hhv8 treatment poorly codify chemotherapies give best 3060 transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
+
+// nombres et dates \\
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus   hhv8 treatment poorly codify chemotherapies give best   transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
+
+// unite et temporal \\
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus hhv8 treatment poorly codify chemotherapies give best transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
+
+// final \\
+scientific justification classic endemic kaposis sarcoma lymphangioproliferations associate human herpes virus hhv8 treatment poorly codify chemotherapies give best transient response interferon response frequent drug often poorly tolerate elderly patient therefore new therapy need classic kaposi sarcoma represent ideal model evaluate new drug since patient receive concomitant immunosuppressive regimen antiviral therapy pembrolizumab antipd1 monoclonal antibody recently show improve survival several solid tumor kaposi sarcoma data available role pd1pdl1 axis significant pdl1 expression hhv8associated pleural effusion lymphoma kaposi sarcoma sample recently report experience classical endemic kaposi sarcoma support role pathway expression pdl1 subpopulation cell also nk cell peripheral blood cell patient expression pdl1 tumor cell kaposi sarcoma lesion study evaluate benefit safety profile pembrolizumab classic endemic kaposi sarcoma
