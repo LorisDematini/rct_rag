@@ -120,19 +120,17 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
         st.info("Aucun protocole pertinent trouvé.")
         return
 
-   # --- HISTOGRAMME DES SCORES (vertical mais toujours en paysage) ---
+   # SCORES
     study_ids = [res["study_id"] for res in results]
     scores = [res["score"] for res in results]
 
-    # Forcer un format paysage : largeur fixe minimale
-    fig, ax = plt.subplots(figsize=(10, 4))  # 10 est large => paysage garanti
+    fig, ax = plt.subplots(figsize=(10, 4))  #paysage
     bars = ax.bar(study_ids, scores, color='skyblue')
-    ax.set_title("Score par étude")
+    ax.set_title("Score par protocole")
     ax.set_ylabel("Score de similarité")
-    ax.set_xlabel("Identifiant de l'étude")
+    ax.set_xlabel("Identifiant du protocole")
     ax.set_ylim(0, max(scores) * 1.1)
 
-    # Rotation des labels si trop nombreux
     if len(study_ids) > 5:
         ax.set_xticklabels(study_ids, rotation=45, ha='right')
 
@@ -151,9 +149,9 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
             formatted_terms = ", ".join(f"**{term}** (`{score:.2f}`)" for term, score in terms)
             st.markdown(f"**Mots importants** : {formatted_terms}")
 
-        with st.expander("Afficher les détails de l’étude"):
+        with st.expander("Afficher les détails du protocole"):
             if study_id not in summary_data:
-                st.warning("Aucune donnée trouvée dans le fichier summary.json pour cette étude.")
+                st.warning("Aucune donnée trouvée dans le fichier summary.json pour ce protocole.")
                 continue
 
             pdf_path = find_pdf_file(study_id)
@@ -166,7 +164,7 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
                         mime="application/pdf"
                     )
             else:
-                st.info("Aucun fichier .pdf disponible pour cette étude.")
+                st.info("Aucun fichier .pdf disponible pour ce protocole.")
 
             study_content = summary_data[study_id]
             if isinstance(study_content, dict):
@@ -187,7 +185,7 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
                         else:
                             st.markdown("Section invalide ou vide.")
             else:
-                st.warning("Format inattendu pour cette étude.")
+                st.warning("Format inattendu pour ce protocole.")
 
 
 
@@ -210,11 +208,11 @@ def display_exacte_results(results, query, selected_section=None, engine=None):
         st.info("Aucun protocole pertinent trouvé.")
         return
 
-    #ne pas répéter plusieurs fois la même étude
+    #ne pas répéter plusieurs fois le même protocole
     display_all_sections = (selected_section is None) or (selected_section == "Toutes les sections")
 
     if display_all_sections:
-        # Regrouper les protocoles par étude pour éviter doublons
+        # Regrouper les protocoles par protocole pour éviter doublons
         results_by_study = {}
         for res in results:
             sid = res["study_id"]
@@ -234,12 +232,12 @@ def display_exacte_results(results, query, selected_section=None, engine=None):
                         mime="application/pdf"
                     )
             else:
-                st.info("Aucun fichier .pdf disponible pour cette étude.")
+                st.info("Aucun fichier .pdf disponible pour ce protocole.")
 
             study_content = summary_data_full.get(study_id, {})
 
             if not isinstance(study_content, dict):
-                st.warning("Format inattendu pour cette étude.")
+                st.warning("Format inattendu pour ce protocole.")
                 continue
 
             with st.expander("Afficher toutes les sections"):
@@ -277,12 +275,12 @@ def display_exacte_results(results, query, selected_section=None, engine=None):
                         mime="application/pdf"
                     )
             else:
-                st.info("Aucun fichier .pdf disponible pour cette étude.")
+                st.info("Aucun fichier .pdf disponible pour ce protocole.")
 
             study_content = summary_data_full.get(study_id, {})
 
             if not isinstance(study_content, dict):
-                st.warning("Format inattendu pour cette étude.")
+                st.warning("Format inattendu pour ce protocole.")
                 continue
 
             section_paragraphs = study_content.get(section_name, [])
@@ -311,7 +309,7 @@ def display_liste(query=None):
         filtered_summary = summary.items()
     else:
         query = query.strip().lower()
-        # Filtrer les études contenant le mot dans le study_id
+        # Filtrer les protocole contenant le mot dans le study_id
         filtered_summary = [
             (study_id, study_content)
             for study_id, study_content in summary.items()
@@ -319,7 +317,7 @@ def display_liste(query=None):
         ]
 
         if not filtered_summary:
-            st.warning("Aucune étude trouvée avec ce nom.")
+            st.warning("Aucun protocole trouvé avec ce nom.")
             return
 
     for study_id, study_content in filtered_summary:
@@ -336,10 +334,10 @@ def display_liste(query=None):
                     mime="application/pdf"
                 )
         else:
-            st.info("Aucun fichier .pdf disponible pour cette étude.")
+            st.info("Aucun fichier .pdf disponible pour cette protocole.")
 
         # Expander pour afficher le contenu brut
-        with st.expander("Afficher le contenu de l’étude"):
+        with st.expander("Afficher le contenu de protocole"):
             if isinstance(study_content, dict):
                 for section_title, section_paragraphs in study_content.items():
                     if not section_paragraphs:
@@ -353,6 +351,6 @@ def display_liste(query=None):
                         else:
                             st.markdown("Paragraphe non textuel.")
             else:
-                st.warning("Format inattendu pour cette étude.")
+                st.warning("Format inattendu pour cette protocole.")
 
 

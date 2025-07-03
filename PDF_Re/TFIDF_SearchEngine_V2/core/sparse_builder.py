@@ -3,7 +3,7 @@ sparse_index_builder.py
 
 Ce module construit un index TF-IDF à partir d'une liste de documents LangChain.
 Il regroupe soit :
-- les sections d'une même étude (ancienne version, voir code commenté),
+- les sections d'une même protocole (ancienne version, voir code commenté),
 - soit toutes les sections d’un même type (nouvelle version, par section globale),
 et génère une matrice sparse utilisable pour la recherche textuelle.
 """
@@ -13,7 +13,7 @@ from langchain.schema import Document
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-#TF-IDF par étude ===
+#TF-IDF par protocole ===
 class SparseBuilder:
     def __init__(self, documents: List[Document]):
         self.documents = documents
@@ -45,10 +45,7 @@ class SparseBuilder:
 
 # TF-IDF par section 
 # class SparseBuilder:
-#     """
-#     Construit un index TF-IDF en regroupant tous les contenus d'une même section 
-#     (ex: tous les TITLES, tous les OBJECTIVES...) sur l'ensemble des études.
-#     """
+
 #     def __init__(self, documents: List[Document]):
 #         self.documents = documents
 

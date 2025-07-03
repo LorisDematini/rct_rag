@@ -33,7 +33,7 @@ def process_and_keep_sections(input_path=SECTIONS_FULL_JSON_PATH, output_path=EX
 
     for study_id, sections in data.items():
         if not isinstance(sections, dict):
-            print(f"[WARN] Étude {study_id} ignorée (sections non valides).")
+            print(f"[WARN] protocole {study_id} ignoré (sections non valides).")
             continue
 
         processed_sections = {}
@@ -73,7 +73,7 @@ def process_and_keep_json(existing=False):
 
     for study_id, sections in data.items():
         if not isinstance(sections, dict):
-            print(f"[WARN] Étude {study_id} ignorée (sections non valides).")
+            print(f"[WARN] protocole {study_id} ignoré (sections non valides).")
             continue
 
         for section_name, content in sections.items():
