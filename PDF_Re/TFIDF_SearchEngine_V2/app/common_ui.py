@@ -16,12 +16,11 @@ import re
 import json
 from config.paths import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH, SUMMARY_JSON_PATH
 import matplotlib.pyplot as plt
-from core.exact_search import ExactSearchEngine
 
-# import nltk
-# nltk.download('wordnet')
-# nltk.download('omw-1.4')
-# nltk.download('averaged_perceptron_tagger')
+import nltk
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('averaged_perceptron_tagger')
 
 #Chargment unique du fichier summary.json 
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
@@ -33,15 +32,27 @@ with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
 with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
     summary = json.load(f)
 
-#Fonction de surlignage
-def highlight_text(text, keywords):
+# #Fonction de surlignage
+# def highlight_text(text, keywords):
+#     for word in sorted(keywords, key=len, reverse=True):
+#         pattern = re.compile(rf"(\b{re.escape(word)}\b)", flags=re.IGNORECASE)
+#         text = pattern.sub(r"<mark>\1</mark>", text)
+#     return text
+
+def highlight_text_sparse(text, raw_query, cleaned_query):
+    keywords = set()
+
+    raw_terms = re.findall(r"\b\w+\b", raw_query.lower())
+    cleaned_terms = re.findall(r"\b\w+\b", cleaned_query.lower())
+
+    keywords.update(raw_terms)
+    keywords.update(cleaned_terms)
+
     for word in sorted(keywords, key=len, reverse=True):
         pattern = re.compile(rf"(\b{re.escape(word)}\b)", flags=re.IGNORECASE)
         text = pattern.sub(r"<mark>\1</mark>", text)
-    return text
-import re
 
-import re
+    return text
 
 def highlight_text_exact(text, query, mode="PHRASE"):
     text = str(text)
@@ -178,7 +189,7 @@ def display_sparse_results(results, query, query_cleaned, top_terms_by_study=Non
                         if isinstance(section_paragraphs, list):
                             for paragraph in section_paragraphs:
                                 if isinstance(paragraph, str):
-                                    highlighted = highlight_text(paragraph, keywords)
+                                    highlighted = highlight_text_sparse(paragraph, query, query_cleaned)
                                     st.markdown(highlighted, unsafe_allow_html=True)
                                 else:
                                     st.markdown("Paragraphe non textuel.")

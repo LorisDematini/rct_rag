@@ -41,37 +41,3 @@ class SparseBuilder:
             self.study_ids.append(study_id)
 
         return study_texts
-
-
-# TF-IDF par section 
-# class SparseBuilder:
-
-#     def __init__(self, documents: List[Document]):
-#         self.documents = documents
-
-#         # Noms des sections globales : TITLE, JUSTIFICATION, etc.
-#         self.section_names = []
-
-#         # Liste des textes fusionnés par section
-#         self.section_texts = self.merge_by_section(documents)
-
-#         # TF-IDF vectorizer
-#         self.vectorizer = TfidfVectorizer(max_df=0.95)
-#         self.sparse_matrix = self.vectorizer.fit_transform(self.section_texts)
-
-#     def merge_by_section(self, documents: List[Document]) -> List[str]:
-#         section_groups: Dict[str, List[str]] = {}
-
-#         for doc in documents:
-#             section = doc.metadata.get("section", "UNKNOWN")
-#             content = doc.page_content
-
-#             if section not in section_groups:
-#                 section_groups[section] = []
-
-#             section_groups[section].append(content)
-
-#         # On garde la trace de l’ordre des sections
-#         self.section_names = list(section_groups.keys())
-
-#         return [" ".join(texts).strip() for texts in section_groups.values()]

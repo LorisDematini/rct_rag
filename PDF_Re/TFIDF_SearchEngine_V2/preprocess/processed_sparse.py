@@ -5,11 +5,12 @@ from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
 from nltk.stem import WordNetLemmatizer
 from langchain.schema import Document
+import nltk
 
-# nltk.download('punkt')
-# nltk.download('averaged_perceptron_tagger')
-# nltk.download('wordnet')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('wordnet')
+nltk.download('stopwords')
 
 from config.paths import ACRONYMS_FILE_UNIQUE, SPARSE_JSON_PATH, SECTIONS_JSON_PATH, ACRONYMS_FILE
 

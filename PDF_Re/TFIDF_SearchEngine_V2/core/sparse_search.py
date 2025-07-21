@@ -35,8 +35,6 @@ class SparseSearchEngine:
 
     def search(self, query: str, k: int = 10) -> List[dict]:
         query_vec = self.vectorizer.transform([query])
-        # print(self.sparse_matrix)
-        # print(self.vectorizer.get_feature_names_out()[2032])
         similarities = cosine_similarity(query_vec, self.sparse_matrix).flatten()
         sorted_indices = np.argsort(similarities)[::-1]
         results = []

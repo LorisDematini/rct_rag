@@ -1,0 +1,26 @@
+search_engine/
+├── app/
+│   ├── sparse_app.py              # Streamlit UI et appelle toutes les fonctions nécessaires pour le moteur sparse
+│   ├── dense_app.py               # Streamlit UI et appelle toutes les fonctions nécessaires pour le moteur dense
+│   └── common_ui.py               # Code Streamlit commun (affichage résultats, surlignage, colonnes...)
+│
+├── core/
+│   ├── data_loader.py             # Chargement des JSON 
+│   ├── vectorizer_sparse.py       # Embedding Sparse + Recherche
+│   └── vectorizer_dense.py        # Embedding Dense avec LangChain + recherche avec FAISS
+│
+├── preprocess/
+│   ├── processed_dense.py         # Preprocessing spécifique au dense embedding
+│   └── processed_sparse.py        # Preprocessing spécifique au sparse embedding
+│
+├── config/
+│   ├── paths.py                   # Tous les chemins vers les fichiers centralisés ici
+│   └── settings.py                # Paramètres (top_k, modèles)
+│
+├── data/
+│   ├── (Stocke les JSON pour la création des autres JSON)
+│   ├── (stocke les JSON de données pré-traitées)
+│   └── index/
+│       └── (stocke l'index FAISS)
+│
+└── main.py                        # Pour lancer l'app et choisir dense ou sparse
