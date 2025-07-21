@@ -1,16 +1,17 @@
 import re
 import json
 import unicodedata
+import nltk
+nltk.data.path.append("/usr/share/nltk_data")
 from nltk.corpus import stopwords
 from nltk import word_tokenize, pos_tag
+from nltk.tokenize import sent_tokenize
 from nltk.stem import WordNetLemmatizer
-from langchain.schema import Document
-import nltk
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('wordnet')
+# nltk.download('stopwords')
 
 from config.paths import ACRONYMS_FILE_UNIQUE, SPARSE_JSON_PATH, SECTIONS_JSON_PATH, ACRONYMS_FILE
 
@@ -115,7 +116,8 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
     else: 
         text = replace_acronyms(acronyms_all, study_id, text)
 
-    words = word_tokenize(text)
+    sentences = sent_tokenize(text, language="english")
+    words = [word for sent in sentences for word in word_tokenize(sent)]
     words = lemmatize_text(words)
     text = ' '.join(words)
 
@@ -127,7 +129,7 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
 
     text = replace_roman_phrases(text)
 
-    tokens = word_tokenize(text)
+    tokens = [word for sent in sent_tokenize(text, language="english") for word in word_tokenize(sent)]
     tokens = [w for w in tokens if (w not in stop_words or w.isdigit()) and (len(w) > 1 or w.isdigit())]
     text = ' '.join(tokens)
 
