@@ -42,7 +42,7 @@ _build/
 
 # Data
 *.csv
-*.txt
+# *.txt
 *.xls
 *.xlsx
 *.tar.gz
