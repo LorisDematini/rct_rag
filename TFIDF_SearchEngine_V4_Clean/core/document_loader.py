@@ -130,7 +130,7 @@ def document_sparse(existing=False):
         # On garde les noms de sections
         section_blocks = []
         for section_name, content in sections.items():
-            section_blocks.append(f"[{section_name}]\n{content}")
+            section_blocks.append(f"\n{content}")
 
         full_text = '\n\n'.join(section_blocks)
 
