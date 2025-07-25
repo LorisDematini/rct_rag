@@ -144,11 +144,12 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
 
     text = text.lower()
 
+    #Nouvel ordre car problème avec "grade II-IV"
+    text = replace_roman_phrases(text)
+
     text = re.sub(r'[^\w\s-]|_', ' ', text)
     text = text.replace("-", "")
     text = re.sub(r'\s+', ' ', text).strip()
-
-    text = replace_roman_phrases(text)
 
     tokens = [word for sent in sent_tokenize(text, language="english") for word in word_tokenize(sent)]
     tokens = [w for w in tokens if (w not in stop_words or w.isdigit()) and (len(w) > 1 or w.isdigit())]
