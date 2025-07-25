@@ -1,8 +1,24 @@
+"""
+display_utils.py
+
+Ce module contient des fonctions utilitaires pour :
+- Charger les fichiers JSON contenant les résumés, sections et métadonnées.
+- Extraire et nettoyer les identifiants d'étude pour retrouver les fichiers PDF associés.
+- Afficher les éléments de l'interface utilisateur avec Streamlit (titres, radios, input, spinner, etc.).
+
+Fonctions principales :
+- get_summary_data(), get_summary_data_full(), get_summary_list() : chargent les différents jeux de données.
+- find_pdf_file() : cherche un fichier PDF correspondant à un study_id.
+- clean_string() : standardise une chaîne de caractères (pour retrouver les noms).
+- Fonctions d'interface (Streamlit) : set_page(), sidebar_title(), title_print(), sidebar_radio(), etc.
+"""
+
 import os
 import json
 from config.paths import SECTIONS_JSON_PATH, SECTIONS_FULL_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
 import streamlit as st
 
+#Chargement des différents fichiers pour les moteurs
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
     summary_data = json.load(f)
 
@@ -21,12 +37,11 @@ def get_summary_data_full():
 def get_summary_list():
     return summary
 
-def extract_top_terms_by_study(top_terms):
-    return {study: terms for study, terms in top_terms.items()}
-
+#Mini Preprocess pour trouver le nom de l'étude dans la fonction find_pdf_file
 def clean_string(s):
     return s.lower().replace("-", " ").replace("_", " ").replace("/", " ").strip()
 
+#Cherche le nom de l'étude dans les fichiers PDF
 def find_pdf_file(study_id, folder=PDF_FOLDER):
     study_id_clean = clean_string(study_id)
 
@@ -38,6 +53,7 @@ def find_pdf_file(study_id, folder=PDF_FOLDER):
             return os.path.join(folder, filename)
     return None
 
+#Fonctions de display
 def set_page(): 
     st.set_page_config(layout="wide")
 

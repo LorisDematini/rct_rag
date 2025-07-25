@@ -1,3 +1,19 @@
+"""
+processed_sparse.py
+
+Ce module effectue le prétraitement des textes et des requêtes.
+
+Fonctionnalités principales :
+- Normalisation Unicode (suppression des accents et caractères spéciaux)
+- Nettoyage lexical : minuscules, suppression de la ponctuation, des chiffres et des unités non significatives
+- Remplacement des acronymes par leurs définitions (spécifiques par études)
+- Conversion des chiffres romains dans les expressions médicales (ex. : "Phase II" → "Phase2")
+- Lemmatisation avec NLTK en tenant compte des catégories grammaticales
+- Suppression des stopwords sauf chiffres
+
+Ce traitement vise à homogénéiser les textes pour améliorer l'efficacité de la vectorisation TF-IDF.
+"""
+
 import re
 import json
 import unicodedata
@@ -13,17 +29,20 @@ from nltk.stem import WordNetLemmatizer
 # nltk.download('wordnet')
 # nltk.download('stopwords')
 
-from config.paths import ACRONYMS_FILE_UNIQUE, SPARSE_JSON_PATH, SECTIONS_JSON_PATH, ACRONYMS_FILE
+from config.paths import ACRONYMS_FILE_UNIQUE
 
 stop_words = set(stopwords.words('english'))
+#Les unités qui ne nous intéresse pas
 words_dont = ["be", "day", "week", "month", 'year', 'old', "kg", "ml", "g", "mg", "ph", "ng", "cm", "mm", "nm", "min", "cal", "kcal", "ppm", "ppb", "mm2", "mm3"]
+#Transformation chiffres romains en arabe
 roman_to_arabic = {
     "i": "1", "ii": "2", "iii": "3", "iv": "4",
     "v": "5", "vi": "6", "vii": "7", "viii": "8", "ix": "9"
 }
+#A compléter avec d'autres acronymes
 acronym_generaux = {"vs" : "versus"}
 
-
+#Lemmatisation
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
         return 'a'
@@ -40,6 +59,7 @@ def lemmatize_text(tokens):
     lemmatizer = WordNetLemmatizer()
     return [lemmatizer.lemmatize(token, get_wordnet_pos(pos)) for token, pos in pos_tags]
 
+#Remplacement des acronymes
 def replace_all_variants(text, acronym, definition):
     variants = {acronym, acronym.upper(), acronym.lower()}
     for variant in variants:
@@ -54,6 +74,7 @@ def replace_acronyms(acronyms_all, study_id, text):
         text = replace_all_variants(text, acronym, definition)
     return text
 
+#Chiffres romains
 def replace_roman_phrases(text):
     def convert_range(match):
         base = match.group(1)
@@ -86,7 +107,7 @@ def replace_roman_phrases(text):
 
     return text
 
-
+#Acronymes dans la query
 def replace_acronyms_query(acronyms_all, text):
     # dictionnaire en minuscule
     acronyms_all_lower = {k.lower(): v for k, v in acronyms_all.items()}
@@ -104,7 +125,7 @@ def replace_acronyms_query(acronyms_all, text):
     return re.sub(pattern, replace_match, text)
 
 
-
+#Fonction principale
 def preprocess(text, study_id, acronyms_all, isQuery=False):
     text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
     
@@ -146,7 +167,7 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
 
     return ' '.join(tokens)
 
-
+#Fonction principale pour la query
 def preprocess_query(query):
     study_id = None
     with open(ACRONYMS_FILE_UNIQUE, 'r', encoding='utf-8') as f:

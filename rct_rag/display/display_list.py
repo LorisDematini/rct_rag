@@ -1,11 +1,33 @@
+"""
+display_list.py
+
+Module d'affichage de la liste des protocoles disponibles dans l'application Streamlit.
+
+Fonction principale :
+- display_liste(query=None) :
+    Affiche tous les protocoles sous forme de liste.
+    - Si `query` est vide, tous les protocoles sont listés.
+    - Si `query` est renseignée, les IDs sont filtrés en fonction de la requête utilisateur.
+
+Fonctionnalités :
+- Affichage du titre de chaque protocole (study_id).
+- Téléchargement du rapport PDF associé.
+- Affichage du contenu structuré du protocole via un expander.
+- Gestion de contenu inattendu ou vide avec messages Streamlit.
+"""
+
+
 import os
 import streamlit as st
 
 from display.display_utils import find_pdf_file, get_summary_list
 
+#texte de base
 summary = get_summary_list()
 
+#Affiche l'entièreté des PDF ou filtre avec une requête
 def display_liste(query=None):
+    #Filtre les protocoles affichés en fonction de la requête
     if query is None or query.strip() == "":
         st.subheader(f"Liste complète des {len(summary)} protocoles")
         filtered_summary = summary.items()
@@ -21,6 +43,7 @@ def display_liste(query=None):
             st.warning("Aucun protocole trouvé avec ce nom.")
             return
 
+    #Affiche les PDF choisis sous forme de texte extrait d'un JSON, avec un téléchargement du PDF
     for study_id, study_content in filtered_summary:
         st.markdown(f"### {study_id}")
 

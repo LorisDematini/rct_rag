@@ -1,3 +1,19 @@
+"""
+sparse_builder.py
+
+Ce module construit, sauvegarde et recharge l'index TF-IDF sparse pour la recherche sémantique.
+
+Fonctions principales :
+- save_sparse_index(documents, save=True) :
+    Regroupe les textes par protocole, crée la matrice TF-IDF, sauvegarde les artefacts
+    (vectorizer, matrice sparse, liste des study_ids) sur disque, et retourne ces objets.
+
+- build_sparse_index(documents) :
+    Recharge l'index TF-IDF depuis les fichiers sauvegardés s'ils existent,
+    sinon reconstruit et sauvegarde l'index à partir des documents fournis.
+"""
+
+
 import os
 import pickle
 import numpy as np
@@ -5,7 +21,7 @@ from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from config.paths import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH
 
-
+#Sauvegarde des différents éléments si c'est pas déjà fait
 def save_sparse_index(documents, save=True):
     study_ids = []
     study_sections = {}
@@ -36,6 +52,7 @@ def save_sparse_index(documents, save=True):
     return vectorizer, sparse_matrix, study_ids, documents
 
 
+#Vérifie qu'on a tout, sinon les enregistre et les télécharge
 def build_sparse_index(documents):
     if not (os.path.exists(VECTOR_PATH) and os.path.exists(MATRIX_PATH) and os.path.exists(STUDY_IDS_PATH)):
         print("[INFO] Sparse index non trouvé, reconstruction...")

@@ -1,3 +1,26 @@
+"""
+display_exact.py
+
+Ce module gère l'affichage des résultats de la recherche exacte dans l'interface Streamlit.
+
+Fonction principale :
+- display_exacte_results(results, query, selected_section) :
+    Affiche les résultats de recherche exacte, soit par étude complète, soit par section,
+    avec mise en évidence des termes de la requête (highlight) dans le texte.
+
+Fonctionnalités :
+- Affichage du nombre de résultats et téléchargement des fichiers PDF liés à chaque étude.
+- Organisation des résultats par protocole ou section, selon le mode sélectionné.
+- Utilisation de balises HTML <mark> pour surligner les termes trouvés.
+- Support des modes de requête : PHRASE, AND, OR, avec ou sans wildcard (*).
+
+Dépendances :
+- streamlit : pour l'affichage interactif.
+- highlight_text_exact : pour la mise en évidence des mots-clés.
+- parse_query : pour analyser la requête exacte et déterminer le mode.
+- summary_data_full : données complètes des sections par étude.
+"""
+
 import streamlit as st
 import os
 from display.highlight import highlight_text_exact
@@ -8,8 +31,10 @@ summary_data_full = get_summary_data_full()
 
 def display_exacte_results(results, query, selected_section=None):
     parsed = parse_query(query)
+    #Relève les AND et OR pour l'affichage en surbillance
     mode = parsed["operator"]
 
+    #On ne garde qu'une étude si jamais, le texte apparaît dans plusieurs sections
     unique_study_ids = {res["study_id"] for res in results}
     total_results = len(unique_study_ids)
     total_studies = len(summary_data_full)
@@ -23,6 +48,7 @@ def display_exacte_results(results, query, selected_section=None):
         st.info("Aucun protocole pertinent trouvé.")
         return
 
+    #Si l'utilisateur a choisi toutes les sections, on affiche tout  
     display_all_sections = (selected_section is None) or (selected_section == "Toutes les sections")
 
     if display_all_sections:
@@ -66,6 +92,8 @@ def display_exacte_results(results, query, selected_section=None):
                                 st.markdown(highlighted, unsafe_allow_html=True)
                             else:
                                 st.markdown("Paragraphe non textuel.")
+
+    #Sinon on affiche uniquement l'étude selectionné
     else:
         for res in results:
             study_id = res["study_id"]

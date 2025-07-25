@@ -1,20 +1,28 @@
-"""
+'''
 paths.py
 
-Ce module centralise tous les chemins utilisés dans le projet pour accéder aux fichiers de données.
-Il permet de garantir une organisation claire et évite la duplication de chemins en dur dans le code.
+Ce module définit les chemins vers tous les fichiers de données.
 
-Variables définies :
-- BASE_DIR : Chemin racine du projet.
-- DATA_DIR : Dossier contenant les fichiers de données (`data/`).
+- Racine : `BASE_DIR` et `DATA_DIR` pointent vers la structure de base du projet.
 
-Fichiers JSON utilisés :
-- RAW_JSON_PATH : Données brutes (`summary.json`) utilisées notamment pour le moteur sparse.
-- ACRONYMS_FILE : Dictionnaire d’acronymes et de leurs définitions.
-- SPARSE_JSON_PATH : Résultat du prétraitement pour le moteur TF-IDF.
-- DENSE_JSON_PATH : Résultat du prétraitement pour le moteur sémantique.
-- FAISS_INDEX_PATH : Répertoire contenant l’index FAISS binaire.
-"""
+- PDF_FOLDER : dossier contenant les fichiers sources.
+
+- Fichiers JSON :
+    - `SECTIONS_JSON_PATH` : Sections choisis pour le moteur SPARSE (limité)
+    - `SECTIONS_FULL_JSON_PATH` : Sections choisis pour le moteur EXACTE (TOUT)
+    - `SUMMARY_JSON_PATH` : documents bruts en JSON.
+    - `SPARSE_JSON_PATH`, `EXACT_JSON_PATH` : versions prétraitées pour les moteurs de recherche sparse et exact.
+
+- Acronymes :
+    - `ACRONYMS_FILE` : Acronymes extraits des tableaux et ACR = def(ACR)
+    - `ACRONYMS_FILE_UNIQUE` :  Liste d'acronymes uniques.
+
+- Fichiers de sauvegarde générés pour la recherche sparse :
+    - `TOP_TERMS_PATH` : termes TF-IDF les plus représentatifs par document.
+    - `VECTOR_PATH`, `MATRIX_PATH`, `STUDY_IDS_PATH` : vectoriseur TF-IDF, matrice sparse et identifiants de documents.
+
+Ce module centralise les chemins pour éviter les chemins ailleurs dans le projet.
+'''
 
 import os
 
@@ -38,11 +46,8 @@ ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 EXACT_JSON_PATH = os.path.join(DATA_DIR, "summaryExact_pre.json")
 
-#Fichiers créés pour les recherche 
+#Fichiers de sauvegarde 
 TOP_TERMS_PATH = os.path.join(DATA_DIR, "top_terms_sparse.json")
 VECTOR_PATH = os.path.join(DATA_DIR, "tfidf_vectorizer.pkl")
 MATRIX_PATH = os.path.join(DATA_DIR, "sparse_matrix.npz")
 STUDY_IDS_PATH = os.path.join(DATA_DIR, "study_ids.npy")
-
-#OLD RAW
-# RAW_JSON_PATH = os.path.join(DATA_DIR, "summary.json")  # Nom du fichier JSON contenant les documents RAW
