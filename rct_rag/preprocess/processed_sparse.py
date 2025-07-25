@@ -127,16 +127,21 @@ def replace_acronyms_query(acronyms_all, text):
 
 #Fonction principale
 def preprocess(text, study_id, acronyms_all, isQuery=False):
+    #Normalisation
     text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
     
+    #Acronymes Généraux
     for acro, defi in acronym_generaux.items():
         text = re.sub(rf'\b{acro}\b', f' {defi} ', text)
     
+    #Si query alors remplacement les acronymes de la query 
     if isQuery:
         text = replace_acronyms_query(acronyms_all, text)
+    #Sinon remplace ceux du texte
     else: 
         text = replace_acronyms(acronyms_all, study_id, text)
 
+    #On extrait les phrases puis les mots pour faire un lemmatize propre
     sentences = sent_tokenize(text, language="english")
     words = [word for sent in sentences for word in word_tokenize(sent)]
     words = lemmatize_text(words)
@@ -145,23 +150,27 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
     text = text.lower()
 
     #Nouvel ordre car problème avec "grade II-IV"
+    #On transforme les chiffres romains en chiffres
     text = replace_roman_phrases(text)
 
+    #nettoyage de la ponctuation
     text = re.sub(r'[^\w\s-]|_', ' ', text)
     text = text.replace("-", "")
     text = re.sub(r'\s+', ' ', text).strip()
 
+    #Tokenization et retire les stop words, les chiffres et les caractères seuls
     tokens = [word for sent in sent_tokenize(text, language="english") for word in word_tokenize(sent)]
     tokens = [w for w in tokens if (w not in stop_words or w.isdigit()) and (len(w) > 1 or w.isdigit())]
     text = ' '.join(tokens)
 
+    #Gère tous les types de chiffres qui ne nous intéresse pas : d1, m3, 2x3, 23
     text = re.sub(r'\bd(\d+)\b', " ", text)
     text = re.sub(r'\bw(\d+)\b', " ", text)
     text = re.sub(r'\bm(\d+)\b', " ", text)
     text = re.sub(r'\b\d+\b', " ", text)
     text = re.sub(r'\b\d+x\d+\b', ' ', text)
 
-
+    #Autres stopwords avec des unités 
     tokens = word_tokenize(text)
     unit_pattern = re.compile(rf"^\d+(\.\d+)?({'|'.join(re.escape(u) for u in words_dont)})$", re.IGNORECASE)
     tokens = [w for w in tokens if w not in words_dont and not unit_pattern.match(w)]
@@ -171,6 +180,7 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
 #Fonction principale pour la query
 def preprocess_query(query):
     study_id = None
+    #On remplace uniquement les acronymes uniques (pareil pour toutes les études)
     with open(ACRONYMS_FILE_UNIQUE, 'r', encoding='utf-8') as f:
         acronyms_all_unique = json.load(f)
     query_cleaned = preprocess(query, study_id, acronyms_all_unique, isQuery=True)
