@@ -1,7 +1,12 @@
 import os
 import json
 
-def merge_acronym_jsons(json1_path, json2_path, output_path):
+def merge_acronym_jsons(json1_path: str, json2_path: str, output_path: str) -> None:
+    """
+    This function loads two JSON files where each key is a study ID and each value
+    is a dictionary of acronym-definition pairs. It merges the acronym dictionaries
+    per study. The final merged result is saved as a final acronym JSON file.
+    """
     # Load
     with open(json1_path, 'r', encoding='utf-8') as f1, open(json2_path, 'r', encoding='utf-8') as f2:
         data1 = json.load(f1)

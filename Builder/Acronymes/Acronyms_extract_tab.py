@@ -6,7 +6,12 @@ import logging
 logging.getLogger("pdfminer").setLevel(logging.ERROR)
 
 
-def extract_acronyms_from_pdfs(pdf_folder, output_json_path):
+def extract_acronyms_from_pdfs(pdf_folder: str, output_json_path: str) -> None:
+    """
+    This function scans all PDF files in the given folder. It looks for pages containing
+    keywords like "abbreviation" or "glossary", and extracts acronym-definition pairs from
+    lines that match a specific regex pattern. Output is a JSON file.
+    """
     # Regular expression to match lines like: "ABC - Some definition"
     acronym_regex = r"^\s*([A-Z][A-Z0-9\-]{1,10})[\s:,-]+(.+)$"
 

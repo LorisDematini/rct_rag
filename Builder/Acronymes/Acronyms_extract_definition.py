@@ -1,14 +1,15 @@
 import os
 import re
 import json
+from typing import Dict, List, Optional
 from nltk.corpus import stopwords
 
 STOPWORDS = set(stopwords.words('english'))
 
-def extract_acronyms_with_definitions(text):
+def extract_acronyms_with_definitions(text: str) -> Dict[str, str]:
     """
     Extract acronyms and their possible definitions from a given text.
-    Uses diiferents versions to connect acronyms to their definitions.
+    Uses different versions to connect acronyms to their definitions.
     """
     results = {}
 
@@ -21,8 +22,9 @@ def extract_acronyms_with_definitions(text):
             continue
 
         acronym = candidate
+        # Ignore single-character acronyms
         if len(acronym) <= 1:
-            continue  # Ignore single-character acronyms
+            continue  
 
         start_pos = match.start()
         definition = None
@@ -30,22 +32,22 @@ def extract_acronyms_with_definitions(text):
         # Try plural form detection strategy
         if acronym[-1] == 's' and len(acronym) > 1:
             words_before = get_words_before(text, start_pos, len(acronym)-1)
-            definition = version_s_final(acronym, words_before)
+            definition = acronym_s_final(acronym, words_before)
 
         # Try standard one-word-per-letter strategy
         if not definition:
             words_before = get_words_before(text, start_pos, len(acronym))
-            definition = version_2(acronym, words_before)
+            definition = acronym_initials(acronym, words_before)
 
         # Try matching acronym within one long word like molecules
         if not definition:
             words_before = get_words_before(text, start_pos, 1)
-            definition = version_3(acronym, words_before)
+            definition = acronym_long(acronym, words_before)
 
         # Try larger context window
         if not definition:
             words_before = get_words_before(text, start_pos, len(acronym)*2)
-            definition = version_4(acronym, words_before)
+            definition = acronym_big_window(acronym, words_before)
 
         # If a definition was found and acronym is new, store it
         if definition and acronym not in results:
@@ -53,7 +55,7 @@ def extract_acronyms_with_definitions(text):
 
     return results
 
-def get_words_before(text, pos, window):
+def get_words_before(text: str, pos: int, window: int) -> List[str]:
     """
     Extract the last 'window' number of words before the given position.
     """
@@ -61,7 +63,7 @@ def get_words_before(text, pos, window):
     words = re.findall(r'\b\w+\b', text_before)
     return words[-window:]
 
-def version_s_final(acronym, words):
+def acronym_s_final(acronym: str, words: List[str]) -> Optional[List[str]]:
     """
     Strategy for acronyms ending in 's' (plural)
     """
@@ -79,7 +81,7 @@ def version_s_final(acronym, words):
         return None
     return candidate_words
 
-def version_2(acronym, words):
+def acronym_initials(acronym: str, words: List[str]) -> Optional[List[str]]:
     """
     Each letter in acronym matches the first letter of a word.
     """
@@ -91,7 +93,7 @@ def version_2(acronym, words):
             return None
     return candidate_words
 
-def version_3(acronym, words):
+def acronym_long(acronym: str, words: List[str]) -> Optional[List[str]]:
     """
     The acronym letters are embedded in one long word
     """
@@ -104,7 +106,7 @@ def version_3(acronym, words):
             a_idx += 1
     return [first_word] if a_idx == len(acronym) else None
 
-def version_4(acronym, words):
+def acronym_big_window(acronym: str, words: List[str]) -> Optional[List[str]]:
     """
     Match acronym letters to the initials of content words in a bigger window.
     """
@@ -124,14 +126,14 @@ def version_4(acronym, words):
 
     return selected_words if a_idx < 0 else None
 
-def extract_acronyms_from_json(input_json_path, output_json_path):
+def extract_acronyms_from_json(input_json_path: str, output_json_path: str) -> None:
     """
     Load a JSON file with study and contents, extract acronyms and their definitions,
-    then save the results to a new JSON file.
+    then save the results in a JSON file.
     """
     # Load the input JSON file
-    with open(input_json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    with open(input_json_path, "r", encoding="utf-8") as file:
+        data = json.load(file)
 
     acronyms_by_study = {}
 
