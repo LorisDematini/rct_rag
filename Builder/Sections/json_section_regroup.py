@@ -147,7 +147,8 @@ def categorize_study_sections(input_json_path: str, output_json_path: str)-> Non
             for category, keywords in categories.items():
                 if any(normalize(keyword) == norm_key for keyword in keywords):
                     sorted_sections[category].append(entry_text)
-                    break  # Stop at first match
+                    # Stop at first match
+                    break
 
         grouped_data[normalized_name] = sorted_sections
 
