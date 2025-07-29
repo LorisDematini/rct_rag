@@ -2,14 +2,24 @@ import json
 import re
 import os
 
-def clean_study_name(name):
+def clean_study_name(name: str) -> str:
+    """
+    Return the study name prefix (before '_'), in uppercase.
+    """
     return name.split("_")[0].upper()
 
-def normalize(text):
+def normalize(text: str) -> str:
+    """
+    Normalize text by removing extra spaces and converting to lowercase.
+    """
     return re.sub(r'\s+', ' ', text.strip().lower())
 
-def categorize_study_sections_full(input_json_path, output_json_path):
-    
+def categorize_study_sections(input_json_path: str, output_json_path: str)-> None:
+    """
+    Categorizes study sections based on predefined section titles and groups them accordingly.
+    """
+
+    # Predefined mapping of section titles to their category
     categories = {
         "TITLE": [
             "name of the study",
@@ -117,72 +127,17 @@ def categorize_study_sections_full(input_json_path, output_json_path):
             "statistical power and sample size justification:",
             "first interim analysis",
             "sample size",
-        ],
-        "DSMB" : [
-            "DSMB",
-            "DSMB (Data Safety Monitoring Board)",
-            "DSMB : Data safety monitoring board",
-            "Data Safety Monitoring Board",
-            "Data Safety Monitoring Board anticipated",
-            "Independent surveillance committee planned",
-            "Study will have a Data Safety Monitoring Board",
-            "Trial will have a Data Monitoring Committee",
-            "Trial will have a Data Safety Monitoring Board",
-        ],
-        "ACRONYM" : [
-            "Abbreviated title",
-            "Acronym",
-            "Acronym/reference",
-            "Short Title",
-            "Study Acronym",
-            "Clinical Trial Code",
-        ],
-        "INVESTIGATOR" : [
-            "Coordinating Investigator",
-            "Coordinating investigator",
-            "Coordinating investigator and Scientific Director",
-            "Coordinating investigator and Scientific director",
-            "Coordinating investigators",
-            "coordinating investigator",
-            "Coordinator",
-            "Scientific Director",
-            "Scientific Director (if applicable)"
-        ],
-        "NUMBER OF INCLUSIONS": [
-            "Number of participants included",
-            "Number of participants chosen",
-            "Number of selected subjects",
-            "Number of subjects chosen",
-            "Number of subjects included",
-            "Number of subjects required",
-        ],
-        "SITES" : [
-            "Number of valued sites",
-            "Clinical Sites",
-            "Centres: 28",
-            "Number of sites",
-            "Number of centers",
-            "Number of centres",
-        ],
-        "FUNDING": [
-            "Study Sponsor",
-            "Sources of funding for the trial",
-            "Sources of monetary support",
-            "Sponsor",
-            "Financing",
-            "Funding",
-            "Funding source",
-            "Funding sources",
-            "Budget",
-        ],
+        ]
     }
-    
-    with open(input_json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+
+    # Load input data
+    with open(input_json_path, "r", encoding="utf-8") as file_input:
+        list_study_content = json.load(file_input)
 
     grouped_data = {}
 
-    for study_name, study_content in data.items():
+    # Process each study individually
+    for study_name, study_content in list_study_content.items():
         normalized_name = clean_study_name(study_name)
         sorted_sections = {category: [] for category in categories}
 
@@ -192,12 +147,15 @@ def categorize_study_sections_full(input_json_path, output_json_path):
             for category, keywords in categories.items():
                 if any(normalize(keyword) == norm_key for keyword in keywords):
                     sorted_sections[category].append(entry_text)
-                    break
+                    break  # Stop at first match
 
         grouped_data[normalized_name] = sorted_sections
 
+    # Ckeck if output directory exists
     os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
+
+    # Save the result to output JSON
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(grouped_data, f, indent=2, ensure_ascii=False)
 
-    print(f"Sections triées et sauvegardées dans : {output_json_path}")
+    print(f"Categorized sections saved to: {output_json_path}")

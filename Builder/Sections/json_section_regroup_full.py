@@ -1,16 +1,27 @@
 import json
 import re
 import os
+from typing import Dict
 
-def clean_study_name(name):
+def clean_study_name(name: str) -> str:
+    """
+    Return the study name prefix (before '_'), in uppercase.
+    """
     return name.split("_")[0].upper()
 
-def normalize(text):
+def normalize(text: str) -> str:
+    """
+    Normalize text by removing extra spaces and converting to lowercase.
+    """
     return re.sub(r'\s+', ' ', text.strip().lower())
 
-def categorize_study_sections(input_json_path, output_json_path):
-    
-    categories = {
+def categorize_study_sections_full(input_json_path: str, output_json_path: str) -> None:
+    """
+    Loads a JSON where each study contains section titles and their values.
+    For each section title, it matches a predefined category using keyword lists.
+    The categorized sections are grouped and saved with normalized study names.
+    """
+    categories: Dict[str, list] = {
         "TITLE": [
             "name of the study",
             "title",
@@ -39,17 +50,17 @@ def categorize_study_sections(input_json_path, output_json_path):
             "study endpoints",
             "study objectives",
             "evaluation criteria",
-            "Questions asked in the CAALL-F01 protocol",
+            "questions asked in the caall-f01 protocol",
         ],
         "DESIGN": [
-            "Study Design",
+            "study design",
             "design / phase / category",
             "design of the study",
             "design of the trial",
             "experimental design",
             "diagnostic method",
             "reference diagnostic method",
-            "Scope of the trial",
+            "scope of the trial",
             "ancillary study",
             "type of study",
         ],
@@ -66,7 +77,7 @@ def categorize_study_sections(input_json_path, output_json_path):
             "population involved",
             "population of study participants",
             "population of trial subjects",
-            "Indication",
+            "indication",
         ],
         "EXCLUSION CRITERIA": [
             "graall-2014/b non inclusion criteria",
@@ -83,7 +94,7 @@ def categorize_study_sections(input_json_path, output_json_path):
         "INTERVENTION" : [
             "reference treatment",
             "transplant modalities",
-            "transplant modalities medical product provided by the Sponsor",
+            "transplant modalities medical product provided by the sponsor",
             "transplantation modalities",
             "transplants modalities",
             "treatment (transplant modalities)",
@@ -104,10 +115,9 @@ def categorize_study_sections(input_json_path, output_json_path):
             "investigational medicinal products",
             "investigational strategy and medicinal product(s)",
             "investigational medicinal product and auxiliairy medicinal products",
-            "Study Intervention",
-            "Study intervention",
+            "study intervention",
             "chemotherapy",
-            "Challenge agents",
+            "challenge agents",
             "comparator",
             "comparator arm",
         ],
@@ -117,15 +127,70 @@ def categorize_study_sections(input_json_path, output_json_path):
             "statistical power and sample size justification:",
             "first interim analysis",
             "sample size",
-        ]
+        ],
+        "DSMB" : [
+            "dsmb",
+            "dsmb (data safety monitoring board)",
+            "dsmb : data safety monitoring board",
+            "data safety monitoring board",
+            "data safety monitoring board anticipated",
+            "independent surveillance committee planned",
+            "study will have a data safety monitoring board",
+            "trial will have a data monitoring committee",
+            "trial will have a data safety monitoring board",
+        ],
+        "ACRONYM" : [
+            "abbreviated title",
+            "acronym",
+            "acronym/reference",
+            "short title",
+            "study acronym",
+            "clinical trial code",
+        ],
+        "INVESTIGATOR" : [
+            "coordinating investigator",
+            "coordinating investigator and scientific director",
+            "coordinating investigator and scientific director",
+            "coordinating investigators",
+            "coordinator",
+            "scientific director",
+            "scientific director (if applicable)"
+        ],
+        "NUMBER OF INCLUSIONS": [
+            "number of participants included",
+            "number of participants chosen",
+            "number of selected subjects",
+            "number of subjects chosen",
+            "number of subjects included",
+            "number of subjects required",
+        ],
+        "SITES" : [
+            "number of valued sites",
+            "clinical sites",
+            "centres: 28",
+            "number of sites",
+            "number of centers",
+            "number of centres",
+        ],
+        "FUNDING": [
+            "study sponsor",
+            "sources of funding for the trial",
+            "sources of monetary support",
+            "sponsor",
+            "financing",
+            "funding",
+            "funding source",
+            "funding sources",
+            "budget",
+        ],
     }
     
-    with open(input_json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    with open(input_json_path, "r", encoding="utf-8") as file_input:
+        list_study_content = json.load(file_input)
 
-    grouped_data = {}
+    grouped_data: Dict[str, Dict[str, list]] = {}
 
-    for study_name, study_content in data.items():
+    for study_name, study_content in list_study_content.items():
         normalized_name = clean_study_name(study_name)
         sorted_sections = {category: [] for category in categories}
 
@@ -140,8 +205,7 @@ def categorize_study_sections(input_json_path, output_json_path):
         grouped_data[normalized_name] = sorted_sections
 
     os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
-    with open(output_json_path, "w", encoding="utf-8") as f:
-        json.dump(grouped_data, f, indent=2, ensure_ascii=False)
+    with open(output_json_path, "w", encoding="utf-8") as file_output:
+        json.dump(grouped_data, file_output, indent=2, ensure_ascii=False)
 
-    print(f"Sections triées et sauvegardées dans : {output_json_path}")
-
+    print(f"Categorized sections saved to: {output_json_path}")
