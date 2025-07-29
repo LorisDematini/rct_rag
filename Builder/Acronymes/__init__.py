@@ -1,0 +1,4 @@
+from .Acronyms_unique import get_consistent_unique_acronyms
+from .Acronyms_extract import extract_acronyms_from_pdfs
+from .Acronyms_etudes import extract_acronyms_from_json
+from .fusion_json import merge_acronym_jsons
