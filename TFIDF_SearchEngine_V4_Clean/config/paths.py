@@ -1,20 +1,23 @@
-"""
+'''
 paths.py
 
-Ce module centralise tous les chemins utilisés dans le projet pour accéder aux fichiers de données.
-Il permet de garantir une organisation claire et évite la duplication de chemins en dur dans le code.
+Ce module définit les chemins vers tous les fichiers et dossiers utilisés dans le projet.
 
-Variables définies :
-- BASE_DIR : Chemin racine du projet.
-- DATA_DIR : Dossier contenant les fichiers de données (`data/`).
+Organisation des chemins :
+- Racine : `BASE_DIR` et `DATA_DIR` pointent vers la structure de base du projet.
+- Fichiers PDF : dossier contenant les fichiers sources (`PDF_FOLDER`).
+- Fichiers JSON :
+    - `SECTIONS_JSON_PATH`, `SECTIONS_FULL_JSON_PATH` : sections extraites et nettoyées des documents.
+    - `SUMMARY_JSON_PATH` : résumé des documents bruts.
+    - `SPARSE_JSON_PATH`, `EXACT_JSON_PATH` : versions prétraitées pour les moteurs de recherche sémantique (sparse) et exact.
+- Acronymes :
+    - `ACRONYMS_FILE`, `ACRONYMS_FILE_UNIQUE` : acronymes extraits et version dédupliquée.
+- Fichiers générés pour la recherche sparse :
+    - `TOP_TERMS_PATH` : termes TF-IDF les plus représentatifs par document.
+    - `VECTOR_PATH`, `MATRIX_PATH`, `STUDY_IDS_PATH` : vectoriseur TF-IDF, matrice sparse et identifiants de documents.
 
-Fichiers JSON utilisés :
-- RAW_JSON_PATH : Données brutes (`summary.json`) utilisées notamment pour le moteur sparse.
-- ACRONYMS_FILE : Dictionnaire d’acronymes et de leurs définitions.
-- SPARSE_JSON_PATH : Résultat du prétraitement pour le moteur TF-IDF.
-- DENSE_JSON_PATH : Résultat du prétraitement pour le moteur sémantique.
-- FAISS_INDEX_PATH : Répertoire contenant l’index FAISS binaire.
-"""
+Ce module centralise les chemins pour éviter les chemins en dur ailleurs dans le projet.
+'''
 
 import os
 
