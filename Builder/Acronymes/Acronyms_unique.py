@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-def get_consistent_unique_acronyms(input_json, output_json_path):
+def get_unique_acronyms(input_json, output_json_path):
     # Load the final JSON file
     with open(input_json, 'r', encoding='utf-8') as f:
         data = json.load(f)
