@@ -23,3 +23,11 @@ SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
 # Processed and complete JSON files
 SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
+
+#top terms
+TOP_TERMS_PATH = os.path.join(DATA_DIR, "TopTermsByStudy.json")
+
+#Vectorizer
+VECTOR_PATH = os.path.join(DATA_DIR, "vectorizer.pkl")
+MATRIX_PATH = os.path.join(DATA_DIR, "sparse_matrix.npz")
+STUDY_IDS_PATH = os.path.join(DATA_DIR, "study_ids.npy")

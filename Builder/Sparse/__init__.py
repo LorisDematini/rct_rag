@@ -1,1 +1,2 @@
 from .document_generator import generator_save_documents
+from .Vectorizer import build_save_sparse_index

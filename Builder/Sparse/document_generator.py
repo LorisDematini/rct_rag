@@ -68,3 +68,5 @@ def generator_save_documents(input_path: str = SECTIONS_JSON_PATH, acronyms_path
 
     print(f"Preprocessed text saved to: {output_json}")
     print(f"LangChain Documents saved to: {output_pkl}")
+    
+    return documents
