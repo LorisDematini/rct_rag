@@ -1,0 +1,1 @@
+from .document_generator import generator_save_documents

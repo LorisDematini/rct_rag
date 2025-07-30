@@ -39,4 +39,4 @@ def get_unique_acronyms(input_json: str, output_json_path: str) -> None:
     with open(output_json_path, "w", encoding="utf-8") as file_final:
         json.dump(unique_acronyms, file_final, ensure_ascii=False, indent=2)
 
-    print("Done")
+    print("Unique acronyms list save to: ", output_json_path)

@@ -19,3 +19,7 @@ ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 # Section-related JSON files
 SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
 SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
+
+# Processed and complete JSON files
+SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
+SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
