@@ -1,4 +1,3 @@
-import os
 import json
 
 def merge_acronym_jsons(json1_path: str, json2_path: str, output_path: str) -> None:
@@ -8,11 +7,12 @@ def merge_acronym_jsons(json1_path: str, json2_path: str, output_path: str) -> N
     per study. The final merged result is saved as a final acronym JSON file.
     """
     # Load
-    with open(json1_path, 'r', encoding='utf-8') as f1, open(json2_path, 'r', encoding='utf-8') as f2:
-        data1 = json.load(f1)
-        data2 = json.load(f2)
+    with open(json1_path, 'r', encoding='utf-8') as file1, open(json2_path, 'r', encoding='utf-8') as file2:
+        data1 = json.load(file1)
+        data2 = json.load(file2)
 
-    fusion = {}  #Merged result 
+    #Merged result
+    fusion = {}   
 
     # Union of study's ID
     all_keys = set(data1.keys()) | set(data2.keys())
@@ -32,4 +32,4 @@ def merge_acronym_jsons(json1_path: str, json2_path: str, output_path: str) -> N
     with open(output_path, 'w', encoding='utf-8') as fout:
         json.dump(fusion, fout, ensure_ascii=False, indent=2)
 
-    print(f"Merged {len(data1)} + {len(data2)} studies => {len(fusion)} entries written to {output_path}")
+    print("" + len(fusion) + "entries written to"+ output_path)

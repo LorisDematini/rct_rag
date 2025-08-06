@@ -18,10 +18,8 @@ Ce moteur permet une recherche par similarité, en utilisant la pondération TF-
 '''
 
 
-from core.data_loader import load_data_sparse
-from core.sparse_builder import build_sparse_index
+from core.data_loader import load_data_sparse, load_sparse_index, load_top_terms
 from core.sparse_search import search_sparse
-from core.top_terms import get_top_terms
 from preprocess.processed_sparse import preprocess_query
 from display.display_sparse import display_sparse_results
 from display.display_utils import spinner_context, title_print, text_input
@@ -35,7 +33,9 @@ def run_sparse_app():
         print("[INFO] Chargement des données sparse...")
         #Chargement des documents et création de la matrice, du vectoriser et la liste des études
         documents = load_data_sparse()
-        vectorizer, sparse_matrix, study_ids, full_docs = build_sparse_index(documents)
+        vectorizer, sparse_matrix, study_ids = load_sparse_index()
+        #Récupération des top termes de chaque études
+        top_terms_by_study = load_top_terms()
 
     query = text_input()
 
@@ -44,10 +44,7 @@ def run_sparse_app():
         print(f"Requête prétraitée : {query_cleaned}")
 
         #Effectue la recherche avec une similarité cosinus et la requête
-        results = search_sparse(query_cleaned, vectorizer, sparse_matrix, study_ids, full_docs)
-
-        #Récupération des top termes de chaque études
-        top_terms_by_study = get_top_terms(vectorizer, sparse_matrix, study_ids)
+        results = search_sparse(query_cleaned, vectorizer, sparse_matrix, study_ids, documents)
 
         #Affichage de tous les résultats
         display_sparse_results(results, query, query_cleaned, top_terms_by_study)

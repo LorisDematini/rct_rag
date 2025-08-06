@@ -1,4 +1,3 @@
-import os
 import re
 import json
 from typing import Dict, List, Optional
@@ -157,9 +156,6 @@ def extract_acronyms_from_json(input_json_path: str, output_json_path: str) -> N
         re.split(r'[_/]', study_id)[0]: acronyms
         for study_id, acronyms in acronyms_by_study.items()
     }
-
-    # Ensure output folder exists
-    os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
 
     # Save output to JSON file
     with open(output_json_path, "w", encoding="utf-8") as f_out:

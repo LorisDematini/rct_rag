@@ -4,9 +4,10 @@ import os
 
 def clean_study_name(name: str) -> str:
     """
-    Return the study name prefix (before '_'), in uppercase.
+    Return the study name prefix (before '_' or '/'), in uppercase.
     """
-    return name.split("_")[0].upper()
+    base = re.split(r'[_/]', name)[0]
+    return base.upper()
 
 def normalize(text: str) -> str:
     """

@@ -30,16 +30,18 @@ get_unique_acronyms(ACRONYMS_FILE, ACRONYMS_FILE_UNIQUE)
 #json_section_regroup_clean_complet.py
 categorize_study_sections_full(SUMMARY_JSON_PATH, SECTIONS_FULL_JSON_PATH)
 
-
 #json_section_regroup_clean.py
 categorize_study_sections(SUMMARY_JSON_PATH, SECTIONS_JSON_PATH)
 
 
+###INDEX
 #SPARSE_BUILDER
 documents = generator_save_documents(SECTIONS_JSON_PATH, ACRONYMS_FILE, SPARSE_JSON_PATH, SPARSE_PCKL_PATH)
 
 #Vectorizer
 vectorizer, sparse_matrix, study_ids = build_save_sparse_index(documents)
 
-#TOP TERMS
+
+#DISPLAY
+#TopTerms
 top_terms_per_document(vectorizer, sparse_matrix, study_ids)

@@ -698,7 +698,7 @@
       "Statistical analysis: This is a pilot prospective Phase II clinical trial that aims at\nevaluating safety and efficacy of Isatuximab in type 1\ncryoglobulinemia vasculitis. We hypothesize that up to\n70% of the patients receiving Isatuximab will achieve a\ncomplete remission of cryoglobulinemia vasculitis at week\n20 (W20).\nContinuous variables (cf variables described in primary\nand secondary objectives) will be presented with the\nmedian and IQR or with the mean ± SEM. Categorical\nvariables will be presented with counts and proportions.\nStatistical comparisons will be performed by using the\nMann-Whitney test for quantitative unpaired data, t-test for\nquantitative paired data, Kruskal-Wallis for multiple\ncomparisons, Spearman correlation test for correlations.\nT-test for quantitative paired data analysis will be used to\ncompare immunological changes between day 0 and week\n12 and 20 after Isatuximab.\nAll statistical tests will be two-tailed with a significance\nlevel of 0.05."
     ]
   },
-  "GRAALL-2014/B": {
+  "GRAALL-2014": {
     "TITLE": [],
     "JUSTIFICATION": [],
     "OBJECTIVE": [

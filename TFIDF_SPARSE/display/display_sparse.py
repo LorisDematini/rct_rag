@@ -3,10 +3,10 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 from display.highlight import highlight_text_sparse
-from display.display_utils import find_pdf_file, get_summary_data, get_summary_data_full, get_summary_list
+from display.display_utils import find_pdf_file, get_summary_data, get_summary_list
 
 summary_data = get_summary_data()
-summary_data_full = get_summary_data_full()
+# summary_data_full = get_summary_data_full()
 summary = get_summary_list()
 
 def display_scores_chart(results):

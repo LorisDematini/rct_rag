@@ -5,7 +5,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from Config import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH
 
 
-def build_save_sparse_index(documents, save=True):
+def build_save_sparse_index(documents):
     study_ids = []
     study_sections = {}
     study_texts = []

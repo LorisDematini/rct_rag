@@ -23,28 +23,31 @@ import os
 
 # Racine du projet
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+PARENT_OF_BASE = os.path.dirname(BASE_DIR)
+BUILDER = os.path.join(PARENT_OF_BASE, "Builder")
+DATA_DIR = os.path.join(BUILDER, "Data")
 
+# #Fichiers d'entrées contenant les données du texte
+# SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
+
+#V2
 #Dossier contenant les fichiers d'origine docx
 PDF_FOLDER = os.path.join(DATA_DIR, "pdf")
 
-#Fichiers d'entrées contenant les données du texte
-SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
-SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
 SUMMARY_JSON_PATH = os.path.join(DATA_DIR, "summary.json")
 
 #Fichiers contenant les acronymes du texte
 ACRONYMS_FILE = os.path.join(DATA_DIR, "extracted_acronym_final.json")
 ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 
-# Fichier de sortie prétraité spécifique aux moteurs
-SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 
-#Fichiers créés pour les recherche 
-TOP_TERMS_PATH = os.path.join(DATA_DIR, "top_terms_sparse.json")
-VECTOR_PATH = os.path.join(DATA_DIR, "tfidf_vectorizer.pkl")
+SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
+
+
+SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
+
+VECTOR_PATH = os.path.join(DATA_DIR, "vectorizer.pkl")
 MATRIX_PATH = os.path.join(DATA_DIR, "sparse_matrix.npz")
 STUDY_IDS_PATH = os.path.join(DATA_DIR, "study_ids.npy")
 
-#OLD RAW
-# RAW_JSON_PATH = os.path.join(DATA_DIR, "summary.json")  # Nom du fichier JSON contenant les documents RAW
+TOP_TERMS_PATH = os.path.join(DATA_DIR, "TopTermsByStudy.json")

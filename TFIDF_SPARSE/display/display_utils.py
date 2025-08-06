@@ -1,13 +1,13 @@
 import os
 import json
-from config.paths import SECTIONS_JSON_PATH, SECTIONS_FULL_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
+from config.paths import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
 import streamlit as st
 
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
     summary_data = json.load(f)
 
-with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
-    summary_data_full = json.load(f)
+# with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
+#     summary_data_full = json.load(f)
 
 with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
     summary = json.load(f)
@@ -15,8 +15,8 @@ with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
 def get_summary_data():
     return summary_data
 
-def get_summary_data_full():
-    return summary_data_full
+# def get_summary_data_full():
+#     return summary_data_full
 
 def get_summary_list():
     return summary

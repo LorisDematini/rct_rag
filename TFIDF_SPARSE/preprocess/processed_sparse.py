@@ -40,20 +40,6 @@ def lemmatize_text(tokens):
     lemmatizer = WordNetLemmatizer()
     return [lemmatizer.lemmatize(token, get_wordnet_pos(pos)) for token, pos in pos_tags]
 
-def replace_all_variants(text, acronym, definition):
-    variants = {acronym, acronym.upper(), acronym.lower()}
-    for variant in variants:
-        text = re.sub(r'\(' + re.escape(variant) + r'\)', ' ', text)
-        pattern = r'(?<!\w)' + re.escape(variant) + r'(?!\w)'
-        text = re.sub(pattern, f' {definition.lower()} ', text)
-    return text
-
-def replace_acronyms(acronyms_all, study_id, text):
-    acronyms_study = acronyms_all.get(study_id, {})
-    for acronym, definition in acronyms_study.items():
-        text = replace_all_variants(text, acronym, definition)
-    return text
-
 def replace_roman_phrases(text):
     def convert_range(match):
         base = match.group(1)
@@ -105,16 +91,16 @@ def replace_acronyms_query(acronyms_all, text):
 
 
 
-def preprocess(text, study_id, acronyms_all, isQuery=False):
+def preprocess_query(text):
     text = unicodedata.normalize('NFKD', text).encode('ASCII', 'ignore').decode('utf-8')
+
+    with open(ACRONYMS_FILE_UNIQUE, 'r', encoding='utf-8') as f:
+        acronyms_all_unique = json.load(f)
     
     for acro, defi in acronym_generaux.items():
         text = re.sub(rf'\b{acro}\b', f' {defi} ', text)
     
-    if isQuery:
-        text = replace_acronyms_query(acronyms_all, text)
-    else: 
-        text = replace_acronyms(acronyms_all, study_id, text)
+    text = replace_acronyms_query(acronyms_all_unique, text)
 
     sentences = sent_tokenize(text, language="english")
     words = [word for sent in sentences for word in word_tokenize(sent)]
@@ -145,12 +131,3 @@ def preprocess(text, study_id, acronyms_all, isQuery=False):
     tokens = [w for w in tokens if w not in words_dont and not unit_pattern.match(w)]
 
     return ' '.join(tokens)
-
-
-def preprocess_query(query):
-    study_id = None
-    with open(ACRONYMS_FILE_UNIQUE, 'r', encoding='utf-8') as f:
-        acronyms_all_unique = json.load(f)
-    query_cleaned = preprocess(query, study_id, acronyms_all_unique, isQuery=True)
-    # print(query_cleaned)
-    return query_cleaned
