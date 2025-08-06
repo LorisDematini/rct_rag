@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Empêche Streamlit de scanner ce module spécial de torch
+# Prevent Streamlit from scanning this special torch module
 import types
 sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 
@@ -11,12 +11,12 @@ from display.display_utils import set_page, sidebar_title, sidebar_radio
 
 set_page()
 
-titre= "Choisissez le moteur de recherche"
-sidebar_title(titre)
+title = "Choose the search engine"
+sidebar_title(title)
 
-liste_sous_titre = ["Similarité"]
+subtitle_list = ["Similarity"]
 
-mode = sidebar_radio(liste_sous_titre)
+mode = sidebar_radio(subtitle_list)
 
-if mode == "Similarité":
+if mode == "Similarity":
     run_sparse_app()

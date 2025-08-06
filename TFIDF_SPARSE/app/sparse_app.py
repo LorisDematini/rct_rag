@@ -1,50 +1,62 @@
-'''
+"""
 sparse_app.py
 
-Ce module exécute l'application Streamlit pour la recherche par similarité (basée sur TF-IDF).
+This module runs the Streamlit application for similarity-based search using TF-IDF.
 
-Fonction principale : `run_sparse_app()`
+Main function: `run_sparse_app()`
 
-Étapes principales :
-1. Affiche le titre "Moteur de recherche par similarité".
-2. Charge les documents prétraités à l’aide de `load_data_sparse()`.
-3. Construit l’index TF-IDF via `build_sparse_index()` (retourne le vectoriser, la matrice sparse, les study_ids et les documents).
-4. Récupère la requête utilisateur, puis la prétraite avec `preprocess_query()`.
-5. Effectue la recherche par similarité cosinus avec `search_sparse()`.
-6. Récupère les termes les plus importants par étude (`get_top_terms()`).
-7. Affiche les résultats de recherche et de top termes avec `display_sparse_results()`.
+Main steps:
+1. Displays the title "Similarity Search Engine".
+2. Loads preprocessed documents using `load_sparse()`.
+3. Builds the TF-IDF index (returns the vectorizer, sparse matrix, study_ids, and documents).
+4. Retrieves the user query and preprocesses it via `preprocess_query()`.
+5. Performs cosine similarity search using `search_sparse()`.
+6. Retrieves top terms per study via `load_sparse()` output.
+7. Displays search results and top terms using `display_sparse_results()`.
 
-Ce moteur permet une recherche par similarité, en utilisant la pondération TF-IDF pour trouver les sections les plus proches de la requête en termes de contenu.
-'''
+This engine enables semantic search using TF-IDF weighting to find the most relevant sections to a user's query.
+"""
 
-
-from core.data_loader import load_data_sparse, load_sparse_index, load_top_terms
+from core.data_loader import load_sparse
 from core.sparse_search import search_sparse
 from preprocess.processed_sparse import preprocess_query
 from display.display_sparse import display_sparse_results
 from display.display_utils import spinner_context, title_print, text_input
 
-#Fonction principale
+
 def run_sparse_app():
-    titre = "Moteur de recherche par similarité"
-    title_print(titre)
+    """
+    Runs the Streamlit sparse search app.
 
+    Inputs:
+    - User query entered via Streamlit text input.
+
+    Outputs:
+    - Streamlit interface displaying ranked results and relevant terms per study.
+    """
+
+    # Display the app title
+    #A MODIFIER PAR ANGLAIS AVEC FICHIER JSON
+    title = "Search Engine by similarity"
+    title_print(title)
+
+    # Load all required data and models
     with spinner_context():
-        print("[INFO] Chargement des données sparse...")
-        #Chargement des documents et création de la matrice, du vectoriser et la liste des études
-        documents = load_data_sparse()
-        vectorizer, sparse_matrix, study_ids = load_sparse_index()
-        #Récupération des top termes de chaque études
-        top_terms_by_study = load_top_terms()
+        print("[INFO] Loading sparse data...")
+        # Returns TfidfVectorizer, document-term matrix, list of study IDs, LangChain Documents, top TF-IDF terms
+        vectorizer, sparse_matrix, study_ids, documents, top_terms = load_sparse()
 
+    # Get user query input from the UI
     query = text_input()
 
     if query:
+        # Preprocess the query (lowercase, remove stopwords, lemmatize, etc.)
         query_cleaned = preprocess_query(query)
-        print(f"Requête prétraitée : {query_cleaned}")
+        print(f"Preprocessed query: {query_cleaned}")
 
-        #Effectue la recherche avec une similarité cosinus et la requête
+        # Perform cosine similarity search between query and TF-IDF index
+        # Returns a list of matched sections with similarity scores and metadata
         results = search_sparse(query_cleaned, vectorizer, sparse_matrix, study_ids, documents)
 
-        #Affichage de tous les résultats
-        display_sparse_results(results, query, query_cleaned, top_terms_by_study)
+        # Display the ranked results and top terms per study using Streamlit
+        display_sparse_results(results, query, query_cleaned, top_terms)

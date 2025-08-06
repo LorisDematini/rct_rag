@@ -1,53 +1,48 @@
-'''
+"""
 paths.py
 
-Ce module définit les chemins vers tous les fichiers et dossiers utilisés dans le projet.
+This python file defines paths to all files and directories used in the project.
 
-Organisation des chemins :
-- Racine : `BASE_DIR` et `DATA_DIR` pointent vers la structure de base du projet.
-- Fichiers PDF : dossier contenant les fichiers sources (`PDF_FOLDER`).
-- Fichiers JSON :
-    - `SECTIONS_JSON_PATH`, `SECTIONS_FULL_JSON_PATH` : sections extraites et nettoyées des documents.
-    - `SUMMARY_JSON_PATH` : résumé des documents bruts.
-    - `SPARSE_JSON_PATH`, `EXACT_JSON_PATH` : versions prétraitées pour les moteurs de recherche sémantique (sparse) et exact.
-- Acronymes :
-    - `ACRONYMS_FILE`, `ACRONYMS_FILE_UNIQUE` : acronymes extraits et version dédupliquée.
-- Fichiers générés pour la recherche sparse :
-    - `TOP_TERMS_PATH` : termes TF-IDF les plus représentatifs par document.
-    - `VECTOR_PATH`, `MATRIX_PATH`, `STUDY_IDS_PATH` : vectoriseur TF-IDF, matrice sparse et identifiants de documents.
-
-Ce module centralise les chemins pour éviter les chemins en dur ailleurs dans le projet.
-'''
+Path organization:
+- Root: `BASE_DIR`, `PARENT OF BASE`, `BUILDER` and `DATA_DIR` define the base structure of the project.
+- PDF files: folder containing the source pdf documents (`PDF_FOLDER`).
+- JSON files:
+    - `SECTIONS_JSON_PATH`, `SUMMARY_JSON_PATH`: contain processed and summarized document content.
+    - `ACRONYMS_FILE`, `ACRONYMS_FILE_UNIQUE`: store extracted acronyms and their deduplicated version.
+    - `TOP_TERMS_PATH`: top TF-IDF terms per document.
+- Sparse search engine files:
+    - `VECTOR_PATH`, `MATRIX_PATH`, `STUDY_IDS_PATH`: store the TF-IDF vectorizer, the sparse matrix, and the study identifiers.
+    - `SPARSE_PCKL_PATH`: LangChain documents used in sparse retrieval (pickled format).
+"""
 
 import os
 
-# Racine du projet
+# Project root directories
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARENT_OF_BASE = os.path.dirname(BASE_DIR)
 BUILDER = os.path.join(PARENT_OF_BASE, "Builder")
 DATA_DIR = os.path.join(BUILDER, "Data")
 
-# #Fichiers d'entrées contenant les données du texte
-# SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
-
-#V2
-#Dossier contenant les fichiers d'origine docx
+# Folder containing the original source files (PDF or DOCX)
 PDF_FOLDER = os.path.join(DATA_DIR, "pdf")
 
+# JSON file containing raw summaries for each study
 SUMMARY_JSON_PATH = os.path.join(DATA_DIR, "summary.json")
 
-#Fichiers contenant les acronymes du texte
+# JSON files containing acronym definitions
 ACRONYMS_FILE = os.path.join(DATA_DIR, "extracted_acronym_final.json")
 ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 
-
+# JSON file with cleaned and sorted section content
 SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
 
-
+# Pickled list of LangChain Documents for sparse retrieval
 SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
 
+# TF-IDF components
 VECTOR_PATH = os.path.join(DATA_DIR, "vectorizer.pkl")
 MATRIX_PATH = os.path.join(DATA_DIR, "sparse_matrix.npz")
 STUDY_IDS_PATH = os.path.join(DATA_DIR, "study_ids.npy")
 
+# JSON file listing top TF-IDF terms for each study
 TOP_TERMS_PATH = os.path.join(DATA_DIR, "TopTermsByStudy.json")

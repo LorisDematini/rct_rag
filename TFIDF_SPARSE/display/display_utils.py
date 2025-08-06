@@ -2,32 +2,51 @@ import os
 import json
 from config.paths import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
 import streamlit as st
+from typing import Any, Optional, Dict, List
 
+# Load data once on import
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
-    summary_data = json.load(f)
+    summary_data: Dict[str, Any] = json.load(f)
 
+# Uncomment if needed later
 # with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
 #     summary_data_full = json.load(f)
 
 with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
-    summary = json.load(f)
+    summary: List[Dict[str, Any]] = json.load(f)
 
-def get_summary_data():
+def get_summary_data() -> Dict[str, Any]:
+    """
+    Return the summary data dictionary loaded from sections JSON.
+    """
     return summary_data
 
-# def get_summary_data_full():
+# def get_summary_data_full() -> Dict[str, Any]:
+#     """Return the full summary data dictionary (if needed)."""
 #     return summary_data_full
 
-def get_summary_list():
+def get_summary_list() -> List[Dict[str, Any]]:
+    """
+    Return the summary list loaded from summary JSON.
+    """
     return summary
 
-def extract_top_terms_by_study(top_terms):
+def extract_top_terms_by_study(top_terms: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Return a dictionary of top terms keyed by study ID.
+    """
     return {study: terms for study, terms in top_terms.items()}
 
-def clean_string(s):
+def clean_string(s: str) -> str:
+    """
+    Normalize a string for matching by lowercasing and replacing some separators.
+    """
     return s.lower().replace("-", " ").replace("_", " ").replace("/", " ").strip()
 
-def find_pdf_file(study_id, folder=PDF_FOLDER):
+def find_pdf_file(study_id: str, folder: str = PDF_FOLDER) -> Optional[str]:
+    """
+    Search for a PDF file in the given folder matching the study_id.
+    """
     study_id_clean = clean_string(study_id)
 
     for filename in os.listdir(folder):
@@ -38,26 +57,45 @@ def find_pdf_file(study_id, folder=PDF_FOLDER):
             return os.path.join(folder, filename)
     return None
 
-def set_page(): 
+def set_page() -> None:
+    """
+    Configure the Streamlit page layout as wide.
+    """
     st.set_page_config(layout="wide")
 
-def sidebar_title(txt):
+def sidebar_title(txt: str) -> None:
+    """
+    Display a title in the Streamlit sidebar.
+    """
     st.sidebar.title(txt)
 
-def title_print(txt):
+def title_print(txt: str) -> None:
+    """
+    Display a main title in the Streamlit app.
+    """
     st.title(txt)
 
-def sidebar_radio(liste_txt):
-    mode = st.sidebar.radio("Mode", liste_txt)
+def sidebar_radio(options: List[str]) -> str:
+    """
+    Display a radio button selection in the sidebar.
+    """
+    mode = st.sidebar.radio("Mode", options)
     return mode
 
-def spinner_context(message="Chargement des données ..."):
+def spinner_context(message: str = "Loading data ..."):
+    """
+    Provide a Streamlit spinner context manager with a custom message.
+    """
     return st.spinner(message)
 
-def text_input(texte="Entrez votre requête"):
-    input = st.text_input(texte)
-    return input
-    
-def radio_button(message, liste_options):
-    selected = st.radio(message, liste_options, horizontal=True)
-    return selected
+def text_input(prompt: str = "Enter your query") -> str:
+    """
+    Display a Streamlit text input box.
+    """
+    return st.text_input(prompt)
+
+def radio_button(label: str, options: List[str]) -> str:
+    """
+    Display a horizontal Streamlit radio button group.
+    """
+    return st.radio(label, options, horizontal=True)
