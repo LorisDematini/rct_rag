@@ -82,12 +82,6 @@ def sidebar_radio(options: List[str]) -> str:
     mode = st.sidebar.radio("Mode", options)
     return mode
 
-def spinner_context(message: str = "Loading data ..."):
-    """
-    Provide a Streamlit spinner context manager with a custom message.
-    """
-    return st.spinner(message)
-
 def text_input(prompt: str = "Enter your query") -> str:
     """
     Display a Streamlit text input box.

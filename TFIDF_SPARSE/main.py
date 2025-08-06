@@ -3,7 +3,8 @@ import sys
 import types
 sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 
-from app import run_sparse_app
+from app import run_sparse_app, run_list_app
+# from app.exact_app import run_exacte_app
 from display import set_page, sidebar_title, sidebar_radio
 
 set_page()
@@ -11,9 +12,13 @@ set_page()
 title = "Choose the search engine"
 sidebar_title(title)
 
-subtitle_list = ["Similarity"]
+subtitle_list = ["Similarity", "Key-Words", "Database"]
 
 mode = sidebar_radio(subtitle_list)
 
 if mode == "Similarity":
     run_sparse_app()
+# elif mode == "Key-Words":
+#     run_exacte_app()
+else:
+    run_list_app()
