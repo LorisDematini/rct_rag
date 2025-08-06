@@ -1,13 +1,10 @@
 import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 # Prevent Streamlit from scanning this special torch module
 import types
 sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 
-from app.sparse_app import run_sparse_app
-from display.display_utils import set_page, sidebar_title, sidebar_radio
+from app import run_sparse_app
+from display import set_page, sidebar_title, sidebar_radio
 
 set_page()
 

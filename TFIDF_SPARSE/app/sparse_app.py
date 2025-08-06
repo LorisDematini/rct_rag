@@ -17,11 +17,9 @@ Main steps:
 This engine enables semantic search using TF-IDF weighting to find the most relevant sections to a user's query.
 """
 
-from core.data_loader import load_sparse
-from core.sparse_search import search_sparse
-from preprocess.processed_sparse import preprocess_query
-from display.display_sparse import display_sparse_results
-from display.display_utils import spinner_context, title_print, text_input
+from core import load_sparse, search_sparse
+from preprocess import preprocess_query
+from display import display_sparse_results, spinner_context, title_print, text_input
 
 
 def run_sparse_app():

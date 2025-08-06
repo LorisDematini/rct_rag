@@ -9,7 +9,7 @@ from nltk import word_tokenize, pos_tag
 from nltk.tokenize import sent_tokenize
 from nltk.stem import WordNetLemmatizer
 
-from config.paths import ACRONYMS_FILE_UNIQUE
+from config import ACRONYMS_FILE_UNIQUE
 
 # NLTK setup
 stop_words = set(stopwords.words('english'))

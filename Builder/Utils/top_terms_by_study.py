@@ -1,5 +1,5 @@
 import json
-from typing import List, Tuple
+from typing import List
 from Config import TOP_TERMS_PATH
 
 def top_terms_per_document(vectorizer, sparse_matrix, study_ids: List[str], top_n: int = 3) -> None:

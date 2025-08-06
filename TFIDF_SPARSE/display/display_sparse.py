@@ -2,8 +2,7 @@ import os
 import streamlit as st
 import matplotlib.pyplot as plt
 
-from display.highlight import highlight_text_sparse
-from display.display_utils import find_pdf_file, get_summary_data, get_summary_list
+from display import highlight_text_sparse, find_pdf_file, get_summary_data, get_summary_list
 
 summary_data = get_summary_data()
 # summary_data_full = get_summary_data_full()
@@ -31,6 +30,45 @@ def display_scores_chart(results: list[dict]) -> None:
         ax.set_xticks(range(len(study_ids)))
         ax.set_xticklabels(study_ids, rotation=45, ha='right')
     st.pyplot(fig)
+
+
+def display_study_sections(
+    sections: dict | None,
+    query: str,
+    cleaned_query: str | None = None,
+    mode: str = "sparse",
+) -> None:
+    """
+    Display detailed sections of a study with highlighted matches.
+
+    Args:
+        sections (dict or None): Sections and paragraphs keyed by section title.
+        query (str): Original user query.
+        cleaned_query (str, optional): Preprocessed query for highlighting.
+        mode (str): Display mode; "sparse" applies highlighting.
+    """
+    if not isinstance(sections, dict):
+        st.warning("Invalid format for this protocol.")
+        return
+
+    for title, paragraphs in sections.items():
+        if not paragraphs:
+            continue
+        col1, col2 = st.columns([1, 4])
+        with col1:
+            st.markdown(f"**{title}**")
+        with col2:
+            for p in paragraphs if isinstance(paragraphs, list) else [paragraphs]:
+                if not isinstance(p, str):
+                    st.markdown("Non-text paragraph.")
+                    continue
+                if mode == "sparse":
+                    # Highlight matching query terms
+                    st.markdown(
+                        highlight_text_sparse(p, query, cleaned_query),
+                        unsafe_allow_html=True,
+                    )
+
 
 def display_sparse_results(
     results: list[dict],
@@ -96,40 +134,3 @@ def display_sparse_results(
             display_study_sections(
                 summary_data.get(study_id), query, query_cleaned, mode="sparse"
             )
-
-def display_study_sections(
-    sections: dict | None,
-    query: str,
-    cleaned_query: str | None = None,
-    mode: str = "sparse",
-) -> None:
-    """
-    Display detailed sections of a study with highlighted matches.
-
-    Args:
-        sections (dict or None): Sections and paragraphs keyed by section title.
-        query (str): Original user query.
-        cleaned_query (str, optional): Preprocessed query for highlighting.
-        mode (str): Display mode; "sparse" applies highlighting.
-    """
-    if not isinstance(sections, dict):
-        st.warning("Invalid format for this protocol.")
-        return
-
-    for title, paragraphs in sections.items():
-        if not paragraphs:
-            continue
-        col1, col2 = st.columns([1, 4])
-        with col1:
-            st.markdown(f"**{title}**")
-        with col2:
-            for p in paragraphs if isinstance(paragraphs, list) else [paragraphs]:
-                if not isinstance(p, str):
-                    st.markdown("Non-text paragraph.")
-                    continue
-                if mode == "sparse":
-                    # Highlight matching query terms
-                    st.markdown(
-                        highlight_text_sparse(p, query, cleaned_query),
-                        unsafe_allow_html=True,
-                    )

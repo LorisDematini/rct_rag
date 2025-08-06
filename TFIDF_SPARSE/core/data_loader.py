@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 from scipy import sparse
 import json
-from config.paths import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH, SPARSE_PCKL_PATH, TOP_TERMS_PATH
+from config import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH, SPARSE_PCKL_PATH, TOP_TERMS_PATH
 
 def load_file_pkl(file_path: str):
     """Load a pickle file."""

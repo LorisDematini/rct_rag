@@ -1,6 +1,6 @@
 import os
 import json
-from config.paths import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
+from config import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
 import streamlit as st
 from typing import Any, Optional, Dict, List
 
