@@ -28,15 +28,15 @@ from display import display_exacte_results
 # Main entry point for the exact search application
 def run_exact_app():
     # Title display
-    title = "Moteur de recherche par mot-clé"
+    title = "Search Engine by key-words"
     title_print(title)
 
     # Load preprocessed documents and list of available section names
     documents_exact, list_sections = load_exact()
 
     # Create section filter options (including "All sections")
-    sections_options = ["Toutes les sections"] + list_sections
-    selected_section = radio_button("Choisissez une section", sections_options)
+    sections_options = ["All sections"] + list_sections
+    selected_section = radio_button("Selection a section", sections_options)
 
     # Get user query input
     query = text_input()
@@ -46,7 +46,7 @@ def run_exact_app():
         query_cleaned = preprocess_query_ex(query)
 
         # Determine target sections (None means all sections)
-        selected_sections = None if selected_section == "Toutes les sections" else [selected_section]
+        selected_sections = None if selected_section == "All sections" else [selected_section]
         
         # Perform the exact keyword search
         results = search_ex(documents_exact, query_cleaned, selected_sections=selected_sections)

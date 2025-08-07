@@ -14,7 +14,7 @@ def display_exacte_results(results, query, selected_section=None):
     Args:
         results (list[dict]): List of matching results, each containing at least 'study_id' and 'section_name'.
         query (str): The user’s query string (can include logical operators).
-        selected_section (str, optional): Section selected by the user. If "Toutes les sections", all sections are shown.
+        selected_section (str, optional): Section selected by the user. If "All sections", all sections are shown.
     """
     parsed = parse_query(query)
     mode = parsed["operator"]
@@ -25,7 +25,7 @@ def display_exacte_results(results, query, selected_section=None):
     total_studies = len(summary_data_full)
 
     # Show appropriate title depending on whether a specific section is selected
-    if selected_section == "Toutes les sections":
+    if selected_section == "All sections":
         st.subheader(f"{total_results} / {total_studies} protocol(s) found")
     else:
         st.subheader(f"{len(results)} matching section(s) found")
@@ -34,7 +34,7 @@ def display_exacte_results(results, query, selected_section=None):
         st.info("No relevant protocols found.")
         return
 
-    display_all_sections = (selected_section is None) or (selected_section == "Toutes les sections")
+    display_all_sections = (selected_section is None) or (selected_section == "All sections")
 
     if display_all_sections:
         # Group results by study_id to only show one match per protocol
