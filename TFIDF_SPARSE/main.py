@@ -1,24 +1,34 @@
-import sys
-# Prevent Streamlit from scanning this special torch module
-import types
-sys.modules['torch.classes'] = types.ModuleType('torch.classes')
+import re
 
-from app import run_sparse_app, run_list_app
-# from app.exact_app import run_exacte_app
-from display import set_page, sidebar_title, sidebar_radio
+def preprocess_ex(text):
+    """
+    Preprocesses the input text for exact keyword matching.
 
-set_page()
+    Steps:
+    1. Converts the text to lowercase for case-insensitive comparison.
+    2. Removes punctuation except for hyphens (-) and asterisks (*), which may be used in wildcard queries.
+    3. Removes hyphens explicitly (treats hyphenated words as single words).
 
-title = "Choose the search engine"
-sidebar_title(title)
+    Args:
+        text (str): The input string to preprocess.
 
-subtitle_list = ["Similarity", "Key-Words", "Database"]
+    Returns:
+        str: A cleaned and normalized version of the input text.
+    """
+    text = text.lower()  # Convert to lowercase
+    text = re.sub(r'[^\w\s*-]|_', ' ', text)  # Remove punctuation except * and -
+    text = text.replace("-", "")
+    return text
 
-mode = sidebar_radio(subtitle_list)
+def preprocess_query_ex(query):
+    """
+    Preprocesses a query string using the exact preprocessing routine.
 
-if mode == "Similarity":
-    run_sparse_app()
-# elif mode == "Key-Words":
-#     run_exacte_app()
-else:
-    run_list_app()
+    Args:
+        query (str): The user query to preprocess.
+
+    Returns:
+        str: The preprocessed version of the query.
+    """
+    query_cleaned = preprocess_ex(query)
+    return query_cleaned

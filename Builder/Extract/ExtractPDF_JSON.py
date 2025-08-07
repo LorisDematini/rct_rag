@@ -104,4 +104,6 @@ def extract_study_tables_from_pdfs(pdf_folder: str, output_json_path: str) -> No
     with open(output_json_path, "w", encoding="utf-8") as f:
         json.dump(final_data, f, indent=4, ensure_ascii=False)
 
-    print("" + len(final_data) + "files processed.\nResult saved to" + output_json_path)
+    print(f"{len(final_data)} files processed.\nResult saved to {output_json_path}")
+
+

@@ -1,1 +1,2 @@
 from .processed_sparse import preprocess_query
+from .processed_exact import preprocess_query_ex

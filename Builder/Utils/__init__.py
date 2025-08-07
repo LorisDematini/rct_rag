@@ -1,2 +1,3 @@
 from .preprocess_sparse import preprocess
 from .top_terms_by_study import top_terms_per_document
+from .preprocess_exact import preprocess_ex

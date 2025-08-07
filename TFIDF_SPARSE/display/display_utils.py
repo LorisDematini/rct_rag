@@ -1,6 +1,6 @@
 import os
 import json
-from config import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER
+from config import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH
 import streamlit as st
 from typing import Any, Optional, Dict, List
 
@@ -8,9 +8,8 @@ from typing import Any, Optional, Dict, List
 with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
     summary_data: Dict[str, Any] = json.load(f)
 
-# Uncomment if needed later
-# with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
-#     summary_data_full = json.load(f)
+with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
+    summary_data_full = json.load(f)
 
 with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
     summary: List[Dict[str, Any]] = json.load(f)
@@ -21,9 +20,9 @@ def get_summary_data() -> Dict[str, Any]:
     """
     return summary_data
 
-# def get_summary_data_full() -> Dict[str, Any]:
-#     """Return the full summary data dictionary (if needed)."""
-#     return summary_data_full
+def get_summary_data_full() -> Dict[str, Any]:
+    """Return the full summary data dictionary (if needed)."""
+    return summary_data_full
 
 def get_summary_list() -> List[Dict[str, Any]]:
     """

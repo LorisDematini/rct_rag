@@ -20,9 +20,16 @@ ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
 SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
 
-# Processed and complete JSON files
+# Processed and complete TFIDF files 
 SPARSE_JSON_PATH = os.path.join(DATA_DIR, "summarySparse_pre.json")
 SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
+
+# Processed and complete Exact/Key-Words files 
+EXACT_JSON_PATH = os.path.join(DATA_DIR, "summaryExact_pre.json")
+EXACT_PCKL_PATH = os.path.join(DATA_DIR, "document_exact.pkl")
+
+#Available Sections 
+AVAILABLE_SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "list_sections.json")
 
 #top terms
 TOP_TERMS_PATH = os.path.join(DATA_DIR, "TopTermsByStudy.json")

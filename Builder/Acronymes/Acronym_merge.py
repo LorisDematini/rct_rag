@@ -32,4 +32,4 @@ def merge_acronym_jsons(json1_path: str, json2_path: str, output_path: str) -> N
     with open(output_path, 'w', encoding='utf-8') as fout:
         json.dump(fusion, fout, ensure_ascii=False, indent=2)
 
-    print("" + len(fusion) + "entries written to"+ output_path)
+    print(f"{len(fusion)} files processed.\nResult saved to {output_path}")

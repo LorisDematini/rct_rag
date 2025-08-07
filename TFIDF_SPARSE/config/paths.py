@@ -35,9 +35,16 @@ ACRONYMS_FILE_UNIQUE = os.path.join(DATA_DIR, "unique_acronym.json")
 
 # JSON file with cleaned and sorted section content
 SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted.json")
+SECTIONS_FULL_JSON_PATH = os.path.join(DATA_DIR, "sections_sorted_full.json")
 
 # Pickled list of LangChain Documents for sparse retrieval
 SPARSE_PCKL_PATH = os.path.join(DATA_DIR, "document_sparse.pkl")
+
+# Pickled list of LangChain Documents for exact retrieval
+EXACT_PCKL_PATH = os.path.join(DATA_DIR, "document_exact.pkl")
+
+#Available sections
+AVAILABLE_SECTIONS_JSON_PATH = os.path.join(DATA_DIR, "list_sections.json")
 
 # TF-IDF components
 VECTOR_PATH = os.path.join(DATA_DIR, "vectorizer.pkl")
