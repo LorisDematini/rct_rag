@@ -2,6 +2,7 @@ import os
 import streamlit as st
 
 from .display_utils import find_pdf_file, get_summary_list
+from config import download_label, show_section
 
 # Load the list of protocols (summary is a dict: {study_id: content})
 summary = get_summary_list()
@@ -44,7 +45,7 @@ def display_list(query: str = None) -> None:
             # If PDF exists, show download button
             with open(pdf_path, "rb") as file:
                 st.download_button(
-                    label="📄 Download report (.pdf)",
+                    label= download_label,
                     data=file,
                     file_name=os.path.basename(pdf_path),
                     mime="application/pdf"
@@ -53,7 +54,7 @@ def display_list(query: str = None) -> None:
             st.info("No PDF file available for this protocol.")
 
         # Expandable section for detailed content
-        with st.expander("Show details"):
+        with st.expander(show_section):
             if isinstance(study_content, dict):
                 # Loop through all sections of the protocol
                 for section_title, section_paragraphs in study_content.items():

@@ -20,7 +20,7 @@ This engine enables semantic search using TF-IDF weighting to find the most rele
 from core import load_sparse, search_sparse
 from preprocess import preprocess_query
 from display import display_sparse_results, title_print, text_input
-
+from config import title_sparse
 
 def run_sparse_app():
     """
@@ -34,19 +34,18 @@ def run_sparse_app():
     """
 
     # Display the app title
-    title = "Search Engine by similarity"
-    title_print(title)
+    title_print(title_sparse)
 
     print("[INFO] Loading sparse data...")
     # Returns TfidfVectorizer, document-term matrix, list of study IDs, LangChain Documents, top TF-IDF terms
     vectorizer, sparse_matrix, study_ids, documents, top_terms = load_sparse()
         
     # Get user query input from the UI
-    query = text_input()
+    query_sparse = text_input()
 
-    if query:
+    if query_sparse:
         # Preprocess the query (lowercase, remove stopwords, lemmatize, etc.)
-        query_cleaned = preprocess_query(query)
+        query_cleaned = preprocess_query(query_sparse)
         print(f"Preprocessed query: {query_cleaned}")
 
         # Perform cosine similarity search between query and TF-IDF index
@@ -54,4 +53,4 @@ def run_sparse_app():
         results = search_sparse(query_cleaned, vectorizer, sparse_matrix, study_ids, documents)
 
         # Display the ranked results and top terms per study using Streamlit
-        display_sparse_results(results, query, query_cleaned, top_terms)
+        display_sparse_results(results, query_sparse, query_cleaned, top_terms)

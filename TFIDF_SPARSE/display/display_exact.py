@@ -3,6 +3,7 @@ import os
 from .display_utils import find_pdf_file, get_summary_data_full
 from .highlight import highlight_text_exact
 from core import parse_query
+from config import download_label, show_section
 
 # Load the summary data for all protocols
 summary_data_full = get_summary_data_full()
@@ -52,7 +53,7 @@ def display_exacte_results(results, query, selected_section=None):
             if pdf_path:
                 with open(pdf_path, "rb") as file:
                     st.download_button(
-                        label="📄 Download report (.pdf)",
+                        label= download_label,
                         data=file,
                         file_name=os.path.basename(pdf_path),
                         mime="application/pdf"
@@ -66,7 +67,7 @@ def display_exacte_results(results, query, selected_section=None):
                 st.warning("Unexpected format for this protocol.")
                 continue
 
-            with st.expander("Show all sections"):
+            with st.expander(show_section):
                 for sec, paragraphs in study_content.items():
                     if not paragraphs:
                         continue

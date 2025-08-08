@@ -14,14 +14,14 @@ This mode allows free navigation through documents, with or without a query.
 '''
 
 from display import title_print, text_input, display_list
+from config import title_data
 
 # Main function
 def run_list_app():
     
-    text = "Protocol's Database"
-    title_print(text)
+    title_print(title_data)
 
-    query = text_input()
+    query_list = text_input()
 
     # Display the list of clinical trials with or without a query
-    display_list(query)
+    display_list(query_list)

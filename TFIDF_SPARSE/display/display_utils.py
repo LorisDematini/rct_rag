@@ -1,6 +1,7 @@
 import os
 import json
 from config import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH
+from config import type_query
 import streamlit as st
 from typing import Any, Optional, Dict, List
 
@@ -81,7 +82,7 @@ def sidebar_radio(options: List[str]) -> str:
     mode = st.sidebar.radio("Mode", options)
     return mode
 
-def text_input(prompt: str = "Enter your query") -> str:
+def text_input(prompt: str = type_query) -> str:
     """
     Display a Streamlit text input box.
     """

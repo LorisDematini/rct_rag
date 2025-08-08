@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 from .highlight import highlight_text_sparse
 from .display_utils import find_pdf_file, get_summary_data, get_summary_list
+from config import validate, show_section, download_label, title_graph, x_label, y_label
 
 summary_data = get_summary_data()
 # summary_data_full = get_summary_data_full()
@@ -21,9 +22,9 @@ def display_scores_chart(results: list[dict]) -> None:
     fig, ax = plt.subplots(figsize=(10, 4))
     bars = ax.bar(study_ids, scores, color='skyblue')
     ax.set(
-        title="Score per protocol",
-        xlabel="Protocol",
-        ylabel="Score",
+        title= title_graph, 
+        xlabel= x_label,
+        ylabel= y_label,
         ylim=(0, max(scores) * 1.1)
     )
     # Rotate x labels if too many
@@ -52,12 +53,12 @@ def display_study_sections(
         st.warning("Invalid format for this protocol.")
         return
 
-    for title, paragraphs in sections.items():
+    for title_sec, paragraphs in sections.items():
         if not paragraphs:
             continue
         col1, col2 = st.columns([1, 4])
         with col1:
-            st.markdown(f"**{title}**")
+            st.markdown(f"**{title_sec}**")
         with col2:
             for p in paragraphs if isinstance(paragraphs, list) else [paragraphs]:
                 if not isinstance(p, str):
@@ -92,7 +93,7 @@ def display_sparse_results(
     # Show the cleaned query as a warning, and wait for user confirmation
     if not st.session_state.validated_warning:
         st.warning(f"Processed query: `{query_cleaned}`")
-        if not st.button("✅ Continue"):
+        if not st.button(validate):
             st.stop()
     st.session_state.validated_warning = False
 
@@ -123,7 +124,7 @@ def display_sparse_results(
             if pdf_path:
                 with open(pdf_path, "rb") as file:
                     st.download_button(
-                        label="📄 Download report (.pdf)",
+                        label=download_label,
                         data=file,
                         file_name=os.path.basename(pdf_path),
                         mime="application/pdf",
@@ -131,7 +132,7 @@ def display_sparse_results(
             else:
                 st.info("No PDF file available for this protocol.")
 
-        with st.expander("Show details"):
+        with st.expander(show_section):
             display_study_sections(
                 summary_data.get(study_id), query, query_cleaned, mode="sparse"
             )
