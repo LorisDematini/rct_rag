@@ -9,6 +9,9 @@ select_sec = "Select a section"
 type_query = "Enter your query"
 validate = "✅ Continue"
 
+#Options Radio
+options_radio = ["Similarity", "Key-Words", "Database"]
+
 ##DISPLAY
 #Download
 download_label = "📄 Download report (.pdf)"

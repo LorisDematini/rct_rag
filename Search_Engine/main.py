@@ -5,11 +5,10 @@ sys.modules['torch.classes'] = types.ModuleType('torch.classes')
 
 from app import run_sparse_app, run_list_app, run_exact_app
 from display import set_page, sidebar_title, sidebar_radio
-from config import title_main
 
 set_page()
 
-sidebar_title(title_main)
+sidebar_title()
 
 mode = sidebar_radio()
 

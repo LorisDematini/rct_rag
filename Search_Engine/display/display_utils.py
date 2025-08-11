@@ -1,7 +1,6 @@
 import os
 import json
-from config import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH
-from config import type_query
+from config import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH, type_query, options_radio, title_main
 import streamlit as st
 from typing import Any, Optional, Dict, List
 
@@ -56,11 +55,11 @@ def set_page() -> None:
     """
     st.set_page_config(layout="wide")
 
-def sidebar_title(txt: str) -> None:
+def sidebar_title() -> None:
     """
     Display a title in the Streamlit sidebar.
     """
-    st.sidebar.title(txt)
+    st.sidebar.title(title_main)
 
 def title_print(txt: str) -> None:
     """
@@ -72,7 +71,7 @@ def sidebar_radio() -> str:
     """
     Display a radio button selection in the sidebar.
     """
-    mode = st.sidebar.radio("Mode", ["Similarity", "Key-Words", "Database"])
+    mode = st.sidebar.radio("Mode", options_radio)
     return mode
 
 def text_input(prompt: str = type_query) -> str:
