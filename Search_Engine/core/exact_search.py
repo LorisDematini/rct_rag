@@ -32,7 +32,7 @@ def parse_query(query):
 def term_to_regex(term):
     """
     Converts a search term into a regex pattern.
-    Supports wildcard '*' at the end of a word (e.g., "therap*").
+    Supports wildcard '*' at the end of a word.
 
     Args:
         term (str): The raw search term.
