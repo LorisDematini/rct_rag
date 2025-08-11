@@ -36,7 +36,6 @@ def run_sparse_app():
     # Display the app title
     title_print(title_sparse)
 
-    print("[INFO] Loading sparse data...")
     # Returns TfidfVectorizer, document-term matrix, list of study IDs, LangChain Documents, top TF-IDF terms
     vectorizer, sparse_matrix, study_ids, documents, top_terms = load_sparse()
         
@@ -44,13 +43,12 @@ def run_sparse_app():
     query_sparse = text_input()
 
     if query_sparse:
-        # Preprocess the query (lowercase, remove stopwords, lemmatize, etc.)
+        # Preprocess the query (lowercase, remove stopwords, etc.)
         query_cleaned = preprocess_query(query_sparse)
-        print(f"Preprocessed query: {query_cleaned}")
 
         # Perform cosine similarity search between query and TF-IDF index
         # Returns a list of matched sections with similarity scores and metadata
         results = search_sparse(query_cleaned, vectorizer, sparse_matrix, study_ids, documents)
 
-        # Display the ranked results and top terms per study using Streamlit
+        # Display the ranked results and top terms per study using results and Streamlit
         display_sparse_results(results, query_sparse, query_cleaned, top_terms)

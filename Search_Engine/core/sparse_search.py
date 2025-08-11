@@ -11,7 +11,7 @@ def search_sparse(query: str, vectorizer, sparse_matrix, study_ids: List[str], d
     Args:
         query (str): The user's textual search query.
         vectorizer: The trained TF-IDF vectorizer.
-        sparse_matrix: The sparse TF-IDF matrix representing all documents.
+        sparse_matrix: The sparse TF-IDF matrix representing all vocabulary.
         study_ids (List[str]): A list of study IDs corresponding to the documents.
         documents (List[str]): A list of document contents.
         k (int, optional): The number of top relevant results to return (default is 40).
