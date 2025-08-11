@@ -11,9 +11,7 @@ set_page()
 
 sidebar_title(title_main)
 
-subtitle_list = ["Similarity", "Key-Words", "Database"]
-
-mode = sidebar_radio(subtitle_list)
+mode = sidebar_radio()
 
 if mode == "Similarity":
     run_sparse_app()

@@ -68,11 +68,11 @@ def title_print(txt: str) -> None:
     """
     st.title(txt)
 
-def sidebar_radio(options: List[str]) -> str:
+def sidebar_radio() -> str:
     """
     Display a radio button selection in the sidebar.
     """
-    mode = st.sidebar.radio("Mode", options)
+    mode = st.sidebar.radio("Mode", ["Similarity", "Key-Words", "Database"])
     return mode
 
 def text_input(prompt: str = type_query) -> str:
