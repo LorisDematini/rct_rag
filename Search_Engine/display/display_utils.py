@@ -1,6 +1,6 @@
 import os
 import json
-from config import SECTIONS_JSON_PATH, SUMMARY_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH
+from config import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH
 from config import type_query
 import streamlit as st
 from typing import Any, Optional, Dict, List
@@ -12,8 +12,6 @@ with open(SECTIONS_JSON_PATH, "r", encoding="utf-8") as f:
 with open(SECTIONS_FULL_JSON_PATH, "r", encoding="utf-8") as f:
     summary_data_full = json.load(f)
 
-with open(SUMMARY_JSON_PATH, "r", encoding="utf-8") as f:
-    summary: List[Dict[str, Any]] = json.load(f)
 
 def get_summary_data() -> Dict[str, Any]:
     """
@@ -25,11 +23,6 @@ def get_summary_data_full() -> Dict[str, Any]:
     """Return the full summary data dictionary (if needed)."""
     return summary_data_full
 
-def get_summary_list() -> List[Dict[str, Any]]:
-    """
-    Return the summary list loaded from summary JSON.
-    """
-    return summary
 
 def extract_top_terms_by_study(top_terms: Dict[str, Any]) -> Dict[str, Any]:
     """

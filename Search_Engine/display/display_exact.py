@@ -3,7 +3,7 @@ import os
 from .display_utils import find_pdf_file, get_summary_data_full
 from .highlight import highlight_text_exact
 from core import parse_query
-from config import download_label, show_section
+from config import download_label, show_section, no_protocol_query, no_pdf_avail, format_protocol, no_text_p
 
 # Load the summary data for all protocols
 summary_data_full = get_summary_data_full()
@@ -32,7 +32,7 @@ def display_exacte_results(results, query, selected_section=None):
         st.subheader(f"{len(results)} matching section(s) found")
 
     if not results:
-        st.info("No relevant protocols found.")
+        st.info(no_protocol_query)
         return
 
     display_all_sections = (selected_section is None) or (selected_section == "All sections")
@@ -59,12 +59,12 @@ def display_exacte_results(results, query, selected_section=None):
                         mime="application/pdf"
                     )
             else:
-                st.info("No .pdf file available for this protocol.")
+                st.info(no_pdf_avail)
 
             # Display all sections and their paragraphs for the study
             study_content = summary_data_full.get(study_id, {})
             if not isinstance(study_content, dict):
-                st.warning("Unexpected format for this protocol.")
+                st.warning(format_protocol)
                 continue
 
             with st.expander(show_section):
@@ -80,7 +80,7 @@ def display_exacte_results(results, query, selected_section=None):
                                 highlighted = highlight_text_exact(paragraph, query, mode)
                                 st.markdown(highlighted, unsafe_allow_html=True)
                             else:
-                                st.markdown("Non-textual paragraph.")
+                                st.markdown(no_text_p)
     else:
         # If a specific section was selected, display each matching result separately
         for res in results:
@@ -92,13 +92,13 @@ def display_exacte_results(results, query, selected_section=None):
             if pdf_path:
                 with open(pdf_path, "rb") as file:
                     st.download_button(
-                        label="📄 Download report (.pdf)",
+                        label=download_label,
                         data=file,
                         file_name=os.path.basename(pdf_path),
                         mime="application/pdf"
                     )
             else:
-                st.info("No .pdf file available for this protocol.")
+                st.info(no_pdf_avail)
 
             # Display only the selected section’s paragraphs
             study_content = summary_data_full.get(study_id, {})
@@ -113,4 +113,4 @@ def display_exacte_results(results, query, selected_section=None):
                         highlighted = highlight_text_exact(paragraph, query, mode)
                         st.markdown(highlighted, unsafe_allow_html=True)
                     else:
-                        st.markdown("Non-textual paragraph.")
+                        st.markdown(no_text_p)

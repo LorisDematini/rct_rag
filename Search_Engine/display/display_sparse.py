@@ -3,12 +3,10 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 from .highlight import highlight_text_sparse
-from .display_utils import find_pdf_file, get_summary_data, get_summary_list
-from config import validate, show_section, download_label, title_graph, x_label, y_label
+from .display_utils import find_pdf_file, get_summary_data
+from config import validate, show_section, download_label, title_graph, x_label, y_label, format_protocol, no_text_p, no_protocol_query, no_pdf_avail
 
 summary_data = get_summary_data()
-# summary_data_full = get_summary_data_full()
-summary = get_summary_list()
 
 def display_scores_chart(results: list[dict]) -> None:
     """
@@ -50,7 +48,7 @@ def display_study_sections(
         mode (str): Display mode; "sparse" applies highlighting.
     """
     if not isinstance(sections, dict):
-        st.warning("Invalid format for this protocol.")
+        st.warning(format_protocol)
         return
 
     for title_sec, paragraphs in sections.items():
@@ -62,7 +60,7 @@ def display_study_sections(
         with col2:
             for p in paragraphs if isinstance(paragraphs, list) else [paragraphs]:
                 if not isinstance(p, str):
-                    st.markdown("Non-text paragraph.")
+                    st.markdown(no_text_p)
                     continue
                 if mode == "sparse":
                     # Highlight matching query terms
@@ -99,7 +97,7 @@ def display_sparse_results(
 
     st.subheader(f"{len(results)} / {len(summary_data)} protocols found")
     if not results:
-        st.info("No relevant protocols found.")
+        st.info(no_protocol_query)
         return
 
     display_scores_chart(results)
@@ -130,7 +128,7 @@ def display_sparse_results(
                         mime="application/pdf",
                     )
             else:
-                st.info("No PDF file available for this protocol.")
+                st.info(no_pdf_avail)
 
         with st.expander(show_section):
             display_study_sections(

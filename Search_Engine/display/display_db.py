@@ -1,17 +1,17 @@
 import os
 import streamlit as st
 
-from .display_utils import find_pdf_file, get_summary_list
-from config import download_label, show_section
+from .display_utils import find_pdf_file
+from config import download_label, show_section, no_protocol_name, no_pdf_avail, format_protocol, no_text_p
 
-# Load the list of protocols (summary is a dict: {study_id: content})
-summary = get_summary_list()
 
-def display_list(query: str = None) -> None:
+def display_list(summary : str, query: str = None) -> None:
     """
     Display a list of clinical protocols, optionally filtered by a search query.
 
     Args:
+        summary(str): Text from summary.json, file containing all pdf extracted 
+        without preprocessing.
         query (str, optional): Text input from the user to filter protocol IDs.
                                If None or empty, the full list is shown.
     """
@@ -30,7 +30,7 @@ def display_list(query: str = None) -> None:
 
         # If nothing matches the query
         if not filtered_summary:
-            st.warning("No protocol found with this name.")
+            st.warning(no_protocol_name)
             return
 
     # Loop through all matching protocols
@@ -51,7 +51,7 @@ def display_list(query: str = None) -> None:
                     mime="application/pdf"
                 )
         else:
-            st.info("No PDF file available for this protocol.")
+            st.info(no_pdf_avail)
 
         # Expandable section for detailed content
         with st.expander(show_section):
@@ -67,6 +67,6 @@ def display_list(query: str = None) -> None:
                         if isinstance(section_paragraphs, str):
                             st.markdown(section_paragraphs)
                         else:
-                            st.markdown("Non-text paragraph.")
+                            st.markdown(no_text_p)
             else:
-                st.warning("Unexpected format for this protocol.")
+                st.warning(format_protocol)

@@ -9,7 +9,8 @@ from config import (
     SPARSE_PCKL_PATH,
     TOP_TERMS_PATH,
     EXACT_PCKL_PATH,
-    AVAILABLE_SECTIONS_JSON_PATH
+    AVAILABLE_SECTIONS_JSON_PATH,
+    SUMMARY_JSON_PATH
 )
 
 def load_file_pkl(file_path: str):
@@ -74,3 +75,16 @@ def load_exact():
     list_sections = load_file_json(AVAILABLE_SECTIONS_JSON_PATH)
 
     return documents_exact, list_sections
+
+
+def load_list():
+    """
+    Load the component required for the database viewer.
+
+    Returns:
+        - summary (Dict) Study_id : content
+    """
+
+    summary = load_file_json(SUMMARY_JSON_PATH)
+
+    return summary
