@@ -62,7 +62,6 @@ def extract_study_tables_from_pdfs(pdf_folder: str, output_json_path: str) -> No
 
                         # Stop extraction if French keyword is detected
                         if any(cell and stopword_fr in cell.lower() for cell in row):
-                            print(f"Stopping extraction for {file_name}: French table detected.")
                             stop_extraction = True
                             break
 
