@@ -1,6 +1,6 @@
 import os
 import json
-from config import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH, type_query, options_radio, title_main
+from config import SECTIONS_JSON_PATH, PDF_FOLDER, SECTIONS_FULL_JSON_PATH, type_query, options_radio, title_main, select_sec
 import streamlit as st
 from typing import Any, Optional, Dict, List
 
@@ -80,8 +80,9 @@ def text_input(prompt: str = type_query) -> str:
     """
     return st.text_input(prompt)
 
-def radio_button(label: str, options: List[str]) -> str:
+def radio_button_exact(list_sections: List[str], label: str = select_sec, ) -> str:
     """
     Display a horizontal Streamlit radio button group.
     """
-    return st.radio(label, options, horizontal=True)
+    sections_options = ["All sections"] + list_sections
+    return st.radio(label, sections_options, horizontal=True)

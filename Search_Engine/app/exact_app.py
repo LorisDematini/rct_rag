@@ -20,9 +20,9 @@ It finds sections containing the given keywords, with optional section filtering
 
 from core import load_exact, search_ex
 from preprocess import preprocess_query_ex
-from display.display_utils import title_print, text_input, radio_button
+from display.display_utils import title_print, text_input, radio_button_exact
 from display import display_exacte_results
-from config import title_exact, select_sec
+from config import title_exact
 
 # Main entry point for the exact search application
 def run_exact_app():
@@ -33,8 +33,7 @@ def run_exact_app():
     documents_exact, list_sections = load_exact()
 
     # Create section filter options (including "All sections")
-    sections_options = ["All sections"] + list_sections
-    selected_section = radio_button(select_sec, sections_options)
+    selected_section = radio_button_exact(list_sections)
 
     # Get user query input
     query_exact = text_input()
