@@ -1,1 +1,0 @@
-from .ExtractPDF_JSON import extract_study_tables_from_pdfs

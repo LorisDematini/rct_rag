@@ -19,7 +19,6 @@ It finds sections containing the given keywords, with optional section filtering
 """
 
 from core import load_exact, search_ex
-from preprocess import preprocess_query_ex
 from display.display_utils import title_print, text_input, radio_button_exact
 from display import display_exacte_results
 from config import title_exact
@@ -39,14 +38,12 @@ def run_exact_app():
     query_exact = text_input()
 
     if query_exact:
-        # Preprocess the input query
-        query_cleaned = preprocess_query_ex(query_exact)
 
         # Determine target sections (None means all sections)
         selected_sections = None if selected_section == "All sections" else [selected_section]
         
         # Perform the exact keyword search
-        results_exact = search_ex(documents_exact, query_cleaned, selected_sections=selected_sections)
+        results_exact = search_ex(documents_exact, query_exact, selected_sections=selected_sections)
         
         # Display the search results
         display_exacte_results(results_exact, query_exact, selected_section)

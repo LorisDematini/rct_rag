@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
-from Config import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH
+from config import VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH
 
 def build_save_sparse_index(documents):
     """

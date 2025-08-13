@@ -1,7 +1,7 @@
 import json
 import pickle
-from Config import ACRONYMS_FILE, SECTIONS_JSON_PATH, SPARSE_JSON_PATH, SPARSE_PCKL_PATH
-from Utils import preprocess
+from config import ACRONYMS_FILE, SECTIONS_JSON_PATH, SPARSE_JSON_PATH, SPARSE_PCKL_PATH
+from utils import preprocess
 from langchain.schema import Document
 
 def generator_save_documents(input_path: str = SECTIONS_JSON_PATH, acronyms_path: str = ACRONYMS_FILE, output_json: str = SPARSE_JSON_PATH, output_pkl: str = SPARSE_PCKL_PATH) -> None:

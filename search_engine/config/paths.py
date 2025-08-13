@@ -20,8 +20,8 @@ import os
 # Project root directories
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARENT_OF_BASE = os.path.dirname(BASE_DIR)
-BUILDER = os.path.join(PARENT_OF_BASE, "Builder")
-DATA_DIR = os.path.join(BUILDER, "Data")
+BUILDER = os.path.join(PARENT_OF_BASE, "builder")
+DATA_DIR = os.path.join(BUILDER, "data")
 
 # Folder containing the original source files (PDF or DOCX)
 PDF_FOLDER = os.path.join(DATA_DIR, "pdf")
@@ -52,4 +52,4 @@ MATRIX_PATH = os.path.join(DATA_DIR, "sparse_matrix.npz")
 STUDY_IDS_PATH = os.path.join(DATA_DIR, "study_ids.npy")
 
 # JSON file listing top TF-IDF terms for each study
-TOP_TERMS_PATH = os.path.join(DATA_DIR, "TopTermsByStudy.json")
+TOP_TERMS_PATH = os.path.join(DATA_DIR, "top_terms_by_study.json")

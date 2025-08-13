@@ -1,7 +1,7 @@
 import json
 import pickle
 from langchain.schema import Document
-from Utils import preprocess_ex
+from utils import preprocess_ex
 
 def generate_save_exact_documents(input_path, output_json, output_pkl):
     """

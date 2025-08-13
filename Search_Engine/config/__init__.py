@@ -1,2 +1,0 @@
-from .paths import PDF_FOLDER, SUMMARY_JSON_PATH, ACRONYMS_FILE, ACRONYMS_FILE_UNIQUE, SECTIONS_JSON_PATH, SPARSE_PCKL_PATH, VECTOR_PATH, MATRIX_PATH, STUDY_IDS_PATH, TOP_TERMS_PATH, EXACT_PCKL_PATH, AVAILABLE_SECTIONS_JSON_PATH, SECTIONS_FULL_JSON_PATH
-from .strings import title_main, title_data, download_label, title_exact, select_sec, type_query, show_section, title_sparse, validate, title_graph, x_label, y_label, no_protocol_query, no_pdf_avail, format_protocol, no_text_p, no_protocol_name, options_radio

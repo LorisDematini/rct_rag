@@ -1,5 +1,5 @@
 import re
-
+from .processed_exact import preprocess_query_ex
 def parse_query(query):
     """
     Parses a raw query string into a structured logical representation.
@@ -105,7 +105,8 @@ def search_ex(documents, query, selected_sections=None):
                 - score
                 - document (LangChain Document)
     """
-    parsed = parse_query(query)
+    query_cleaned = preprocess_query_ex(query)
+    parsed = parse_query(query_cleaned)
     results = []
 
     for doc in documents:

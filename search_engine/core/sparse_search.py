@@ -1,6 +1,7 @@
 # sparse_search.py
 
 from sklearn.metrics.pairwise import cosine_similarity
+from .processed_sparse import preprocess_query
 import numpy as np
 from typing import List, Dict, Any
 
@@ -22,7 +23,9 @@ def search_sparse(query: str, vectorizer, sparse_matrix, study_ids: List[str], d
             - 'score': Cosine similarity score with the query.
             - 'document': Content of the matched document.
     """
-    query_vec = vectorizer.transform([query])
+    query_cleaned = preprocess_query(query)
+
+    query_vec = vectorizer.transform([query_cleaned])
     similarities = cosine_similarity(query_vec, sparse_matrix).flatten()
     sorted_indices = np.argsort(similarities)[::-1]
 
@@ -34,4 +37,4 @@ def search_sparse(query: str, vectorizer, sparse_matrix, study_ids: List[str], d
                 "score": similarities[idx],
                 "document": documents[idx]
             })
-    return results
+    return results, query_cleaned
