@@ -1,7 +1,7 @@
 [project]
 name = "rct-rag"
 version = "0.1.0"
-description = "Clinical Trials Search Engine with a TFIDF"
+description = "Clinical Trials Search Engines "
 authors = [
     {name = "Loris Dematini",email = "loris.dematini@yahoo.fr"}
 ]
