@@ -1,2 +1,1 @@
 from .json_section_regroup import categorize_study_sections
-from .json_section_regroup_full import categorize_study_sections_full

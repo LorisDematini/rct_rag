@@ -1,8 +1,9 @@
 #IMPORT
 from acronyms import extract_acronyms_from_pdfs, extract_acronyms_from_json, merge_acronym_jsons, get_unique_acronyms
 from extract_pdf import extract_study_tables_from_pdfs
-from sections_regroup import categorize_study_sections, categorize_study_sections_full
+from sections_regroup import categorize_study_sections
 from config import PDF_FOLDER, SUMMARY_JSON_PATH, ACRONYMS_EXTRACT_PATH, ACRONYMS_STUDY_PATH, ACRONYMS_FILE, ACRONYMS_FILE_UNIQUE, SECTIONS_FULL_JSON_PATH, SECTIONS_JSON_PATH, SPARSE_JSON_PATH, SPARSE_PCKL_PATH, EXACT_JSON_PATH, EXACT_PCKL_PATH, AVAILABLE_SECTIONS_JSON_PATH
+from config import categories_sparse, categories_exact
 from sparse_engine import generator_save_documents, build_save_sparse_index
 from exact_engine import generate_save_exact_documents, save_available_sections
 from utils import top_terms_per_document
@@ -29,10 +30,10 @@ get_unique_acronyms(ACRONYMS_FILE, ACRONYMS_FILE_UNIQUE)
 
 ###SECTIONS
 #Select sections wanted to full JSON (Key-Words)  
-categorize_study_sections_full(SUMMARY_JSON_PATH, SECTIONS_FULL_JSON_PATH)
+categorize_study_sections(SUMMARY_JSON_PATH, SECTIONS_FULL_JSON_PATH, categories_exact)
 
 #Select sections wanted to sparse JSON (TFIDF)  
-categorize_study_sections(SUMMARY_JSON_PATH, SECTIONS_JSON_PATH)
+categorize_study_sections(SUMMARY_JSON_PATH, SECTIONS_JSON_PATH, categories_sparse)
 
 
 ###INDEX EXACT

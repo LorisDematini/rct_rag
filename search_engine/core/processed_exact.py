@@ -5,6 +5,7 @@ def preprocess_ex(text):
     text = text.lower()
     #ponctuation
     text = re.sub(r'[^\w\s*-]|_', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip()
     text = text.replace("-", "")
 
     return text

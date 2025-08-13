@@ -1,40 +1,37 @@
 {
-  "HAPLO-EMPTY": {
-    "SAA": "severe aplastic anemia",
-    "MUD": "matched unrelated donor",
-    "ELT": "eltrombopag",
+  "HAPLORESCUE": {
+    "DSA": "donor specific antibody"
+  },
+  "ICE": {
+    "MC": "mixed cryoglobulinaemia",
+    "MGUS": "monoclonal gammapathy unknown significance",
+    "BVAS": "Birmingham Vasculitis Activity Score"
+  },
+  "FIRST": {
+    "OS": "Overall Survival",
+    "DFS": "disease free survival",
+    "NRM": "Non relapse mortality",
+    "BMI": "Body Mass Index",
+    "PBSC": "peripheral blood stem cell",
+    "CR": "complete remission"
+  },
+  "DREPA-RIC": {
+    "SCD": "sickle cell disease",
+    "HSCT": "hematopoietic stem cell transplantation",
+    "MRD": "matched related donor",
+    "GVHD": "graft versus host disease",
+    "TBI": "total body irradiation",
+    "CT": "computed tomography",
+    "TP": "transfusion program",
+    "GFR": "glomerular fraction rate"
+  },
+  "APARR": {
+    "HSCT": "Hematopoietic Stem Cell Transplantation",
+    "AA": "aplastic anemia",
+    "EPAG": "eltrombopag",
     "PNH": "paroxysmal nocturnal hemoglobinuria",
     "AML": "acute myeloid leukemia",
-    "HSCT": "Hematopoietic stem cell transplantation",
-    "GvHD": "Graft versus Host Disease",
-    "OS": "overall survival"
-  },
-  "UVB": {
-    "BCVA": "best corrected visual acuity",
-    "ICBD": "International Criteria Behçet Disease",
-    "OCT": "Optical Coherence Tomography"
-  },
-  "KAPKEY": {
-    "KS": "Kaposi sarcoma",
-    "BORR": "Best Overall Response Rate",
-    "CTCAE": "Common Terminology Criteria Adverse Events",
-    "ANC": "Absolute neutrophil count"
-  },
-  "METIMGAST": {
-    "ORR": "overall response rate",
-    "HIV": "Human Immunodeficiency Virus",
-    "CNS": "central nervous system"
-  },
-  "SONIMEL": {
-    "BBB": "Blood Brain Barrier",
-    "US": "UltraSound",
-    "MSD": "most successful dose",
-    "ECOG": "Eastern Cooperative Oncology Group",
-    "PS": "performance status"
-  },
-  "FIBRAPLO": {
-    "OS": "overall survival",
-    "DFS": "disease free survival"
+    "GvHD": "graft versus host disease"
   },
   "SALMA": {
     "AML": "Acute Myeloid Leukemias",
@@ -61,26 +58,58 @@
     "MRD": "minimal residual disease",
     "CRM": "continual reassessment method"
   },
-  "ERYTHROSIM": {
-    "PRCA": "pure red cell aplasia"
+  "ITAC": {
+    "BD": "Behçet disease"
   },
-  "APARR": {
-    "HSCT": "Hematopoietic Stem Cell Transplantation",
-    "AA": "aplastic anemia",
-    "EPAG": "eltrombopag",
-    "PNH": "paroxysmal nocturnal hemoglobinuria",
-    "AML": "acute myeloid leukemia",
-    "GvHD": "graft versus host disease"
+  "MSC-SLE": {
+    "SLE": "Systemic Lupus Erythematosus",
+    "AD": "auto Disease",
+    "MSC": "Mesenchymal Stem cells",
+    "WHO": "World Health Organization",
+    "MCR": "Major Clinical Response"
   },
-  "TEOREM": {
-    "CD": "Crohn disease",
-    "AIEC": "adherent invasive E coli"
+  "JAKAHDI": {
+    "HS": "Hemophagocytic syndrome"
   },
-  "INTORETAK": {
-    "TA": "Takayasu arteritis",
-    "CS": "corticosteroids",
-    "ACR": "American College Rheumatology",
-    "HIV": "human immunodeficiency virus"
+  "MSC-AT-SSC": {
+    "AD": "autoimmune disease",
+    "AE": "Adverse Events",
+    "AHSCT": "autologous hematopoietic stem cell transplantation",
+    "BMI": "Body Mass Index",
+    "CTC-AE": "NCI Common Terminology Criteria for Adverse Events",
+    "CRISS": "ACR Provisional Composite Response Index for Clinical Trials in Early Diffuse",
+    "DLCO": "diffusing capacity of lung for carbon monoxide",
+    "EQ-5D-5L": "EuroQol 5-Dimension 5-Level",
+    "FVC": "Forced Vital Capacity",
+    "GMP": "Good Manufacturing Practices",
+    "GRCS": "Global Rank Composite Score",
+    "IV": "intravenous",
+    "MMF": "Mycophenolate mofetil",
+    "MSC": "Mesenchymal stromal cells",
+    "QALY": "Quality-Adjusted Life Year",
+    "PFS": "Progression free survival",
+    "SAE": "Severe Adverse Events",
+    "SAR": "Serious Adverse Reactions",
+    "SHAQ": "Scleroderma-Health Assessment Questionnaire",
+    "SF-36": "The Short Form (36) Health Survey",
+    "TRSAE": "treatment related Severe Adverse Events",
+    "CTCAE": "Common Terminology Criteria Adverse Events",
+    "DSMB": "Data Safety Monitoring Board"
+  },
+  "FOCUS": {
+    "NIU": "non infectiuous uveitis",
+    "BCVA": "best corrected visual acuity",
+    "OCT": "optical coherence tomographic",
+    "GFR": "Glomerular filtration rates",
+    "NYHA": "New York Heart Association"
+  },
+  "KAPVEC": {
+    "KS": "Kaposi sarcoma",
+    "MCC": "Merkel cell carcinoma",
+    "BORR": "best overall response rate"
+  },
+  "TRIBECA": {
+    "WCBP": "Women Child Bearing Potential"
   },
   "GRAALL-2014": {
     "HSCT": "Haematopoietic Stem Cell Transplantation",
@@ -131,6 +160,35 @@
     "OS": "overall survival",
     "SAEs": "Serious adverse events"
   },
+  "METIMGAST": {
+    "ORR": "overall response rate",
+    "HIV": "Human Immunodeficiency Virus",
+    "CNS": "central nervous system"
+  },
+  "MARVEL": {
+    "DME": "drug metabolizing enzymes",
+    "MAR": "missing at random",
+    "ODV": "ODemethylV"
+  },
+  "HAPLO-EMPTY": {
+    "SAA": "severe aplastic anemia",
+    "MUD": "matched unrelated donor",
+    "ELT": "eltrombopag",
+    "PNH": "paroxysmal nocturnal hemoglobinuria",
+    "AML": "acute myeloid leukemia",
+    "HSCT": "Hematopoietic stem cell transplantation",
+    "GvHD": "Graft versus Host Disease",
+    "OS": "overall survival"
+  },
+  "OPTISAGE": {
+    "AML": "acute myeloid leukemia",
+    "RIC": "reduced intensity conditioning",
+    "EFS": "event free survival",
+    "GVL": "graft versus leukemia",
+    "ATG": "Anti thymocyte globulins",
+    "MUD": "matched unrelated donor",
+    "GRFS": "GVHD relapse free survival"
+  },
   "PARADISE": {
     "LIST": "OF ABBREVIATIONS AND RELEVANT DEFINITIONS",
     "AE": "Adverse Event",
@@ -162,105 +220,6 @@
     "SF16": "Short Form 16",
     "SUSAR": "Suspected Unexpected Serious Adverse Reaction",
     "WPAI": "Work Productivity Index"
-  },
-  "OPTISAGE": {
-    "AML": "acute myeloid leukemia",
-    "RIC": "reduced intensity conditioning",
-    "EFS": "event free survival",
-    "GVL": "graft versus leukemia",
-    "ATG": "Anti thymocyte globulins",
-    "MUD": "matched unrelated donor",
-    "GRFS": "GVHD relapse free survival"
-  },
-  "TRIBECA": {
-    "WCBP": "Women Child Bearing Potential"
-  },
-  "MSC-AT-SSC": {
-    "AD": "autoimmune disease",
-    "AE": "Adverse Events",
-    "AHSCT": "autologous hematopoietic stem cell transplantation",
-    "BMI": "Body Mass Index",
-    "CTC-AE": "NCI Common Terminology Criteria for Adverse Events",
-    "CRISS": "ACR Provisional Composite Response Index for Clinical Trials in Early Diffuse",
-    "DLCO": "diffusing capacity of lung for carbon monoxide",
-    "EQ-5D-5L": "EuroQol 5-Dimension 5-Level",
-    "FVC": "Forced Vital Capacity",
-    "GMP": "Good Manufacturing Practices",
-    "GRCS": "Global Rank Composite Score",
-    "IV": "intravenous",
-    "MMF": "Mycophenolate mofetil",
-    "MSC": "Mesenchymal stromal cells",
-    "QALY": "Quality-Adjusted Life Year",
-    "PFS": "Progression free survival",
-    "SAE": "Severe Adverse Events",
-    "SAR": "Serious Adverse Reactions",
-    "SHAQ": "Scleroderma-Health Assessment Questionnaire",
-    "SF-36": "The Short Form (36) Health Survey",
-    "TRSAE": "treatment related Severe Adverse Events",
-    "CTCAE": "Common Terminology Criteria Adverse Events",
-    "DSMB": "Data Safety Monitoring Board"
-  },
-  "MAC-HAPLO-MUD": {
-    "SCT": "stem cell transplantation",
-    "MUD": "matched unrelated donors",
-    "PBSC": "Peripheral blood stem cell",
-    "HR": "Hazard ratio"
-  },
-  "PCL-2": {
-    "ANSM": "Agence Nationale de Sécurité des Médicaments et des Produits de santé",
-    "ALT": "Alanine aminotransferase",
-    "ANC": "absolute neutrophil count",
-    "AST": "and aspartate aminotransferase",
-    "ASCT": "autologous stem cell transplantation",
-    "CBC": "Complete Blood Count",
-    "CCTAE": "common toxicity criteria",
-    "CPP": "Comité de Protection des Personnes",
-    "CR": "Complete Response",
-    "DOR": "Duration of response",
-    "ECOG": "Eastern Cooperative Oncology Group",
-    "EOT": "End of Treatment",
-    "GI": "Gastro intestinal",
-    "IMWG": "International Myeloma Working Group",
-    "ISS": "International Staging System",
-    "VRD": "Bortezomib-Lenalidomide-Dexamethasone",
-    "MHSC": "Mobilization and harvesting stem cells",
-    "MM": "multiple myeloma",
-    "MRD": "minimal residual disease",
-    "NCI": "National Cancer Institute",
-    "NGS": "Next-Generation Sequencing",
-    "ORR": "Overall response rate",
-    "OS": "overall survival",
-    "PBSC": "Peripheral Blood Hematopoietic Stem Cells",
-    "PCL": "primitive plasma cell leukemia",
-    "PFS": "progression-free survival",
-    "SAE": "Serious Adverse Event",
-    "SC": "Subcutaneous",
-    "SPM": "Second primary malignancy",
-    "TEAE": "Treatment Emergent Adverse Event",
-    "TTP": "Time to progression",
-    "ULN": "upper limit normal",
-    "VGPR": "Very Good Partial Response",
-    "pPCL": "Primary plasma cell leukemia",
-    "PCR": "polymerase chain reaction",
-    "HBV": "hepatitis B virus",
-    "GCP": "good clinical practice",
-    "ICH": "International Conference Harmonization"
-  },
-  "SHORTCUT": {
-    "KTR": "kidney transplant recipients",
-    "UTI": "urinary tract infection",
-    "MDR": "Multidrug"
-  },
-  "PIPAC": {
-    "QoL": "quality of life",
-    "CI": "Confidence Intervals"
-  },
-  "UPFRONT-MUD": {
-    "AA": "aplastic anemia",
-    "FFS": "failure free survival",
-    "MUD": "matched unrelated donor",
-    "HSCT": "hematopoietic stem cell transplantation",
-    "GvHD": "Graft versus Host Disease"
   },
   "CAMOVID": {
     "ACE2": "Angiotensin Converting Enzyme 2",
@@ -332,44 +291,62 @@
     "CME": "cystoid macular edema",
     "MAMS": "Multi Arm Multi Stage"
   },
-  "ICE": {
-    "MC": "mixed cryoglobulinaemia",
-    "MGUS": "monoclonal gammapathy unknown significance",
-    "BVAS": "Birmingham Vasculitis Activity Score"
+  "PIPAC": {
+    "QoL": "quality of life",
+    "CI": "Confidence Intervals"
   },
-  "KAPVEC": {
-    "KS": "Kaposi sarcoma",
-    "MCC": "Merkel cell carcinoma",
-    "BORR": "best overall response rate"
-  },
-  "MARVEL": {
-    "DME": "drug metabolizing enzymes",
-    "MAR": "missing at random",
-    "ODV": "ODemethylV"
-  },
-  "MSC-SLE": {
-    "SLE": "Systemic Lupus Erythematosus",
-    "AD": "auto Disease",
-    "MSC": "Mesenchymal Stem cells",
-    "WHO": "World Health Organization",
-    "MCR": "Major Clinical Response"
-  },
-  "DREPA-RIC": {
-    "SCD": "sickle cell disease",
-    "HSCT": "hematopoietic stem cell transplantation",
-    "MRD": "matched related donor",
-    "GVHD": "graft versus host disease",
-    "TBI": "total body irradiation",
-    "CT": "computed tomography",
-    "TP": "transfusion program",
-    "GFR": "glomerular fraction rate"
-  },
-  "FOCUS": {
-    "NIU": "non infectiuous uveitis",
+  "UVB": {
     "BCVA": "best corrected visual acuity",
-    "OCT": "optical coherence tomographic",
-    "GFR": "Glomerular filtration rates",
-    "NYHA": "New York Heart Association"
+    "ICBD": "International Criteria Behçet Disease",
+    "OCT": "Optical Coherence Tomography"
+  },
+  "GREEN": {
+    "ADA": "Anti-glenzocimab Drug Antibodies",
+    "ANSM": "Agence Nationale de Sécurité des Médicaments et des Produits de santé",
+    "CPP": "Comité de Protection des Personnes",
+    "EVT": "Endovascular therapy",
+    "IVT": "Intravenous thrombolysis",
+    "MCA": "Middle Cerebral Artery",
+    "MT": "mechanical thrombectomy",
+    "MRI": "magnetic resonance imaging",
+    "MRA": "magnetic resonance angiography",
+    "AIS": "acute ischemic stroke",
+    "LVO": "large vessel occlusion",
+    "ICA": "internal carotid artery",
+    "CTA": "CT angiography",
+    "CTP": "Perfusion CT-scan",
+    "DAPT": "dual anti platelet therapy",
+    "ICH": "IntraCranial Hemorrhages",
+    "CCTAE": "common toxicity criteria",
+    "AE": "adverse effect",
+    "SAE": "serious adverse event",
+    "SUSAR": "Suspected Unexpected Serious Adverse Reaction",
+    "BRE": "Bleeding-Related Event",
+    "TEAE": "Treatment Emergent Adverse Event",
+    "SAEs": "serious adverse events",
+    "SUSARs": "suspected unexpected serious adverse reactions",
+    "BREs": "bleeding related events"
+  },
+  "TEOREM": {
+    "CD": "Crohn disease",
+    "AIEC": "adherent invasive E coli"
+  },
+  "EFRAIM-II": {
+    "ARF": "Acute respiratory failure",
+    "DNI": "Do Not Intubate",
+    "DNR": "Do Not Resuscitate"
+  },
+  "ERYTHROSIM": {
+    "PRCA": "pure red cell aplasia"
+  },
+  "SHORTCUT": {
+    "KTR": "kidney transplant recipients",
+    "UTI": "urinary tract infection",
+    "MDR": "Multidrug"
+  },
+  "FIBRAPLO": {
+    "OS": "overall survival",
+    "DFS": "disease free survival"
   },
   "RECORDS": {
     "LIST": "OF ABBREVIATIONS",
@@ -401,6 +378,12 @@
     "URC": "HUPIFO Paris Ile de France Ouest Clinical Research Unit",
     "WHO": "World Health Organization",
     "CS": "corticosteroids"
+  },
+  "KAPKEY": {
+    "KS": "Kaposi sarcoma",
+    "BORR": "Best Overall Response Rate",
+    "CTCAE": "Common Terminology Criteria Adverse Events",
+    "ANC": "Absolute neutrophil count"
   },
   "CAALLF01": {
     "ALL": "acute lymphoblastic leukemia",
@@ -442,53 +425,70 @@
     "GPR": "Good prednisone response",
     "PPR": "Poor Prednisone response"
   },
-  "JAKAHDI": {
-    "HS": "Hemophagocytic syndrome"
-  },
-  "EFRAIM-II": {
-    "ARF": "Acute respiratory failure",
-    "DNI": "Do Not Intubate",
-    "DNR": "Do Not Resuscitate"
-  },
-  "ITAC": {
-    "BD": "Behçet disease"
-  },
-  "FIRST": {
-    "OS": "Overall Survival",
-    "DFS": "disease free survival",
-    "NRM": "Non relapse mortality",
-    "BMI": "Body Mass Index",
-    "PBSC": "peripheral blood stem cell",
-    "CR": "complete remission"
-  },
-  "HAPLORESCUE": {
-    "DSA": "donor specific antibody"
-  },
-  "GREEN": {
-    "ADA": "Anti-glenzocimab Drug Antibodies",
+  "PCL-2": {
     "ANSM": "Agence Nationale de Sécurité des Médicaments et des Produits de santé",
-    "CPP": "Comité de Protection des Personnes",
-    "EVT": "Endovascular therapy",
-    "IVT": "Intravenous thrombolysis",
-    "MCA": "Middle Cerebral Artery",
-    "MT": "mechanical thrombectomy",
-    "MRI": "magnetic resonance imaging",
-    "MRA": "magnetic resonance angiography",
-    "AIS": "acute ischemic stroke",
-    "LVO": "large vessel occlusion",
-    "ICA": "internal carotid artery",
-    "CTA": "CT angiography",
-    "CTP": "Perfusion CT-scan",
-    "DAPT": "dual anti platelet therapy",
-    "ICH": "IntraCranial Hemorrhages",
+    "ALT": "Alanine aminotransferase",
+    "ANC": "absolute neutrophil count",
+    "AST": "and aspartate aminotransferase",
+    "ASCT": "autologous stem cell transplantation",
+    "CBC": "Complete Blood Count",
     "CCTAE": "common toxicity criteria",
-    "AE": "adverse effect",
-    "SAE": "serious adverse event",
-    "SUSAR": "Suspected Unexpected Serious Adverse Reaction",
-    "BRE": "Bleeding-Related Event",
+    "CPP": "Comité de Protection des Personnes",
+    "CR": "Complete Response",
+    "DOR": "Duration of response",
+    "ECOG": "Eastern Cooperative Oncology Group",
+    "EOT": "End of Treatment",
+    "GI": "Gastro intestinal",
+    "IMWG": "International Myeloma Working Group",
+    "ISS": "International Staging System",
+    "VRD": "Bortezomib-Lenalidomide-Dexamethasone",
+    "MHSC": "Mobilization and harvesting stem cells",
+    "MM": "multiple myeloma",
+    "MRD": "minimal residual disease",
+    "NCI": "National Cancer Institute",
+    "NGS": "Next-Generation Sequencing",
+    "ORR": "Overall response rate",
+    "OS": "overall survival",
+    "PBSC": "Peripheral Blood Hematopoietic Stem Cells",
+    "PCL": "primitive plasma cell leukemia",
+    "PFS": "progression-free survival",
+    "SAE": "Serious Adverse Event",
+    "SC": "Subcutaneous",
+    "SPM": "Second primary malignancy",
     "TEAE": "Treatment Emergent Adverse Event",
-    "SAEs": "serious adverse events",
-    "SUSARs": "suspected unexpected serious adverse reactions",
-    "BREs": "bleeding related events"
+    "TTP": "Time to progression",
+    "ULN": "upper limit normal",
+    "VGPR": "Very Good Partial Response",
+    "pPCL": "Primary plasma cell leukemia",
+    "PCR": "polymerase chain reaction",
+    "HBV": "hepatitis B virus",
+    "GCP": "good clinical practice",
+    "ICH": "International Conference Harmonization"
+  },
+  "UPFRONT-MUD": {
+    "AA": "aplastic anemia",
+    "FFS": "failure free survival",
+    "MUD": "matched unrelated donor",
+    "HSCT": "hematopoietic stem cell transplantation",
+    "GvHD": "Graft versus Host Disease"
+  },
+  "SONIMEL": {
+    "BBB": "Blood Brain Barrier",
+    "US": "UltraSound",
+    "MSD": "most successful dose",
+    "ECOG": "Eastern Cooperative Oncology Group",
+    "PS": "performance status"
+  },
+  "INTORETAK": {
+    "TA": "Takayasu arteritis",
+    "CS": "corticosteroids",
+    "ACR": "American College Rheumatology",
+    "HIV": "human immunodeficiency virus"
+  },
+  "MAC-HAPLO-MUD": {
+    "SCT": "stem cell transplantation",
+    "MUD": "matched unrelated donors",
+    "PBSC": "Peripheral blood stem cell",
+    "HR": "Hazard ratio"
   }
 }
