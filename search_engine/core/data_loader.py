@@ -12,7 +12,7 @@ from config import (
     AVAILABLE_SECTIONS_JSON_PATH,
     SUMMARY_JSON_PATH
 )
-
+ 
 def load_file_pkl(file_path: str):
     """
     Load a Python object from a Pickle file.
