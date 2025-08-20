@@ -1,0 +1,11 @@
+version : python:3.12.3
+
+
+Docker:
+docker build -t search_engine_app protocol_search_engine/.
+
+docker run -p 8080:8080 search_engine_app
+
+
+Code:
+streamlit run main.py
