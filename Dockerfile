@@ -18,4 +18,4 @@ COPY site/ ./site/
 COPY docs/ ./docs/
 
 # Lancer l'app Streamlit
-CMD ["streamlit", "run", "search_engine/main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "search_engine/main.py", "--server.port=8080", "--server.address=0.0.0.0"]
