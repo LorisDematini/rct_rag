@@ -42,8 +42,7 @@ _build/
 
 # Data
 *.csv
-*.pickle
-*.txt
+# *.txt
 *.xls
 *.xlsx
 *.tar.gz
@@ -72,8 +71,8 @@ docs/changelog.md
 docs/contributing.md
 
 # Ignore the /data folder
-data/
-/data/
+# data/
+# /data/
 /rct_protocols/
 
 #Ignore bin files
