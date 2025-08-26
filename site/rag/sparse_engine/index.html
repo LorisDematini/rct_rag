@@ -361,16 +361,22 @@
 
   <h1>Sparse Search Engine</h1>
 
-<p><img alt="Alt text" src="../assets/sparse_search_engine.png" /></p>
-<p><strong>2. Search_engine</strong> : ce module gère l’interface utilisateur et la recherche dans les documents. Il contient :  </p>
+<p><strong>2. Search_engine</strong>: This module manages the user interface and document search. It contains:  </p>
 <ul>
-<li><code>app</code> : fichiers liés à l'appel du moteur sélectionné pour la consultation et la recherche.  </li>
-<li><code>config</code> : configuration des paramètres du moteur de recherche.  </li>
-<li><code>core</code> : logique principale des moteurs de recherche.  </li>
-<li><code>display</code> : fonctions pour l’affichage et la mise en forme des résultats.  </li>
-<li><code>utils</code> : fonctions utilitaires pour la recherche et la manipulation des résultats.  </li>
+<li><code>app</code>: files related to invoking the selected search engine for consultation and querying.  </li>
+<li><code>config</code>: configuration files for search engine parameters.  </li>
+<li><code>core</code>: main search engine logic.  </li>
+<li><code>display</code>: functions for formatting and displaying search results.  </li>
+<li><code>utils</code>: utility functions for search operations and result handling.  </li>
 </ul>
-<p>Le script <code>main.py</code> lance l’application et permet l’interaction avec l’utilisateur.</p>
+<p>The script <code>main.py</code> runs the application and enables user interaction.  </p>
+<p><img alt="Sparse Search Engine" src="../assets/sparse_search_engine.png" /></p>
+<p>Example: using the TF-IDF search engine<br />
+- <code>display</code>: handles displaying the title and the query.<br />
+- <code>load_sparse</code>: loads the different files built in the Builder module.<br />
+- <code>query</code>: processes the user’s input query and sends it to the search engine.<br />
+- <code>search_sparse</code>: the core search engine; performs the search and returns results.<br />
+- <code>display</code>: another display function formats the results and uses <code>highlight</code> to emphasize query terms.  </p>
 
 
 

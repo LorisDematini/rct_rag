@@ -5,21 +5,18 @@ Welcome to the **RCT RAG** project!
 **Access the web app for free here : **  
 ➡️ [RCT_Search_Engine](https://rct-rag.onrender.com/)
 
-For instance, try with `cryoglobulinemia vasculitis AND double-blind study`
+For instance, try with `cryoglobulinemia vasculitis double-blind study`
 
 📖 **Read the full documentation here:**  
 ➡️ [RCT RAG Documentation](https://ohassanaly.github.io/rct_rag/)  
 
-This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.
+This project aims at offering differents search engines for Randomized Clinical Trials protocols made at URC Saint Louis.
 
-A RAG architecture divides in several steps :
+There are 2 differents searchs engines :
 
-corpus text embedding  
-embedding storage in a Vector Databse  
-query embedding and retrieving most similar vectors in the DB
+- `Sparse with TFIDF`
+- `Exact like CTRL+F`
 
-The scratch model is based on FAISS https://github.com/facebookresearch/faiss
+and a third like a database to consult directly the file
 
 ![Alt text](assets/rag_illustration.png)
-
-later improvements include preparing the RCT protocols text database ; scale the vector db storage ; LLM augmentation (using LangChain?) ; 
