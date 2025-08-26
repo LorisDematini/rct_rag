@@ -12,9 +12,8 @@ query embedding and retrieving most similar vectors in the DB
 
 ## Folders
 
-* `rag` - The main project architecture.
-* `get_bdd` - Code used to retrieve the rct protocols from URC Saint Louis NAS system.
-
+* `builder` - The main project architecture.
+* `search_engine` - The application code
 ## Continue
 
     Project still in progress 

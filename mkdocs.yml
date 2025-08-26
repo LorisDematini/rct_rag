@@ -4,9 +4,8 @@ theme:
 nav:
   - Home: index.md
   - Different steps : 
-    - Embedding: ./rag/embeddings.md
-    - Vector DB: ./rag/vector_db.md
-    - Query: ./rag/search.md
+    - Builder: ./rag/builder.md
+    - Sparse Search Engine: ./rag/sparse_engine.md
   - About: about.md
 plugins:
   - search
