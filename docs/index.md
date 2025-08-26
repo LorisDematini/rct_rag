@@ -1,7 +1,5 @@
 # What is this project?
 
-test
-
 This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.
 
 A RAG architecture divides in several steps :
