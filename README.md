@@ -2,21 +2,35 @@
 
 Welcome to the **RCT RAG** project!
 
-**Access the web app for free here : **  
+**Access the web app for free here :**  
 ➡️ [RCT_Search_Engine](https://rct-rag.onrender.com/)
 
-For instance, try with `cryoglobulinemia vasculitis double-blind study`
+Try for example: `cryoglobulinemia vasculitis double-blind study`
 
-📖 **Read the full documentation here:**  
-➡️ [RCT RAG Documentation](https://ohassanaly.github.io/rct_rag/)  
+---
 
-This project aims at offering differents search engines for Randomized Clinical Trials protocols made at URC Saint Louis.
+📖 **Full documentation available here:**  
+➡️ [RCT RAG Documentation](https://ohassanaly.github.io/rct_rag/)
 
-There are 2 differents searchs engines :
+---
 
-- `Sparse with TFIDF`
-- `Exact like CTRL+F`
+## Project Overview
 
-and a third like a database to consult directly the file
+This project provides several search engines to explore **Randomized Clinical Trial (RCT) protocols** developed at **URC Saint Louis**.
 
-![Alt text](assets/rag_illustration.png)
+Currently, it includes:
+
+- **Sparse Search (TF-IDF)** → semantic keyword-based retrieval  
+- **Exact Search (CTRL+F style)** → strict word matching  
+- **Database-like Explorer** → direct browsing of the full files  
+
+---
+
+## Dataset
+
+- **40 protocols available** at the moment  
+- The collection will continue to grow over time
+
+
+
+<!-- ![Alt text](assets/rag_illustration.png) -->
