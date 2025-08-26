@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
     
     
       
@@ -362,6 +362,17 @@
   <h1>Builder</h1>
 
 <p><img alt="Alt text" src="../assets/builder.png" /></p>
+<p><strong>1. Builder</strong> : ce module est responsable de la préparation des données et de la construction des index de recherche. Il contient :  </p>
+<ul>
+<li><code>acronyms</code> : gestion et extraction des acronymes présents dans les protocoles.  </li>
+<li><code>config</code> : fichiers de configuration pour le traitement et la construction des index.  </li>
+<li><code>data</code> : stockage des fichiers et jeux de données sources.  </li>
+<li><code>exact_engine</code> et <code>spare_engine</code> : modules pour la construction des moteurs de recherche par mots-clés et TF-IDF.  </li>
+<li><code>extract_pdf</code> : extraction du texte depuis les fichiers PDF.  </li>
+<li><code>sections_regroup</code> : organisation et regroupement des sections de documents.  </li>
+<li><code>utils</code> : fonctions utilitaires pour le prétraitement et la manipulation des données.  </li>
+</ul>
+<p>Le script <code>main_builder.py</code> orchestre l’ensemble du processus de construction de la base et des indices.</p>
 
 
 

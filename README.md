@@ -5,7 +5,7 @@ Welcome to the **RCT RAG** project!
 **Access the web app for free here : **  
 ➡️ [RCT_Search_Engine](https://rct-rag.onrender.com/)
 
-For instance, try with ...
+For instance, try with `cryoglobulinemia vasculitis AND double-blind study`
 
 📖 **Read the full documentation here:**  
 ➡️ [RCT RAG Documentation](https://ohassanaly.github.io/rct_rag/)  
