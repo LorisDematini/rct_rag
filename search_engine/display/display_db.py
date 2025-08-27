@@ -34,9 +34,12 @@ def display_list(summary : str, query: str = None) -> None:
             return
 
     # Loop through all matching protocols
-    for study_id, study_content in filtered_summary:
-        # Remove any suffix after the first slash in study_id
+    for study_id, study_content in sorted(filtered_summary, key=lambda x: x[0].lower()):
+        # Remove any suffix after the first slash or underscore in study_id
         study_id = study_id.split("/", 1)[0]
+        study_id = study_id.split("_", 1)[0]
+        # Force uppercase
+        study_id = study_id.upper()
         st.markdown(f"### {study_id}")
 
         # Try to locate the corresponding PDF file

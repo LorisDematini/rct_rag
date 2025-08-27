@@ -1,24 +1,51 @@
 # What is this project?
 
-This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.
+This project offers multiple search engines to explore **Randomized Clinical Trial (RCT) protocols** created at **URC Saint Louis**.
 
-A RAG architecture divides in several steps :
+![Project overview](assets/smart_image.jpg)
 
-corpus text embedding
-embedding storage in a Vector Database
-query embedding and retrieving most similar vectors in the DB
+---
+## Quick Start
 
-![Alt text](assets/smart_image.jpg)
+You have two options to start using the RCT search engines:
 
-## Folders
+### Use the Hosted Version
 
-* `builder` - The main project architecture.
-* `search_engine` - The application code
-## Continue
+No setup is required. Simply visit the web application:
+[RCT_Search_Engine](https://rct-rag.onrender.com/)
 
-    Project still in progress 
-    
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Run Locally via Git and Docker
+
+- **Clone the repository**:
+```bash
+git clone https://github.com/ohassanaly/rct_rag.git
+cd rct_rag
+```
+
+- **Build and run the Docker container**:
+```bash
+docker build -t rct_search .
+docker run -p 8080:8080 rct_search
+```
+- **Open your browser at http://localhost:8080 to access the application.**
+
+---
+## Demos
+
+You have access to **three search engines**:
+
+- **Sparse Engine** - [`demo`](demo/sparse_engine_demo.md)  
+Retrieves the most relevant protocols for multi-word queries using TF-IDF.
+
+- **Key-words Engine** - [`demo`](demo/exact_engine_demo.md)  
+Finds protocols containing the exact keywords of your query, supporting wildcards (`*`) adn operators(AND/OR) for flexible matching.
+
+- **Database** - [`demo`](demo/database_demo.md)  
+Allows direct navigation and exploration of all protocols stored in the structured database.
+
+---
+## Project Structure
+
+- [`builder`](rag/builder.md) – Handles data preparation and construction of each engines   
+- [`search_engine`](rag/sparse_engine.md) – Contains the application logic and user interface  
+

@@ -21,8 +21,8 @@ This project provides several search engines to explore **Randomized Clinical Tr
 Currently, it includes:
 
 - **Sparse Search (TF-IDF)** → semantic keyword-based retrieval  
-- **Exact Search (CTRL+F style)** → strict word matching  
-- **Database-like Explorer** → direct browsing of the full files  
+- **Exact Search (CTRL+F style)** → strict word matching with wildcard and operators (AND, OR)
+- **Database-like Explorer** → direct browsing of the full files
 
 ---
 
@@ -30,7 +30,5 @@ Currently, it includes:
 
 - **40 protocols available** at the moment  
 - The collection will continue to grow over time
-
-
 
 <!-- ![Alt text](assets/rag_illustration.png) -->

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../demo/exact_engine_demo/">
+        <link rel="prev" href="../sparse_engine_demo/">
       
       
-        <link rel="next" href="../sparse_engine/">
+        <link rel="next" href="../../rag/builder/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Builder - RCT RAG</title>
+        <title>Key-Words Engine - RCT RAG</title>
       
     
     
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Builder
+              Key-Words Engine
             
           </span>
         </div>
@@ -208,18 +208,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -235,7 +237,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Demo
@@ -249,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/sparse_engine_demo/" class="md-nav__link">
+      <a href="../sparse_engine_demo/" class="md-nav__link">
         
   
   
@@ -269,10 +271,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../demo/exact_engine_demo/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -283,6 +292,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -295,7 +305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../demo/database_demo.md" class="md-nav__link">
+      <a href="../database_demo.md" class="md-nav__link">
         
   
   
@@ -322,20 +332,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -351,7 +359,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Different steps
@@ -362,17 +370,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../rag/builder/" class="md-nav__link">
         
   
   
@@ -383,7 +384,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -396,7 +396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sparse_engine/" class="md-nav__link">
+      <a href="../../rag/sparse_engine/" class="md-nav__link">
         
   
   
@@ -473,20 +473,9 @@
 
 
 
-  <h1>Builder</h1>
+  <h1>Key-Words Engine</h1>
 
-<p><img alt="Builder" src="../assets/builder.png" /></p>
-<p><strong>Builder</strong>: This module is responsible for data preparation and the construction of search indexes. It contains:  </p>
-<ul>
-<li><code>acronyms</code>: management and extraction of acronyms found in the protocols.  </li>
-<li><code>config</code>: configuration files for data processing and index building.  </li>
-<li><code>data</code>: storage of source files and datasets.  </li>
-<li><code>exact_engine</code> and <code>sparse_engine</code>: modules for building keyword-based and TF-IDF search engines.  </li>
-<li><code>extract_pdf</code>: extraction of text from PDF files.  </li>
-<li><code>sections_regroup</code>: organization and regrouping of document sections.  </li>
-<li><code>utils</code>: utility functions for preprocessing and data handling.  </li>
-</ul>
-<p>The script <code>main_builder.py</code> orchestrates the entire process of database and index construction.  </p>
+
 
 
 

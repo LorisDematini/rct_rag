@@ -10,7 +10,7 @@
       
       
       
-        <link rel="next" href="rag/builder/">
+        <link rel="next" href="demo/sparse_engine_demo/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -242,18 +242,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#folders" class="md-nav__link">
+  <a href="#project-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Folders
+      Project Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#continue" class="md-nav__link">
+  <a href="#demos" class="md-nav__link">
     <span class="md-ellipsis">
-      Continue
+      Demos
     </span>
   </a>
   
@@ -290,7 +290,7 @@
   
   
   <span class="md-ellipsis">
-    Different steps
+    Demo
     
   </span>
   
@@ -300,6 +300,120 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Demo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="demo/sparse_engine_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sparse Engine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="demo/exact_engine_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Key-Words Engine
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="demo/database_demo.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Database
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Different steps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Different steps
           </label>
@@ -407,18 +521,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#folders" class="md-nav__link">
+  <a href="#project-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      Folders
+      Project Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#continue" class="md-nav__link">
+  <a href="#demos" class="md-nav__link">
     <span class="md-ellipsis">
-      Continue
+      Demos
     </span>
   </a>
   
@@ -441,25 +555,29 @@
 
 
 <h1 id="what-is-this-project">What is this project?</h1>
-<p>This project aims at offering a RAG architecture for Randomized Clinical Trials protocols made at URC Saint Louis.</p>
-<p>A RAG architecture divides in several steps :</p>
-<p>corpus text embedding
-embedding storage in a Vector Database
-query embedding and retrieving most similar vectors in the DB</p>
-<p><img alt="Alt text" src="assets/smart_image.jpg" /></p>
-<h2 id="folders">Folders</h2>
+<p>This project offers multiple search engines to explore <strong>Randomized Clinical Trial (RCT) protocols</strong> created at <strong>URC Saint Louis</strong>.</p>
+<p><img alt="Project overview" src="assets/smart_image.jpg" /></p>
+<hr />
+<h2 id="project-structure">Project Structure</h2>
 <ul>
-<li><code>builder</code> - The main project architecture.</li>
-<li><code>search_engine</code> - The application code</li>
+<li><a href="rag/builder/"><code>builder</code></a> – Handles data preparation and index construction  </li>
+<li><a href="rag/sparse_engine/"><code>search_engine</code></a> – Contains the application logic and user interface  </li>
 </ul>
-<h2 id="continue">Continue</h2>
-<pre><code>Project still in progress
-
-mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<hr />
+<h2 id="demos">Demos</h2>
+<p>You have access to <strong>three search engines</strong>:</p>
+<ul>
+<li>
+<p><strong>Sparse Engine</strong> - <a href="demo/sparse_engine_demo/"><code>demo</code></a>
+Retrieves the most relevant protocols for multi-word queries using TF-IDF.</p>
+</li>
+<li>
+<p><strong>Key-words Engine</strong> - <a href="demo/exact_engine_demo/"><code>demo</code></a></p>
+</li>
+<li>
+<p><strong>Database</strong> - <a href="demo/database_demo.md"><code>demo</code></a></p>
+</li>
+</ul>
 
 
 

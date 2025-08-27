@@ -1,11 +1,20 @@
-site_name: RCT RAG
+site_name: RCT Search Engines
 theme:
   name: material
 nav:
   - Home: index.md
-  - Different steps : 
+  
+  - Demo :
+    - Sparse Engine : ./demo/sparse_engine_demo.md
+    - Key-Words Engine : ./demo/exact_engine_demo.md
+    - Database : ./demo/database_demo.md
+
+  - Project Structure : 
     - Builder: ./rag/builder.md
+    - Search Engines: ./rag/search_engine.md
     - Sparse Search Engine: ./rag/sparse_engine.md
+
   - About: about.md
+
 plugins:
   - search

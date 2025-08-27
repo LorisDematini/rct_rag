@@ -18,7 +18,8 @@ def preprocess_ex(text):
     text = text.lower()
 
     # Remove punctuation (keep * and - initially), also remove underscores
-    text = re.sub(r'[^\w\s*-]|_', ' ', text)
+    text = re.sub(r'[^\w*-]|_', ' ', text)
+    text = re.sub(r'\s+',' ',text).strip()
 
     # Remove hyphens explicitly
     text = text.replace("-", "")
